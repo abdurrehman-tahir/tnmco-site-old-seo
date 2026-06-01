@@ -11,16 +11,17 @@ session_start();
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         
 
-        <title>T&M Consultants</title>
-        <meta content="" name="">
-        <meta content="" name="">
+        <title>T&M Consultants | Technology & Management Solutions UK</title>
+        <link rel="canonical" href="https://tnmco.uk/">
 
         <!-- Favicons -->
         <link href="./assets/img/cropped-Logo.6.3-gradient-shadow.1-1024x957.png" rel="icon" alt="T&M logo">
         <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
         <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
         <!-- Vendor CSS Files -->
         <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -32,16 +33,22 @@ session_start();
 
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/3e825e83d5.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/3e825e83d5.js" crossorigin="anonymous" defer></script>
 
-        <script src="assets/vendor/jquery/jquery.min.js"></script>
+        <script src="assets/vendor/jquery/jquery.min.js" defer></script>
         <script>
-            $(document).ready(function() {
-                $(document).click(function(event) {
-                    var click = $(event.target);
-                    var _open = $(".navbar-collapse").hasClass("show");
-                    if (_open === true && !click.hasClass("navbar-toggler")) {
-                        $(".navbar-toggler").click();
+            document.addEventListener("DOMContentLoaded", function() {
+                document.addEventListener("click", function(event) {
+                    var navbarCollapse = document.querySelector(".navbar-collapse");
+                    if (navbarCollapse) {
+                        var isOpen = navbarCollapse.classList.contains("show");
+                        var clickTarget = event.target;
+                        if (isOpen && !clickTarget.classList.contains("navbar-toggler") && !clickTarget.closest(".navbar-toggler")) {
+                            var toggler = document.querySelector(".navbar-toggler");
+                            if (toggler) {
+                                toggler.click();
+                            }
+                        }
                     }
                 });
             });
@@ -56,108 +63,203 @@ session_start();
 
   gtag('config', 'G-MRYVE7QMBL');
 </script>
-              <!-----schema-----> 
-              <script type="application/ld+json">
-            {
-                "@context": "https://schema.org/",
-                "@type": "WebSite",
-                "name": "T&M Consultants",
-                "url": "https://tnmco.uk/",
-                "potentialAction": {
-                "@type": "SearchAction",
-            "target": "https://tnmco.uk/Career.php{search_term_string}",
-                "query-input": "required name=search_term_string"
-            }
-            }
-            </script>
-            
-            <script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "WebSite",
-  "name": "T&M Consultants",
-  "url": "https://tnmco.uk/",
-  "potentialAction": {
-    "@type": "SearchAction",
-    "target": "{search_term_string}",
-    "query-input": "required name=search_term_string"
-  }
-}
-</script>
+        <!-- ===== SEO Meta Tags ===== -->
+        <meta name="description" content="Technology and Management (T&M) Consultants is a UK-registered social enterprise delivering 360° technology solutions — Blockchain Ledger, Full Stack Web Development, Mobile Apps, Machine Learning, E-commerce, and Project Management — for start-ups and SMEs.">
+        <meta name="keywords" content="T&M Consultants, technology consultants UK, blockchain ledger, full stack web development, mobile application development, machine learning, AI solutions, project management, e-commerce, software development Faisalabad">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="T&M Consultants">
+        <meta name="language" content="English">
 
+        <!-- ===== Open Graph / Facebook ===== -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://tnmco.uk/">
+        <meta property="og:title" content="T&M Consultants | Technology & Management Solutions UK">
+        <meta property="og:description" content="UK-registered social enterprise delivering 360° tech solutions — Blockchain, Web Development, Mobile Apps, ML/AI, E-commerce and Project Management for start-ups and SMEs.">
+        <meta property="og:image" content="https://tnmco.uk/assets/img/tnmLogo.png">
+        <meta property="og:site_name" content="T&M Consultants">
+        <meta property="og:locale" content="en_GB">
 
+        <!-- ===== Twitter / X Card ===== -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:url" content="https://tnmco.uk/">
+        <meta name="twitter:title" content="T&M Consultants | Technology & Management Solutions UK">
+        <meta name="twitter:description" content="UK-registered social enterprise delivering 360° tech solutions for start-ups and SMEs: Blockchain, Full Stack Dev, Mobile Apps, ML/AI.">
+        <meta name="twitter:image" content="https://tnmco.uk/assets/img/tnmLogo.png">
+
+        <!-- ===== Unified @graph Schema — Entity Disambiguation + Services ===== -->
         <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "T&M Consultants",
-  "image": "https://tnmco.uk/",
-  "@id": "https://tnmco.uk/",
-  "url": "https://tnmco.uk/",
-  "telephone": "+923216601111",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "",
-    "addressLocality": "Faisalabad",
-    "postalCode": "38000",
-    "addressCountry": "PK"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 31.4634331,
-    "longitude": 73.0795599
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Tuesday",
-      "Monday",
-      "Wednesday",
-      "Thursday",
-      "Friday"
-    ],
-    "opens": "09:00",
-    "closes": "06:00"
-  },
-  "sameAs": [
-    "https://www.facebook.com/TnMConsultants/",
-    "https://pk.linkedin.com/company/tnmconsultants"
-  ] 
-}
-</script>
-            
-
-    <script>
-    //   (function(d,t) {
-    //     var BASE_URL="https://staging.gueswi.com";
-    //     var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    //     g.src=BASE_URL+"/packs/js/sdk.js";
-    //     g.defer = true;
-    //     g.async = true;
-    //     s.parentNode.insertBefore(g,s);
-    //     g.onload=function(){
-    //       window.chatwootSDK.run({
-    //         websiteToken: '73GqSjkJbNY5SwcVZrfWwLRw',
-    //         baseUrl: BASE_URL
-    //       })
-    //     }
-    //   })(document,"script");
-     </script>
-                
-            
-            <!-------meta tag-------->
-            
-            <meta name="title" content="T&M Consultants">
-<meta name="description" content="Technology and Management (T&M) consultants is a social
-enterprise building capacity for start-ups and SMEs.T&M offers 360° solutions
-to start-ups and SMEs including but not limited to product development,
-Here at T&M We try to provide our clients and customers best services.">
-<meta name="keywords" content="BLOCKCHAIN LEDGER Project Management FULL STACK WEB DEVELOPMENT MOBILE APPLICATION DEVELOPMENT Machine Learning E-commerce Ecosystem">
-<meta name="robots" content="index, follow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="language" content="English">
-<meta name="revisit-after" content=" days">
-<meta name="author" content="">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://tnmco.uk/#website",
+              "name": "T&M Consultants",
+              "url": "https://tnmco.uk/",
+              "publisher": { "@id": "https://tnmco.uk/#organization" },
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://tnmco.uk/Career.php?search={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            },
+            {
+              "@type": ["Organization", "ProfessionalService"],
+              "@id": "https://tnmco.uk/#organization",
+              "name": "T&M Consultants",
+              "alternateName": ["Technology and Management Consultants", "Technology and Management Consultants Ltd", "TNMCO"],
+              "url": "https://tnmco.uk/",
+              "logo": {
+                "@type": "ImageObject",
+                "@id": "https://tnmco.uk/#logo",
+                "url": "https://tnmco.uk/assets/img/tnmLogo.png",
+                "width": 400,
+                "height": 374
+              },
+              "image": { "@id": "https://tnmco.uk/#logo" },
+              "description": "T&M Consultants is a UK-registered social enterprise (Company Number 12621485) building capacity for start-ups and SMEs through blockchain solutions, full stack development, mobile applications, machine learning, and 360-degree technology consultancy. T&M is distinct from TNMOC (The National Museum of Computing) and is not affiliated with any museum, heritage, or environmental organisation.",
+              "foundingDate": "2020",
+              "legalName": "Technology and Management Consultants Ltd",
+              "taxID": "12621485",
+              "numberOfEmployees": { "@type": "QuantitativeValue", "minValue": 5, "maxValue": 25 },
+              "address": [
+                {
+                  "@type": "PostalAddress",
+                  "@id": "https://tnmco.uk/#address-uk",
+                  "streetAddress": "49 Eglington Rd",
+                  "addressLocality": "London",
+                  "postalCode": "SE18 3SL",
+                  "addressCountry": "GB"
+                },
+                {
+                  "@type": "PostalAddress",
+                  "@id": "https://tnmco.uk/#address-pk",
+                  "addressLocality": "Faisalabad",
+                  "addressRegion": "Punjab",
+                  "postalCode": "38000",
+                  "addressCountry": "PK"
+                }
+              ],
+              "contactPoint": [
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+44208374708",
+                  "contactType": "customer support",
+                  "areaServed": "GB"
+                },
+                {
+                  "@type": "ContactPoint",
+                  "telephone": "+923216601111",
+                  "contactType": "customer support",
+                  "email": "contact@tnmco.uk",
+                  "areaServed": "PK"
+                }
+              ],
+              "sameAs": [
+                "https://www.facebook.com/TnMConsultants/",
+                "https://pk.linkedin.com/company/tnmconsultants"
+              ],
+              "knowsAbout": [
+                "Blockchain Ledger Development",
+                "Full Stack Web Development",
+                "Mobile Application Development",
+                "Machine Learning",
+                "Artificial Intelligence",
+                "E-commerce Platforms",
+                "Project Management",
+                "Cashless Payment Systems"
+              ],
+              "makesOffer": [
+                { "@id": "https://tnmco.uk/#service-blockchain" },
+                { "@id": "https://tnmco.uk/#service-webdev" },
+                { "@id": "https://tnmco.uk/#service-mobile" },
+                { "@id": "https://tnmco.uk/#service-ml" },
+                { "@id": "https://tnmco.uk/#service-ecommerce" },
+                { "@id": "https://tnmco.uk/#service-pm" }
+              ]
+            },
+            {
+              "@type": "Service",
+              "@id": "https://tnmco.uk/#service-blockchain",
+              "name": "Blockchain Ledger Development",
+              "provider": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Personalized blockchain ledger services including the proprietary T&M Block architecture, API integrations, and the QuickCard cashless payment platform for businesses transitioning to transparent, cash-free transactions.",
+              "areaServed": "Worldwide",
+              "serviceType": "Blockchain Development"
+            },
+            {
+              "@type": "Service",
+              "@id": "https://tnmco.uk/#service-webdev",
+              "name": "Full Stack Web Development",
+              "provider": { "@id": "https://tnmco.uk/#organization" },
+              "description": "End-to-end web application development using modern frameworks including React, Node.js, PHP, and WordPress. Covers responsive front-end interfaces, server-side architecture, database design, and API development.",
+              "areaServed": "Worldwide",
+              "serviceType": "Web Development"
+            },
+            {
+              "@type": "Service",
+              "@id": "https://tnmco.uk/#service-mobile",
+              "name": "Mobile Application Development",
+              "provider": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Native and cross-platform mobile application development for iOS and Android, including consumer-facing apps, enterprise tools, and health-tech solutions like e-Sehat.",
+              "areaServed": "Worldwide",
+              "serviceType": "Mobile App Development"
+            },
+            {
+              "@type": "Service",
+              "@id": "https://tnmco.uk/#service-ml",
+              "name": "Machine Learning & Artificial Intelligence",
+              "provider": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Custom ML model development, data pipeline engineering, natural language processing, and predictive analytics solutions for SMEs and start-ups.",
+              "areaServed": "Worldwide",
+              "serviceType": "AI/ML Consulting"
+            },
+            {
+              "@type": "Service",
+              "@id": "https://tnmco.uk/#service-ecommerce",
+              "name": "E-commerce Ecosystem Development",
+              "provider": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Complete e-commerce platform development including payment gateway integration, inventory management, multi-vendor marketplace architecture, and order fulfilment systems.",
+              "areaServed": "Worldwide",
+              "serviceType": "E-commerce Development"
+            },
+            {
+              "@type": "Service",
+              "@id": "https://tnmco.uk/#service-pm",
+              "name": "Project Management Consultancy",
+              "provider": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Agile project management consulting, process optimisation, team capacity building, and digital transformation strategy for start-ups and growing organisations.",
+              "areaServed": "Worldwide",
+              "serviceType": "Management Consulting"
+            },
+            {
+              "@type": "LocalBusiness",
+              "@id": "https://tnmco.uk/#localbusiness",
+              "name": "T&M Consultants",
+              "image": "https://tnmco.uk/assets/img/tnmLogo.png",
+              "url": "https://tnmco.uk/",
+              "telephone": "+44208374708",
+              "email": "contact@tnmco.uk",
+              "address": { "@id": "https://tnmco.uk/#address-uk" },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 51.4875,
+                "longitude": 0.0803
+              },
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              "sameAs": [
+                "https://www.facebook.com/TnMConsultants/",
+                "https://pk.linkedin.com/company/tnmconsultants"
+              ]
+            }
+          ]
+        }
+        </script>
 
 
     </head>
@@ -167,8 +269,8 @@ Here at T&M We try to provide our clients and customers best services.">
         <div id="topbar" class="d-none d-lg-flex align-items-end fixed-top topbar-transparent">
             <div class="container d-flex justify-content-end">
                 <div class="social-links">
-                    <a href="https://www.facebook.com/TnMConsultants" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.linkedin.com/company/tnmconsultants" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/TnMConsultants" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="T&M Consultants on Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/company/tnmconsultants" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="T&M Consultants on LinkedIn"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
@@ -178,7 +280,7 @@ Here at T&M We try to provide our clients and customers best services.">
             <div class="container">
                 <nav class="navbar navbar-expand-md bg-transparent navbar-light p-0 m-0">
                     <!-- Site Logo Here -->
-                    <a class="logo mr-auto" href="./index.php"><img src="./assets/img/tnmLogo.png" alt="TNM Logo"></a>
+                    <a class="logo mr-auto" href="./index.php"><img src="./assets/img/tnmLogo.png" alt="TNM Logo" width="400" height="374"></a>
                     <!-- Collapsibe Button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobilemenu" onclick='
         if($("#my-bars").hasClass("fa-bars")){
@@ -229,7 +331,11 @@ Here at T&M We try to provide our clients and customers best services.">
 
         <!-- ======= Hero Section ======= -->
         <section id="hero" class="clearfix">
-            <div id="particles-js"></div>
+            <div class="hero-animated-bg">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+            </div>
 
             <?php
         if(isset($_SESSION['message']))
@@ -250,7 +356,8 @@ Here at T&M We try to provide our clients and customers best services.">
                                     <span>
                                         Technology and Management Solutions
                                     </span>
-                                    <h1 class="cursor"></h1>
+                                    <!-- Static fallback text for crawlers/AI bots that don't execute JS. The typewriter JS clears this before it starts. -->
+                                    <h1 class="cursor">All In One Place!</h1>
                                 </div>
                                 <div class="mt-5">
                                     <a href="#contact" class="btn-get-started scrollto mt-5">Get Started</a>
@@ -259,7 +366,7 @@ Here at T&M We try to provide our clients and customers best services.">
 
                             <div class="col-md-7 intro-img order-md-last order-first mt-md-5" data-aos="zoom-out" data-aos-delay="200">
                                 <!-- <img src="assets/img/intro-img.svg" alt="" class="img-fluid"> -->
-                                <img src="./assets/img/fix-size-01.png" alt="hero img" class="img-fluid">
+                                <img src="./assets/img/fix-size-01.png" alt="T&M Consultants technology solutions illustration" class="img-fluid" width="900" height="540">
                             </div>
                         </div>
                     </div>
@@ -280,7 +387,7 @@ Here at T&M We try to provide our clients and customers best services.">
 
                         <div class="col-lg-5 col-md-6">
                             <div class="about-img" data-aos="fade-right" data-aos-delay="100">
-                                <img src="assets/img/aboutNew.png" alt="about img">
+                                <img src="assets/img/aboutNew.png" alt="T&M Consultants Team Collaborating on Technology Solutions" loading="lazy" width="474" height="700">
                             </div>
                         </div>
 
@@ -413,7 +520,7 @@ Here at T&M We try to provide our clients and customers best services.">
 
                     <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="100">
                         <div class="why-us-img">
-                            <img src="assets/img/why-us.jpg" alt="" class="img-fluid">
+                            <img src="assets/img/why-us.jpg" alt="T&M Consultants professional expertise and capabilities" class="img-fluid" width="900" height="600">
                         </div>
                     </div>
 
@@ -582,7 +689,7 @@ Here at T&M We try to provide our clients and customers best services.">
                         <!-- nrd web -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
-                                <img src="./assets/img/portfolio/nrd-web.png" class="img-fluid" alt="init img">
+                                <img src="./assets/img/portfolio/nrd-web.png" class="img-fluid" alt="NonRival Data Web 3.0 Platform Interface" loading="lazy" width="2560" height="2526">
                                 <div class="portfolio-info">
                                     <h4><a href="https://nonrivaldata.com" target="_blank">NonRival Data</a></h4>
                                     <p>WEB 3.0</p>
@@ -597,7 +704,7 @@ Here at T&M We try to provide our clients and customers best services.">
                         <!-- docushiel app -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
-                                <img style="height: 200px !important; margin: 20px 0;" src="./assets/img/portfolio/doc.png" class="img-fluid" alt="esehat logo">
+                                <img style="height: 200px !important; margin: 20px 0;" src="./assets/img/portfolio/doc.png" class="img-fluid" alt="Docushield Secure Mobile Application" loading="lazy" width="3000" height="2000">
                                 <div class="portfolio-info">
                                     <h4><a href="https://play.google.com/store/apps/details?id=com.tnm.e_sehat&fbclid=IwAR132Dx6zlIK9nwDyRF1iq4s8LSTbZ6-SW3VMqvICqb5NDSGsWns1MvTREI" target="_blank">Docushield</a></h4>
                                     <p>App</p>
@@ -613,7 +720,7 @@ Here at T&M We try to provide our clients and customers best services.">
                         <!-- nrd chrome extension -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-Extension" data-wow-delay="0.2s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
-                                <img style="height: 230px !important; margin: 20px;" src="./assets/img/portfolio/nrd-ext-chrome.png" class="img-fluid " alt="nonrival icon">
+                                <img style="height: 230px !important; margin: 20px;" src="./assets/img/portfolio/nrd-ext-chrome.png" class="img-fluid " alt="NonRival Data Chrome Browser Extension Interface" loading="lazy" width="3000" height="2250">
                                 <div class="portfolio-info">
                                     <h4><a href="https://chrome.google.com/webstore/detail/nonrival-data/namcbnkeoapdnoajhlbdpnmmbkodoakh" target="_blank">NonRival Data</a></h4>
                                     <p>Chrome Extension</p>
@@ -630,7 +737,7 @@ Here at T&M We try to provide our clients and customers best services.">
                         <!-- Tameer Estate  web -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
-                                <img src="./assets/img/portfolio/tameer-web.png" class="img-fluid" alt="init img">
+                                <img src="./assets/img/portfolio/tameer-web.png" class="img-fluid" alt="Tameer Estate UK Property Website Portal" loading="lazy" width="2560" height="2707">
                                 <div class="portfolio-info">
                                     <h4><a href="https://tameerestate.com" target="_blank">Tameer Estate UK</a></h4>
                                     <p>Real Estate Website</p>
@@ -646,7 +753,7 @@ Here at T&M We try to provide our clients and customers best services.">
                         <!-- docushield web -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center;padding:20px;">
-                                <img src="./assets/img/portfolio/doc-web.png" class="img-fluid" alt="Qc img">
+                                <img src="./assets/img/portfolio/doc-web.png" class="img-fluid" alt="Docushield Security Web Console Platform" loading="lazy" width="2559" height="2217">
                                 <div class="portfolio-info">
                                     <h4><a href="https://docushield.tnmco.uk/" target="_blank">Docushield</a></h4>
                                     <p>Website</p>
@@ -661,7 +768,7 @@ Here at T&M We try to provide our clients and customers best services.">
                         <!-- nrd firfox add-on -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-Extension" data-wow-delay="0.2s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
-                                <img style="height: 230px !important; margin: 20px;" src="./assets/img/portfolio/nrd-ext-mozilla.png" class="img-fluid " alt="nonrival icon">
+                                <img style="height: 230px !important; margin: 20px;" src="./assets/img/portfolio/nrd-ext-mozilla.png" class="img-fluid " alt="NonRival Data Firefox Add-on Extension" loading="lazy" width="3000" height="2250">
                                 <div class="portfolio-info">
                                     <h4><a href="https://addons.mozilla.org/en-US/firefox/addon/non-rival-data/" target="_blank">NonRival Data</a></h4>
                                     <p>FireFox Add-on</p>
@@ -678,7 +785,7 @@ Here at T&M We try to provide our clients and customers best services.">
                         <!-- e-sehat app -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
-                                <img style="height: 200px !important; margin: 20px 0;" src="./assets/img/portfolio/esehat.png" class="img-fluid" alt="esehat logo">
+                                <img style="height: 200px !important; margin: 20px 0;" src="./assets/img/portfolio/esehat.png" class="img-fluid" alt="e-Sehat Telemedicine Mobile Application" loading="lazy" width="3000" height="2000">
                                 <div class="portfolio-info">
                                     <h4><a href="https://play.google.com/store/apps/details?id=com.tnm.e_sehat&fbclid=IwAR132Dx6zlIK9nwDyRF1iq4s8LSTbZ6-SW3VMqvICqb5NDSGsWns1MvTREI" target="_blank">e-Sehat</a></h4>
                                     <p>App</p>
@@ -694,7 +801,7 @@ Here at T&M We try to provide our clients and customers best services.">
                         <!-- mint-it web site -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center;padding:20px;">
-                                <img src="./assets/img/portfolio/mintit-web.png" class="img-fluid" alt="Qc img">
+                                <img src="./assets/img/portfolio/mintit-web.png" class="img-fluid" alt="Mintit Studio Creative Digital Web Platform" loading="lazy" width="2560" height="2465">
                                 <div class="portfolio-info">
                                     <h4><a href="https://mintit.tnmco.uk/" target="_blank">Mintit-Studio</a></h4>
                                     <p>Website</p>
@@ -709,7 +816,7 @@ Here at T&M We try to provide our clients and customers best services.">
                         <!-- nrd Safari extension -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-Extension" data-wow-delay="0.2s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
-                                <img style="height: 230px !important; margin: 20px;" src="./assets/img/portfolio/nrd-ext-safari.png" class="img-fluid " alt="nonrival icon">
+                                <img style="height: 230px !important; margin: 20px;" src="./assets/img/portfolio/nrd-ext-safari.png" class="img-fluid " alt="NonRival Data Safari Web Extension" loading="lazy" width="3000" height="2250">
                                 <div class="portfolio-info">
                                     <h4><a href="https://apps.apple.com/app/id1573762995" target="_blank">NonRival Data</a></h4>
                                     <p>Safari Extension</p>
@@ -728,7 +835,7 @@ Here at T&M We try to provide our clients and customers best services.">
                         <!-- Quick Card web -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center;padding:20px;">
-                                <img src="./assets/img/portfolio/qc.png" class="img-fluid" alt="Qc img">
+                                <img src="./assets/img/portfolio/qc.png" class="img-fluid" alt="Quick Card Contactless Cashless Payments Website" loading="lazy" width="512" height="512">
                                 <div class="portfolio-info">
                                     <h4><a href="https://quickcard.me" target="_blank">Quick Card</a></h4>
                                     <p>Website</p>
@@ -743,7 +850,7 @@ Here at T&M We try to provide our clients and customers best services.">
                         <!-- nrd app -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
-                                <img style="height: 190px !important; margin: 20px 0;" src="./assets/img/portfolio/nrd-app.png" class="img-fluid " alt="nonrival logo ">
+                                <img style="height: 190px !important; margin: 20px 0;" src="./assets/img/portfolio/nrd-app.png" class="img-fluid " alt="NonRival Data Finance and Web3 Mobile Application" loading="lazy" width="3000" height="2000">
                                 <div class="portfolio-info">
                                     <h4><a href="https://play.google.com/store/apps/details?id=com.tnm.NONRIVAL" target="_blank">NonRival Data</a></h4>
                                     <p>App</p>
@@ -780,7 +887,7 @@ Here at T&M We try to provide our clients and customers best services.">
                                     me refine my idea. I was thoroughly impressed with the speed of delivery as the project was time sensitive. I would strongly recommend working with them. Thanks again and looking forward to working with you in future.
                                 <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
                             </p>
-                            <img src="./assets/img/doc-circle.png" class="testimonial-img" alt="init logo">
+                            <img src="./assets/img/doc-circle.png" class="testimonial-img" alt="Docushield Client Testimonial Logo" loading="lazy" width="1080" height="1080">
                             <h3>Jules Mancion (Project Manager)</h3>
                             <h4><a href="https://docushield.tnmco.uk/" target="_blank">docushield.com</a></h4>
                         </div>
@@ -793,7 +900,7 @@ Here at T&M We try to provide our clients and customers best services.">
                                     I wholeheartedly recommend T&M consultants for their technical skills, user-centric approach, and transformative contributions to our project. Thank you for shaping the future of real estate online!
                                 <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
                             </p>
-                            <img src="./assets/img/tameer_circle.png" class="testimonial-img" alt="init logo">
+                            <img src="./assets/img/tameer_circle.png" class="testimonial-img" alt="Tameer Estate UK Client Testimonial Logo" loading="lazy" width="400" height="400">
                             <h3>Hamza Bajwa (Project Manager)</h3>
                             <h4><a href="https://tameerestate.com/" target="_blank">tameerestate.com</a></h4>
                         </div>
@@ -815,7 +922,7 @@ Here at T&M We try to provide our clients and customers best services.">
                                     They made my project go smoothly. We were extremely pleased with the quality and speed of delivery. I would highly recommend them and would acquire their services again.
                                 <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
                             </p>
-                            <img src="./assets/img/cominfo.png" class="testimonial-img" alt="circle img">
+                            <img src="./assets/img/cominfo-logo.png" class="testimonial-img" alt="Cominfo Client Testimonial Logo" loading="lazy" width="400" height="400">
                             <h3>Imad Rehman (Exec Vice. President)</h3>
                             <h4><a href="https://www.cominfo.com/" target="_blank">cominfo.com</a></h4>
                         </div>
@@ -837,7 +944,7 @@ Here at T&M We try to provide our clients and customers best services.">
                                 services in developing prototype for my start-up.
                                 <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
                             </p>
-                            <img src="./assets/img/TSG_Circle.png" class="testimonial-img" alt="circle img">
+                            <img src="./assets/img/TSG_Circle.png" class="testimonial-img" alt="TSG Client Testimonial Logo" loading="lazy" width="400" height="400">
                             <h3>Dr.Asif Mufti (Founder)</h3>
                             <h4><a href="http://tsgtech.us/" target="_blank">Tsgtech.us</a></h4>
                         </div>
@@ -858,7 +965,7 @@ Here at T&M We try to provide our clients and customers best services.">
                     <div class="row">
                         <div class="col-4">
                             <div class="member">
-                                <img src="./assets/img/team/abd.png" alt="team img">
+                                <img src="./assets/img/team/abd.png" alt="Abdurehman Bin Tahir - Technical Director & Co-Founder" loading="lazy" width="417" height="500">
                                 <h4>Abdurehman Bin Tahir</h4>
                                 <span>Technical Director/ Co-Founder</span>
                                 <p>
@@ -868,13 +975,13 @@ Here at T&M We try to provide our clients and customers best services.">
                                 <div class="social">
                                     <a href="mailto:abdurrehman@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
 
-                                    <a href="https://www.linkedin.com/in/abdtahir/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/abdtahir/" target="_blank" rel="noopener noreferrer" aria-label="Abdurehman Bin Tahir on LinkedIn"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="member">
-                                <img src="./assets/img/team/athar-mushtaq.png" alt="team img">
+                                <img src="./assets/img/team/athar-mushtaq.png" alt="Athar Mushtaq - Managing Director & Co-Founder" loading="lazy" width="417" height="500">
                                 <h4>Athar Mushtaq</h4>
                                 <span>Managing Director/Co-Founder</span>
                                 <p>
@@ -883,13 +990,13 @@ Here at T&M We try to provide our clients and customers best services.">
                                 <div class="social">
                                     <a href="mailto:md@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
 
-                                    <a href="https://www.linkedin.com/in/atharmushtaq/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/atharmushtaq/" target="_blank" rel="noopener noreferrer" aria-label="Athar Mushtaq on LinkedIn"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="member">
-                                <img src="./assets/img/team/mubashir-farooq.png" alt="mubashir-farooq">
+                                <img src="./assets/img/team/mubashir-farooq.png" alt="Mubashir Farooq - Team Leader & Senior Software Developer" loading="lazy" width="417" height="500">
                                 <h4>Mubashir Farooq</h4>
                                 <span>Team Leader / Sr. software Developer</span>
                                 <p>
@@ -898,13 +1005,13 @@ Here at T&M We try to provide our clients and customers best services.">
                                 <div class="social">
                                     <a href="mailto:mubashir@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
 
-                                    <a href="https://www.linkedin.com/in/mubashir-farooq-b01064202/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/mubashir-farooq-b01064202/" target="_blank" rel="noopener noreferrer" aria-label="Mubashir Farooq on LinkedIn"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="member">
-                                <img src="./assets/img/team/team-member2.png" alt="team img">
+                                <img src="./assets/img/team/team-member2.png" alt="Dr. Tahir Mushtaq - Marketing Advisor" loading="lazy" width="417" height="500">
                                 <h4>Dr.Tahir Mushtaq</h4>
                                 <span>Marketing Advisor</span>
                                 <p>
@@ -913,13 +1020,13 @@ Here at T&M We try to provide our clients and customers best services.">
                                 <div class="social">
                                     <a href="mailto:cmo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
 
-                                    <a href="https://www.linkedin.com/in/muhammadtahirmushtaq/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/muhammadtahirmushtaq/" target="_blank" rel="noopener noreferrer" aria-label="Dr. Tahir Mushtaq on LinkedIn"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="member">
-                                <img src="./assets/img/team/team-member3.png" alt="team img">
+                                <img src="./assets/img/team/team-member3.png" alt="Ola Badawi - Financial Advisor" loading="lazy" width="417" height="500">
                                 <h4>Ola Badawi</h4>
                                 <span>Financial Advisor</span>
                                 <p>
@@ -928,13 +1035,13 @@ Here at T&M We try to provide our clients and customers best services.">
                                 <div class="social">
                                     <a href="mailto:cfo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
 
-                                    <a href="https://www.linkedin.com/in/ola-badawi-mba-923b79185/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/ola-badawi-mba-923b79185/" target="_blank" rel="noopener noreferrer" aria-label="Ola Badawi on LinkedIn"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="member">
-                                <img src="./assets/img/team/team-member1.png" alt="team img">
+                                <img src="./assets/img/team/team-member1.png" alt="Haixia Li - Chief Operating Officer" loading="lazy" width="417" height="500">
                                 <h4>HAIXIA LI</h4>
                                 <span>Cheif Operating Officer (COO)</span>
                                 <p>
@@ -943,7 +1050,7 @@ Here at T&M We try to provide our clients and customers best services.">
                                 <div class="social">
                                     <a href="mailto:coo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
 
-                                    <a href="https://www.linkedin.com/in/lynn-li-b88632100/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/lynn-li-b88632100/" target="_blank" rel="noopener noreferrer" aria-label="Haixia Li on LinkedIn"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -964,55 +1071,55 @@ Here at T&M We try to provide our clients and customers best services.">
 
                     <div class="owl-carousel clients-carousel">
                         <div>
-                            <img src="./assets/img/aam-logo.svg" alt="aam logo">
+                            <img src="./assets/img/aam-logo.svg" alt="aam logo" width="150" height="150">
                         </div>
 
                         <div>
-                            <img src="./assets/img/esehat-logo.png" alt="esehat logo">
+                            <img src="./assets/img/esehat-logo.png" alt="esehat logo" width="512" height="512">
                         </div>
 
                         <div style="margin-top:30px">
-                            <img src="./assets/img/tsg.png" alt="tsg img">
+                            <img src="./assets/img/tsg.png" alt="tsg img" width="512" height="264">
                         </div>
 
                         <div style="margin-top:30px">
-                            <img src="./assets/img/CricInGif.png" alt="cricintgit img">
+                            <img src="./assets/img/CricInGif.png" alt="cricintgit img" width="512" height="346">
                         </div>
 
                         <div style="margin-top:0px">
-                            <img src="./assets/img/cominfo-logo.png" alt="cricintgit img">
+                            <img src="./assets/img/cominfo-logo.png" alt="cominfo logo" width="400" height="400">
                         </div>
 
                         <div style="margin-top:48px">
-                            <img src="./assets/img/init-logo-min.png" alt="init logo">
+                            <img src="./assets/img/init-logo-min.png" alt="init logo" width="541" height="190">
                         </div>
 
                         <div>
-                            <img src="./assets/img/qc.png" alt="qc img">
+                            <img src="./assets/img/qc.png" alt="qc img" width="512" height="512">
                         </div>
 
                         <div style="margin-top:40px">
-                            <img src="./assets/img/nonrivaldata.png" alt="nonrivaldata logo">
+                            <img src="./assets/img/nonrivaldata.png" alt="nonrivaldata logo" width="668" height="283">
                         </div>
 
                         <div style="margin-top:40px">
-                            <img src="./assets/img/tecstore.png" alt="techstore img">
+                            <img src="./assets/img/tecstore.png" alt="techstore logo" width="400" height="191">
                         </div>
 
                         <div style="margin-top:20px">
-                            <img src="./assets/img/doclogo.png" alt="docushield logo">
+                            <img src="./assets/img/doclogo.png" alt="docushield logo" width="800" height="570">
                         </div>
                         
                         <div style="margin-top:55px">
-                            <img src="./assets/img/mint-it-dark.png" alt="init logo">
+                            <img src="./assets/img/mint-it-dark.png" alt="mint-it logo" width="1000" height="203">
                         </div>
 
                         <div style="margin-top:50px">
-                            <img src="./assets/img/tameer-estate.png" alt="init logo">
+                            <img src="./assets/img/tameer-estate.png" alt="tameer-estate logo" width="256" height="53">
                         </div>
 
                         <div style="margin-top:45px">
-                            <img src="./assets/img/logo png.png" style="max-width: 90%;" alt="popup logo">
+                            <img src="./assets/img/logo png.png" style="max-width: 90%;" alt="popup logo" width="894" height="291">
                         </div>
                         <!-- <img src="./assets/img/aam-logo.svg" alt="aam logo">
                     <img src="./assets/img/esehat-logo.png" alt="eshat logo">
@@ -1149,8 +1256,8 @@ Here at T&M We try to provide our clients and customers best services.">
                                 T&M We try to provide our clients and customers best services.
                             </p>
                             <div class="social-links  pt-3 pt-md-0 mt-3">
-                                <a href="https://www.facebook.com/TnMConsultants" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="https://www.linkedin.com/company/tnmconsultants" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://www.facebook.com/TnMConsultants" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="T&M Consultants on Facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/tnmconsultants" target="_blank" rel="noopener noreferrer" class="linkedin" aria-label="T&M Consultants on LinkedIn"><i class="fa fa-linkedin"></i></a>
                             </div>
                         </div>
 
@@ -1367,20 +1474,76 @@ Here at T&M We try to provide our clients and customers best services.">
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         <!-- <div id="preloader"></div> -->
 
+        <!-- ===== FAQPage Schema — Rich Results + RAG Extraction ===== -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What services does T&M Consultants provide?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "T&M Consultants provides 360-degree technology solutions including Blockchain Ledger Development, Full Stack Web Development, Mobile Application Development, Machine Learning and AI, E-commerce Ecosystem Development, and Project Management Consultancy for start-ups and SMEs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the T&M Block Ledger and QuickCard cashless payment system?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The T&M Block Ledger is a customized blockchain architecture that provides personalized ledger services and API integrations for businesses. QuickCard is a proprietary contactless cashless payment platform built on this architecture, enabling communities and businesses to transact without cash through POS and e-commerce integration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where is T&M Consultants located?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "T&M Consultants is a UK-registered company (Company Number 12621485) headquartered at 49 Eglington Rd, London, SE18 3SL, United Kingdom. The company also operates a technology development office in Faisalabad, Punjab, Pakistan."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is T&M Consultants (TNMCO) related to The National Museum of Computing (TNMOC)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. T&M Consultants (tnmco.uk) is a professional technology consulting firm and social enterprise. It is entirely separate from and not affiliated with The National Museum of Computing (TNMOC), which is a heritage organisation based at Bletchley Park."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is T&M Consultants' social mission?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "T&M Consultants is a social enterprise that recruits technology graduates from underprivileged backgrounds to accelerate social mobility. The company is committed to developing own-brand products with high social impact in local communities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can I contact T&M Consultants or apply for a job?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can contact T&M Consultants via email at contact@tnmco.uk, by phone at +44 208 374 708 (UK) or +92 321 660 1111 (Pakistan), or through the contact form on tnmco.uk. Current job openings are listed at tnmco.uk/Career.php."
+              }
+            }
+          ]
+        }
+        </script>
+
         <!-- Vendor JS Files -->
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/counterup/counterup.min.js"></script>
-        <script src="assets/vendor/venobox/venobox.min.js"></script>
-        <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-        <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-        <script src="assets/vendor/aos/aos.js"></script>
-        <script src="assets/vendor/particles/particles.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+        <script src="assets/vendor/jquery.easing/jquery.easing.min.js" defer></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
+        <script src="assets/vendor/counterup/counterup.min.js" defer></script>
+        <script src="assets/vendor/venobox/venobox.min.js" defer></script>
+        <script src="assets/vendor/owl.carousel/owl.carousel.min.js" defer></script>
+        <script src="assets/vendor/waypoints/jquery.waypoints.min.js" defer></script>
+        <script src="assets/vendor/aos/aos.js" defer></script>
 
         <!-- Template Main JS File -->
-
-        <script src="assets/js/main.js"></script>
+        <script src="assets/js/main.js" defer></script>
     
     
 

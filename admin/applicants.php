@@ -1,18 +1,9 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "dev_tnm";
-$password = "fQUQK@8kpV^r";
-$dbname = "db_tnm";
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-}
-    $sql = "SELECT a.*,c.* FROM applicants a inner join career c on a.job_id=c.id";
-    $result = $conn->query($sql);
-    $conn->close();
+require_once '../db_config.php';
+$sql = "SELECT a.*,c.* FROM applicants a inner join career c on a.job_id=c.id";
+$result = $conn->query($sql);
+$conn->close();
     function time_elapsed_string($datetime, $full = false) {
         $now = new DateTime;
         $ago = new DateTime($datetime);

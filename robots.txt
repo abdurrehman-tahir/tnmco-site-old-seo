@@ -1,3 +1,52 @@
-User-agent: Googlebot
+User-agent: *
 Disallow: /database/
 Disallow: /scripts/
+Disallow: /admin/
+Disallow: /db_config.php
+Disallow: /db_config.example.php
+
+# ===== Real-Time AI Search Crawlers =====
+# These bots retrieve content at query time for conversational search answers.
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: xai-crawler
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# ===== AI Training Crawlers =====
+# These bots perform deep crawls for model training datasets.
+# Crawl-delay manages server load on shared hosting.
+
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 1
+
+Sitemap: https://tnmco.uk/sitemap.xml

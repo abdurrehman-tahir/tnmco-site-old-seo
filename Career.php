@@ -1,35 +1,49 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "dev_tnm";
-$password = "fQUQK@8kpV^r";
-$dbname = "db_tnm";
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-    $sql = "SELECT * FROM `career` where status = 1";
-    if(isset($_POST['location']) || isset($_POST['type']))
+require_once 'db_config.php';
+
+$sql = "SELECT * FROM `career` where status = 1";
+$params = [];
+$types = "";
+
+if(isset($_POST['location']) || isset($_POST['type']))
+{
+    $location = isset($_POST['location']) ? $_POST['location'] : 'all';
+    $type = isset($_POST['type']) ? $_POST['type'] : 'all1';
+
+    if($location != "all" && $type != "all1")
     {
-        if($_POST['location']!="all" && $_POST['type']!="all1")
+        $sql = $sql . " and location = ? and job_type = ?";
+        $params[] = $location;
+        $params[] = $type;
+        $types .= "ss";
+    }
+    else 
+    {
+        if($location != "all")
         {
-            $sql = $sql." and  location = '".$_POST['location']."' and job_type = '".$_POST['type']."'";
+            $sql = $sql . " and location = ?";
+            $params[] = $location;
+            $types .= "s";
         }
-        else 
+        else if($type != "all1")
         {
-            if($_POST['location']!="all")
-            {
-                $sql = $sql." and location = '".$_POST['location']."'";
-            }
-            else if($_POST['type']!="all1")
-            {
-                $sql = $sql." and where job_type = '".$_POST['type']."'";
-            }
+            $sql = $sql . " and job_type = ?";
+            $params[] = $type;
+            $types .= "s";
         }
     }
-    $result = $conn->query($sql);
+}
+
+$stmt = $conn->prepare($sql);
+if (!$stmt) {
+    die("Query Preparation Failed: " . $conn->error);
+}
+if (!empty($params)) {
+    $stmt->bind_param($types, ...$params);
+}
+$stmt->execute();
+$result = $stmt->get_result();
     function time_elapsed_string($datetime, $full = false) {
         $now = new DateTime;
         $ago = new DateTime($datetime);
@@ -102,7 +116,7 @@ if ($conn->connect_error) {
             <div class="container">
                 <nav class="navbar navbar-expand-md bg-transparent navbar-light p-0 m-0">
                     <!-- Site Logo Here -->
-                    <a class="logo mr-auto" href="./index.php"><img src="./assets/img/tnmLogo.png" alt="TNM Logo"></a>
+                    <a class="logo mr-auto" href="./index.php"><img src="./assets/img/tnmLogo.png" alt="TNM Logo" width="400" height="374"></a>
                     <!-- Collapsibe Button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobilemenu" onclick='
         if($("#my-bars").hasClass("fa-bars")){
@@ -288,7 +302,7 @@ if ($conn->connect_error) {
                         <div class="col-lg-6 col-md-12 footer-contact">
                             <h3>T&M Consultants</h3>
                             <p>
-                                Technology and Management (T&M) consultants is a social enterprise building capacity for start-ups and SMEs.T&M offers 360¡Æ solutions to start-ups and SMEs including but not limited to product development, deployment and after sales services. Here at
+                                Technology and Management (T&M) consultants is a social enterprise building capacity for start-ups and SMEs.T&M offers 360ï¿½ï¿½ solutions to start-ups and SMEs including but not limited to product development, deployment and after sales services. Here at
                                 T&M We try to provide our clients and customers best services.
                             </p>
                             <div class="social-links  pt-3 pt-md-0 mt-3">

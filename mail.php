@@ -15,7 +15,7 @@
 
 </html>
 <?php
-
+require_once 'db_config.php';
 require_once './assets/vendor/mailer/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -29,12 +29,12 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
 
 $mail->isSMTP();
-$mail->Host = 'tnmco.uk';
+$mail->Host = SMTP_HOST;
 $mail->SMTPAuth = true;
-$mail->Username = 'test@tnmco.uk';   //username
-$mail->Password = "1qa2ws3ed";   //password
+$mail->Username = SMTP_USERNAME;   //username
+$mail->Password = SMTP_PASSWORD;   //password
 $mail->SMTPSecure = 'ssl';
-$mail->Port = 465; //SMTP port
+$mail->Port = SMTP_PORT; //SMTP port
 
 $mail->setFrom($email, $name);
 $mail->addAddress('contact@tnmco.uk');

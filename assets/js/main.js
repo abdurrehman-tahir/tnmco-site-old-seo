@@ -17,14 +17,7 @@
         }
     });
 
-    // Back to top button
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $('.back-to-top').fadeIn('slow');
-        } else {
-            $('.back-to-top').fadeOut('slow');
-        }
-    });
+    // Back to top button click handler
     $('.back-to-top').click(function() {
         $('html, body').animate({
             scrollTop: 0
@@ -32,18 +25,9 @@
         return false;
     });
 
-    // Header scroll class
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {
-            $('#header').addClass('header-scrolled');
-            $('#topbar').addClass('topbar-scrolled ');
-        } else {
-            $('#header').removeClass('header-scrolled');
-            $('#topbar').removeClass('topbar-scrolled ');
-        }
-    });
-
-    if ($(window).scrollTop() > 100) {
+    // Initial state on load
+    var initialScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (initialScrollTop > 100) {
         $('#header').addClass('header-scrolled');
         $('#topbar').addClass('topbar-scrolled');
     }
@@ -93,9 +77,28 @@
     var main_nav = $('#mobilemenu, .mobile-nav');
     var main_nav_height = $('#header').outerHeight();
 
-    $(window).on('scroll', function() {
-        var cur_pos = $(this).scrollTop() + 200;
+    // Unified, passive scroll listener for high performance (prevents scroll-blocking)
+    window.addEventListener('scroll', function() {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
+        // Back to top button visibility
+        if (scrollTop > 100) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+
+        // Header scroll class
+        if (scrollTop > 100) {
+            $('#header').addClass('header-scrolled');
+            $('#topbar').addClass('topbar-scrolled ');
+        } else {
+            $('#header').removeClass('header-scrolled');
+            $('#topbar').removeClass('topbar-scrolled ');
+        }
+
+        // Navigation active state on scroll
+        var cur_pos = scrollTop + 200;
         nav_sections.each(function() {
             var top = $(this).offset().top - main_nav_height,
                 bottom = top + $(this).outerHeight();
@@ -108,9 +111,8 @@
             if (cur_pos < 300) {
                 $(".nav-menu ul:first li:first").addClass('active');
             }
-
         });
-    });
+    }, { passive: true });
 
     // jQuery counterUp (used in Whu Us section)
     $('[data-toggle="counter-up"]').counterUp({
@@ -240,6 +242,8 @@
         speedBackspace = 25; //Backspace Speed
 
     //Run the loop
+    // Clear the static SEO fallback text before the typewriter starts animating
+    $("#output").children("h1").text("");
     typeWriter("output", textArray);
 
     function typeWriter(id, ar) {
@@ -294,110 +298,5 @@
 
 
 
-    particlesJS("particles-js", {
-        "particles": {
-            "number": {
-                "value": 80,
-                "density": {
-                    "enable": true,
-                    "value_area": 800
-                }
-            },
-            "color": {
-                "value": "#2874BF"
-            },
-            "shape": {
-                "type": "circle",
-                "stroke": {
-                    "width": 0,
-                    "color": "#2874BF"
-                },
-                "polygon": {
-                    "nb_sides": 5
-                }
-            },
-            "opacity": {
-                "value": 0.1,
-                "random": false,
-                "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.1,
-                    "sync": false
-                }
-            },
-            "size": {
-                "value": 4,
-                "random": true,
-                "anim": {
-                    "enable": false,
-                    "speed": 40,
-                    "size_min": 0.1,
-                    "sync": false
-                }
-            },
-            "line_linked": {
-                "enable": true,
-                "distance": 150,
-                "color": "#2874BF",
-                "opacity": 0.09,
-                "width": 1
-            },
-            "move": {
-                "enable": true,
-                "speed": 6,
-                "direction": "none",
-                "random": false,
-                "straight": false,
-                "out_mode": "out",
-                "bounce": false,
-                "attract": {
-                    "enable": false,
-                    "rotateX": 600,
-                    "rotateY": 1200
-                }
-            }
-        },
-        "interactivity": {
-            "detect_on": "canvas",
-            "events": {
-                "onhover": {
-                    "enable": true,
-                    "mode": "grab"
-                },
-                "onclick": {
-                    "enable": true,
-                    "mode": "push"
-                },
-                "resize": true
-            },
-            "modes": {
-                "grab": {
-                    "distance": 140,
-                    "line_linked": {
-                        "opacity": 0.7
-                    }
-                },
-                "bubble": {
-                    "distance": 400,
-                    "size": 40,
-                    "duration": 2,
-                    "opacity": 8,
-                    "speed": 3
-                },
-                "repulse": {
-                    "distance": 100,
-                    "duration": 0.4
-                },
-                "push": {
-                    "particles_nb": 2
-                },
-                "remove": {
-                    "particles_nb": 2
-                }
-            }
-        },
-        "retina_detect": true
-    });
 
 })(jQuery);

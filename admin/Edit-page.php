@@ -5,22 +5,21 @@ if(!isset($_SESSION['username']) )
 {
     header("Location:./index.php");
 }
-$servername = "localhost";
-$username = "dev_tnm";
-$password = "fQUQK@8kpV^r";
-$dbname = "db_tnm";
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-}
+require_once '../db_config.php';
 if(isset($_GET['id'])){
     if(is_numeric($_GET['id']) ){
-    $sql = "SELECT * FROM career where id = ".$_GET['id'].";";
-    $result = $conn->query($sql);}
+        $sql = "SELECT * FROM career where id = ?;";
+        $stmt = $conn->prepare($sql);
+        if (!$stmt) {
+            die("Query Preparation Failed: " . $conn->error);
+        }
+        $stmt->bind_param("i", $_GET['id']);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $stmt->close();
+    }
 }
-    $conn->close();
+$conn->close();
 ?>
     <!DOCTYPE html>
     <html lang="en">

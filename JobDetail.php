@@ -1,19 +1,17 @@
 <?php
 if(isset($_GET['id']) && is_numeric($_GET['id']))
 {
-$servername = "localhost";
-$username = "dev_tnm";
-$password = "fQUQK@8kpV^r";
-$dbname = "db_tnm";
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
+require_once 'db_config.php';
+$sql = "SELECT * FROM career where id = ?;";
+$stmt = $conn->prepare($sql);
+if (!$stmt) {
+    die("Query Preparation Failed: " . $conn->error);
 }
-    $sql = "SELECT * FROM career where id = ".$_GET['id'].";";
-    $result = $conn->query($sql);
-    $conn->close();
+$stmt->bind_param("i", $_GET['id']);
+$stmt->execute();
+$result = $stmt->get_result();
+$stmt->close();
+$conn->close();
 }
 function time_elapsed_string($datetime, $full = false) {
     $now = new DateTime;
@@ -101,7 +99,7 @@ input[type=number] {
         <div class="container">
             <nav class="navbar navbar-expand-md bg-transparent navbar-light p-0 m-0">
                 <!-- Site Logo Here -->
-                <a class="logo mr-auto" href="./index.php"><img src="./assets/img/tnmLogo.png" alt="TNM Logo"></a>
+                <a class="logo mr-auto" href="./index.php"><img src="./assets/img/tnmLogo.png" alt="TNM Logo" width="400" height="374"></a>
                 <!-- Collapsibe Button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobilemenu" onclick='
         if($("#my-bars").hasClass("fa-bars")){

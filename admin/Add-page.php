@@ -269,23 +269,19 @@ if(!isset($_SESSION['username']) )
 
 if($_POST)
 {
-    $servername = "localhost";
-    $username = "dev_tnm";
-    $password = "fQUQK@8kpV^r";
-    $dbname = "db_tnm";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-}
-$sql = "insert into career (job_title,location,job_type,no_of_positions,working_days,detail) values ('".$_POST["job"]."','".$_POST["loc"]."','".$_POST["j_t"]."',".$_POST["n-o-p"].",'".$_POST["w-days"]."','".$_POST["details"]."');";
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-    } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    require_once '../db_config.php';
+    $sql = "insert into career (job_title,location,job_type,no_of_positions,working_days,detail) values (?,?,?,?,?,?);";
+    $stmt = $conn->prepare($sql);
+    if (!$stmt) {
+        die("Query Preparation Failed: " . $conn->error);
     }
+    $stmt->bind_param("sssiss", $_POST["job"], $_POST["loc"], $_POST["j_t"], $_POST["n-o-p"], $_POST["w-days"], $_POST["details"]);
+    if ($stmt->execute()) {
+        echo "New record created successfully";
+    } else {
+        echo "Error: " . $stmt->error;
+    }
+    $stmt->close();
     $conn->close();
 }
 

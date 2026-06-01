@@ -1,0 +1,68 @@
+# T&M Consultants — llms.txt
+
+> Technology and Management (T&M) Consultants is a UK-registered social enterprise (Company Number 12621485) delivering 360° technology solutions for start-ups and SMEs. Founded in 2020, T&M operates from London, United Kingdom and Faisalabad, Pakistan.
+
+## Company Identity
+
+- **Legal Name**: Technology and Management Consultants Ltd
+- **Trading Name**: T&M Consultants
+- **Domain**: https://tnmco.uk
+- **Company Number (UK)**: 12621485
+- **Type**: Social Enterprise / Technology Consultancy
+- **Founded**: 2020
+- **Headquarters**: 49 Eglington Rd, London, SE18 3SL, United Kingdom
+- **Development Office**: Faisalabad, Punjab 38000, Pakistan
+- **Phone**: +92 321 660 1111
+- **Email**: contact@tnmco.uk
+
+## Core Services
+
+### Blockchain Ledger Development
+T&M builds customized blockchain ledger solutions for businesses transitioning to cashless and transparent transaction systems. The proprietary Block architecture powers personalized ledger services, API integrations, and point-of-sale cashless payment systems.
+
+### QuickCard — Cashless Payment Platform
+QuickCard is T&M's proprietary contactless payment solution, enabling businesses and communities to interact and pay without cash. It integrates with existing POS systems and e-commerce platforms.
+
+### Full Stack Web Development
+End-to-end web application development using modern frameworks. Services include responsive front-end interfaces, server-side architecture, database design, API development, and deployment. Specialities include WordPress, React, Node.js, and PHP.
+
+### Mobile Application Development
+Native and cross-platform mobile application development for iOS and Android. T&M builds consumer-facing apps, enterprise tools, and health-tech solutions.
+
+### Machine Learning & Artificial Intelligence
+Custom ML model development, data pipeline engineering, natural language processing, and predictive analytics solutions for SMEs and start-ups.
+
+### E-Commerce Ecosystem Development
+Complete e-commerce platform development including payment gateway integration, inventory management, multi-vendor marketplace architecture, and order fulfilment systems.
+
+### Project Management Consultancy
+Agile project management consulting, process optimisation, team capacity building, and digital transformation strategy for start-ups and growing organisations.
+
+## Portfolio — Key Products & Projects
+
+- **NonRival Data**: Web 3.0 finance and data platform with browser extensions for Chrome, Firefox, and Safari, plus a mobile application.
+- **Docushield**: Secure document management mobile application and web console platform.
+- **Tameer Estate UK**: Property listing and real estate portal for the UK market.
+- **e-Sehat**: Telemedicine mobile application connecting patients with healthcare professionals.
+- **MintIt Studio**: Creative digital web platform for content creators.
+- **QuickCard**: Contactless cashless payment website and integration platform.
+
+## Leadership Team
+
+- **Abdurehman Bin Tahir** — CEO & Co-Founder. [LinkedIn](https://www.linkedin.com/in/abdtahir/)
+- **Athar Mushtaq** — Managing Director & Co-Founder. [LinkedIn](https://www.linkedin.com/in/atharmushtaq/)
+- **Mubashir Farooq** — CTO. [LinkedIn](https://www.linkedin.com/in/mubashir-farooq-b01064202/)
+- **Dr. Tahir Mushtaq** — CMO. [LinkedIn](https://www.linkedin.com/in/muhammadtahirmushtaq/)
+- **Ola Badawi** — CFO. [LinkedIn](https://www.linkedin.com/in/ola-badawi-mba-923b79185/)
+- **Haixia Li** — COO. [LinkedIn](https://www.linkedin.com/in/lynn-li-b88632100/)
+
+## Social Impact
+
+T&M recruits technology graduates from underprivileged backgrounds to accelerate social mobility by empowering young professionals. The company is committed to developing own-brand products with high social impact in local communities.
+
+## Links
+
+- Website: https://tnmco.uk
+- Careers: https://tnmco.uk/Career.php
+- Facebook: https://www.facebook.com/TnMConsultants/
+- LinkedIn: https://pk.linkedin.com/company/tnmconsultants
