@@ -35,15 +35,25 @@ if(isset($_POST['location']) || isset($_POST['type']))
     }
 }
 
-$stmt = $conn->prepare($sql);
-if (!$stmt) {
-    die("Query Preparation Failed: " . $conn->error);
+$db_error = false;
+$result = null;
+if (!$conn) {
+    $db_error = true;
+} else {
+    $stmt = $conn->prepare($sql);
+    if (!$stmt) {
+        $db_error = true;
+    } else {
+        if (!empty($params)) {
+            $stmt->bind_param($types, ...$params);
+        }
+        if ($stmt->execute()) {
+            $result = $stmt->get_result();
+        } else {
+            $db_error = true;
+        }
+    }
 }
-if (!empty($params)) {
-    $stmt->bind_param($types, ...$params);
-}
-$stmt->execute();
-$result = $stmt->get_result();
     function time_elapsed_string($datetime, $full = false) {
         $now = new DateTime;
         $ago = new DateTime($datetime);
@@ -116,7 +126,7 @@ $result = $stmt->get_result();
             <div class="container">
                 <nav class="navbar navbar-expand-md bg-transparent navbar-light p-0 m-0">
                     <!-- Site Logo Here -->
-                    <a class="logo mr-auto" href="./index.php"><img src="./assets/img/tnmLogo.png" alt="TNM Logo" width="400" height="374"></a>
+                    <a class="logo mr-auto" href="./index.php"><img src="./assets/img/tnmLogo.png" alt="TNM Logo"></a>
                     <!-- Collapsibe Button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobilemenu" onclick='
         if($("#my-bars").hasClass("fa-bars")){
@@ -190,17 +200,19 @@ $result = $stmt->get_result();
                             <select class="form-control" id="Location" name="location">
                         <option value="all">All Locations</option>
                         <?php 
-                        $sql1 = "SELECT distinct location FROM career ";
-                        $result1 = $conn->query($sql1);
-                        while($rows1=$result1->fetch_assoc())
-                        {
-                        ?>
-                        <option value="<?php echo $rows1['location'];?>"> 
-                        <?php 
-                        echo $rows1['location'];
-                        ?>
-                        </option>
-                        <?php 
+                        if (!$db_error && $conn) {
+                            $sql1 = "SELECT distinct location FROM career ";
+                            $result1 = $conn->query($sql1);
+                            while($rows1=$result1->fetch_assoc())
+                            {
+                            ?>
+                            <option value="<?php echo $rows1['location'];?>"> 
+                            <?php 
+                            echo $rows1['location'];
+                            ?>
+                            </option>
+                            <?php 
+                            }
                         }
                         ?>
                     </select>
@@ -210,17 +222,19 @@ $result = $stmt->get_result();
                             <select class="form-control" id="Catagory" name="type">
                         <option value="all1">All Catagories</option>
                         <?php 
-                        $sql2 = "SELECT distinct job_type FROM career ";
-                        $result2 = $conn->query($sql2);
-                        while($rows2=$result2->fetch_assoc())
-                        {
-                        ?>
-                        <option value="<?php echo $rows2['job_type'];?>"> 
-                        <?php 
-                        echo $rows2['job_type'];
-                        ?>
-                        </option>
-                        <?php 
+                        if (!$db_error && $conn) {
+                            $sql2 = "SELECT distinct job_type FROM career ";
+                            $result2 = $conn->query($sql2);
+                            while($rows2=$result2->fetch_assoc())
+                            {
+                            ?>
+                            <option value="<?php echo $rows2['job_type'];?>"> 
+                            <?php 
+                            echo $rows2['job_type'];
+                            ?>
+                            </option>
+                            <?php 
+                            }
                         }
                         ?>
                     </select>
@@ -235,9 +249,18 @@ $result = $stmt->get_result();
             </div>
             <div class="container" id="job_panel">
                 <?php  
-                while($rows=$result->fetch_assoc())
-                {
-            ?>
+                if ($db_error || !$result) {
+                    ?>
+                    <div class="alert alert-warning text-center py-4 my-5" style="border-radius: 15px; border: 1px solid #ffeeba; background-color: #fff3cd; color: #856404;">
+                        <i class="fas fa-exclamation-triangle fa-2x mb-3" style="color: #e0a800;"></i>
+                        <h5>Careers Database Offline</h5>
+                        <p class="mb-0">Our career opportunities database is currently undergoing scheduled maintenance. You are still highly encouraged to apply! Please send your CV and Cover Letter directly to <a href="mailto:contact@tnmco.uk" style="color: #533f03; text-decoration: underline; font-weight: bold;"><strong>contact@tnmco.uk</strong></a> and our team will get in touch with you immediately.</p>
+                    </div>
+                    <?php
+                } else {
+                    while($rows=$result->fetch_assoc())
+                    {
+                ?>
                 <div style="border: 1px solid rgb(100, 100, 100); padding: 3%; margin-top: 20px; margin-bottom: 20px; border-radius: 20px;">
                     <h1 style="font-weight:600;">
                         <?php echo $rows['job_title'];?>
@@ -286,6 +309,7 @@ $result = $stmt->get_result();
                 </div>
                 <hr>
                 <?php
+                    }
                 }
             ?>
             </div>

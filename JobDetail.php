@@ -1,17 +1,27 @@
 <?php
+$db_error = false;
+$result = null;
 if(isset($_GET['id']) && is_numeric($_GET['id']))
 {
-require_once 'db_config.php';
-$sql = "SELECT * FROM career where id = ?;";
-$stmt = $conn->prepare($sql);
-if (!$stmt) {
-    die("Query Preparation Failed: " . $conn->error);
-}
-$stmt->bind_param("i", $_GET['id']);
-$stmt->execute();
-$result = $stmt->get_result();
-$stmt->close();
-$conn->close();
+    require_once 'db_config.php';
+    if (!$conn) {
+        $db_error = true;
+    } else {
+        $sql = "SELECT * FROM career where id = ?;";
+        $stmt = $conn->prepare($sql);
+        if (!$stmt) {
+            $db_error = true;
+        } else {
+            $stmt->bind_param("i", $_GET['id']);
+            if ($stmt->execute()) {
+                $result = $stmt->get_result();
+            } else {
+                $db_error = true;
+            }
+            $stmt->close();
+        }
+        $conn->close();
+    }
 }
 function time_elapsed_string($datetime, $full = false) {
     $now = new DateTime;
@@ -99,7 +109,7 @@ input[type=number] {
         <div class="container">
             <nav class="navbar navbar-expand-md bg-transparent navbar-light p-0 m-0">
                 <!-- Site Logo Here -->
-                <a class="logo mr-auto" href="./index.php"><img src="./assets/img/tnmLogo.png" alt="TNM Logo" width="400" height="374"></a>
+                <a class="logo mr-auto" href="./index.php"><img src="./assets/img/tnmLogo.png" alt="TNM Logo"></a>
                 <!-- Collapsibe Button -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobilemenu" onclick='
         if($("#my-bars").hasClass("fa-bars")){
@@ -167,7 +177,16 @@ input[type=number] {
         <div class="container mt-5">
             <div style="border: 1px solid rgb(100, 100, 100); padding: 3%; margin-top: 20px; margin-bottom: 30px; border-radius: 20px;">
             <h1 style="font-weight:600;">
-            <?php if(isset($_GET['id']) && is_numeric($_GET['id'])){
+            <?php 
+            if ($db_error || !$result) {
+                ?>
+                <div class="text-center py-5">
+                    <i class="fas fa-exclamation-triangle fa-2x mb-3 text-warning"></i>
+                    <h5>Job Detail Unavailable</h5>
+                    <p class="mb-0">Our career database is currently undergoing scheduled maintenance. Please contact us directly at <a href="mailto:contact@tnmco.uk"><strong>contact@tnmco.uk</strong></a> for inquiries about this position.</p>
+                </div>
+                <?php
+            } else if(isset($_GET['id']) && is_numeric($_GET['id'])){
                     $rows=$result->fetch_assoc();
                     if(!is_null($rows))
                     {
@@ -182,7 +201,7 @@ input[type=number] {
                     <i class="fas fa-check mb-2 mr-2"></i> No. of Positions: <?php echo $rows['no_of_positions'];?> <br>
                     <i class="fas fa-check mb-2 mr-2"></i> Job Type: <?php echo $rows['job_type'];?> <br>
                     <i class="fas fa-check mb-2 mr-2"></i> Working Days: <?php echo $rows['working_days'];?> <br>
-
+ 
                     <br>
                     <b><i class="fas fa-map-marker-alt"></i> Job Location : <?php echo $rows['location'];?> </b>
                 <?php
