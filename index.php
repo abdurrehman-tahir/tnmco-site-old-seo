@@ -331,7 +331,7 @@ session_start();
 
         <!-- ======= Hero Section ======= -->
         <section id="hero" class="clearfix">
-            <div id="tsparticles"></div>
+            <div id="particles-js"></div>
 
             <?php
         if(isset($_SESSION['message']))
@@ -1541,52 +1541,7 @@ session_start();
         <!-- Template Main JS File -->
         <script src="assets/js/main.js" defer></script>
         
-        <!-- tsParticles modern animation -->
-        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.12.0/tsparticles.bundle.min.js"></script>
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                tsParticles.load("tsparticles", {
-                    background: {
-                        color: { value: "transparent" }
-                    },
-                    fpsLimit: 60,
-                    interactivity: {
-                        events: {
-                            onClick: { enable: true, mode: "push" },
-                            onHover: { enable: true, mode: "repulse" },
-                            resize: true
-                        },
-                        modes: {
-                            push: { quantity: 4 },
-                            repulse: { distance: 100, duration: 0.4 }
-                        }
-                    },
-                    particles: {
-                        color: { value: "#ffffff" },
-                        links: {
-                            color: "#ffffff",
-                            distance: 150,
-                            enable: true,
-                            opacity: 0.4,
-                            width: 1
-                        },
-                        collisions: { enable: true },
-                        move: {
-                            direction: "none",
-                            enable: true,
-                            outModes: { default: "bounce" },
-                            random: false,
-                            speed: 2,
-                            straight: false
-                        },
-                        number: { density: { enable: true, area: 800 }, value: 60 },
-                        opacity: { value: 0.5 },
-                        shape: { type: "circle" },
-                        size: { value: { min: 1, max: 5 } }
-                    },
-                    detectRetina: true
-                });
-            });
-        </script>
+        <!-- particles.js -->
+        <script src="assets/vendor/particles/particles.js"></script>
     </body>
     </html>

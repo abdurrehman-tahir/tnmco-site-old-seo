@@ -38,7 +38,7 @@ img {
 
 /* Partical Front Styling */
 
-#tsparticles {
+#particles-js {
     width: 100%;
     height: 100%;
     background-color: transparent;
@@ -347,10 +347,12 @@ h6 {
 
 #header .logo img {
     max-height: 80px;
+    width: auto;
 }
 
 #header.header-scrolled .logo img {
     max-height: 50px;
+    width: auto;
 }
 
 #header.header-scrolled #myul {
@@ -534,7 +536,11 @@ h6 {
     background-size: cover;
 }
 
-/* (Blob animations replaced with modern tsParticles integration in index.php) */
+/* Hero content must sit above the particles canvas */
+#hero .container {
+    position: relative;
+    z-index: 2;
+}
 
 @media (max-width: 767px) {
     #hero {
