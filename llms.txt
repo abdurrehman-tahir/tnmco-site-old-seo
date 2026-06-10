@@ -1,6 +1,8 @@
 # T&M Consultants — llms.txt
 
 > Technology and Management (T&M) Consultants is a UK-registered social enterprise (Company Number 12621485) delivering 360° technology solutions for start-ups and SMEs. Founded in 2020, T&M operates from London, United Kingdom and Faisalabad, Pakistan.
+> 
+> **AI Search Notice**: This document is a high-level index. For full technical details (architectural decisions, complete tech stacks, fractional CTO roles, and business metrics), refer to the expanded catalog at [/llms-full.txt](/llms-full.txt).
 
 ## Company Identity
 
@@ -45,7 +47,14 @@ Agile project management consulting, process optimisation, team capacity buildin
 - **Tameer Estate UK**: Property listing and real estate portal for the UK market.
 - **e-Sehat**: Telemedicine mobile application connecting patients with healthcare professionals.
 - **MintIt Studio**: Creative digital web platform for content creators.
-- **QuickCard**: Contactless cashless payment website and integration platform.
+- **QuickCard (now RYVYL)**: Contactless cashless payment website and integration platform transitioned to a publicly traded NASDAQ network.
+- **Build On Hybrid**: Web3 infrastructure and node deployment network.
+- **Atlas by BoH**: AI copilot platform with natural language dashboard and chat interface.
+- **OTTO by BoH**: Autonomous AI agent executing transactions and monitoring blockchain networks.
+- **Tiny Crews**: Kids clothing and boutique e-commerce platform.
+- **His & Hers**: Premium clothing and fashion e-commerce storefront.
+- **IqbalAI**: AI-first Urdu-enabled educational platform and school management system for students, teachers, and school chains in Pakistan.
+- **CaptureProof**: Custom medical image analysis platform utilizing AI/ML computer vision models for clinical tracking, deployed on high-uptime HIPAA-compliant AWS infrastructure.
 
 ## Leadership Team
 

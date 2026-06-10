@@ -7,6 +7,10 @@ allow from all
 # Enforce HTTPS and Canonical Redirects
 <IfModule mod_rewrite.c>
   RewriteEngine On
+
+  # Redirect incorrect well-known sitemap requests to the real sitemap
+  RewriteRule ^/?\.well-known/=/sitemap\.xml$ /sitemap.xml [R=301,L]
+
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>

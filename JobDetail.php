@@ -148,6 +148,13 @@ input[type=number] {
                         <li class="nav-item">
                             <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="./index.php#contact">Contact</a>
                         </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="demosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demos</a>
+                            <div class="dropdown-menu" aria-labelledby="demosDropdown">
+                                <a class="dropdown-item" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="https://ai.assistant.tnmco.uk/" target="_blank">VIOLET - Clinic AI Assistant</a>
+                                <a class="dropdown-item" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="https://bitebot.tnmco.uk/" target="_blank">BiteBot - Restaurant AI Assistant</a>
+                            </div>
+                        </li>
                         <li class="nav-item ">
                             <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="./Career.php">Career</a>
                         </li>
@@ -279,7 +286,7 @@ input[type=number] {
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-6 col-md-12 footer-contact">
+                    <div class="col-lg-4 col-md-6 footer-contact">
                         <h3>TnM Consultant</h3>
                         <p>
                             Technology and Management (T&M) consultants is a social enterprise building capacity for start-ups and SMEs.T&M offers 360° solutions to start-ups and SMEs including but not limited to product development, deployment and after sales services. Here at
@@ -306,13 +313,21 @@ input[type=number] {
                     </div>
 
 
-                    <div class="col-lg-3 col-md-6 footer-links">
+                    <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
                             <li><i class="bx bx-chevron-right"></i> <a href="./index.php#hero">Home</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="./index.php#about">About us</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="./index.php#services">Services</a></li>
                             <li><i class="bx bx-chevron-right"></i> <a href="./Career.php">Career</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Our Demos</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://ai.assistant.tnmco.uk/" target="_blank">VIOLET - Clinic AI Assistant</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="https://bitebot.tnmco.uk/" target="_blank">BiteBot - Restaurant AI Assistant</a></li>
                         </ul>
                     </div>
 

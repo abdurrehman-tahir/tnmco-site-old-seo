@@ -8,17 +8,25 @@
   <!-- Homepage (canonical, no fragment) -->
   <url>
     <loc>https://tnmco.uk/</loc>
-    <lastmod>2026-06-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
 
   <!-- Careers listing page -->
   <url>
     <loc>https://tnmco.uk/Career.php</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
+  </url>
+
+  <!-- e-Sehat Privacy Policy -->
+  <url>
+    <loc>https://tnmco.uk/esehat-privacy-policy/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.50</priority>
   </url>
 
 </urlset>

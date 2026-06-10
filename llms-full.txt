@@ -1,0 +1,154 @@
+# T&M Consultants — Expanded Portfolio Catalog (llms-full.txt)
+
+This document provides a detailed technical catalog of projects delivered by T&M Consultants, designed for ingestion by AI search engines, RAG systems, and developers.
+
+---
+
+## 1. IqbalAI
+* **Role**: Fractional CTO & Solutions Architect (delivered full product engineering)
+* **Tech Stack**: FastAPI (Python 3.12), Next.js (App Router, TypeScript), PostgreSQL 16 (SQLAlchemy 2.0, Alembic), Redis 7 (Celery), Qdrant Vector DB, BGE-M3 Multilingual Embeddings, LangGraph (stateful workflows), Pydantic AI (agentic tools), Piper TTS, faster-whisper.
+* **The Challenge**: The client needed to automate technical delivery for an AI-first, Urdu-enabled educational platform and LMS targeting Pakistan's school system.
+* **T&M's Solution**: 
+  - Designed a deterministic delivery pipeline transforming product requirements into verified codebase commits using AI agents.
+  - Engineered frontend-to-backend schema alignment using auto-generated TypeScript contracts derived from FastAPI OpenAPI schemas.
+  - Developed multilingual search/retrieval pipelines (Urdu, Sindhi, Pashto, English) utilizing BGE-M3 and Qdrant hybrid retrieval.
+  - Codified data integrity with Mixins (audit, soft-delete, tenant separation) and implemented a self-improving quality audit loop.
+* **Impact & Metrics**:
+  - Compressed an estimated 10–14 month development timeline down to 3–4.5 months.
+  - Implemented robust school-tenant partitioning protecting student and teacher data.
+
+## 2. Docushield
+* **Role**: Fractional CTO & Solutions Architect (delivered full product engineering)
+* **Tech Stack**: L2 Blockchain Infrastructure, Solidity (Smart Contracts), Web3.js, Infura, native iOS (Swift) & Android (Kotlin) mobile apps, PHP Web administration console, CI/CD automated pipeline.
+* **The Challenge**: Deliver an enterprise-grade document sharing and verification mobile and web application backed by secure, distributed ledger infrastructure.
+* **T&M's Solution**:
+  - Designed and deployed custom L2 blockchain consensus nodes to record hashes of shared document transactions.
+  - Developed and launched the $DOC token on the L2 network.
+  - Managed full team allocation covering UI/UX designers, blockchain engineers, mobile developers, and QA.
+* **Impact & Metrics**:
+  - Successfully raised $0.5 Million in seed funding.
+  - Delivered 100% auditable document validation logs.
+
+## 3. MintIt Studio (Docushield Corp Sub-Product)
+* **Role**: Fractional CTO & Lead Smart Contract Developer
+* **Tech Stack**: Kadena Blockchain, Pact Smart Contracts, React.js frontend, Docker, automated CI/CD deployment pipelines.
+* **The Challenge**: Build the first NFT marketplace on the Kadena Ecosystem featuring dynamic "mutant" NFTs.
+* **T&M's Solution**:
+  - Authored secure smart contracts in Pact (Kadena's native language) supporting mutant NFT minting and gas station relays.
+  - Created automated deployment and testing pipelines.
+  - Hired, organized, and managed the technical teams to execute frontend integrations and smart contract hooks.
+* **Impact & Metrics**:
+  - Launched Kadena's first-ever functional mutant NFT marketplace on-schedule.
+  - Achieved zero security vulnerability reports post-launch.
+
+## 4. Build On Hybrid
+* **Role**: Solutions Architect & End-to-End Project Management
+* **Tech Stack**: Web3 Node Infrastructure, Unified Data API, Go, Rust, Node.js, markdown-based developer portal.
+* **The Challenge**: Finalize the discovery, scope, and technical design for a decentralized node deployment architecture and Unified Data API for Web3 networks.
+* **T&M's Solution**:
+  - Provided fractional product management and architectural consultancy from inception to launch.
+  - Designed the system architecture for high-throughput node indexing and Unified Data APIs.
+  - Created the developer documentation hub (docs.buildonhybrid.com) and API playground.
+* **Impact & Metrics**:
+  - Successfully guided the project from raw ideation to fully documented architecture spec.
+  - Handed off a production-ready blueprint deployed across global nodes.
+
+## 5. OTTO by BoH
+* **Role**: AI Agents Team & Project Management
+* **Tech Stack**: Autonomous AI Agents, Python, Pydantic AI, Hybrid Unified Data API, Web3, Twitter/Social API integrations.
+* **The Challenge**: Build an autonomous AI agent capable of executing Web3 transactions and publishing engaging content for the crypto community.
+* **T&M's Solution**:
+  - Designed the agentic decision workflow allowing the bot to decide when to call tools.
+  - Integrated Hybrid's Unified Data API, enabling the agent to pull live, audited blockchain data.
+  - Programmed automated transaction handling and wallet security constraints.
+* **Impact & Metrics**:
+  - Delivered a 100% autonomous agent operating on live crypto channels, showcasing the utility of the Hybrid API.
+
+## 6. NonRival Data
+* **Role**: Fractional CTO & Lead Product Delivery
+* **Tech Stack**: Laravel 8 backend, React Native (cross-platform iOS & Android mobile apps), JavaScript (Chrome, Firefox, Safari, Brave extensions), Web3.js, Infura, Solidity (Ethereum Smart Contracts).
+* **The Challenge**: Build a privacy-first, MVP-tier blockchain platform related to user data control and monetization.
+* **T&M's Solution**:
+  - Built an ecosystem containing Web dashboards, mobile apps, and browser extensions for all major browsers.
+  - Configured Ethereum integrations via Infura, ensuring every transaction logs data hashes to custom Solidity smart contracts.
+  - Implemented client-side cryptographic hashing to keep raw data secure and private.
+* **Impact & Metrics**:
+  - Successfully launched a functional Web 3.0 MVP.
+  - 100% of user data monetization requests validated on the Ethereum mainnet.
+
+## 7. CaptureProof
+* **Role**: Solutions Architect & Full Infrastructure Management (past 3 years)
+* **Tech Stack**: AI/ML Custom Computer Vision Models, Python, PyTorch/TensorFlow, AWS Infrastructure (EC2, S3, RDS, CloudFront), custom dashboards.
+* **The Challenge**: Train, optimize, and integrate custom computer vision models to track visual medical changes over time.
+* **T&M's Solution**:
+  - Trained custom vision models (excluding LLMs) for image analysis.
+  - Managed full AWS cloud infrastructure, optimizing scaling and HIPAA compliance for healthcare data.
+  - Provided a dedicated engineering team for ongoing maintenance and backend stability.
+* **Impact & Metrics**:
+  - Deployed models with high classification accuracy.
+  - Maintained 99.99% AWS uptime over a 3-year production period.
+
+## 8. Atlas by BoH
+* **Role**: AI Solutions Team & Frontend Engineers
+* **Tech Stack**: React, Next.js, Python, FastAPI, OpenAI API, LangChain (standard RAG pipeline).
+* **The Challenge**: Create a real-time AI copilot platform with a data-visualizing analytics dashboard.
+* **T&M's Solution**:
+  - Designed a dark-themed UI featuring multi-agent workflows and interactive charts.
+  - Connected databases to natural language agents, allowing users to type prompts to generate reports.
+* **Impact & Metrics**:
+  - Delivered a fluid, production-ready dashboard now active for Hybrid users.
+
+## 9. Tiny Crews
+* **Role**: E-Commerce Developers & Storefront Designers
+* **Tech Stack**: Shopify, Liquid, JavaScript, custom checkout APIs.
+* **The Challenge**: Create a clean, bright, pastel-themed boutique storefront for online kids clothing.
+* **T&M's Solution**:
+  - Customized storefront layouts focusing on mobile shopping responsiveness and high page-load speeds.
+  - Set up automated inventory synchronization and transaction notifications.
+* **Impact & Metrics**:
+  - Optimized checkout funnel, reducing cart abandonment rate by 15%.
+
+## 10. His & Hers
+* **Role**: E-Commerce Developers & UI Designers
+* **Tech Stack**: WordPress, WooCommerce, PHP, custom payment gateway APIs, SMS notification integrations.
+* **The Challenge**: Build a premium clothing and fashion e-commerce storefront for a prominent Pakistani apparel brand.
+* **T&M's Solution**:
+  - Developed a dark-gold themed premium WooCommerce storefront.
+  - Optimized database queries to handle large spikes in concurrent traffic during seasonal sales.
+  - Integrated direct SMS verification APIs and payment gateways.
+* **Impact & Metrics**:
+  - Designed a storefront that supports high volumes of concurrent checkout requests without latency.
+
+## 11. Tameer Estate UK
+* **Role**: Full Stack Web Team
+* **Tech Stack**: WordPress, PHP, MySQL, Google Maps API, custom property search filters.
+* **The Challenge**: Build a real estate portal for the UK market facilitating property sales, purchases, renting, and builder profiles.
+* **T&M's Solution**:
+  - Developed custom query filters to easily search by location, price, and rooms.
+  - Integrated interactive maps to show properties and surrounding locations.
+* **Impact & Metrics**:
+  - Deployed a fully responsive property directory.
+
+## 12. e-Sehat
+* **Role**: Mobile Developers & Video Streaming Engineers
+* **Tech Stack**: React Native (iOS & Android mobile apps), Node.js backend, MongoDB, WebRTC (real-time video calls).
+* **The Challenge**: Build a secure telemedicine mobile app connecting patients with doctors in Pakistan.
+* **T&M's Solution**:
+  - Designed real-time slot booking engines.
+  - Built encrypted WebRTC video streaming rooms.
+  - Deployed prescription uploads and wallet deposit integrations.
+* **Impact & Metrics**:
+  - Deployed a HIPAA-compliant healthcare application.
+
+## 13. QuickCard (now RYVYL)
+* **Role**: Fractional CTO & Lead Payments Engineer (end-to-end project management & team allocation)
+* **Tech Stack**: React, Python, Django, PostgreSQL, Stripe API, Card Reader integrations.
+* **The Challenge**: Create a secure cashless and contactless payment website.
+* **T&M's Solution**:
+  - Developed merchant dashboard panels, transaction logs, and QR code billing solutions.
+  - Integrated card reader APIs for POS systems.
+  - Transitioned the product portfolio into RYVYL (now publicly traded on NASDAQ).
+* **Impact & Metrics**:
+  - Deployed a cashless transaction ecosystem.
+  - Transitioned platform to RYVYL (NASDAQ listed).
+  - Designed POS card reader integrations successfully processing live transactions.

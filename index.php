@@ -256,6 +256,201 @@ session_start();
                 "https://www.facebook.com/TnMConsultants/",
                 "https://pk.linkedin.com/company/tnmconsultants"
               ]
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-iqbalai",
+              "name": "IqbalAI",
+              "applicationCategory": "EducationalApplication",
+              "operatingSystem": "Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "AI-first, Urdu-enabled educational platform and comprehensive school management system. Developed with FastAPI, Next.js, PostgreSQL, Redis, Qdrant Vector DB, BGE-M3 Multilingual Embeddings, LangGraph agentic workflows, Piper TTS, and faster-whisper. Managed via fractional CTO role to compress standard dev timelines down to 3-4.5 months.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-docushield",
+              "name": "Docushield",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "iOS, Android, Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Enterprise secure document sharing and verification mobile/web platform with custom Layer 2 (L2) blockchain ledger infrastructure. Built using Solidity smart contracts, Web3.js, Swift, Kotlin, and PHP admin console. Delivered under Fractional CTO leadership, raising $0.5M in seed funding.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-mintit",
+              "name": "MintIt Studio",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "The first NFT marketplace on the Kadena Ecosystem featuring dynamic 'mutant' NFTs. Developed using Pact smart contracts, React.js frontend, Docker, and CI/CD pipelines, overseen by fractional CTO and smart contract leads with zero security vulnerabilities.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-buildonhybrid",
+              "name": "Build On Hybrid",
+              "applicationCategory": "DeveloperApplication",
+              "operatingSystem": "Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Decentralized node deployment architecture and Unified Data API portal for Web3 networks. Developed high-throughput node indexing infrastructure using Go, Rust, Node.js, and API playgrounds, guided by fractional solutions architects.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-otto",
+              "name": "OTTO by BoH",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Autonomous transaction-handling AI agent integrated with Web3 Hybrid Unified Data API. Built with Python, Pydantic AI, and social API automations, enabling secure, autonomous blockchain transactions based on natural language cues.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-nonrival",
+              "name": "NonRival Data",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web, iOS, Android, Browser Extension",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Privacy-first blockchain platform for user data monetization. Built with Laravel 8, React Native, browser extensions (Chrome, Firefox, Safari, Brave), Web3.js, and Solidity smart contracts on Ethereum, ensuring secure client-side cryptographic hashing.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-captureproof",
+              "name": "CaptureProof",
+              "applicationCategory": "MedicalApplication",
+              "operatingSystem": "Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Medical image analysis platform using custom computer vision modeling (excluding LLMs) for clinical tracking of visual health changes. Managed full AWS cloud infrastructure (EC2, S3, RDS, CloudFront) under strict HIPAA compliance with 99.99% uptime over 3 years.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-atlas",
+              "name": "Atlas by BoH",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Real-time AI copilot platform with a data-visualizing analytics dashboard. Built with React, Next.js, FastAPI, OpenAI API, and LangChain RAG pipelines, connecting databases to natural language reporting agents.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-tinycrews",
+              "name": "Tiny Crews",
+              "applicationCategory": "ShoppingApplication",
+              "operatingSystem": "Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Responsive e-commerce storefront for a kids clothing boutique. Built with Shopify Liquid, custom checkout APIs, and automated inventory sync. Achieved a 15% reduction in shopping cart abandonment rates.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-hisandhers",
+              "name": "His & Hers",
+              "applicationCategory": "ShoppingApplication",
+              "operatingSystem": "Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Premium e-commerce storefront for a prominent Pakistani apparel brand. Developed on WooCommerce and WordPress with PHP, custom payment gateway APIs, and SMS notification integrations, optimized for high concurrency checkout during sales.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-tameer",
+              "name": "Tameer Estate UK",
+              "applicationCategory": "BusinessApplication",
+              "operatingSystem": "Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "UK property directory and real estate search engine. Built with WordPress, PHP, MySQL, and Google Maps API, integrating custom search filters to list properties, builders, and rentals.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-esehat",
+              "name": "e-Sehat",
+              "applicationCategory": "MedicalApplication",
+              "operatingSystem": "iOS, Android, Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Telemedicine mobile and web platform. Built with React Native, Node.js, MongoDB, and WebRTC encrypted video streaming, facilitating HIPAA-compliant doctor appointments, slot bookings, and prescriptions.",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
+            },
+            {
+              "@type": "SoftwareApplication",
+              "@id": "https://tnmco.uk/#portfolio-quickcard",
+              "name": "QuickCard (now RYVYL)",
+              "applicationCategory": "FinanceApplication",
+              "operatingSystem": "Web",
+              "author": { "@id": "https://tnmco.uk/#organization" },
+              "description": "Cashless and contactless payment network solution. Built with React, Python, Django, PostgreSQL, Stripe API, and QR-based POS billing systems. Developed under Fractional CTO leadership and transitioned to RYVYL (now publicly traded on NASDAQ).",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD",
+                "offeredBy": { "@id": "https://tnmco.uk/#organization" }
+              }
             }
           ]
         }
@@ -308,16 +503,23 @@ session_start();
                                 <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#services">Services</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#team">Team</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#testimonials">Testimonials</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#team">Team</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" id="contact1" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="demosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demos</a>
+                                <div class="dropdown-menu" aria-labelledby="demosDropdown">
+                                    <a class="dropdown-item" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="https://ai.assistant.tnmco.uk/" target="_blank">VIOLET - Clinic AI Assistant</a>
+                                    <a class="dropdown-item" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="https://bitebot.tnmco.uk/" target="_blank">BiteBot - Restaurant AI Assistant</a>
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="./Career.php">Career</a>
@@ -569,9 +771,9 @@ session_start();
                     </div>
                 </div> -->
                     <div class="container">
-                        <div class="row counters" data-aos="fade-up" data-aos-delay="100">
+                        <div class="row counters justify-content-center" data-aos="fade-up" data-aos-delay="100">
 
-                            <div class="col-lg-3 col-6 text-center">
+                            <div class="col-lg-2 col-md-4 col-6 text-center">
                                 <div class="row">
                                     <div class="col-7 p-0 text-right"><span data-toggle="counter-up">29 </span></div>
                                     <div class="col-5 p-0 text-left">
@@ -581,7 +783,7 @@ session_start();
                                 <p>PROJECT FINISHED</p>
                             </div>
 
-                            <div class="col-lg-3 col-6 text-center">
+                            <div class="col-lg-2 col-md-4 col-6 text-center">
                                 <div class="row">
                                     <div class="col-7 p-0 text-right"><span data-toggle="counter-up">16 </span></div>
                                     <div class="col-5 p-0 text-left">
@@ -591,7 +793,19 @@ session_start();
                                 <p>HAPPY CLIENTS</p>
                             </div>
 
-                            <div class="col-lg-3 col-6 text-center">
+                            <div class="col-lg-2 col-md-4 col-6 text-center">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 p-0 d-flex justify-content-center align-items-baseline">
+                                        <span style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 58px; color: #1bb1dc; line-height: 1; margin-right: 2px;">$</span>
+                                        <span data-toggle="counter-up" style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 58px; color: #1bb1dc; line-height: 1;">1</span>
+                                        <span style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 58px; color: #1bb1dc; line-height: 1; margin-left: 2px;">M</span>
+                                        <span class="align-text-top" style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 40px; color: #1bb1dc; line-height: 1; margin-left: 2px;">+</span>
+                                    </div>
+                                </div>
+                                <p style="color: #1bb1dc; font-weight: bold; margin-top: 10px;">CAPITAL RAISED</p>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-6 text-center">
                                 <div class="row">
                                     <div class="col-6 p-0 text-right"><span data-toggle="counter-up">10 </span></div>
                                     <div class="col-5 p-0 text-left">
@@ -601,7 +815,7 @@ session_start();
                                 <p>YEARS OF EXPERIENCE</p>
                             </div>
 
-                            <div class="col-lg-3 col-6 text-center">
+                            <div class="col-lg-2 col-md-4 col-6 text-center">
                                 <div class="row">
                                     <div class="col-7 p-0 text-right"><span data-toggle="counter-up">97 </span></div>
                                     <div class="col-5 p-0 text-left">
@@ -659,6 +873,218 @@ session_start();
         </section> -->
             <!-- End Features Section -->
 
+
+            <!-- <section id="testimonials" class="testimonials section-bg"> -->
+            <section id="team" class="team section-bg">
+                <div class="container">
+                    <div class="section-title">
+                        <span>Team</span>
+                        <h2>Team</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-6">
+                            <div class="member">
+                                <div data-toggle="modal" data-target="#exampleModalCenter" class="member-info-trigger" style="cursor: pointer;">
+                                    <img src="./assets/img/team/abd.png" alt="Abdurehman Bin Tahir - Technical Director & Co-Founder" loading="lazy" width="417" height="500">
+                                    <h4>Abdurehman Bin Tahir</h4>
+                                </div>
+                                <span class="d-none d-md-block">Technical Director/ Co-Founder</span>
+                                <p class="d-none d-md-block">
+                                    Abdurehman is responsible for implementing technological strategies and ensuring that the technical resources... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter">read more</a> )
+                                </p>
+
+                                <div class="social d-none d-md-block">
+                                    <a href="mailto:abdurrehman@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+
+                                    <a href="https://www.linkedin.com/in/abdtahir/" target="_blank" rel="noopener noreferrer" aria-label="Abdurehman Bin Tahir on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="member">
+                                <div data-toggle="modal" data-target="#exampleModalCenter1" class="member-info-trigger" style="cursor: pointer;">
+                                    <img src="./assets/img/team/athar-mushtaq.png" alt="Athar Mushtaq - Managing Director & Co-Founder" loading="lazy" width="417" height="500">
+                                    <h4>Athar Mushtaq</h4>
+                                </div>
+                                <span class="d-none d-md-block">Managing Director/Co-Founder</span>
+                                <p class="d-none d-md-block">
+                                    Athar is responsible for formulating company strategies, reviewing financial, marketing and operations activities... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter1">read more</a> )
+                                </p>
+                                <div class="social d-none d-md-block">
+                                    <a href="mailto:md@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+
+                                    <a href="https://www.linkedin.com/in/atharmushtaq/" target="_blank" rel="noopener noreferrer" aria-label="Athar Mushtaq on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="member">
+                                <div data-toggle="modal" data-target="#mubashir" class="member-info-trigger" style="cursor: pointer;">
+                                    <img src="./assets/img/team/mubashir-farooq.png" alt="Mubashir Farooq - Team Leader & Senior Software Developer" loading="lazy" width="417" height="500">
+                                    <h4>Mubashir Farooq</h4>
+                                </div>
+                                <span class="d-none d-md-block">Team Leader / Sr. software Developer</span>
+                                <p class="d-none d-md-block">
+                                Mubashir is responsible for overseeing the operations of the technical development team. He's the one... ( <a href="#/" data-toggle="modal" data-target="#mubashir">read more</a> )
+                                </p>
+                                <div class="social d-none d-md-block">
+                                    <a href="mailto:mubashir@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+
+                                    <a href="https://www.linkedin.com/in/mubashir-farooq-b01064202/" target="_blank" rel="noopener noreferrer" aria-label="Mubashir Farooq on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="member">
+                                <div data-toggle="modal" data-target="#exampleModalCenter3" class="member-info-trigger" style="cursor: pointer;">
+                                    <img src="./assets/img/team/team-member2.png" alt="Dr. Tahir Mushtaq - Marketing Advisor" loading="lazy" width="417" height="500">
+                                    <h4>Dr.Tahir Mushtaq</h4>
+                                </div>
+                                <span class="d-none d-md-block">Marketing Advisor</span>
+                                <p class="d-none d-md-block">
+                                    Dr Tahir is responsible for developing marketing strategy, gathering market intelligence, and providing... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter3">read more</a> )
+                                </p>
+                                <div class="social d-none d-md-block">
+                                    <a href="mailto:cmo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+
+                                    <a href="https://www.linkedin.com/in/muhammadtahirmushtaq/" target="_blank" rel="noopener noreferrer" aria-label="Dr. Tahir Mushtaq on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="member">
+                                <div data-toggle="modal" data-target="#exampleModalCenter4" class="member-info-trigger" style="cursor: pointer;">
+                                    <img src="./assets/img/team/team-member3.png" alt="Ola Badawi - Financial Advisor" loading="lazy" width="417" height="500">
+                                    <h4>Ola Badawi</h4>
+                                </div>
+                                <span class="d-none d-md-block">Financial Advisor</span>
+                                <p class="d-none d-md-block">
+                                    Ola is responsible for managing the company’s finances, management of financial risks, record-keeping, ensuring... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter4">read more</a> )
+                                </p>
+                                <div class="social d-none d-md-block">
+                                    <a href="mailto:cfo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+
+                                    <a href="https://www.linkedin.com/in/ola-badawi-mba-923b79185/" target="_blank" rel="noopener noreferrer" aria-label="Ola Badawi on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6">
+                            <div class="member">
+                                <div data-toggle="modal" data-target="#exampleModalCenter2" class="member-info-trigger" style="cursor: pointer;">
+                                    <img src="./assets/img/team/team-member1.png" alt="Haixia Li - Chief Operating Officer" loading="lazy" width="417" height="500">
+                                    <h4>HAIXIA LI</h4>
+                                </div>
+                                <span class="d-none d-md-block">Cheif Operating Officer (COO)</span>
+                                <p class="d-none d-md-block">
+                                    Haixia is responsible for overseeing operations of the company, engage key stakeholders, manage Human Resource, and... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter2">read more</a> )
+                                </p>
+                                <div class="social d-none d-md-block">
+                                    <a href="mailto:coo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+
+                                    <a href="https://www.linkedin.com/in/lynn-li-b88632100/" target="_blank" rel="noopener noreferrer" aria-label="Haixia Li on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ======= Clients Section ======= -->
+            <section id="clients" class="clients">
+                <div class="container" data-aos="zoom-in">
+
+                    <header class="section-header">
+                        <div class="section-title">
+                            <span>Our Clients</span>
+                            <h2>Our Clients</h2>
+                        </div>
+                    </header>
+
+                    <div class="owl-carousel clients-carousel">
+                        <div>
+                            <img src="./assets/img/aam-logo.svg" alt="aam logo" width="150" height="150">
+                        </div>
+
+                        <div>
+                            <img src="./assets/img/esehat-logo.png" alt="esehat logo" width="512" height="512">
+                        </div>
+
+                        <div style="margin-top:30px">
+                            <img src="./assets/img/tsg.png" alt="tsg img" width="512" height="264">
+                        </div>
+
+                        <div style="margin-top:30px">
+                            <img src="./assets/img/CricInGif.png" alt="cricintgit img" width="512" height="346">
+                        </div>
+
+                        <div style="margin-top:0px">
+                            <img src="./assets/img/cominfo-logo.png" alt="cominfo logo" width="400" height="400">
+                        </div>
+
+                        <div style="margin-top:48px">
+                            <img src="./assets/img/init-logo-min.png" alt="init logo" width="541" height="190">
+                        </div>
+
+                        <div>
+                            <img src="./assets/img/qc.png" alt="qc img" width="512" height="512">
+                        </div>
+
+                        <div style="margin-top:40px">
+                            <img src="./assets/img/nonrivaldata.png" alt="nonrivaldata logo" width="668" height="283">
+                        </div>
+
+                        <div style="margin-top:40px">
+                            <img src="./assets/img/tecstore.png" alt="techstore logo" width="400" height="191">
+                        </div>
+
+                        <div style="margin-top:20px">
+                            <img src="./assets/img/doclogo.png" alt="docushield logo" width="800" height="570">
+                        </div>
+                        
+                        <div style="margin-top:55px">
+                            <img src="./assets/img/mint-it-dark.png" alt="mint-it logo" width="1000" height="203">
+                        </div>
+
+                        <div style="margin-top:50px">
+                            <img src="./assets/img/tameer-estate.png" alt="tameer-estate logo" width="256" height="53">
+                        </div>
+
+                        <div style="margin-top:45px">
+                            <img src="./assets/img/logo png.png" style="max-width: 90%;" alt="popup logo" width="894" height="291">
+                        </div>
+
+                        <div>
+                            <img src="./assets/img/tinycrews-logo.png" alt="Tiny Crews logo" loading="lazy" width="512" height="512">
+                        </div>
+
+                        <div style="margin-top:30px">
+                            <img src="./assets/img/hisandhers-logo.png" alt="His & Hers logo" loading="lazy" width="452" height="286">
+                        </div>
+
+                        <div>
+                            <img src="./assets/img/buildonhybrid-logo.png" alt="Build On Hybrid logo" loading="lazy" width="512" height="512">
+                        </div>
+
+                        <div style="margin-top:30px">
+                            <img src="./assets/img/iqbalai-logo.png" alt="IqbalAI logo" loading="lazy" width="317" height="201">
+                        </div>
+                        <!-- <img src="./assets/img/aam-logo.svg" alt="aam logo">
+                    <img src="./assets/img/esehat-logo.png" alt="eshat logo">
+                    <img src="./assets/img/tsg.png" alt=" logo">
+                    <img src="./assets/img/CricInGif.png" alt=" logo">
+                    <img src="./assets/img/init-logo-min.png" alt="img">
+                    <img src="./assets/img/qc.png" alt="img">
+                    <img src="./assets/img/llogoo.png" alt="logo">
+                    <img src="./assets/img/tecstore.png" alt="logo">
+                    <img src="./assets/img/logoIcon.png" alt="logo">
+                    <img src="./assets/img/logo png.png" alt="logo"> -->
+                    </div>
+
+                </div>
+            </section>
+            <!-- End Clients Section -->
+
             <!-- ======= Portfolio Section ======= -->
             <section id="portfolio" class="portfolio ">
                 <div class="container" data-aos="fade-up">
@@ -676,6 +1102,8 @@ session_start();
                                 <li data-filter=".filter-web">Web</li>
                                 <li data-filter=".filter-app">App</li>
                                 <li data-filter=".filter-Extension">Extension</li>
+                                <li data-filter=".filter-Web3">Web3</li>
+                                <li data-filter=".filter-AI">AI</li>
                             </ul>
                         </div>
                     </div>
@@ -687,10 +1115,11 @@ session_start();
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
                                 <img src="./assets/img/portfolio/nrd-web.png" class="img-fluid" alt="NonRival Data Web 3.0 Platform Interface" loading="lazy" width="2560" height="2526">
                                 <div class="portfolio-info">
-                                    <h4><a href="https://nonrivaldata.com" target="_blank">NonRival Data</a></h4>
+                                    <h4><a href="#portfolioModal-nrd" data-toggle="modal">NonRival Data</a></h4>
                                     <p>WEB 3.0</p>
                                     <div>
-                                        <a href="assets/img/portfolio/nrd-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery VIew"><i class="far fa-images"></i></a>
+                                        <a href="assets/img/portfolio/nrd-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-nrd" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
                                         <a href="https://nonrivaldata.com" target="_blank" class="link-details" title="Visit Website"><i class="fas fa-link"></i></a>
                                     </div>
                                 </div>
@@ -702,12 +1131,11 @@ session_start();
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
                                 <img style="height: 200px !important; margin: 20px 0;" src="./assets/img/portfolio/doc.png" class="img-fluid" alt="Docushield Secure Mobile Application" loading="lazy" width="3000" height="2000">
                                 <div class="portfolio-info">
-                                    <h4><a href="https://play.google.com/store/apps/details?id=com.tnm.e_sehat&fbclid=IwAR132Dx6zlIK9nwDyRF1iq4s8LSTbZ6-SW3VMqvICqb5NDSGsWns1MvTREI" target="_blank">Docushield</a></h4>
+                                    <h4><a href="#portfolioModal-docushield" data-toggle="modal">Docushield</a></h4>
                                     <p>App</p>
                                     <div>
-                                        <a href="./assets/img/portfolio/doc.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery VIew"><i class="far fa-images"></i></a>
-                                        <a href="https://play.google.com/store/apps/details?id=com.tnm.e_sehat&fbclid=IwAR132Dx6zlIK9nwDyRF1iq4s8LSTbZ6-SW3VMqvICqb5NDSGsWns1MvTREI" target="_blank" class="link-details" title="View on Play Store"><i
-                                            class="fas fa-link"></i></a>
+                                        <a href="./assets/img/portfolio/doc.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-docushield" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -718,13 +1146,12 @@ session_start();
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
                                 <img style="height: 230px !important; margin: 20px;" src="./assets/img/portfolio/nrd-ext-chrome.png" class="img-fluid " alt="NonRival Data Chrome Browser Extension Interface" loading="lazy" width="3000" height="2250">
                                 <div class="portfolio-info">
-                                    <h4><a href="https://chrome.google.com/webstore/detail/nonrival-data/namcbnkeoapdnoajhlbdpnmmbkodoakh" target="_blank">NonRival Data</a></h4>
+                                    <h4><a href="#portfolioModal-nrd" data-toggle="modal">NonRival Data</a></h4>
                                     <p>Chrome Extension</p>
                                     <div>
-                                        <a href="./assets/img/portfolio/nrd-ext-chrome.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery VIew">
-                                            <i class="far fa-images"></i>
-                                            <a href="https://chrome.google.com/webstore/detail/nonrival-data/namcbnkeoapdnoajhlbdpnmmbkodoakh" target="_blank" class="link-details" title="View on Extensions Store"><i
-                                            class="fas fa-link"></i></a>
+                                        <a href="./assets/img/portfolio/nrd-ext-chrome.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-nrd" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                        <a href="https://chrome.google.com/webstore/detail/nonrival-data/namcbnkeoapdnoajhlbdpnmmbkodoakh" target="_blank" class="link-details" title="View on Extensions Store"><i class="fas fa-link"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -735,44 +1162,43 @@ session_start();
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
                                 <img src="./assets/img/portfolio/tameer-web.png" class="img-fluid" alt="Tameer Estate UK Property Website Portal" loading="lazy" width="2560" height="2707">
                                 <div class="portfolio-info">
-                                    <h4><a href="https://tameerestate.com" target="_blank">Tameer Estate UK</a></h4>
+                                    <h4><a href="#portfolioModal-tameer" data-toggle="modal">Tameer Estate UK</a></h4>
                                     <p>Real Estate Website</p>
                                     <div>
-                                        <a href="assets/img/portfolio/tameer-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery VIew"><i class="far fa-images"></i></a>
+                                        <a href="assets/img/portfolio/tameer-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-tameer" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
                                         <a href="https://tameerestate.com" target="_blank" class="link-details" title="Visit Website"><i class="fas fa-link"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        
                         <!-- docushield web -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center;padding:20px;">
                                 <img src="./assets/img/portfolio/doc-web.png" class="img-fluid" alt="Docushield Security Web Console Platform" loading="lazy" width="2559" height="2217">
                                 <div class="portfolio-info">
-                                    <h4><a href="https://docushield.tnmco.uk/" target="_blank">Docushield</a></h4>
+                                    <h4><a href="#portfolioModal-docushield" data-toggle="modal">Docushield</a></h4>
                                     <p>Website</p>
                                     <div>
-                                        <a href="./assets/img/portfolio/doc-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery VIew"><i class="far fa-images"></i></a>
-                                        <a href="https://docushield.tnmco.uk/" target="_blank" class="link-details" title="Visit Website"><i class="fas fa-link"></i></a>
+                                        <a href="./assets/img/portfolio/doc-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-docushield" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- nrd firfox add-on -->
+                        <!-- nrd firefox add-on -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-Extension" data-wow-delay="0.2s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
                                 <img style="height: 230px !important; margin: 20px;" src="./assets/img/portfolio/nrd-ext-mozilla.png" class="img-fluid " alt="NonRival Data Firefox Add-on Extension" loading="lazy" width="3000" height="2250">
                                 <div class="portfolio-info">
-                                    <h4><a href="https://addons.mozilla.org/en-US/firefox/addon/non-rival-data/" target="_blank">NonRival Data</a></h4>
-                                    <p>FireFox Add-on</p>
+                                    <h4><a href="#portfolioModal-nrd" data-toggle="modal">NonRival Data</a></h4>
+                                    <p>Firefox Add-on</p>
                                     <div>
-                                        <a href="./assets/img/portfolio/nrd-ext-mozilla.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery VIew">
-                                            <i class="far fa-images"></i>
-                                            <a href="https://addons.mozilla.org/en-US/firefox/addon/non-rival-data/" target="_blank" class="link-details" title="View on Extensions Store"><i
-                                            class="fas fa-link"></i></a>
+                                        <a href="./assets/img/portfolio/nrd-ext-mozilla.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-nrd" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                        <a href="https://addons.mozilla.org/en-US/firefox/addon/non-rival-data/" target="_blank" class="link-details" title="View on Extensions Store"><i class="fas fa-link"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -783,26 +1209,27 @@ session_start();
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
                                 <img style="height: 200px !important; margin: 20px 0;" src="./assets/img/portfolio/esehat.png" class="img-fluid" alt="e-Sehat Telemedicine Mobile Application" loading="lazy" width="3000" height="2000">
                                 <div class="portfolio-info">
-                                    <h4><a href="https://play.google.com/store/apps/details?id=com.tnm.e_sehat&fbclid=IwAR132Dx6zlIK9nwDyRF1iq4s8LSTbZ6-SW3VMqvICqb5NDSGsWns1MvTREI" target="_blank">e-Sehat</a></h4>
+                                    <h4><a href="#portfolioModal-esehat" data-toggle="modal">e-Sehat</a></h4>
                                     <p>App</p>
                                     <div>
-                                        <a href="./assets/img/portfolio/esehat.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery VIew"><i class="far fa-images"></i></a>
-                                        <a href="https://play.google.com/store/apps/details?id=com.tnm.e_sehat&fbclid=IwAR132Dx6zlIK9nwDyRF1iq4s8LSTbZ6-SW3VMqvICqb5NDSGsWns1MvTREI" target="_blank" class="link-details" title="View on Play Store"><i
-                                            class="fas fa-link"></i></a>
+                                        <a href="./assets/img/portfolio/esehat.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-esehat" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.tnm.e_sehat&fbclid=IwAR132Dx6zlIK9nwDyRF1iq4s8LSTbZ6-SW3VMqvICqb5NDSGsWns1MvTREI" target="_blank" class="link-details" title="View on Play Store"><i class="fas fa-link"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+
                         <!-- mint-it web site -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center;padding:20px;">
                                 <img src="./assets/img/portfolio/mintit-web.png" class="img-fluid" alt="Mintit Studio Creative Digital Web Platform" loading="lazy" width="2560" height="2465">
                                 <div class="portfolio-info">
-                                    <h4><a href="https://mintit.tnmco.uk/" target="_blank">Mintit-Studio</a></h4>
+                                    <h4><a href="#portfolioModal-mintit" data-toggle="modal">Mintit-Studio</a></h4>
                                     <p>Website</p>
                                     <div>
-                                        <a href="./assets/img/portfolio/mintit-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery VIew"><i class="far fa-images"></i></a>
+                                        <a href="./assets/img/portfolio/mintit-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-mintit" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
                                         <a href="https://mintit.tnmco.uk/" target="_blank" class="link-details" title="Visit Website"><i class="fas fa-link"></i></a>
                                     </div>
                                 </div>
@@ -814,30 +1241,28 @@ session_start();
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
                                 <img style="height: 230px !important; margin: 20px;" src="./assets/img/portfolio/nrd-ext-safari.png" class="img-fluid " alt="NonRival Data Safari Web Extension" loading="lazy" width="3000" height="2250">
                                 <div class="portfolio-info">
-                                    <h4><a href="https://apps.apple.com/app/id1573762995" target="_blank">NonRival Data</a></h4>
+                                    <h4><a href="#portfolioModal-nrd" data-toggle="modal">NonRival Data</a></h4>
                                     <p>Safari Extension</p>
                                     <div>
-                                        <a href="./assets/img/portfolio/nrd-ext-safari.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery VIew">
-                                            <i class="far fa-images"></i>
-                                            <a href="https://apps.apple.com/app/id1573762995" target="_blank" class="link-details" title="View on Extensions Store"><i
-                                            class="fas fa-link"></i></a>
+                                        <a href="./assets/img/portfolio/nrd-ext-safari.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-nrd" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                        <a href="https://apps.apple.com/app/id1573762995" target="_blank" class="link-details" title="View on Extensions Store"><i class="fas fa-link"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        
 
                         <!-- Quick Card web -->
                         <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center;padding:20px;">
                                 <img src="./assets/img/portfolio/qc.png" class="img-fluid" alt="Quick Card Contactless Cashless Payments Website" loading="lazy" width="512" height="512">
                                 <div class="portfolio-info">
-                                    <h4><a href="https://quickcard.me" target="_blank">Quick Card</a></h4>
+                                    <h4><a href="#portfolioModal-quickcard" data-toggle="modal">QuickCard (now RYVYL)</a></h4>
                                     <p>Website</p>
                                     <div>
-                                        <a href="./assets/img/portfolio/qc.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery VIew"><i class="far fa-images"></i></a>
-                                        <a href="https://quickcard.me" target="_blank" class="link-details" title="Visit Website"><i class="fas fa-link"></i></a>
+                                        <a href="./assets/img/portfolio/qc.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-quickcard" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                        <a href="https://www.ryvyl.com/" target="_blank" class="link-details" title="Visit Website"><i class="fas fa-link"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -848,12 +1273,122 @@ session_start();
                             <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; ">
                                 <img style="height: 190px !important; margin: 20px 0;" src="./assets/img/portfolio/nrd-app.png" class="img-fluid " alt="NonRival Data Finance and Web3 Mobile Application" loading="lazy" width="3000" height="2000">
                                 <div class="portfolio-info">
-                                    <h4><a href="https://play.google.com/store/apps/details?id=com.tnm.NONRIVAL" target="_blank">NonRival Data</a></h4>
+                                    <h4><a href="#portfolioModal-nrd" data-toggle="modal">NonRival Data</a></h4>
                                     <p>App</p>
                                     <div>
-                                        <a href="./assets/img/portfolio/nrd-app.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery VIew"><i class="far fa-images"></i></a>
-                                        <a href="https://play.google.com/store/apps/details?id=com.tnm.NONRIVAL" target="_blank" class="link-details" title="View on Play Store"><i
-                                            class="fas fa-link"></i></a>
+                                        <a href="./assets/img/portfolio/nrd-app.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-nrd" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                        <a href="https://play.google.com/store/apps/details?id=com.tnm.NONRIVAL" target="_blank" class="link-details" title="View on Play Store"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Build On Hybrid -->
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-Web3" data-wow-delay="0.1s">
+                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
+                                <img src="./assets/img/portfolio/buildonhybrid-web.png" class="img-fluid" alt="Build On Hybrid Web3 Infrastructure Interface" loading="lazy" width="1024" height="1024">
+                                <div class="portfolio-info">
+                                    <h4><a href="#portfolioModal-buildonhybrid" data-toggle="modal">Build On Hybrid</a></h4>
+                                    <p>Web3 Infrastructure</p>
+                                    <div>
+                                        <a href="./assets/img/portfolio/buildonhybrid-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-buildonhybrid" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Atlas by BoH -->
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-AI" data-wow-delay="0.2s">
+                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
+                                <img src="./assets/img/portfolio/atlas-web.png" class="img-fluid" alt="Atlas AI Copilot Platform Dashboard" loading="lazy" width="1024" height="1024">
+                                <div class="portfolio-info">
+                                    <h4><a href="#portfolioModal-atlas" data-toggle="modal">Atlas by BoH</a></h4>
+                                    <p>AI Copilot Platform</p>
+                                    <div>
+                                        <a href="./assets/img/portfolio/atlas-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-atlas" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                        <a href="https://atlas.buildonhybrid.com/" target="_blank" class="link-details" title="Visit Website"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- OTTO by BoH -->
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-AI" data-wow-delay="0.1s">
+                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
+                                <img src="./assets/img/portfolio/otto-web.png" class="img-fluid" alt="OTTO Autonomous AI Agent Dashboard" loading="lazy" width="1024" height="1024">
+                                <div class="portfolio-info">
+                                    <h4><a href="#portfolioModal-otto" data-toggle="modal">OTTO by BoH</a></h4>
+                                    <p>Autonomous AI Agent</p>
+                                    <div>
+                                        <a href="./assets/img/portfolio/otto-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-otto" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                        <a href="https://onchainotto.ai/" target="_blank" class="link-details" title="Visit Website"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tiny Crews -->
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
+                                <img src="./assets/img/portfolio/tinycrews-web.png" class="img-fluid" alt="Tiny Crews Kids Clothing E-Commerce Website" loading="lazy" width="1024" height="1024">
+                                <div class="portfolio-info">
+                                    <h4><a href="#portfolioModal-tinycrews" data-toggle="modal">Tiny Crews</a></h4>
+                                    <p>E-Commerce</p>
+                                    <div>
+                                        <a href="./assets/img/portfolio/tinycrews-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-tinycrews" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                        <a href="https://tinycrews.com/" target="_blank" class="link-details" title="Visit Website"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- His & Hers -->
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
+                                <img src="./assets/img/portfolio/hisandhers-web.png" class="img-fluid" alt="His & Hers Fashion E-Commerce Website" loading="lazy" width="1024" height="599">
+                                <div class="portfolio-info">
+                                    <h4><a href="#portfolioModal-hisandhers" data-toggle="modal">His & Hers</a></h4>
+                                    <p>E-Commerce</p>
+                                    <div>
+                                        <a href="./assets/img/portfolio/hisandhers-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-hisandhers" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                        <a href="https://hisandhers.com.pk" target="_blank" class="link-details" title="Visit Website"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- IqbalAI -->
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-AI" data-wow-delay="0.2s">
+                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
+                                <img src="./assets/img/portfolio/iqbalai-web.png" class="img-fluid" alt="IqbalAI AI-First Urdu Educational and School Management Platform" loading="lazy" width="1024" height="1024">
+                                <div class="portfolio-info">
+                                    <h4><a href="#portfolioModal-iqbalai" data-toggle="modal">IqbalAI</a></h4>
+                                    <p>AI-First Urdu Educational & School Management Platform</p>
+                                    <div>
+                                        <a href="./assets/img/portfolio/iqbalai-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-iqbalai" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
+                                        <a href="https://iqbalai.com" target="_blank" class="link-details" title="Visit Website"><i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CaptureProof -->
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-AI" data-wow-delay="0.1s">
+                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
+                                <img src="./assets/img/portfolio/captureproof-web.png" class="img-fluid" alt="CaptureProof Medical Image Analysis Platform Interface" loading="lazy" width="2648" height="1796">
+                                <div class="portfolio-info">
+                                    <h4><a href="#portfolioModal-captureproof" data-toggle="modal">CaptureProof</a></h4>
+                                    <p>Medical Image Analysis Platform</p>
+                                    <div>
+                                        <a href="./assets/img/portfolio/captureproof-web.png" class="link-preview venobox" data-gall="portfolioGallery" title="Gallery View"><i class="far fa-images"></i></a>
+                                        <a href="#portfolioModal-captureproof" data-toggle="modal" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -950,188 +1485,7 @@ session_start();
             </section>
 
 
-            <!-- <section id="testimonials" class="testimonials section-bg"> -->
-            <section id="team" class="team section-bg">
-                <div class="container">
-                    <div class="section-title">
-                        <span>Team</span>
-                        <h2>Team</h2>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-4">
-                            <div class="member">
-                                <img src="./assets/img/team/abd.png" alt="Abdurehman Bin Tahir - Technical Director & Co-Founder" loading="lazy" width="417" height="500">
-                                <h4>Abdurehman Bin Tahir</h4>
-                                <span>Technical Director/ Co-Founder</span>
-                                <p>
-                                    Abdurehman is responsible for implementing technological strategies and ensuring that the technical resources... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter">read more</a> )
-                                </p>
-
-                                <div class="social">
-                                    <a href="mailto:abdurrehman@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
-
-                                    <a href="https://www.linkedin.com/in/abdtahir/" target="_blank" rel="noopener noreferrer" aria-label="Abdurehman Bin Tahir on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="member">
-                                <img src="./assets/img/team/athar-mushtaq.png" alt="Athar Mushtaq - Managing Director & Co-Founder" loading="lazy" width="417" height="500">
-                                <h4>Athar Mushtaq</h4>
-                                <span>Managing Director/Co-Founder</span>
-                                <p>
-                                    Athar is responsible for formulating company strategies, reviewing financial, marketing and operations activities... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter1">read more</a> )
-                                </p>
-                                <div class="social">
-                                    <a href="mailto:md@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
-
-                                    <a href="https://www.linkedin.com/in/atharmushtaq/" target="_blank" rel="noopener noreferrer" aria-label="Athar Mushtaq on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="member">
-                                <img src="./assets/img/team/mubashir-farooq.png" alt="Mubashir Farooq - Team Leader & Senior Software Developer" loading="lazy" width="417" height="500">
-                                <h4>Mubashir Farooq</h4>
-                                <span>Team Leader / Sr. software Developer</span>
-                                <p>
-                                Mubashir is responsible for overseeing the operations of the technical development team. He's the one... ( <a href="#/" data-toggle="modal" data-target="#mubashir">read more</a> )
-                                </p>
-                                <div class="social">
-                                    <a href="mailto:mubashir@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
-
-                                    <a href="https://www.linkedin.com/in/mubashir-farooq-b01064202/" target="_blank" rel="noopener noreferrer" aria-label="Mubashir Farooq on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="member">
-                                <img src="./assets/img/team/team-member2.png" alt="Dr. Tahir Mushtaq - Marketing Advisor" loading="lazy" width="417" height="500">
-                                <h4>Dr.Tahir Mushtaq</h4>
-                                <span>Marketing Advisor</span>
-                                <p>
-                                    Dr Tahir is responsible for developing marketing strategy, gathering market intelligence, and providing... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter3">read more</a> )
-                                </p>
-                                <div class="social">
-                                    <a href="mailto:cmo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
-
-                                    <a href="https://www.linkedin.com/in/muhammadtahirmushtaq/" target="_blank" rel="noopener noreferrer" aria-label="Dr. Tahir Mushtaq on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="member">
-                                <img src="./assets/img/team/team-member3.png" alt="Ola Badawi - Financial Advisor" loading="lazy" width="417" height="500">
-                                <h4>Ola Badawi</h4>
-                                <span>Financial Advisor</span>
-                                <p>
-                                    Ola is responsible for managing the company’s finances, management of financial risks, record-keeping, ensuring... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter4">read more</a> )
-                                </p>
-                                <div class="social">
-                                    <a href="mailto:cfo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
-
-                                    <a href="https://www.linkedin.com/in/ola-badawi-mba-923b79185/" target="_blank" rel="noopener noreferrer" aria-label="Ola Badawi on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="member">
-                                <img src="./assets/img/team/team-member1.png" alt="Haixia Li - Chief Operating Officer" loading="lazy" width="417" height="500">
-                                <h4>HAIXIA LI</h4>
-                                <span>Cheif Operating Officer (COO)</span>
-                                <p>
-                                    Haixia is responsible for overseeing operations of the company, engage key stakeholders, manage Human Resource, and... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter2">read more</a> )
-                                </p>
-                                <div class="social">
-                                    <a href="mailto:coo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
-
-                                    <a href="https://www.linkedin.com/in/lynn-li-b88632100/" target="_blank" rel="noopener noreferrer" aria-label="Haixia Li on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- ======= Clients Section ======= -->
-            <section id="clients" class="clients">
-                <div class="container" data-aos="zoom-in">
-
-                    <header class="section-header">
-                        <div class="section-title">
-                            <span>Our Clients</span>
-                            <h2>Our Clients</h2>
-                        </div>
-                    </header>
-
-                    <div class="owl-carousel clients-carousel">
-                        <div>
-                            <img src="./assets/img/aam-logo.svg" alt="aam logo" width="150" height="150">
-                        </div>
-
-                        <div>
-                            <img src="./assets/img/esehat-logo.png" alt="esehat logo" width="512" height="512">
-                        </div>
-
-                        <div style="margin-top:30px">
-                            <img src="./assets/img/tsg.png" alt="tsg img" width="512" height="264">
-                        </div>
-
-                        <div style="margin-top:30px">
-                            <img src="./assets/img/CricInGif.png" alt="cricintgit img" width="512" height="346">
-                        </div>
-
-                        <div style="margin-top:0px">
-                            <img src="./assets/img/cominfo-logo.png" alt="cominfo logo" width="400" height="400">
-                        </div>
-
-                        <div style="margin-top:48px">
-                            <img src="./assets/img/init-logo-min.png" alt="init logo" width="541" height="190">
-                        </div>
-
-                        <div>
-                            <img src="./assets/img/qc.png" alt="qc img" width="512" height="512">
-                        </div>
-
-                        <div style="margin-top:40px">
-                            <img src="./assets/img/nonrivaldata.png" alt="nonrivaldata logo" width="668" height="283">
-                        </div>
-
-                        <div style="margin-top:40px">
-                            <img src="./assets/img/tecstore.png" alt="techstore logo" width="400" height="191">
-                        </div>
-
-                        <div style="margin-top:20px">
-                            <img src="./assets/img/doclogo.png" alt="docushield logo" width="800" height="570">
-                        </div>
-                        
-                        <div style="margin-top:55px">
-                            <img src="./assets/img/mint-it-dark.png" alt="mint-it logo" width="1000" height="203">
-                        </div>
-
-                        <div style="margin-top:50px">
-                            <img src="./assets/img/tameer-estate.png" alt="tameer-estate logo" width="256" height="53">
-                        </div>
-
-                        <div style="margin-top:45px">
-                            <img src="./assets/img/logo png.png" style="max-width: 90%;" alt="popup logo" width="894" height="291">
-                        </div>
-                        <!-- <img src="./assets/img/aam-logo.svg" alt="aam logo">
-                    <img src="./assets/img/esehat-logo.png" alt="eshat logo">
-                    <img src="./assets/img/tsg.png" alt=" logo">
-                    <img src="./assets/img/CricInGif.png" alt=" logo">
-                    <img src="./assets/img/init-logo-min.png" alt="img">
-                    <img src="./assets/img/qc.png" alt="img">
-                    <img src="./assets/img/llogoo.png" alt="logo">
-                    <img src="./assets/img/tecstore.png" alt="logo">
-                    <img src="./assets/img/logoIcon.png" alt="logo">
-                    <img src="./assets/img/logo png.png" alt="logo"> -->
-                    </div>
-
-                </div>
-            </section>
-            <!-- End Clients Section -->
 
         </main>
         <!-- End #main -->
@@ -1245,7 +1599,7 @@ session_start();
                 <div class="container">
                     <div class="row">
 
-                        <div class="col-lg-6 col-md-12 footer-contact">
+                        <div class="col-lg-4 col-md-6 footer-contact">
                             <h3><img src="./assets/img/whitelogo.png" style="width: 40px;" alt="white logo"> T&M Consultants</h3>
                             <p>
                                 Technology and Management (T&M) consultants is a social enterprise building capacity for start-ups and SMEs.T&M offers 360° solutions to start-ups and SMEs including but not limited to product development, deployment and after sales services. Here at
@@ -1271,13 +1625,21 @@ session_start();
                             </ul>
                         </div>
 
-                        <div class="col-lg-3 col-md-6 footer-links">
+                        <div class="col-lg-2 col-md-6 footer-links">
                             <h4>Useful Links</h4>
                             <ul>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="./Career.php">Career</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Our Demos</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://ai.assistant.tnmco.uk/" target="_blank">VIOLET - Clinic AI Assistant</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://bitebot.tnmco.uk/" target="_blank">BiteBot - Restaurant AI Assistant</a></li>
                             </ul>
                         </div>
 
@@ -1461,6 +1823,809 @@ session_start();
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary my-btn" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- =======================================================
+             PORTFOLIO CASE STUDY MODALS (HUMAN-OPTIMIZED INTERACTIVE CASE STUDIES)
+             ======================================================= -->
+
+        <!-- 1. NonRival Data Modal -->
+        <div class="modal fade" id="portfolioModal-nrd" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-nrd-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-nrd-title" style="font-weight: 700; font-size: 24px;">NonRival Data</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/nrd-web.png" class="img-fluid" alt="NonRival Data Dashboard Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: Fractional CTO & Lead Product Delivery</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2021 - 2022</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Laravel 8</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">React Native</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Web3.js</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Solidity</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Infura</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Browser Extensions API</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">The client wanted to build a privacy-first, MVP blockchain ecosystem empowering users to take control of their financial data and monetize it. This required seamless cross-platform functionality spanning Web, Mobile (iOS/Android), and major Web Browsers (Chrome, Firefox, Safari, Brave).</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">T&M designed and engineered a unified ecosystem. We built high-performance browser extensions, responsive mobile applications, and secure Ethereum mainnet hooks via Infura. All user transactions securely record hashes to custom Solidity smart contracts, utilizing client-side cryptographic hashing to keep raw data completely private.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Successfully launched Web 3.0 MVP across Web, iOS, Android, and 3 Extension Stores.</span>
+                                        </li>
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>100% of user data monetization requests validated on the Ethereum mainnet.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Designed high-performance cross-platform communication protocols.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <a href="https://nonrivaldata.com" target="_blank" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 8px 16px;"><i class="fas fa-external-link-alt mr-2"></i> Visit Live Site</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Docushield Modal -->
+        <div class="modal fade" id="portfolioModal-docushield" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-docushield-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-docushield-title" style="font-weight: 700; font-size: 24px;">Docushield</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/doc.png" class="img-fluid" alt="Docushield Mobile Interface Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: Fractional CTO & Solutions Architect</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2020 - 2021</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Solidity</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Web3.js</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">iOS (Swift)</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Android (Kotlin)</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">PHP Web Admin</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">L2 Blockchain</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">The requirement was to deliver an enterprise-grade document sharing, signing, and verification mobile and web application backed by secure, distributed ledger infrastructure to assure document integrity.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">As Fractional CTO, we designed and deployed custom Layer 2 (L2) blockchain nodes to index document hashes securely. We also launched the native $DOC utility token, built native iOS and Android apps, created a PHP web console, and managed the full engineering and QA teams.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Raised $0.5 Million in seed funding.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>100% auditable blockchain-backed document signatures.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between align-items-center" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <div class="text-muted small" style="text-align: left;"><i class="fas fa-lock mr-1 text-warning"></i> Enterprise IP: Source code & live backend are private.</div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. MintIt Studio Modal -->
+        <div class="modal fade" id="portfolioModal-mintit" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-mintit-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-mintit-title" style="font-weight: 700; font-size: 24px;">MintIt Studio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/mintit-web.png" class="img-fluid" alt="MintIt Studio Marketplace Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: Fractional CTO & Lead Smart Contract Developer</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2021 - 2022</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Kadena Blockchain</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Pact Smart Contracts</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">React.js</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Docker</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">CI/CD</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">Design and develop the first NFT marketplace on the Kadena Ecosystem featuring dynamic "mutant" NFTs that evolve based on on-chain activities.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">We authored secure Pact smart contracts, set up Kadena gas station relays to subsidize user transactions, designed the React.js integration, and built deployment infrastructure using Docker and automated CI/CD pipelines.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Successfully launched the first-ever mutant NFT marketplace on Kadena.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Zero security vulnerabilities reported post-launch.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <a href="https://mintit.tnmco.uk/" target="_blank" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 8px 16px;"><i class="fas fa-external-link-alt mr-2"></i> Visit Live Site</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. Build On Hybrid Modal -->
+        <div class="modal fade" id="portfolioModal-buildonhybrid" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-buildonhybrid-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-buildonhybrid-title" style="font-weight: 700; font-size: 24px;">Build On Hybrid</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/buildonhybrid-web.png" class="img-fluid" alt="Build On Hybrid Platform Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: Solutions Architect & Project Management</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2023 - 2024</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Go</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Rust</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Node.js</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Web3 Node Infrastructure</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">GraphQL API</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">Design a decentralized node deployment architecture and a high-performance Unified Data API for multichain Web3 networks, enabling developers to query audited blockchain records instantly.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">T&M provided fractional architecture consulting. We designed the Go and Rust based node indexing infrastructure, mapped the Unified Data API models, and built the developer portal hub and API playgound (docs.buildonhybrid.com).</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Guided project from raw ideation to verified technical architecture blueprints.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Deployed high-availability node query infrastructure worldwide.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between align-items-center" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <div class="text-muted small" style="text-align: left;"><i class="fas fa-lock mr-1 text-warning"></i> Enterprise IP: Source code & live backend are private.</div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. OTTO by BoH Modal -->
+        <div class="modal fade" id="portfolioModal-otto" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-otto-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-otto-title" style="font-weight: 700; font-size: 24px;">OTTO by BoH</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/otto-web.png" class="img-fluid" alt="OTTO AI Agent Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: AI Agents Team & Project Management</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2024</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Pydantic AI</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Python</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Hybrid API</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Web3.js</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Social API integrations</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">Develop an autonomous AI agent capable of parsing natural language prompts, monitoring live blockchain networks, executing secure transactions, and communicating findings across social channels.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">We built OTTO's agentic decision workflows using Pydantic AI. We integrated the Hybrid Unified Data API so the agent fetches audited Web3 telemetry, and programmed cryptographically constrained transaction tools to guarantee safe agent wallet operations.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>100% autonomous agent running on live social and crypto channels.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Integrated directly with wallets supporting automated gas limits.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <a href="https://onchainotto.ai/" target="_blank" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 8px 16px;"><i class="fas fa-external-link-alt mr-2"></i> Visit Live Site</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. Atlas by BoH Modal -->
+        <div class="modal fade" id="portfolioModal-atlas" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-atlas-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-atlas-title" style="font-weight: 700; font-size: 24px;">Atlas by BoH</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/atlas-web.png" class="img-fluid" alt="Atlas Dashboard Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: AI Solutions Team & Frontend Engineers</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2024</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">React</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Next.js</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">FastAPI</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">OpenAI API</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">LangChain (RAG)</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">Develop a premium, responsive real-time AI copilot application with a fluid data-visualizing analytics dashboard querying complex backends.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">We designed a dark-themed user interface featuring interactive charting widgets and multi-agent chat. We developed a robust Retrieval-Augmented Generation (RAG) backend utilizing FastAPI and LangChain, enabling natural language to SQL/report execution.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Fluid, high-responsiveness dashboard active for Hybrid users.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Under 1.5s latency on custom natural language analytics reports.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <a href="https://atlas.buildonhybrid.com/" target="_blank" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 8px 16px;"><i class="fas fa-external-link-alt mr-2"></i> Visit Live Site</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. CaptureProof Modal -->
+        <div class="modal fade" id="portfolioModal-captureproof" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-captureproof-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-captureproof-title" style="font-weight: 700; font-size: 24px;">CaptureProof</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/captureproof-web.png" class="img-fluid" alt="CaptureProof Interface Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: Solutions Architect & Infrastructure Team</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2023 - 2026 (Past 3 Years)</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">PyTorch</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">TensorFlow</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Python</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">AWS (EC2, S3, RDS, CloudFront)</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Custom CV Models</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">Train, validate, and optimize medical computer vision models to track patient visual physiological changes over time, requiring high uptime and strict HIPAA-compliant cloud hosting solutions.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">T&M trained specialized computer vision architectures (non-LLM models) for clinical visual analytics. Over the past 3 years, we have fully managed the secure AWS hosting cluster, engineered automated backups, configured CloudFront CDN distribution, and provided dedicated backend maintenance.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Maintained 99.99% AWS server cluster availability over 3 years.</span>
+                                        </li>
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Successfully satisfied rigorous healthcare data protection audits.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Deployed highly accurate visual physiological tracking models.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-between align-items-center" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <div class="text-muted small" style="text-align: left;"><i class="fas fa-lock mr-1 text-warning"></i> Enterprise IP: Source code & live backend are private.</div>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 8. Tiny Crews Modal -->
+        <div class="modal fade" id="portfolioModal-tinycrews" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-tinycrews-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-tinycrews-title" style="font-weight: 700; font-size: 24px;">Tiny Crews</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/tinycrews-web.png" class="img-fluid" alt="Tiny Crews Storefront Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: E-Commerce Developers & Storefront Designers</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2022 - 2023</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Shopify</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Liquid</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">JavaScript</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Custom Checkout APIs</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">Create a highly responsive, custom boutique kids clothing storefront on Shopify with clean, fast checkout, custom cart behaviors, and real-time inventory sync.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">T&M developed a responsive theme utilizing Shopify Liquid and vanilla JavaScript. We optimized page speed configurations and implemented direct inventory and notification synchronization hooks.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Reduced checkout cart abandonment rates by 15%.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Increased mobile page-load speed score to 90+.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <a href="https://tinycrews.com/" target="_blank" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 8px 16px;"><i class="fas fa-external-link-alt mr-2"></i> Visit Live Site</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. His & Hers Modal -->
+        <div class="modal fade" id="portfolioModal-hisandhers" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-hisandhers-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-hisandhers-title" style="font-weight: 700; font-size: 24px;">His & Hers</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/hisandhers-web.png" class="img-fluid" alt="His & Hers Storefront Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: E-Commerce Developers & UI Designers</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2022 - 2023</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">WordPress</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">WooCommerce</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">PHP</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Custom Payment APIs</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">SMS Gateway API</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">Build a premium, high-traffic clothing e-commerce storefront for a prominent fashion brand in Pakistan. The system needed database optimization to survive flash-sales spikes and custom local API hooks.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">T&M delivered a premium dark-gold themed WooCommerce storefront, implementing direct PHP query optimizations, custom checkout integrations, and automated SMS confirmation networks.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Platform handles thousands of concurrent checkouts during seasonal sales.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Integrated automated SMS billing alerts for clients.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <a href="https://hisandhers.com.pk" target="_blank" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 8px 16px;"><i class="fas fa-external-link-alt mr-2"></i> Visit Live Site</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 10. Tameer Estate UK Modal -->
+        <div class="modal fade" id="portfolioModal-tameer" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-tameer-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-tameer-title" style="font-weight: 700; font-size: 24px;">Tameer Estate UK</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/tameer-web.png" class="img-fluid" alt="Tameer Estate UK Website Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: Full Stack Web Team</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2020 - 2021</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">WordPress</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">PHP</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">MySQL</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Google Maps API</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Custom Search Queries</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">Develop a highly performant UK-focused property directory platform supporting sales, rentals, builder profiles, interactive location-based searching, and custom property filters.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">We built custom database query systems to instantly filter properties by geography, pricing thresholds, and room specifications. We embedded dynamic Google Maps features showing location markers and nearby points of interest.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Fully responsive UK property search portal successfully deployed.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Integrated instant location mapping system with 100% automated map syncing.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <a href="https://tameerestate.com" target="_blank" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 8px 16px;"><i class="fas fa-external-link-alt mr-2"></i> Visit Live Site</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11. e-Sehat Modal -->
+        <div class="modal fade" id="portfolioModal-esehat" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-esehat-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-esehat-title" style="font-weight: 700; font-size: 24px;">e-Sehat</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/esehat.png" class="img-fluid" alt="e-Sehat App Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: Mobile Developers & Video Streaming Engineers</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2021 - 2022</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">React Native</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Node.js</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">MongoDB</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">WebRTC (Real-time Video)</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">Develop a highly secure, HIPAA-compliant telemedicine application connecting patients in Pakistan to specialized doctors, supporting live slot booking, instant video calls, and e-prescriptions.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">T&M developed cross-platform mobile apps using React Native. We built encrypted, low-bandwidth WebRTC video consultation rooms, constructed database booking engines, and integrated local digital wallets for deposit methods.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>HIPAA-compliant video telemedicine app successfully launched.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Low-latency, encrypted consultations running on mobile devices.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <a href="https://play.google.com/store/apps/details?id=com.tnm.e_sehat&fbclid=IwAR132Dx6zlIK9nwDyRF1iq4s8LSTbZ6-SW3VMqvICqb5NDSGsWns1MvTREI" target="_blank" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 8px 16px;"><i class="fas fa-external-link-alt mr-2"></i> View on Play Store</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 12. QuickCard Modal -->
+        <div class="modal fade" id="portfolioModal-quickcard" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-quickcard-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-quickcard-title" style="font-weight: 700; font-size: 24px;">QuickCard (now RYVYL)</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/qc.png" class="img-fluid" alt="QuickCard Logo" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 150px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: Fractional CTO & Lead Payments Engineer</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2020 - 2021</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">React</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Python</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Django</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">PostgreSQL</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Stripe API</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">POS Integrations</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">Develop a contactless and cashless payment ecosystem allowing merchants to create bills, generate printable/digital QR codes, and hook directly into hardware card readers.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">We created custom Stripe checkout integrations, designed merchant dashboard panels to log daily transaction logs, set up PostgreSQL databases, and integrated POS card reader APIs.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Contactless transaction ecosystem fully deployed.</span>
+                                        </li>
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Acquired and transitioned into RYVYL (now publicly traded on NASDAQ).</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Integrated POS card readers successfully processing payments.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <a href="https://www.ryvyl.com/" target="_blank" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 8px 16px;"><i class="fas fa-external-link-alt mr-2"></i> Visit Live Site</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13. IqbalAI Modal -->
+        <div class="modal fade" id="portfolioModal-iqbalai" tabindex="-1" role="dialog" aria-labelledby="portfolioModal-iqbalai-title" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content" style="border-radius: 12px; overflow: hidden; border: none; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                    <div class="modal-header" style="background-color: #282646; color: #fff; padding: 20px; border-bottom: none;">
+                        <h5 class="modal-title" id="portfolioModal-iqbalai-title" style="font-weight: 700; font-size: 24px;">IqbalAI</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 28px; outline: none;">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="padding: 30px; background-color: #fff; max-height: 75vh; overflow-y: auto;">
+                        <div class="text-center mb-4">
+                            <img src="./assets/img/portfolio/iqbalai-web.png" class="img-fluid" alt="IqbalAI Dashboard Screenshot" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 350px; width: auto;" loading="lazy">
+                        </div>
+                        <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                            <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: Fractional CTO & Solutions Architect</span>
+                            <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: 2024 - 2025</span>
+                        </div>
+                        <div class="mb-4">
+                            <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
+                            <div class="d-flex flex-wrap" style="gap: 6px;">
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">FastAPI (Python 3.12)</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Next.js (App Router)</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">PostgreSQL 16</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Qdrant Vector DB</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">LangGraph</span>
+                                <span class="badge badge-light" style="background-color: #f1f3f5; color: #495057; font-size: 12px; padding: 5px 10px; border-radius: 4px;">Piper TTS / whisper</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 mb-4 mb-md-0">
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-bottom: 12px;"><i class="fas fa-lightbulb mr-2"></i> The Challenge</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">Build an AI-first, Urdu-enabled educational learning management platform and school administration suite. It required tools for teachers to build lectures, quizzes, and curricula, while allowing students to take dynamic AI-supported professional test preps, plus school-tenant separations for managing private/public chains.</p>
+                                <h5 style="color: #1bb1dc; font-weight: 700; font-size: 18px; margin-top: 20px; margin-bottom: 12px;"><i class="fas fa-cogs mr-2"></i> T&M's Solution</h5>
+                                <p style="text-align: justify; color: #495057; line-height: 1.6;">As Fractional CTO, we established a strict AI-native software engineering loop that auto-generates TypeScript client contracts. We developed stateful agent workflows using LangGraph and Pydantic AI, multilingual hybrid vector search (BGE-M3 + Qdrant), Urdu speech-to-text models, and secure school-chain multi-tenant database partitions.</p>
+                            </div>
+                            <div class="col-md-5">
+                                <div style="background-color: #f8f9fa; border-radius: 8px; padding: 20px; border-top: 4px solid #1bb1dc; box-shadow: 0 2px 10px rgba(0,0,0,0.02);">
+                                    <h5 style="color: #282646; font-weight: 700; font-size: 16px; margin-bottom: 15px;"><i class="fas fa-chart-line mr-2" style="color: #1bb1dc;"></i> Impact & Metrics</h5>
+                                    <ul class="list-unstyled" style="padding-left: 0; margin-bottom: 0; color: #495057; line-height: 1.5;">
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Compressed development timeline down to 3–4.5 months (saving 70% in costs).</span>
+                                        </li>
+                                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Urdu-enabled AI engine helping students, teachers, and admins.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <i class="fas fa-check-circle text-success mr-2" style="margin-top: 4px;"></i>
+                                            <span>Unified Admin panel to control multi-school chains.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="background-color: #f8f9fa; border-top: none; padding: 15px 20px;">
+                        <a href="https://iqbalai.com" target="_blank" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 8px 16px;"><i class="fas fa-external-link-alt mr-2"></i> Visit Live Site</a>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="font-weight: 600; padding: 8px 16px;">Close</button>
                     </div>
                 </div>
             </div>

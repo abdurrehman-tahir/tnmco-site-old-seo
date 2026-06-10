@@ -1721,6 +1721,11 @@ section {
     background-color: #000000;
 }
 
+#footer .container {
+    max-width: 1400px;
+    width: 95%;
+}
+
 #footer .footer-top {
     padding: 60px 0 30px 0;
     background-color: rgb(35, 35, 35) !important;
@@ -1744,7 +1749,7 @@ section {
     line-height: 24px;
     margin-bottom: 0;
     text-align: justify;
-    padding-right: 160px !important;
+    padding-right: 20px !important;
     font-family: "Raleway", sans-serif;
     color: #ffffffc4;
 }
@@ -2020,4 +2025,143 @@ section {
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #1968ddd3 !important;
+}
+
+/* ==========================================
+   T&M Custom Header Demos Dropdown Styling
+   ========================================== */
+
+/* Dropdown styling on Desktop */
+@media (min-width: 768px) {
+    /* Hover to open behavior */
+    .navbar-nav .dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        transition: all 0.3s ease;
+    }
+
+    .navbar-nav .dropdown .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all 0.3s ease;
+        position: absolute;
+    }
+}
+
+/* Base Dropdown Menu styles */
+#mobilemenu .dropdown-menu {
+    border: none;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 8px 0;
+    min-width: 280px;
+    background: #ffffff;
+}
+
+#mobilemenu .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 13px !important;
+    text-transform: none !important; /* Keep natural casing for assistant names */
+    font-weight: 600 !important;
+    color: #413e66 !important;
+    border-bottom: none !important;
+    transition: all 0.2s ease-in-out;
+    background: transparent;
+}
+
+#mobilemenu .dropdown-item:hover {
+    background-color: #f8f9fa !important;
+    color: #1bb1dc !important;
+    text-decoration: none;
+}
+
+/* Active and focus overrides */
+#mobilemenu .dropdown-item:active,
+#mobilemenu .dropdown-item:focus {
+    background-color: #f8f9fa !important;
+    color: #1bb1dc !important;
+    outline: none;
+}
+
+/* Ensure the parent nav-item is positioned properly */
+#mobilemenu .nav-item.dropdown {
+    position: relative;
+}
+
+/* Styling dropdown toggle arrow on Desktop */
+@media (min-width: 768px) {
+    #mobilemenu .dropdown-toggle::after {
+        display: inline-block;
+        margin-left: 0.355em;
+        vertical-align: 0.255em;
+        content: "";
+        border-top: 0.3em solid;
+        border-right: 0.3em solid transparent;
+        border-bottom: 0;
+        border-left: 0.3em solid transparent;
+        transition: transform 0.2s ease;
+    }
+    #mobilemenu .dropdown:hover .dropdown-toggle::after {
+        transform: rotate(180deg);
+    }
+}
+
+/* Mobile Dropdown Adjustments (< 768px) */
+@media (max-width: 767.98px) {
+    #mobilemenu .dropdown-menu {
+        box-shadow: none;
+        background-color: rgba(0, 0, 0, 0.03);
+        border-radius: 6px;
+        margin: 5px 15px 10px 15px;
+        padding: 5px 0;
+        min-width: auto;
+        float: none;
+        position: static;
+    }
+
+    #mobilemenu .dropdown-item {
+        padding: 10px 20px !important;
+        font-size: 13px !important;
+        color: #413e66 !important;
+    }
+    
+    #mobilemenu .dropdown-item:hover {
+        background-color: rgba(27, 177, 220, 0.1) !important;
+    }
+}
+
+.team .member .member-info-trigger:hover h4 {
+    color: #1bb1dc;
+    transition: color 0.2s ease-in-out;
+}
+
+@media (max-width: 767.98px) {
+    .team .row {
+        margin-left: -5px !important;
+        margin-right: -5px !important;
+    }
+    .team .row > [class*="col-"] {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+    .team .member {
+        margin: 5px 0 !important;
+        padding: 15px 10px 10px 10px !important;
+    }
+    .team .member img {
+        margin: 0 0 15px 0 !important;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+    .team .member h4 {
+        font-size: 15px !important;
+        margin-bottom: 0px !important;
+    }
 }
