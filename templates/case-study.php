@@ -159,7 +159,7 @@ require dirname(__DIR__) . '/includes/header.php';
                 <div class="container">
                     <!-- CTA -->
                     <div class="text-center">
-                        <a href="/contact/" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
+                        <a href="https://cal.com/tnm-co" target="_blank" rel="noopener noreferrer" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
                         <?php if (empty($cs['private']) && !empty($cs['live_url'])): ?>
                         <a href="<?php echo $cs['live_url']; ?>" target="_blank" rel="noopener noreferrer" class="btn-tnm-ghost"><i class="fas fa-external-link-alt mr-2"></i> <?php echo $cs['live_label']; ?></a>
                         <?php endif; ?>

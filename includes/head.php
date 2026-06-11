@@ -65,8 +65,8 @@ if (!function_exists('tnm_motif')) {
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title><?php echo $pageTitle; ?></title>
-    <link rel="canonical" href="<?php echo $canonicalUrl; ?>">
+    <title><?php echo htmlspecialchars($pageTitle, ENT_QUOTES); ?></title>
+    <link rel="canonical" href="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES); ?>">
 
     <!-- Favicons -->
     <link href="/assets/img/cropped-Logo.6.3-gradient-shadow.1-1024x957.png" rel="icon" alt="T&M logo">
@@ -96,7 +96,7 @@ if (!function_exists('tnm_motif')) {
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('consent', 'default', { 'analytics_storage': 'denied' });
+        gtag('consent', 'default', { 'analytics_storage': 'denied', 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied' });
         if (localStorage.getItem('tnm-consent') === 'granted') {
             gtag('consent', 'update', { 'analytics_storage': 'granted' });
         }
@@ -105,26 +105,26 @@ if (!function_exists('tnm_motif')) {
     </script>
 
     <!-- ===== SEO Meta Tags ===== -->
-    <meta name="description" content="<?php echo $metaDescription; ?>">
+    <meta name="description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES); ?>">
     <meta name="robots" content="index, follow">
     <meta name="author" content="T&M Consultants">
     <meta name="language" content="English">
 
     <!-- ===== Open Graph / Facebook ===== -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="<?php echo $canonicalUrl; ?>">
-    <meta property="og:title" content="<?php echo $pageTitle; ?>">
-    <meta property="og:description" content="<?php echo $metaDescription; ?>">
-    <meta property="og:image" content="<?php echo $ogImage; ?>">
+    <meta property="og:url" content="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES); ?>">
+    <meta property="og:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES); ?>">
+    <meta property="og:description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES); ?>">
+    <meta property="og:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
     <meta property="og:site_name" content="T&M Consultants">
     <meta property="og:locale" content="en_GB">
 
     <!-- ===== Twitter / X Card ===== -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="<?php echo $canonicalUrl; ?>">
-    <meta name="twitter:title" content="<?php echo $pageTitle; ?>">
-    <meta name="twitter:description" content="<?php echo $metaDescription; ?>">
-    <meta name="twitter:image" content="<?php echo $ogImage; ?>">
+    <meta name="twitter:url" content="<?php echo htmlspecialchars($canonicalUrl, ENT_QUOTES); ?>">
+    <meta name="twitter:title" content="<?php echo htmlspecialchars($pageTitle, ENT_QUOTES); ?>">
+    <meta name="twitter:description" content="<?php echo htmlspecialchars($metaDescription, ENT_QUOTES); ?>">
+    <meta name="twitter:image" content="<?php echo htmlspecialchars($ogImage, ENT_QUOTES); ?>">
 
 <?php echo $jsonLd; ?>
 </head>

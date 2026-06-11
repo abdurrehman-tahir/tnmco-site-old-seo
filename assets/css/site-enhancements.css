@@ -598,3 +598,81 @@
     .team-cta .btn-tnm-ghost { width: auto; }
     #hero .intro-info a.btn-get-started { display: block; margin: 0 0 12px 0 !important; text-align: center; }
 }
+
+/* =====================================================================
+   Batch 5 — nav dropdowns, mobile menu, mobile team grid
+   ===================================================================== */
+
+/* --- Desktop nav dropdowns: card look + hover accent + entrance --- */
+#header .dropdown-menu {
+    border: 1px solid var(--tnm-line);
+    border-radius: 14px;
+    box-shadow: 0 18px 44px rgba(40, 38, 70, .16);
+    padding: 10px;
+    margin-top: 12px;
+    min-width: 260px;
+    animation: dropIn .22s var(--tnm-ease);
+}
+#header .dropdown-menu .dropdown-item {
+    padding: 11px 14px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--tnm-navy);
+    text-transform: none;       /* undo the nav's uppercase */
+    letter-spacing: .2px;
+    position: relative;
+    transition: background .15s var(--tnm-ease), color .15s var(--tnm-ease), transform .15s var(--tnm-ease);
+}
+#header .dropdown-menu .dropdown-item:hover,
+#header .dropdown-menu .dropdown-item:focus {
+    background: rgba(27, 177, 220, .10);
+    color: var(--tnm-cyan);
+    transform: translateX(3px);
+}
+#header .dropdown-menu .dropdown-item::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 22%; bottom: 22%;
+    width: 3px;
+    border-radius: 3px;
+    background: var(--tnm-cyan);
+    opacity: 0;
+    transition: opacity .15s var(--tnm-ease);
+}
+#header .dropdown-menu .dropdown-item:hover::before { opacity: 1; }
+@keyframes dropIn { from { opacity: 0; transform: translateY(10px); } }
+
+/* --- Mobile collapsed menu: readable glass panel (small devices only) --- */
+@media (max-width: 991px) {
+    #header .navbar-collapse {
+        background: rgba(255, 255, 255, .96);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--tnm-line);
+        border-radius: 14px;
+        box-shadow: 0 16px 40px rgba(40, 38, 70, .18);
+        margin-top: 10px;
+        padding: 12px 18px;
+    }
+    #header .navbar-collapse .dropdown-menu {
+        background: rgba(27, 177, 220, .06);
+        border: none;
+        box-shadow: none;
+        margin-top: 4px;
+    }
+}
+
+/* --- Mobile/tablet team grid: bigger cards, tighter gutters --- */
+@media (max-width: 991px) {
+    #team .row { margin-left: -8px; margin-right: -8px; }
+    #team .col-6, #team .col-lg-4 { padding-left: 8px; padding-right: 8px; }
+    #team .member {
+        margin: 0 0 16px 0 !important;
+        padding: 16px 12px 14px !important;
+        border-radius: 12px;
+        height: calc(100% - 16px);
+    }
+    #team .member img { width: 100%; height: auto; }
+    #team .member h4 { font-size: 16px; margin-top: 10px; }
+}

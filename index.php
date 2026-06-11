@@ -60,7 +60,7 @@ session_start();
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', { 'analytics_storage': 'denied' });
+  gtag('consent', 'default', { 'analytics_storage': 'denied', 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied' });
   if (localStorage.getItem('tnm-consent') === 'granted') {
     gtag('consent', 'update', { 'analytics_storage': 'granted' });
   }
@@ -251,7 +251,7 @@ session_start();
                                 </div>
                                 <div class="mt-4">
                                     <a href="/demos/" class="btn-get-started scrollto">Try a Live Demo</a>
-                                    <a href="/contact/" class="btn-get-started scrollto" style="margin-left:10px;">Book a Call</a>
+                                    <a href="https://cal.com/tnm-co" target="_blank" rel="noopener noreferrer" class="btn-get-started" style="margin-left:10px;">Book a Call</a>
                                 </div>
                             </div>
 
@@ -497,7 +497,7 @@ session_start();
                                         <span class="align-text-top" style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 40px; color: #1bb1dc; line-height: 1; margin-left: 2px;">+</span>
                                     </div>
                                 </div>
-                                <p style="color: #1bb1dc; font-weight: bold; margin-top: 10px;">CAPITAL RAISED</p>
+                                <p style="color: #1bb1dc; font-weight: bold; margin-top: 10px;">CLIENT CAPITAL RAISED</p>
                             </div>
 
                             <div class="col-lg-2 col-md-4 col-6 text-center">
@@ -627,6 +627,20 @@ session_start();
                                     <a href="mailto:cmo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
 
                                     <a href="https://www.linkedin.com/in/muhammadtahirmushtaq/" target="_blank" rel="noopener noreferrer" aria-label="Dr. Tahir Mushtaq on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ola: shown only below lg so the 2-column mobile grid is a balanced 2x2 -->
+                        <div class="col-6 d-lg-none">
+                            <div class="member">
+                                <div class="member-info-trigger">
+                                    <img src="./assets/img/team/team-member3.png" alt="Ola Badawi - Financial Advisor" loading="lazy" width="417" height="500">
+                                    <h4>Ola Badawi</h4>
+                                </div>
+                                <span class="d-none d-md-block">Financial Advisor</span>
+                                <div class="social d-none d-md-block">
+                                    <a href="mailto:cfo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+                                    <a href="https://www.linkedin.com/in/ola-badawi-mba-923b79185/" target="_blank" rel="noopener noreferrer" aria-label="Ola Badawi on LinkedIn"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -927,6 +941,7 @@ session_start();
                                         <div class="sent-message">Your message has been sent. Thank you!</div>
                                     </div>
                                     <div class="text-center"><button type="submit">Send Message</button></div>
+                                    <div class="text-center mt-2"><small style="color:#6c757d;">We'll only use your details to reply to you. See our <a href="/privacy/" style="color:#1bb1dc;">privacy policy</a>.</small></div>
                                 </form>
 
                             </div>
@@ -979,6 +994,8 @@ session_start();
                                 <li><i class="bx bx-chevron-right"></i> <a href="/articles/">Articles</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/contact/">Contact</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="./Career.php">Career</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/privacy/">Privacy &amp; Cookies</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#" class="cookie-settings-link">Cookie settings</a></li>
                             </ul>
                         </div>
 
@@ -1018,7 +1035,7 @@ session_start();
                     <div style="float:right;">
                         <div style=" text-align:center;">
                             <img style="margin-top:-70px;  " src="./assets/img/team/abd-500x500-1.png" alt="team img" width="180px" height="auto">
-                            <h2 style="font-weight:600; margin:20px 0 0 0">Abdurehman Bin Tahir</h2>
+                            <h3 style="font-weight:600; font-size:2rem; margin:20px 0 0 0">Abdurehman Bin Tahir</h3>
                             <h5 style="margin:10px 0 20px 0">Technical Director/ Co-Founder</h5>
                             <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
                         </div>
@@ -1044,7 +1061,7 @@ session_start();
                     <div style="float:right;">
                         <div style=" text-align:center;">
                             <img style="margin-top:-70px;  " src="./assets/img/team/md-500x500-1.png" alt="team img" width="180px" height="auto">
-                            <h2 style="font-weight:600; margin:20px 0 0 0">Athar Mushtaq</h1>
+                            <h3 style="font-weight:600; font-size:2rem; margin:20px 0 0 0">Athar Mushtaq</h3>
                                 <h5 style="margin:10px 0 20px 0">Managing Director/Co-Founder</h5>
                                 <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
                         </div>
@@ -1072,7 +1089,7 @@ session_start();
                     <div style="float:right;">
                         <div style=" text-align:center;">
                             <img style="margin-top:-70px;  " src="./assets/img/team/tahir-500x500-1.png" alt="team img" width="180px" height="auto">
-                            <h2 style="font-weight:600; margin:20px 0 0 0">Dr.Tahir Mushtaq</h1>
+                            <h3 style="font-weight:600; font-size:2rem; margin:20px 0 0 0">Dr.Tahir Mushtaq</h3>
                                 <h5 style="margin:10px 0 20px 0">Marketing Advisor</h5>
                                 <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
                         </div>
@@ -1193,13 +1210,15 @@ session_start();
 
         <!-- Cookie consent (Consent Mode v2) -->
         <div class="consent-banner" id="consentBanner" role="dialog" aria-label="Cookie consent">
-            <p>We use Google Analytics cookies to understand how visitors use our site. No marketing or third-party ad cookies.</p>
+            <p><strong style="color:#282646;">Cookies on this site</strong></p>
+            <p>We use one optional cookie — Google Analytics — to see how the site is used. Nothing for ads, nothing sold or shared. Change your mind anytime on our <a href="/privacy/" style="color:#1bb1dc;">Privacy &amp; Cookies</a> page.</p>
             <div class="consent-actions">
-                <button type="button" class="btn-tnm" id="consentAccept">Accept</button>
+                <button type="button" class="btn-tnm" id="consentAccept">Accept analytics</button>
                 <button type="button" class="btn-tnm-ghost" id="consentDecline">Decline</button>
             </div>
         </div>
         <script src="assets/js/consent.js" defer></script>
+        <script src="assets/js/contact-form.js" defer></script>
 
         <!-- particles.js -->
         <script src="assets/vendor/particles/particles.js"></script>

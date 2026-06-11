@@ -1,25 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>T&M Consultant : Join Us</title>
-    <link href="./assets/img/cropped-Logo.6.3-gradient-shadow.1-1024x957.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-</head>
-
-<body>
-</body>
-
-
-</html>
 <?php
+/**
+ * Contact form endpoint.
+ * - AJAX (fetch with X-Requested-With: fetch): returns JSON {ok: bool}, page never navigates.
+ * - No-JS fallback: redirects back to the homepage with a session toast.
+ * NOTE: no HTML output before the header() calls — output before headers broke redirects.
+ */
 require_once 'db_config.php';
 require_once './assets/vendor/mailer/autoload.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
+session_start();
+
+$isAjax = (($_SERVER['HTTP_X_REQUESTED_WITH'] ?? '') === 'fetch');
+
+function respond(bool $ok, bool $isAjax): void
+{
+    if ($isAjax) {
+        header('Content-Type: application/json');
+        echo json_encode(['ok' => $ok]);
+    } else {
+        $_SESSION['message'] = $ok ? 'show' : 'error';
+        header('Location: ./index.php');
+    }
+    exit();
+}
 
 // Only accept POST submissions
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
@@ -27,12 +33,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit();
 }
 
-// Honeypot: real visitors never see/fill this field — silently drop bot submissions
+// Honeypot: real visitors never see/fill this field — pretend success so bots learn nothing
 if (!empty($_POST['company_website'])) {
-    session_start();
-    $_SESSION['message'] = "show";
-    header('Location: ./index.php');
-    exit();
+    respond(true, $isAjax);
 }
 
 $name    = trim($_POST['name'] ?? '');
@@ -42,19 +45,17 @@ $message = trim($_POST['message'] ?? '');
 
 // Validate + sanitise: reject invalid emails and header-injection attempts
 if ($name === '' || $subject === '' || $message === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    header('Location: ./index.php');
-    exit();
+    respond(false, $isAjax);
 }
 $name    = str_replace(["\r", "\n"], ' ', $name);
 $subject = str_replace(["\r", "\n"], ' ', $subject);
 $message = mb_substr($message, 0, 2000);
 
-session_start();
-
 try {
     $mail = new PHPMailer(true);   // throw exceptions so failures are not silent
 
     $mail->isSMTP();
+    $mail->Timeout = 15;   // don't leave the visitor's button spinning on a slow SMTP server
     $mail->Host = SMTP_HOST;
     $mail->SMTPAuth = true;
     $mail->Username = SMTP_USERNAME;   //username
@@ -72,14 +73,8 @@ try {
     $mail->Body    = "From: {$name} <{$email}>\n\n" . $message;
 
     $mail->send();
-    $_SESSION['message'] = "show";
+    respond(true, $isAjax);
 } catch (Exception $e) {
-    // Don't claim success when the send failed — the toast shows an error state
     error_log('Contact form mail failure: ' . $e->getMessage());
-    $_SESSION['message'] = "error";
+    respond(false, $isAjax);
 }
-
-header("Location:./index.php");
-exit();
-
-?>

@@ -79,7 +79,7 @@ require dirname(__DIR__) . '/includes/header.php';
                     <h2 style="color:#282646; font-weight:700; font-size:24px; margin-bottom:8px;">Want one of these for your business?</h2>
                     <p style="color:#495057; margin-bottom:20px;">These demos are built, integrated and maintained by T&M — the same way we'd build yours.</p>
                     <div class="btn-row justify-content-center" style="justify-content:center;">
-                        <a href="/contact/" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a build like this</a>
+                        <a href="https://cal.com/tnm-co" target="_blank" rel="noopener noreferrer" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a build like this</a>
                         <a href="/services/ai-agents/" class="btn-tnm-ghost"><i class="fas fa-robot mr-2"></i> AI Agents Service</a>
                     </div>
                 </div>

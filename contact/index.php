@@ -33,6 +33,9 @@ require dirname(__DIR__) . '/includes/header.php';
                     <div class="section-title">
                         <p>For further inquiries, please fill the contact us form or e-mail us at info@tnmco.uk.</p>
                     </div>
+                    <div class="text-center" style="margin-bottom:28px;">
+                        <a href="https://cal.com/tnm-co" target="_blank" rel="noopener noreferrer" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
+                    </div>
 
                     <div>
                         <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.8673554751695!2d0.061977215234076996!3d51.47894902060476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a8e41d4dde1d%3A0xf1841cdf91d7d079!2s49%20Eglinton%20Rd%2C%20London%20SE18%203SL%2C%20UK!5e0!3m2!1sen!2s!4v1629702881294!5m2!1sen!2s"
@@ -89,7 +92,8 @@ require dirname(__DIR__) . '/includes/header.php';
                                     <div class="error-message"></div>
                                     <div class="sent-message">Your message has been sent. Thank you!</div>
                                 </div>
-                                <div class="text-center"><button type="submit" onclick="ValidateContact();">Send Message</button></div>
+                                <div class="text-center"><button type="submit">Send Message</button></div>
+                                <div class="text-center mt-2"><small style="color:#6c757d;">We'll only use your details to reply to you. See our <a href="/privacy/" style="color:#1bb1dc;">privacy policy</a>.</small></div>
                             </form>
                         </div>
                     </div>

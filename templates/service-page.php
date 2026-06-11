@@ -62,7 +62,7 @@ require dirname(__DIR__) . '/includes/header.php';
                     </ul>
 
                     <div class="btn-row mt-4 mb-2">
-                        <a href="/contact/" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
+                        <a href="https://cal.com/tnm-co" target="_blank" rel="noopener noreferrer" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
                         <?php if (!empty($sv['show_demos'])): ?>
                         <a href="/demos/" class="btn-tnm-ghost"><i class="fas fa-play-circle mr-2"></i> Try a Live Demo</a>
                         <?php else: ?>

@@ -54,7 +54,7 @@ require dirname(__DIR__) . '/includes/header.php';
                     </div>
 
                     <div class="text-center mt-3">
-                        <a href="/contact/" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
+                        <a href="https://cal.com/tnm-co" target="_blank" rel="noopener noreferrer" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
                     </div>
                 </div>
             </section>
