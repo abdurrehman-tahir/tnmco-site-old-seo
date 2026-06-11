@@ -21,10 +21,11 @@ require dirname(__DIR__) . '/includes/header.php';
 
         <main id="main">
             <section class="services" style="padding-top: 160px; padding-bottom: 100px;">
-                <div class="container text-center" data-aos="fade-up">
+                <div class="container text-center page-hero" data-aos="fade-up">
+                    <?php tnm_motif('shared'); ?>
                     <h1 style="color:#282646; font-weight:700; margin-bottom:14px;">Articles</h1>
                     <p style="color:#6c757d; font-size:18px;">Articles are coming soon.</p>
-                    <a href="/contact/" class="btn btn-primary mt-3" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 10px 24px;"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
+                    <a href="/contact/" class="btn-tnm mt-3"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
                 </div>
             </section>
         </main>

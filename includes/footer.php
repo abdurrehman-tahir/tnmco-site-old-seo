@@ -65,6 +65,16 @@
 
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
+        <!-- Cookie consent (Consent Mode v2) -->
+        <div class="consent-banner" id="consentBanner" role="dialog" aria-label="Cookie consent">
+            <p>We use Google Analytics cookies to understand how visitors use our site. No marketing or third-party ad cookies.</p>
+            <div class="consent-actions">
+                <button type="button" class="btn-tnm" id="consentAccept">Accept</button>
+                <button type="button" class="btn-tnm-ghost" id="consentDecline">Decline</button>
+            </div>
+        </div>
+        <script src="/assets/js/consent.js" defer></script>
+
         <!-- Vendor JS Files -->
         <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
         <script src="/assets/vendor/jquery.easing/jquery.easing.min.js" defer></script>
@@ -77,6 +87,7 @@
 
         <!-- Template Main JS File -->
         <script src="/assets/js/main.js" defer></script>
+        <script src="/assets/js/orb.js" defer></script>
     </body>
 
 </html>

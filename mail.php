@@ -21,12 +21,35 @@ require_once './assets/vendor/mailer/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-$mail = new PHPMailer();
+// Only accept POST submissions
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+    header('Location: ./index.php');
+    exit();
+}
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+// Honeypot: real visitors never see/fill this field — silently drop bot submissions
+if (!empty($_POST['company_website'])) {
+    session_start();
+    $_SESSION['message'] = "show";
+    header('Location: ./index.php');
+    exit();
+}
+
+$name    = trim($_POST['name'] ?? '');
+$email   = trim($_POST['email'] ?? '');
+$subject = trim($_POST['subject'] ?? '');
+$message = trim($_POST['message'] ?? '');
+
+// Validate + sanitise: reject invalid emails and header-injection attempts
+if ($name === '' || $subject === '' || $message === '' || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    header('Location: ./index.php');
+    exit();
+}
+$name    = str_replace(["\r", "\n"], ' ', $name);
+$subject = str_replace(["\r", "\n"], ' ', $subject);
+$message = mb_substr($message, 0, 2000);
+
+$mail = new PHPMailer();
 
 $mail->isSMTP();
 $mail->Host = SMTP_HOST;
@@ -36,12 +59,14 @@ $mail->Password = SMTP_PASSWORD;   //password
 $mail->SMTPSecure = 'ssl';
 $mail->Port = SMTP_PORT; //SMTP port
 
-$mail->setFrom($email, $name);
+// Send from our own authenticated address (SPF/DMARC-safe); visitor goes in Reply-To
+$mail->setFrom(SMTP_USERNAME, 'T&M Website Contact Form');
+$mail->addReplyTo($email, $name);
 $mail->addAddress('contact@tnmco.uk');
 
-$mail->isHTML(true);
+$mail->isHTML(false);
 $mail->Subject = $subject;
-$mail->Body    = $message;
+$mail->Body    = "From: {$name} <{$email}>\n\n" . $message;
 
 $mail->send();
 session_start();

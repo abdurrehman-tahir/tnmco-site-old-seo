@@ -33,6 +33,7 @@ session_start();
 
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/site-enhancements.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/3e825e83d5.js" crossorigin="anonymous" defer></script>
 
         <script src="assets/vendor/jquery/jquery.min.js" defer></script>
@@ -59,6 +60,10 @@ session_start();
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { 'analytics_storage': 'denied' });
+  if (localStorage.getItem('tnm-consent') === 'granted') {
+    gtag('consent', 'update', { 'analytics_storage': 'granted' });
+  }
   gtag('js', new Date());
 
   gtag('config', 'G-MRYVE7QMBL');
@@ -191,16 +196,22 @@ session_start();
                                 <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#hero">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#about">About</a>
+                                <a class="nav-link" href="/about/">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                                <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <a class="dropdown-item" href="/services/ai-agents/">AI Agents &amp; Assistants</a>
+                                    <a class="dropdown-item" href="/services/ai-automation/">AI Automation &amp; RAG</a>
+                                    <a class="dropdown-item" href="/services/fractional-cto/">Fractional CTO</a>
+                                    <a class="dropdown-item" href="/services/software-delivery/">Software Delivery</a>
+                                </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#services">Services</a>
+                                <a class="nav-link" href="/case-studies/">Case Studies</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#team">Team</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#testimonials">Testimonials</a>
@@ -211,12 +222,13 @@ session_start();
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="demosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Demos</a>
                                 <div class="dropdown-menu" aria-labelledby="demosDropdown">
-                                    <a class="dropdown-item" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="https://ai.assistant.tnmco.uk/" target="_blank">VIOLET - Clinic AI Assistant</a>
-                                    <a class="dropdown-item" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="https://bitebot.tnmco.uk/" target="_blank">BiteBot - Restaurant AI Assistant</a>
+                                    <a class="dropdown-item" href="https://ai.assistant.tnmco.uk/" target="_blank">VIOLET - Clinic AI Assistant</a>
+                                    <a class="dropdown-item" href="https://bitebot.tnmco.uk/" target="_blank">BiteBot - Restaurant AI Assistant</a>
+                                    <a class="dropdown-item" href="/demos/">All Live Demos</a>
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="./Career.php">Career</a>
+                                <a class="nav-link" href="./Career.php">Career</a>
                             </li>
                         </ul>
                     </div>
@@ -273,27 +285,28 @@ session_start();
                         <span>About Us</span>
                         <h2>About Us</h2>
                     </div>
-                    <div class="row">
+                    <div class="row align-items-center">
 
                         <div class="col-lg-5 col-md-6">
-                            <div class="about-img" data-aos="fade-right" data-aos-delay="100">
-                                <img src="assets/img/aboutNew.png" alt="T&M Consultants Team Collaborating on Technology Solutions" loading="lazy" width="474" height="700">
+                            <div class="about-orb" data-aos="fade-right" data-aos-delay="100" aria-hidden="true">
+                                <canvas class="orb-canvas"></canvas>
                             </div>
                         </div>
 
                         <div class="col-lg-7 col-md-6">
                             <div class="about-content" data-aos="fade-left" data-aos-delay="100">
 
-                                <h3>Technology and Management (T&M)</h3>
+                                <h3>Technology and Management (T&M) Consultants</h3>
                                 <p class="font-italic" style="text-align: justify; text-justify: inter-word;">
-                                    Technology and Management (T&M) consultants is a social enterprise building capacity for start-ups and SMEs. T&M offers 360° solutions to start-ups and SMEs including but not limited to product development, deployment and after sales services. We specialise
-                                    in blockchain powered solutions, our fully customized blockchain based ledger (Block) is provided to our clients for their e-commerce platforms – QuickCard is powered by our Block that allows its merchants and customers
-                                    to interact and pay without cash. We are committed to develop own-brand products with a high social impact in local communities.
+                                    T&M Consultants is a UK-registered technology consultancy (est. 2020) that designs, builds and runs AI systems and software products for start-ups and SMEs. We work the way a CTO would: scope honestly, architect for what you actually need, ship in weeks, and stay accountable after launch.
+                                </p>
+                                <p class="font-italic" style="text-align: justify; text-justify: inter-word;">
+                                    Over 10+ years and 29+ shipped projects, our work has spanned AI-first education platforms (IqbalAI), medical computer vision run in production for 3 years (CaptureProof), autonomous AI agents (OTTO), RAG-powered copilots (Atlas), and fintech that was acquired into a NASDAQ-listed company (QuickCard → RYVYL). Today our focus is AI agents, automation and fractional technical leadership — with full-stack delivery underneath it all.
                                 </p>
                                 <ul>
-                                    <li><i class="ion-android-checkmark-circle"></i> Living up to the narrative; T&M has recently launched an e-sehat project to build capacity and transform health sector in emerging economies.
+                                    <li><i class="ion-android-checkmark-circle"></i> We're a social enterprise at heart: our e-Sehat telemedicine project helps transform healthcare access in emerging economies.
                                     </li>
-                                    <li><i class="ion-android-checkmark-circle"></i> T&M recruit tech graduates from underprivileged background to accelerate social mobility by empowering young professionals.
+                                    <li><i class="ion-android-checkmark-circle"></i> We recruit tech graduates from underprivileged backgrounds, accelerating social mobility by training young professionals on real client work.
                                     </li>
                                 </ul>
                             </div>
@@ -313,81 +326,82 @@ session_start();
                             <span>Services</span>
                             <h2>Services</h2>
                         </div>
+                        <p class="services-subline">AI-first consulting and delivery — proven on production systems, not slideware.</p>
                     </header>
 
-                    <div class="row">
+                    <div class="row services-grid">
 
-                        <div class="col-md-6 col-lg-4 wow bounceInUp" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="box">
-                                <div class="icon" style="background: #fceef3;">
-                                    <i class="fab fa-bitcoin" style="color: #ff689b;"></i>
-                                </div>
-                                <h4 class="title">BLOCKCHAIN LEDGER</h4>
-                                <p class="description">Personalized Ledger Services</p>
-                                <p class="description">API Integration</p>
-                                <p class="description">E-commerce Services</p>
-                                <p class="description">POS Integration</p>
+                        <!-- Card 1 — AI Agents & Assistants -->
+                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-card-wrap">
+                                <a href="/services/ai-agents/" class="box service-card">
+                                    <div class="icon" style="background:#e6f6fb;"><i class="fas fa-robot" style="color:#1bb1dc;"></i></div>
+                                    <h4 class="title">AI Agents &amp; Assistants</h4>
+                                    <p class="service-lead">Voice and chat agents that answer, book and act — for clinics, restaurants and operations teams.</p>
+                                    <ul class="service-bullets">
+                                        <li>Voice agents &amp; AI assistants</li>
+                                        <li>Tool-using &amp; workflow agents</li>
+                                        <li>Integration with your existing systems</li>
+                                        <li>Hosting, monitoring &amp; maintenance</li>
+                                    </ul>
+                                </a>
+                                <a href="/demos/" class="service-proof">Proof: Try VIOLET (clinic) and BiteBot (restaurant) live <span class="arw">&rarr;</span></a>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-                            <div class=" box">
-                                <div class="icon" style="background: #e1eeff;"><i class="fas fa-business-time" style="color: #2282ff;"></i>
-                                </div>
-                                <h4 class="title">Project Management</h4>
-                                <p class="description">Agile Methodology</p>
-                                <p class="description">Waterfall Methodology</p>
-                                <p class="description">Business Plan , Market Research</p>
-                                <p class="description">Digital Marketing , Planing, Monitoring and Elevation</p>
+                        <!-- Card 2 — AI Automation & RAG -->
+                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="150">
+                            <div class="service-card-wrap">
+                                <a href="/services/ai-automation/" class="box service-card">
+                                    <div class="icon" style="background:#eef4ff;"><i class="fas fa-bolt" style="color:#2282ff;"></i></div>
+                                    <h4 class="title">AI Automation &amp; RAG</h4>
+                                    <p class="service-lead">LLM apps, retrieval pipelines and workflow automation that cut manual work in production.</p>
+                                    <ul class="service-bullets">
+                                        <li>RAG pipelines &amp; knowledge search</li>
+                                        <li>LLM application development</li>
+                                        <li>n8n / Python workflow automation</li>
+                                        <li>Evals, monitoring &amp; cost control</li>
+                                    </ul>
+                                </a>
+                                <a href="/case-studies/iqbalai/" class="service-proof">Proof: IqbalAI shipped in 3–4.5 months, ~70% cost reduction <span class="arw">&rarr;</span></a>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="box">
-                                <div class="icon" style="background: #fff0da;">
-                                    <i class="fas fa-layer-group" style="color: #e98e06;"></i>
-                                </div>
-                                <h4 class="title">FULL STACK WEB DEVELOPMENT</h4>
-                                <p class="description">UI & UX</p>
-                                <p class="description">Front End Development</p>
-                                <p class="description">Back End Development</p>
-                                <p class="description">WordPress</p>
+                        <!-- Card 3 — Fractional CTO & Technical Leadership -->
+                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-card-wrap">
+                                <a href="/services/fractional-cto/" class="box service-card">
+                                    <div class="icon" style="background:#f1ecfb;"><i class="fas fa-user-tie" style="color:#6f42c1;"></i></div>
+                                    <h4 class="title">Fractional CTO &amp; Technical Leadership</h4>
+                                    <p class="service-lead">Senior architecture, team leadership and delivery management — without the full-time cost.</p>
+                                    <ul class="service-bullets">
+                                        <li>Architecture &amp; technical strategy</li>
+                                        <li>Engineering team leadership</li>
+                                        <li>Project &amp; program management</li>
+                                        <li>Technical due diligence &amp; scoping</li>
+                                    </ul>
+                                </a>
+                                <a href="/case-studies/docushield/" class="service-proof">Proof: CTO on Docushield through its $0.5M seed raise <span class="arw">&rarr;</span></a>
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-                            <div class="box">
-                                <div class="icon" style="background: #e6fdfc;"><i class="fas fa-mobile" style="color: #3fcdc7;"></i></div>
-                                <h4 class="title">MOBILE APPLICATION DEVELOPMENT</h4>
-                                <p class="description">Cross Platform Development</p>
-                                <p class="description">Android</p>
-                                <p class="description">IOS</p>
+                        <!-- Card 4 — Software Delivery & MVPs -->
+                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="150">
+                            <div class="service-card-wrap">
+                                <a href="/services/software-delivery/" class="box service-card">
+                                    <div class="icon" style="background:#fff2e6;"><i class="fas fa-laptop-code" style="color:#e98e06;"></i></div>
+                                    <h4 class="title">Software Delivery &amp; MVPs</h4>
+                                    <p class="service-lead">End-to-end product development: web, mobile, e-commerce, Web3 and desktop.</p>
+                                    <ul class="service-bullets">
+                                        <li>Full-stack web &amp; mobile apps</li>
+                                        <li>MVP &amp; proof-of-concept builds</li>
+                                        <li>E-commerce (Shopify / WooCommerce)</li>
+                                        <li>Blockchain &amp; Web3 systems</li>
+                                    </ul>
+                                </a>
+                                <a href="/case-studies/" class="service-proof">Proof: 29+ projects shipped, incl. QuickCard — acquired into NASDAQ-listed RYVYL <span class="arw">&rarr;</span></a>
                             </div>
                         </div>
-
-                        <div class="col-md-6 col-lg-4 wow" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="box">
-                                <div class="icon" style="background: #eafde7;"><i class="fas fa-robot" style="color:#41cf2e;"></i></div>
-                                <h4 class="title">Machine Learning</h4>
-                                <p class="description">Computational Learning</p>
-                                <p class="description">Pattern Recognition</p>
-                                <p class="description">Artificial Intelligence</p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6 col-lg-4 wow" data-aos="zoom-in" data-aos-delay="100">
-                            <div class="box">
-                                <div class="icon" style="background: #f8edb0a2;"><i class="fa fa-laptop-code" style="color: #d3ad30;"></i>
-                                </div>
-                                <h4 class="title">Other Services</h4>
-                                <p class="description">Desktop App Development</p>
-                                <p class="description">Proof of Concept (POC)</p>
-                                <p class="description">Point of Sales (POS)</p>
-                                <p class="description">Mock-ups</p>
-                                <p class="description">E-commerce Ecosystem</p>
-                            </div>
-                        </div>
-
 
                     </div>
 
@@ -612,23 +626,6 @@ session_start();
                         </div>
                         <div class="col-lg-4 col-6">
                             <div class="member">
-                                <div data-toggle="modal" data-target="#mubashir" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="./assets/img/team/mubashir-farooq.png" alt="Mubashir Farooq - Team Leader & Senior Software Developer" loading="lazy" width="417" height="500">
-                                    <h4>Mubashir Farooq</h4>
-                                </div>
-                                <span class="d-none d-md-block">Team Leader / Sr. software Developer</span>
-                                <p class="d-none d-md-block">
-                                Mubashir is responsible for overseeing the operations of the technical development team. He's the one... ( <a href="#/" data-toggle="modal" data-target="#mubashir">read more</a> )
-                                </p>
-                                <div class="social d-none d-md-block">
-                                    <a href="mailto:mubashir@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
-
-                                    <a href="https://www.linkedin.com/in/mubashir-farooq-b01064202/" target="_blank" rel="noopener noreferrer" aria-label="Mubashir Farooq on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-6">
-                            <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter3" class="member-info-trigger" style="cursor: pointer;">
                                     <img src="./assets/img/team/team-member2.png" alt="Dr. Tahir Mushtaq - Marketing Advisor" loading="lazy" width="417" height="500">
                                     <h4>Dr.Tahir Mushtaq</h4>
@@ -644,40 +641,10 @@ session_start();
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-6">
-                            <div class="member">
-                                <div data-toggle="modal" data-target="#exampleModalCenter4" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="./assets/img/team/team-member3.png" alt="Ola Badawi - Financial Advisor" loading="lazy" width="417" height="500">
-                                    <h4>Ola Badawi</h4>
-                                </div>
-                                <span class="d-none d-md-block">Financial Advisor</span>
-                                <p class="d-none d-md-block">
-                                    Ola is responsible for managing the company’s finances, management of financial risks, record-keeping, ensuring... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter4">read more</a> )
-                                </p>
-                                <div class="social d-none d-md-block">
-                                    <a href="mailto:cfo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+                    </div>
 
-                                    <a href="https://www.linkedin.com/in/ola-badawi-mba-923b79185/" target="_blank" rel="noopener noreferrer" aria-label="Ola Badawi on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-6">
-                            <div class="member">
-                                <div data-toggle="modal" data-target="#exampleModalCenter2" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="./assets/img/team/team-member1.png" alt="Haixia Li - Chief Operating Officer" loading="lazy" width="417" height="500">
-                                    <h4>HAIXIA LI</h4>
-                                </div>
-                                <span class="d-none d-md-block">Chief Operating Officer (COO)</span>
-                                <p class="d-none d-md-block">
-                                    Haixia is responsible for overseeing operations of the company, engage key stakeholders, manage Human Resource, and... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter2">read more</a> )
-                                </p>
-                                <div class="social d-none d-md-block">
-                                    <a href="mailto:coo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
-
-                                    <a href="https://www.linkedin.com/in/lynn-li-b88632100/" target="_blank" rel="noopener noreferrer" aria-label="Haixia Li on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="team-cta mt-4" data-aos="fade-up">
+                        <a href="/about/" class="btn-tnm-ghost"><i class="fas fa-users mr-2"></i> Meet the Full Team <span class="arw">&rarr;</span></a>
                     </div>
                 </div>
             </section>
@@ -761,6 +728,14 @@ session_start();
                         <div style="margin-top:30px">
                             <img src="./assets/img/iqbalai-logo.png" alt="IqbalAI logo" loading="lazy" width="317" height="201">
                         </div>
+
+                        <div style="margin-top:55px">
+                            <img src="./assets/img/ryvyl-logo.png" alt="RYVYL logo" loading="lazy" width="278" height="280" style="max-height:90px; width:auto;">
+                        </div>
+
+                        <div style="margin-top:60px">
+                            <img src="./assets/img/techcreatix-logo.svg" alt="TechCreatix logo" loading="lazy" width="190" height="33">
+                        </div>
                         <!-- <img src="./assets/img/aam-logo.svg" alt="aam logo">
                     <img src="./assets/img/esehat-logo.png" alt="eshat logo">
                     <img src="./assets/img/tsg.png" alt=" logo">
@@ -789,94 +764,82 @@ session_start();
 
                     <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-                        <div class="col-lg-4 col-md-6 portfolio-item">
-                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
-                                <a href="/case-studies/iqbalai/">
-                                    <img src="./assets/img/portfolio/iqbalai-web.png" class="img-fluid" alt="IqbalAI case study" loading="lazy" style="max-height:220px; width:auto; margin:0 auto;">
-                                </a>
-                                <div class="portfolio-info">
-                                    <h4><a href="/case-studies/iqbalai/">IqbalAI</a></h4>
+                        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="/case-studies/iqbalai/" class="logo-tile">
+                                <div class="logo-panel">
+                                    <img src="/assets/img/iqbalai-logo.png" alt="IqbalAI logo" loading="lazy">
+                                </div>
+                                <div class="logo-meta">
+                                    <h4>IqbalAI</h4>
                                     <p>AI-First Urdu Educational &amp; School Management Platform</p>
-                                    <div>
-                                        <a href="/case-studies/iqbalai/" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
-                                    </div>
+                                    <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item">
-                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
-                                <a href="/case-studies/captureproof/">
-                                    <img src="./assets/img/portfolio/captureproof-web.png" class="img-fluid" alt="CaptureProof case study" loading="lazy" style="max-height:220px; width:auto; margin:0 auto;">
-                                </a>
-                                <div class="portfolio-info">
-                                    <h4><a href="/case-studies/captureproof/">CaptureProof</a></h4>
+                        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="/case-studies/captureproof/" class="logo-tile">
+                                <div class="logo-panel">
+                                    <img src="/assets/img/captureproof-logo.png" alt="CaptureProof logo" loading="lazy">
+                                </div>
+                                <div class="logo-meta">
+                                    <h4>CaptureProof</h4>
                                     <p>Medical Image Analysis Platform</p>
-                                    <div>
-                                        <a href="/case-studies/captureproof/" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
-                                    </div>
+                                    <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item">
-                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
-                                <a href="/case-studies/atlas/">
-                                    <img src="./assets/img/portfolio/atlas-web.png" class="img-fluid" alt="Atlas by BoH case study" loading="lazy" style="max-height:220px; width:auto; margin:0 auto;">
-                                </a>
-                                <div class="portfolio-info">
-                                    <h4><a href="/case-studies/atlas/">Atlas by BoH</a></h4>
+                        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="/case-studies/atlas/" class="logo-tile">
+                                <div class="logo-panel">
+                                    <img src="/assets/img/atlas-logo.png" alt="Atlas by BoH logo" loading="lazy">
+                                </div>
+                                <div class="logo-meta">
+                                    <h4>Atlas by BoH</h4>
                                     <p>AI Copilot Platform</p>
-                                    <div>
-                                        <a href="/case-studies/atlas/" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
-                                    </div>
+                                    <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item">
-                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
-                                <a href="/case-studies/otto/">
-                                    <img src="./assets/img/portfolio/otto-web.png" class="img-fluid" alt="OTTO by BoH case study" loading="lazy" style="max-height:220px; width:auto; margin:0 auto;">
-                                </a>
-                                <div class="portfolio-info">
-                                    <h4><a href="/case-studies/otto/">OTTO by BoH</a></h4>
+                        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="/case-studies/otto/" class="logo-tile">
+                                <div class="logo-panel">
+                                    <img src="/assets/img/otto-logo.png" alt="OTTO by BoH logo" loading="lazy">
+                                </div>
+                                <div class="logo-meta">
+                                    <h4>OTTO by BoH</h4>
                                     <p>Autonomous AI Agent</p>
-                                    <div>
-                                        <a href="/case-studies/otto/" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
-                                    </div>
+                                    <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item">
-                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
-                                <a href="/case-studies/docushield/">
-                                    <img src="./assets/img/portfolio/doc-web.png" class="img-fluid" alt="Docushield case study" loading="lazy" style="max-height:220px; width:auto; margin:0 auto;">
-                                </a>
-                                <div class="portfolio-info">
-                                    <h4><a href="/case-studies/docushield/">Docushield</a></h4>
+                        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="/case-studies/docushield/" class="logo-tile">
+                                <div class="logo-panel">
+                                    <img src="/assets/img/doclogo.png" alt="Docushield logo" loading="lazy">
+                                </div>
+                                <div class="logo-meta">
+                                    <h4>Docushield</h4>
                                     <p>Secure Document Verification</p>
-                                    <div>
-                                        <a href="/case-studies/docushield/" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
-                                    </div>
+                                    <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
                                 </div>
-                            </div>
+                            </a>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 portfolio-item">
-                            <div class="portfolio-wrap" style="background-color: #ececec;text-align:center; padding:20px;">
-                                <a href="/case-studies/nonrival-data/">
-                                    <img src="./assets/img/portfolio/nrd-web.png" class="img-fluid" alt="NonRival Data case study" loading="lazy" style="max-height:220px; width:auto; margin:0 auto;">
-                                </a>
-                                <div class="portfolio-info">
-                                    <h4><a href="/case-studies/nonrival-data/">NonRival Data</a></h4>
-                                    <p>Web 3.0 Data Platform</p>
-                                    <div>
-                                        <a href="/case-studies/nonrival-data/" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
-                                    </div>
+                        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="/case-studies/nonrival-data/" class="logo-tile">
+                                <div class="logo-panel">
+                                    <img src="/assets/img/nonrivaldata.png" alt="NonRival Data logo" loading="lazy">
                                 </div>
-                            </div>
+                                <div class="logo-meta">
+                                    <h4>NonRival Data</h4>
+                                    <p>Web 3.0 Data Platform</p>
+                                    <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
+                                </div>
+                            </a>
                         </div>
                     </div>
 
@@ -1054,6 +1017,10 @@ session_start();
                                             <div class="validate"></div>
                                         </div>
                                     </div>
+                                    <!-- Honeypot: hidden from humans; bots that fill it are rejected by mail.php -->
+                                    <div style="position:absolute; left:-9999px;" aria-hidden="true">
+                                        <input type="text" name="company_website" tabindex="-1" autocomplete="off">
+                                    </div>
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required/>
                                         <div class="validate"></div>
@@ -1153,36 +1120,6 @@ session_start();
         <!-- End Footer -->
 
         <!-- Modal -->
-        <div class="modal fade" id="mubashir" tabindex="-1" role="dialog" aria-labelledby="mubashirTitle" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document" style="top: 10%;">
-                <div class="modal-content">
-                    <div style="float:right;">
-                        <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="./assets/img/team/mubashir-farooq-c.png" alt="team img" width="180px" height="auto">
-                            <h2 style="font-weight:600; margin:20px 0 0 0">Mubashir Farooq</h1>
-                                <h5 style="margin:10px 0 20px 0">Team Leader / Sr. software Developer</h5>
-                                <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
-                        </div>
-
-                    </div>
-                    <div class="modal-body">
-                        <p style="padding:0 30px; text-align: justify; text-justify: inter-word; ">
-                        Mubashir is responsible for overseeing the operations of the technical development team. He's the one who leads the tech team 
-                        and makes sure everything tech-related goes smoothly. He is like a tech wizard: he helps come up with solutions, checks that the code is 
-                        really good, and keeps us up-to-date with all the cool new tech stuff.
-                        Mubashir holds a bachelor's degree in Computer Sciences from GC University Faisalabad.
-                        He is skilled and comes with a strong background in various development areas. As a seasoned full-stack developer, mobile app specialist, 
-                        and even blockchain enthusiast, he brings a wealth of expertise to the table. Guiding our team, his experience shows how good he is with different technologies, sparking 
-                        new ideas in our projects. He's not only a mentor and communicator but also a great leader who helps us aim for excellence.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary my-btn" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document" style="top: 10%;">
                 <div class="modal-content">
@@ -1237,34 +1174,6 @@ session_start();
         </div>
 
         <!-- Modal2 -->
-        <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document" style="top: 10%;">
-                <div class="modal-content">
-                    <div style="float:right;">
-                        <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="./assets/img/team/coo-500x500-1.png" alt="team img" width="180px" height="auto">
-                            <h2 style="font-weight:600; margin:20px 0 0 0">HAIXIA LI</h1>
-                                <h5 style="margin:10px 0 20px 0">Chief Operating Officer(COO)</h5>
-                                <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
-                        </div>
-
-                    </div>
-                    <div class="modal-body">
-                        <p style="padding:0 30px; text-align: justify; text-justify: inter-word; ">
-                            Haixia is responsible for overseeing operations of the company, engage key stakeholders, manage Human Resource, and day to day administration. She is also responsible for monitoring and evaluating business performance for operational efficiency. Haixia
-                            holds an undergraduate degree in industrial engineering and has worked in general business administration in China for several years. She also holds an MBA Operations (Distinction) from Cardiff university. She is a team player
-                            with outstanding work ethics and committed to whatever she does.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary my-btn" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal3 -->
-
         <div class="modal fade" id="exampleModalCenter3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document" style="top: 10%;">
                 <div class="modal-content">
@@ -1292,32 +1201,6 @@ session_start();
         </div>
 
         <!-- Modal4 -->
-        <div class="modal fade" id="exampleModalCenter4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-lg" role="document" style="top: 10%;">
-                <div class="modal-content">
-                    <div style="float:right;">
-                        <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="./assets/img/team/ola-500x500-1.png" alt="team img" width="180px" height="auto">
-                            <h2 style="font-weight:600; margin:20px 0 0 0">Ola Badawi</h1>
-                                <h5 style="margin:10px 0 20px 0">Financial Advisor</h5>
-                                <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
-                        </div>
-
-                    </div>
-                    <div class="modal-body">
-                        <p style="padding:0 30px; text-align: justify; text-justify: inter-word; ">
-                            Ola is responsible for managing the company’s finances, management of financial risks, record-keeping, ensuring compliance, and financial reporting. Ola holds an undergraduate degree in accounting and finance from Jordan University. She also holds an
-                            MBA in finance (Distinction) from Cardiff University. She has worked with Arab Bank and Jordan Ahli Bank for several years.
-                        </p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary my-btn" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
 
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         <!-- <div id="preloader"></div> -->
@@ -1333,7 +1216,7 @@ session_start();
               "name": "What services does T&M Consultants provide?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "T&M Consultants provides 360-degree technology solutions including Blockchain Ledger Development, Full Stack Web Development, Mobile Application Development, Machine Learning and AI, E-commerce Ecosystem Development, and Project Management Consultancy for start-ups and SMEs."
+                "text": "T&M Consultants provides AI agent development (voice agents and assistants), AI automation and RAG development, Fractional CTO and technical leadership, and full-stack software delivery — web, mobile, e-commerce and Web3 — for start-ups and SMEs."
               }
             },
             {
@@ -1392,7 +1275,18 @@ session_start();
 
         <!-- Template Main JS File -->
         <script src="assets/js/main.js" defer></script>
+        <script src="assets/js/orb.js" defer></script>
         
+        <!-- Cookie consent (Consent Mode v2) -->
+        <div class="consent-banner" id="consentBanner" role="dialog" aria-label="Cookie consent">
+            <p>We use Google Analytics cookies to understand how visitors use our site. No marketing or third-party ad cookies.</p>
+            <div class="consent-actions">
+                <button type="button" class="btn-tnm" id="consentAccept">Accept</button>
+                <button type="button" class="btn-tnm-ghost" id="consentDecline">Decline</button>
+            </div>
+        </div>
+        <script src="assets/js/consent.js" defer></script>
+
         <!-- particles.js -->
         <script src="assets/vendor/particles/particles.js"></script>
     </body>

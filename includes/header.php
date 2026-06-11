@@ -9,7 +9,7 @@
         </div>
 
         <!-- ======= Header ======= -->
-        <header id="header" class="fixed-top header-scrolled">
+        <header id="header" class="fixed-top">
             <div class="container">
                 <nav class="navbar navbar-expand-md bg-transparent navbar-light p-0 m-0">
                     <!-- Site Logo Here -->

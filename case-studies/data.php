@@ -12,11 +12,12 @@
 $CASE_STUDIES = [
 
     'iqbalai' => [
+        'logo'        => '/assets/img/iqbalai-logo.png',
         'name'        => 'IqbalAI',
         'h1'          => 'IqbalAI — AI-First Urdu Educational & School Management Platform',
         'title'       => 'IqbalAI: AI-First Urdu Education Platform | T&M Case Study',
         'meta'        => 'How T&M, as Fractional CTO, shipped an Urdu-enabled AI learning platform in 3–4.5 months using LangGraph, Qdrant and FastAPI — cutting development costs ~70%.',
-        'image'       => '/assets/img/portfolio/iqbalai-web.png',
+        'image'       => '/assets/img/portfolio/iqbalai-web.webp',
         'image_alt'   => 'IqbalAI Dashboard Screenshot',
         'role'        => 'Fractional CTO & Solutions Architect',
         'timeline'    => '2024 - 2025',
@@ -36,11 +37,12 @@ $CASE_STUDIES = [
     ],
 
     'captureproof' => [
+        'logo'        => '/assets/img/captureproof-logo.png',
         'name'        => 'CaptureProof',
         'h1'          => 'CaptureProof — Medical Image Analysis Platform',
         'title'       => 'CaptureProof: 99.99% Uptime Medical CV Platform | T&M Case Study',
         'meta'        => 'As Solutions Architect, T&M trained medical computer-vision models and ran HIPAA-compliant AWS infrastructure at 99.99% uptime over 3 years using PyTorch and TensorFlow.',
-        'image'       => '/assets/img/portfolio/captureproof-web.png',
+        'image'       => '/assets/img/portfolio/captureproof-web.webp',
         'image_alt'   => 'CaptureProof Interface Screenshot',
         'role'        => 'Solutions Architect & Infrastructure Team',
         'timeline'    => '2023 - 2026 (Past 3 Years)',
@@ -60,11 +62,12 @@ $CASE_STUDIES = [
     ],
 
     'atlas' => [
+        'logo'        => '/assets/img/atlas-logo.png',
         'name'        => 'Atlas by BoH',
         'h1'          => 'Atlas by BoH — AI Copilot Platform',
         'title'       => 'Atlas: Real-Time AI Copilot with RAG | T&M Case Study',
         'meta'        => 'T&M\'s AI team built Atlas, a real-time AI copilot with a RAG backend on FastAPI and LangChain, delivering natural-language analytics reports in under 1.5 seconds.',
-        'image'       => '/assets/img/portfolio/atlas-web.png',
+        'image'       => '/assets/img/portfolio/atlas-web.webp',
         'image_alt'   => 'Atlas Dashboard Screenshot',
         'role'        => 'AI Solutions Team & Frontend Engineers',
         'timeline'    => '2024',
@@ -84,11 +87,12 @@ $CASE_STUDIES = [
     ],
 
     'otto' => [
+        'logo'        => '/assets/img/otto-logo.png',
         'name'        => 'OTTO by BoH',
         'h1'          => 'OTTO by BoH — Autonomous AI Agent',
         'title'       => 'OTTO: Autonomous On-Chain AI Agent | T&M Case Study',
         'meta'        => 'T&M\'s AI agents team built OTTO, a fully autonomous on-chain AI agent on Pydantic AI that monitors blockchains and executes secure transactions from natural-language prompts.',
-        'image'       => '/assets/img/portfolio/otto-web.png',
+        'image'       => '/assets/img/portfolio/otto-web.webp',
         'image_alt'   => 'OTTO AI Agent Screenshot',
         'role'        => 'AI Agents Team & Project Management',
         'timeline'    => '2024',
@@ -108,11 +112,12 @@ $CASE_STUDIES = [
     ],
 
     'docushield' => [
+        'logo'        => '/assets/img/doclogo.png',
         'name'        => 'Docushield',
         'h1'          => 'Docushield — Secure Document Verification Platform',
         'title'       => 'Docushield: Blockchain Document Verification | T&M Case Study',
         'meta'        => 'As Fractional CTO, T&M shipped Docushield\'s blockchain document-verification apps on custom L2 nodes and Solidity — the client raised $0.5M in seed funding.',
-        'image'       => '/assets/img/portfolio/doc-web.png',
+        'image'       => '/assets/img/portfolio/doc-web.webp',
         'image_alt'   => 'Docushield Interface Screenshot',
         'role'        => 'Fractional CTO & Solutions Architect',
         'timeline'    => '2020 - 2021',
@@ -138,11 +143,12 @@ $CASE_STUDIES = [
     ],
 
     'nonrival-data' => [
+        'logo'        => '/assets/img/nonrivaldata.png',
         'name'        => 'NonRival Data',
         'h1'          => 'NonRival Data — Web 3.0 Data Platform',
         'title'       => 'NonRival Data: Web3 Data Monetization MVP | T&M Case Study',
         'meta'        => 'As Fractional CTO, T&M launched NonRival Data\'s privacy-first Web3 MVP across web, iOS, Android and 3 extension stores using Laravel, React Native and Solidity.',
-        'image'       => '/assets/img/portfolio/nrd-web.png',
+        'image'       => '/assets/img/portfolio/nrd-web.webp',
         'image_alt'   => 'NonRival Data Dashboard Screenshot',
         'role'        => 'Fractional CTO & Lead Product Delivery',
         'timeline'    => '2021 - 2022',
@@ -162,11 +168,12 @@ $CASE_STUDIES = [
     ],
 
     'build-on-hybrid' => [
+        'logo'        => '/assets/img/buildonhybrid-logo.png',
         'name'        => 'Build On Hybrid',
         'h1'          => 'Build On Hybrid — Web3 Node Infrastructure',
         'title'       => 'Build On Hybrid: Web3 Node Infrastructure | T&M Case Study',
         'meta'        => 'As Solutions Architect, T&M designed Build On Hybrid\'s decentralized node infrastructure and Unified Data API using Go, Rust and Node.js for multichain Web3 networks.',
-        'image'       => '/assets/img/portfolio/buildonhybrid-web.png',
+        'image'       => '/assets/img/portfolio/buildonhybrid-web.webp',
         'image_alt'   => 'Build On Hybrid Platform Screenshot',
         'role'        => 'Solutions Architect & Project Management',
         'timeline'    => '2023 - 2024',
@@ -186,11 +193,12 @@ $CASE_STUDIES = [
     ],
 
     'quickcard' => [
+        'logo'        => '/assets/img/qc.png',
         'name'        => 'QuickCard (now RYVYL)',
         'h1'          => 'QuickCard (now RYVYL) — Contactless Payment Platform',
         'title'       => 'QuickCard: Cashless Payments to NASDAQ Exit | T&M Case Study',
         'meta'        => 'As Fractional CTO, T&M built QuickCard\'s contactless payment ecosystem on React, Django and Stripe — later acquired and transitioned into NASDAQ-listed RYVYL.',
-        'image'       => '/assets/img/portfolio/qc.png',
+        'image'       => '/assets/img/portfolio/qc.webp',
         'image_alt'   => 'QuickCard Logo',
         'role'        => 'Fractional CTO & Lead Payments Engineer',
         'timeline'    => '2020 - 2021',
@@ -210,11 +218,12 @@ $CASE_STUDIES = [
     ],
 
     'e-sehat' => [
+        'logo'        => '/assets/img/esehat-logo.png',
         'name'        => 'e-Sehat',
         'h1'          => 'e-Sehat — Telemedicine Mobile App',
         'title'       => 'e-Sehat: HIPAA Telemedicine App | T&M Case Study',
         'meta'        => 'As mobile developers, T&M shipped e-Sehat, a HIPAA-compliant telemedicine app with encrypted WebRTC video consultations built on React Native and Node.js.',
-        'image'       => '/assets/img/portfolio/esehat.png',
+        'image'       => '/assets/img/portfolio/esehat.webp',
         'image_alt'   => 'e-Sehat App Screenshot',
         'role'        => 'Mobile Developers & Video Streaming Engineers',
         'timeline'    => '2021 - 2022',
@@ -234,11 +243,12 @@ $CASE_STUDIES = [
     ],
 
     'mintit-studio' => [
+        'logo'        => '/assets/img/mint-it-dark.png',
         'name'        => 'MintIt Studio',
         'h1'          => 'MintIt Studio — NFT Marketplace on Kadena',
         'title'       => 'MintIt Studio: First Kadena NFT Marketplace | T&M Case Study',
         'meta'        => 'As Fractional CTO, T&M launched the first mutant-NFT marketplace on Kadena using Pact smart contracts and React.js — with zero post-launch security vulnerabilities.',
-        'image'       => '/assets/img/portfolio/mintit-web.png',
+        'image'       => '/assets/img/portfolio/mintit-web.webp',
         'image_alt'   => 'MintIt Studio Marketplace Screenshot',
         'role'        => 'Fractional CTO & Lead Smart Contract Developer',
         'timeline'    => '2021 - 2022',
@@ -258,11 +268,12 @@ $CASE_STUDIES = [
     ],
 
     'tameer-estate' => [
+        'logo'        => '/assets/img/tameer-estate.png',
         'name'        => 'Tameer Estate UK',
         'h1'          => 'Tameer Estate UK — Property Search Portal',
         'title'       => 'Tameer Estate: UK Property Search Portal | T&M Case Study',
         'meta'        => 'As the full-stack web team, T&M built Tameer Estate UK, a responsive property search portal on WordPress, PHP and the Google Maps API with custom filters.',
-        'image'       => '/assets/img/portfolio/tameer-web.png',
+        'image'       => '/assets/img/portfolio/tameer-web.webp',
         'image_alt'   => 'Tameer Estate UK Website Screenshot',
         'role'        => 'Full Stack Web Team',
         'timeline'    => '2020 - 2021',
@@ -288,11 +299,12 @@ $CASE_STUDIES = [
     ],
 
     'tiny-crews' => [
+        'logo'        => '/assets/img/tinycrews-logo.png',
         'name'        => 'Tiny Crews',
         'h1'          => 'Tiny Crews — Kids Clothing E-Commerce Store',
         'title'       => 'Tiny Crews: Shopify Kids Store, 90+ Speed | T&M Case Study',
         'meta'        => 'As e-commerce developers, T&M built Tiny Crews\' Shopify storefront in Liquid, lifting mobile page-load to 90+ and cutting cart abandonment by 15%.',
-        'image'       => '/assets/img/portfolio/tinycrews-web.png',
+        'image'       => '/assets/img/portfolio/tinycrews-web.webp',
         'image_alt'   => 'Tiny Crews Storefront Screenshot',
         'role'        => 'E-Commerce Developers & Storefront Designers',
         'timeline'    => '2022 - 2023',
@@ -312,11 +324,12 @@ $CASE_STUDIES = [
     ],
 
     'his-and-hers' => [
+        'logo'        => '/assets/img/hisandhers-logo.png',
         'name'        => 'His & Hers',
         'h1'          => 'His & Hers — Fashion E-Commerce Storefront',
         'title'       => 'His & Hers: High-Traffic Fashion Store | T&M Case Study',
         'meta'        => 'As e-commerce developers, T&M delivered His & Hers, a high-traffic WooCommerce fashion store with PHP query optimization and automated SMS confirmations.',
-        'image'       => '/assets/img/portfolio/hisandhers-web.png',
+        'image'       => '/assets/img/portfolio/hisandhers-web.webp',
         'image_alt'   => 'His & Hers Storefront Screenshot',
         'role'        => 'E-Commerce Developers & UI Designers',
         'timeline'    => '2022 - 2023',

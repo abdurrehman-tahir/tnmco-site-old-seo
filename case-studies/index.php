@@ -23,14 +23,14 @@ require dirname(__DIR__) . '/includes/header.php';
 
         <main id="main">
             <section id="portfolio" class="portfolio" style="padding-top: 140px; padding-bottom: 60px;">
-                <div class="container" data-aos="fade-up">
+                <div class="container page-hero" data-aos="fade-up">
+                    <?php tnm_motif('shared'); ?>
                     <header class="section-header">
                         <div class="section-title">
                             <span>Case Studies</span>
-                            <h2>Case Studies</h2>
+                            <h1>Proof, Not Promises</h1>
                         </div>
                     </header>
-                    <h1 class="text-center" style="color:#282646; font-weight:700; margin-bottom:10px;">Proof, Not Promises</h1>
 
                     <div class="row" data-aos="fade-up" data-aos-delay="100">
                         <div class="col-lg-12">
@@ -68,7 +68,7 @@ require dirname(__DIR__) . '/includes/header.php';
                     </div>
 
                     <div class="text-center mt-4">
-                        <a href="/contact/" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 10px 22px;"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
+                        <a href="/contact/" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
                     </div>
                 </div>
             </section>

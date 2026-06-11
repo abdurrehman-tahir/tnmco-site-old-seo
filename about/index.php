@@ -19,33 +19,35 @@ require dirname(__DIR__) . '/includes/head.php';
 require dirname(__DIR__) . '/includes/header.php';
 ?>
 
-        <main id="main" style="padding-top: 100px;">
+        <main id="main" style="padding-top: 140px;">
 
             <!-- ======= About Section ======= -->
             <section id="about" class="about">
-                <div class="container" data-aos="fade-up">
+                <div class="container page-hero" data-aos="fade-up">
+                    <?php tnm_motif('shared'); ?>
                     <div class="section-title">
                         <span>About Us</span>
                         <h1>About Us</h1>
                     </div>
-                    <div class="row">
+                    <div class="row align-items-center">
                         <div class="col-lg-5 col-md-6">
-                            <div class="about-img" data-aos="fade-right" data-aos-delay="100">
-                                <img src="/assets/img/aboutNew.png" alt="T&M Consultants Team Collaborating on Technology Solutions" loading="lazy" width="474" height="700">
+                            <div class="about-orb" data-aos="fade-right" data-aos-delay="100" aria-hidden="true">
+                                <canvas class="orb-canvas"></canvas>
                             </div>
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="about-content" data-aos="fade-left" data-aos-delay="100">
-                                <h3>Technology and Management (T&M)</h3>
+                                <h3>Technology and Management (T&M) Consultants</h3>
                                 <p class="font-italic" style="text-align: justify; text-justify: inter-word;">
-                                    Technology and Management (T&M) consultants is a social enterprise building capacity for start-ups and SMEs. T&M offers 360° solutions to start-ups and SMEs including but not limited to product development, deployment and after sales services. We specialise
-                                    in blockchain powered solutions, our fully customized blockchain based ledger (Block) is provided to our clients for their e-commerce platforms – QuickCard is powered by our Block that allows its merchants and customers
-                                    to interact and pay without cash. We are committed to develop own-brand products with a high social impact in local communities.
+                                    T&M Consultants is a UK-registered technology consultancy (est. 2020) that designs, builds and runs AI systems and software products for start-ups and SMEs. We work the way a CTO would: scope honestly, architect for what you actually need, ship in weeks, and stay accountable after launch.
+                                </p>
+                                <p class="font-italic" style="text-align: justify; text-justify: inter-word;">
+                                    Over 10+ years and 29+ shipped projects, our work has spanned AI-first education platforms (IqbalAI), medical computer vision run in production for 3 years (CaptureProof), autonomous AI agents (OTTO), RAG-powered copilots (Atlas), and fintech that was acquired into a NASDAQ-listed company (QuickCard → RYVYL). Today our focus is AI agents, automation and fractional technical leadership — with full-stack delivery underneath it all.
                                 </p>
                                 <ul>
-                                    <li><i class="ion-android-checkmark-circle"></i> Living up to the narrative; T&M has recently launched an e-sehat project to build capacity and transform health sector in emerging economies.
+                                    <li><i class="ion-android-checkmark-circle"></i> We're a social enterprise at heart: our e-Sehat telemedicine project helps transform healthcare access in emerging economies.
                                     </li>
-                                    <li><i class="ion-android-checkmark-circle"></i> T&M recruit tech graduates from underprivileged background to accelerate social mobility by empowering young professionals.
+                                    <li><i class="ion-android-checkmark-circle"></i> We recruit tech graduates from underprivileged backgrounds, accelerating social mobility by training young professionals on real client work.
                                     </li>
                                 </ul>
                             </div>

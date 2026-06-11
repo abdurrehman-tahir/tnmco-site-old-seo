@@ -57,30 +57,37 @@ require dirname(__DIR__) . '/includes/header.php';
 ?>
 
         <main id="main">
-            <section class="portfolio" style="padding-top: 140px; padding-bottom: 60px;">
-                <div class="container">
+            <section class="portfolio inner-hero" style="padding-top: 140px; padding-bottom: 50px;">
+                <div class="container page-hero cs-hero">
+                    <?php tnm_motif('shared'); ?>
 
                     <!-- Breadcrumb -->
-                    <nav aria-label="breadcrumb" style="margin-bottom: 20px;">
-                        <a href="/" style="color:#1bb1dc;">Home</a>
+                    <nav aria-label="breadcrumb" class="breadcrumb-nav" style="margin-bottom: 22px;">
+                        <a href="/">Home</a>
                         <span style="color:#adb5bd;"> / </span>
-                        <a href="/case-studies/" style="color:#1bb1dc;">Case Studies</a>
+                        <a href="/case-studies/">Case Studies</a>
                         <span style="color:#adb5bd;"> / </span>
                         <span style="color:#6c757d;"><?php echo $cs['name']; ?></span>
                     </nav>
 
-                    <h1 style="color:#282646; font-weight:700; margin-bottom:25px;"><?php echo $cs['h1']; ?></h1>
-
-                    <div class="text-center mb-4">
-                        <img src="<?php echo $cs['image']; ?>" class="img-fluid" alt="<?php echo $cs['image_alt']; ?>" style="border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-height: 420px; width: auto;" loading="lazy">
+                    <?php if (!empty($cs['logo'])): ?>
+                    <div class="cs-logo-chip">
+                        <img src="<?php echo $cs['logo']; ?>" alt="<?php echo $cs['name']; ?> logo" loading="lazy">
                     </div>
+                    <?php endif; ?>
+
+                    <h1><?php echo $cs['h1']; ?></h1>
 
                     <!-- Role + Timeline -->
-                    <div class="d-flex flex-wrap align-items-center mb-3" style="gap: 8px;">
+                    <div class="d-flex flex-wrap align-items-center" style="gap: 8px;">
                         <span class="badge badge-pill badge-primary" style="background-color: #1bb1dc; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Role: <?php echo $cs['role']; ?></span>
                         <span class="badge badge-pill badge-secondary" style="background-color: #6c757d; font-size: 13px; padding: 6px 12px; border: none; font-weight: 500;">Timeline: <?php echo $cs['timeline']; ?></span>
                     </div>
+                </div>
+            </section>
 
+            <section class="portfolio" style="padding: 45px 0 60px;">
+                <div class="container">
                     <!-- Tech Stack -->
                     <div class="mb-4">
                         <h6 style="font-weight: 700; color: #282646; margin-bottom: 8px;">Tech Stack:</h6>
@@ -135,15 +142,29 @@ require dirname(__DIR__) . '/includes/header.php';
                     </div>
                     <?php endif; ?>
 
+                </div>
+            </section>
+
+            <!-- Platform screenshots (moved to end; logo leads the page) -->
+            <section class="cs-screens">
+                <div class="container">
+                    <h2><i class="fas fa-desktop mr-2" style="color:#1bb1dc;"></i> Platform Screenshots</h2>
+                    <div class="text-center">
+                        <img src="<?php echo $cs['image']; ?>" class="img-fluid" alt="<?php echo $cs['image_alt']; ?>" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <section style="padding: 40px 0 60px;">
+                <div class="container">
                     <!-- CTA -->
-                    <div class="text-center mt-5">
-                        <a href="/contact/" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 10px 22px;"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
+                    <div class="text-center">
+                        <a href="/contact/" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
                         <?php if (empty($cs['private']) && !empty($cs['live_url'])): ?>
-                        <a href="<?php echo $cs['live_url']; ?>" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary" style="font-weight: 600; padding: 10px 22px;"><i class="fas fa-external-link-alt mr-2"></i> <?php echo $cs['live_label']; ?></a>
+                        <a href="<?php echo $cs['live_url']; ?>" target="_blank" rel="noopener noreferrer" class="btn-tnm-ghost"><i class="fas fa-external-link-alt mr-2"></i> <?php echo $cs['live_label']; ?></a>
                         <?php endif; ?>
                         <a href="/case-studies/" class="btn btn-link" style="color:#6c757d; font-weight:600;">← All Case Studies</a>
                     </div>
-
                 </div>
             </section>
         </main>

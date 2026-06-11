@@ -22,24 +22,39 @@ require dirname(__DIR__) . '/includes/header.php';
 ?>
 
         <main id="main">
-            <section class="services" style="padding-top: 140px; padding-bottom: 60px;">
-                <div class="container" data-aos="fade-up">
+            <section class="services inner-hero" style="padding-top: 140px; padding-bottom: 60px;">
+                <div class="container page-hero" data-aos="fade-up">
+                    <?php tnm_motif('nodes'); ?>
                     <header class="section-header">
                         <div class="section-title">
                             <span>Services</span>
-                            <h2>Services</h2>
+                            <h1>Services</h1>
                         </div>
+                        <p class="services-subline">AI-first consulting and delivery — proven on production systems, not slideware.</p>
                     </header>
-                    <div class="row">
+
+                    <div class="row services-grid">
                         <?php foreach ($SERVICES as $slug => $sv): ?>
-                        <div class="col-md-6 mb-4">
-                            <div class="box" style="height:100%;">
-                                <h4 class="title"><a href="/services/<?php echo $slug; ?>/" style="color:#282646;"><?php echo $sv['schema_name']; ?></a></h4>
-                                <p class="description" style="text-align:justify;"><?php echo $sv['meta']; ?></p>
-                                <a href="/services/<?php echo $slug; ?>/" style="color:#1bb1dc; font-weight:600;">Learn more →</a>
+                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-card-wrap">
+                                <a href="/services/<?php echo $slug; ?>/" class="box service-card">
+                                    <div class="icon" style="background:<?php echo $sv['icon_bg']; ?>;"><i class="<?php echo $sv['icon']; ?>" style="color:<?php echo $sv['icon_color']; ?>;"></i></div>
+                                    <h4 class="title"><?php echo $sv['schema_name']; ?></h4>
+                                    <p class="service-lead"><?php echo $sv['lead']; ?></p>
+                                    <ul class="service-bullets">
+                                        <?php foreach ($sv['bullets'] as $b): ?>
+                                        <li><?php echo htmlspecialchars($b); ?></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                </a>
+                                <a href="<?php echo $sv['proof_url']; ?>" class="service-proof"><?php echo $sv['proof_text']; ?> <span class="arw">&rarr;</span></a>
                             </div>
                         </div>
                         <?php endforeach; ?>
+                    </div>
+
+                    <div class="text-center mt-3">
+                        <a href="/contact/" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
                     </div>
                 </div>
             </section>

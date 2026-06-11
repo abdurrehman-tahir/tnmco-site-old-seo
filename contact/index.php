@@ -19,10 +19,11 @@ require dirname(__DIR__) . '/includes/head.php';
 require dirname(__DIR__) . '/includes/header.php';
 ?>
 
-        <main id="main" style="padding-top: 100px;">
+        <main id="main" style="padding-top: 140px;">
             <!-- ======= Contact Section ======= -->
             <section id="contact" class="contact" style="margin-bottom:60px">
-                <div class="container" data-aos="fade-up">
+                <div class="container page-hero" data-aos="fade-up">
+                    <?php tnm_motif('shared'); ?>
                     <header class="section-header">
                         <div class="section-title">
                             <span>Contact Us</span>
@@ -70,6 +71,10 @@ require dirname(__DIR__) . '/includes/header.php';
                                         <input type="email" class="form-control" autocomplete="email" name="email" id="email" placeholder="Your Email" required/>
                                         <div class="validate"></div>
                                     </div>
+                                </div>
+                                <!-- Honeypot: hidden from humans; bots that fill it are rejected by mail.php -->
+                                <div style="position:absolute; left:-9999px;" aria-hidden="true">
+                                    <input type="text" name="company_website" tabindex="-1" autocomplete="off">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required/>

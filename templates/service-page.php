@@ -39,25 +39,34 @@ require dirname(__DIR__) . '/includes/header.php';
 ?>
 
         <main id="main">
-            <section class="services" style="padding-top: 140px; padding-bottom: 50px;">
-                <div class="container" data-aos="fade-up">
+            <section class="services inner-hero" style="padding-top: 140px; padding-bottom: 55px;">
+                <div class="container page-hero" data-aos="fade-up">
+                    <?php tnm_motif($sv['motif']); ?>
 
                     <!-- Breadcrumb -->
-                    <nav aria-label="breadcrumb" style="margin-bottom: 20px;">
-                        <a href="/" style="color:#1bb1dc;">Home</a>
+                    <nav aria-label="breadcrumb" class="breadcrumb-nav" style="margin-bottom: 20px;">
+                        <a href="/">Home</a>
                         <span style="color:#adb5bd;"> / </span>
-                        <a href="/services/" style="color:#1bb1dc;">Services</a>
+                        <a href="/services/">Services</a>
                         <span style="color:#adb5bd;"> / </span>
                         <span style="color:#6c757d;"><?php echo $sv['schema_name']; ?></span>
                     </nav>
 
-                    <h1 style="color:#282646; font-weight:700; margin-bottom:18px;"><?php echo $sv['h1']; ?></h1>
-                    <p style="color:#495057; line-height:1.7; font-size:18px; max-width:820px;"><?php echo $sv['meta']; ?></p>
+                    <h1 style="color:#282646; font-weight:700; margin-bottom:16px;"><?php echo $sv['h1']; ?></h1>
+                    <p class="lead-sub" style="max-width:700px;"><?php echo $sv['lead']; ?></p>
 
-                    <div class="mt-4 mb-2">
-                        <a href="/contact/" class="btn btn-primary" style="background-color: #1bb1dc; border-color: #1bb1dc; font-weight: 600; padding: 10px 22px;"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
+                    <ul class="service-hero-bullets">
+                        <?php foreach ($sv['bullets'] as $b): ?>
+                        <li><?php echo htmlspecialchars($b); ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+
+                    <div class="btn-row mt-4 mb-2">
+                        <a href="/contact/" class="btn-tnm"><i class="fas fa-calendar-check mr-2"></i> Book a Call</a>
                         <?php if (!empty($sv['show_demos'])): ?>
-                        <a href="/demos/" class="btn btn-outline-secondary" style="font-weight: 600; padding: 10px 22px;"><i class="fas fa-play-circle mr-2"></i> Try a Live Demo</a>
+                        <a href="/demos/" class="btn-tnm-ghost"><i class="fas fa-play-circle mr-2"></i> Try a Live Demo</a>
+                        <?php else: ?>
+                        <a href="<?php echo $sv['proof_url']; ?>" class="btn-tnm-ghost"><i class="fas fa-file-alt mr-2"></i> See the Proof</a>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -72,13 +81,13 @@ require dirname(__DIR__) . '/includes/header.php';
                         <div class="col-md-6 mb-3">
                             <div style="background:#fff; border-radius:8px; padding:22px; box-shadow:0 2px 10px rgba(0,0,0,0.04); height:100%;">
                                 <h4 style="font-weight:700; color:#282646;">VIOLET — Clinic AI Assistant</h4>
-                                <a href="https://ai.assistant.tnmco.uk/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary mt-2" style="background-color:#1bb1dc; border-color:#1bb1dc; font-weight:600;">Open VIOLET <i class="fas fa-external-link-alt ml-1"></i></a>
+                                <a href="https://ai.assistant.tnmco.uk/" target="_blank" rel="noopener noreferrer" class="btn-tnm mt-2">Open VIOLET <i class="fas fa-external-link-alt ml-1"></i></a>
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <div style="background:#fff; border-radius:8px; padding:22px; box-shadow:0 2px 10px rgba(0,0,0,0.04); height:100%;">
                                 <h4 style="font-weight:700; color:#282646;">BiteBot — Restaurant AI Assistant</h4>
-                                <a href="https://bitebot.tnmco.uk/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary mt-2" style="background-color:#1bb1dc; border-color:#1bb1dc; font-weight:600;">Open BiteBot <i class="fas fa-external-link-alt ml-1"></i></a>
+                                <a href="https://bitebot.tnmco.uk/" target="_blank" rel="noopener noreferrer" class="btn-tnm mt-2">Open BiteBot <i class="fas fa-external-link-alt ml-1"></i></a>
                             </div>
                         </div>
                     </div>
