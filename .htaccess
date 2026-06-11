@@ -1,4 +1,8 @@
 
+# Serve directory requests via index.php so clean URLs resolve
+# (e.g. /services/ai-agents/, /case-studies/iqbalai/, /about/, /contact/)
+DirectoryIndex index.php index.html
+
 <Files 403.shtml>
 order allow,deny
 allow from all

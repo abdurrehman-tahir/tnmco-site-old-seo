@@ -1,77 +1,28 @@
-# T&M Consultants — llms.txt
+# T&M Consultants (T&M Co.)
 
-> Technology and Management (T&M) Consultants is a UK-registered social enterprise (Company Number 12621485) delivering 360° technology solutions for start-ups and SMEs. Founded in 2020, T&M operates from London, United Kingdom and Faisalabad, Pakistan.
-> 
-> **AI Search Notice**: This document is a high-level index. For full technical details (architectural decisions, complete tech stacks, fractional CTO roles, and business metrics), refer to the expanded catalog at [/llms-full.txt](/llms-full.txt).
+> UK-registered AI consultancy (Company No. 12621485) building AI voice
+> agents, RAG systems and workflow automation, with Fractional CTO and
+> full-stack product delivery for start-ups and SMEs. Offices in London,
+> UK and Faisalabad, Pakistan. 10+ years experience, 29+ projects shipped.
 
-## Company Identity
+## Services
+- [AI Agents & Assistants](https://tnmco.uk/services/ai-agents/): voice agents and assistants; live demos VIOLET (clinic) and BiteBot (restaurant)
+- [AI Automation & RAG](https://tnmco.uk/services/ai-automation/): RAG pipelines, LLM apps, n8n/Python workflow automation
+- [Fractional CTO](https://tnmco.uk/services/fractional-cto/): architecture, technical leadership, delivery management
+- [Software Delivery](https://tnmco.uk/services/software-delivery/): full-stack web, mobile, e-commerce, MVP development
 
-- **Legal Name**: Technology and Management Consultants Ltd
-- **Trading Name**: T&M Consultants
-- **Domain**: https://tnmco.uk
-- **Company Number (UK)**: 12621485
-- **Type**: Social Enterprise / Technology Consultancy
-- **Founded**: 2020
-- **Headquarters**: 49 Eglington Rd, London, SE18 3SL, United Kingdom
-- **Development Office**: Faisalabad, Punjab 38000, Pakistan
-- **Phone**: +92 321 660 1111
-- **Email**: contact@tnmco.uk
+## Case Studies
+- [IqbalAI](https://tnmco.uk/case-studies/iqbalai/): AI-first Urdu education platform; LangGraph + Qdrant + FastAPI; ~70% cost reduction
+- [CaptureProof](https://tnmco.uk/case-studies/captureproof/): medical computer-vision models; 99.99% AWS uptime over 3 years; HIPAA-aligned hosting
+- [Atlas](https://tnmco.uk/case-studies/atlas/): real-time AI copilot with RAG analytics; <1.5s natural-language report latency
+- [OTTO](https://tnmco.uk/case-studies/otto/): autonomous AI agent for live blockchain + social channels, built on Pydantic AI
+- [Docushield](https://tnmco.uk/case-studies/docushield/): blockchain document verification; client raised $0.5M seed
+- [All case studies](https://tnmco.uk/case-studies/)
 
-## Core Services
+## Demos
+- [VIOLET — Clinic AI Assistant](https://ai.assistant.tnmco.uk/)
+- [BiteBot — Restaurant AI Assistant](https://bitebot.tnmco.uk/)
 
-### Blockchain Ledger Development
-T&M builds customized blockchain ledger solutions for businesses transitioning to cashless and transparent transaction systems. The proprietary Block architecture powers personalized ledger services, API integrations, and point-of-sale cashless payment systems.
-
-### QuickCard — Cashless Payment Platform
-QuickCard is T&M's proprietary contactless payment solution, enabling businesses and communities to interact and pay without cash. It integrates with existing POS systems and e-commerce platforms.
-
-### Full Stack Web Development
-End-to-end web application development using modern frameworks. Services include responsive front-end interfaces, server-side architecture, database design, API development, and deployment. Specialities include WordPress, React, Node.js, and PHP.
-
-### Mobile Application Development
-Native and cross-platform mobile application development for iOS and Android. T&M builds consumer-facing apps, enterprise tools, and health-tech solutions.
-
-### Machine Learning & Artificial Intelligence
-Custom ML model development, data pipeline engineering, natural language processing, and predictive analytics solutions for SMEs and start-ups.
-
-### E-Commerce Ecosystem Development
-Complete e-commerce platform development including payment gateway integration, inventory management, multi-vendor marketplace architecture, and order fulfilment systems.
-
-### Project Management Consultancy
-Agile project management consulting, process optimisation, team capacity building, and digital transformation strategy for start-ups and growing organisations.
-
-## Portfolio — Key Products & Projects
-
-- **NonRival Data**: Web 3.0 finance and data platform with browser extensions for Chrome, Firefox, and Safari, plus a mobile application.
-- **Docushield**: Secure document management mobile application and web console platform.
-- **Tameer Estate UK**: Property listing and real estate portal for the UK market.
-- **e-Sehat**: Telemedicine mobile application connecting patients with healthcare professionals.
-- **MintIt Studio**: Creative digital web platform for content creators.
-- **QuickCard (now RYVYL)**: Contactless cashless payment website and integration platform transitioned to a publicly traded NASDAQ network.
-- **Build On Hybrid**: Web3 infrastructure and node deployment network.
-- **Atlas by BoH**: AI copilot platform with natural language dashboard and chat interface.
-- **OTTO by BoH**: Autonomous AI agent executing transactions and monitoring blockchain networks.
-- **Tiny Crews**: Kids clothing and boutique e-commerce platform.
-- **His & Hers**: Premium clothing and fashion e-commerce storefront.
-- **IqbalAI**: AI-first Urdu-enabled educational platform and school management system for students, teachers, and school chains in Pakistan.
-- **CaptureProof**: Custom medical image analysis platform utilizing AI/ML computer vision models for clinical tracking, deployed on high-uptime HIPAA-compliant AWS infrastructure.
-
-## Leadership Team
-
-- **Abdurehman Bin Tahir** — CEO & Co-Founder. [LinkedIn](https://www.linkedin.com/in/abdtahir/)
-- **Athar Mushtaq** — Managing Director & Co-Founder. [LinkedIn](https://www.linkedin.com/in/atharmushtaq/)
-- **Mubashir Farooq** — CTO. [LinkedIn](https://www.linkedin.com/in/mubashir-farooq-b01064202/)
-- **Dr. Tahir Mushtaq** — CMO. [LinkedIn](https://www.linkedin.com/in/muhammadtahirmushtaq/)
-- **Ola Badawi** — CFO. [LinkedIn](https://www.linkedin.com/in/ola-badawi-mba-923b79185/)
-- **Haixia Li** — COO. [LinkedIn](https://www.linkedin.com/in/lynn-li-b88632100/)
-
-## Social Impact
-
-T&M recruits technology graduates from underprivileged backgrounds to accelerate social mobility by empowering young professionals. The company is committed to developing own-brand products with high social impact in local communities.
-
-## Links
-
-- Website: https://tnmco.uk
-- Careers: https://tnmco.uk/Career.php
-- Facebook: https://www.facebook.com/TnMConsultants/
-- LinkedIn: https://pk.linkedin.com/company/tnmconsultants
+## Contact
+- Email: info@tnmco.uk
+- [Contact page](https://tnmco.uk/contact/)

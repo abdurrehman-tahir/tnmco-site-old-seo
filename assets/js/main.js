@@ -243,8 +243,10 @@
 
     //Run the loop
     // Clear the static SEO fallback text before the typewriter starts animating
-    $("#output").children("h1").text("");
-    typeWriter("output", textArray);
+    if ($("#output").length) {
+        $("#output").children("h1").text("");
+        typeWriter("output", textArray);
+    }
 
     function typeWriter(id, ar) {
         var element = $("#" + id),
