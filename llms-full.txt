@@ -1,154 +1,172 @@
-# T&M Consultants — Expanded Portfolio Catalog (llms-full.txt)
+# T&M Consultants — Expanded Catalog (llms-full.txt)
 
-This document provides a detailed technical catalog of projects delivered by T&M Consultants, designed for ingestion by AI search engines, RAG systems, and developers.
+> UK-registered AI consultancy (Company No. 12621485) building AI voice agents, RAG systems
+> and workflow automation, with Fractional CTO and full-stack product delivery for start-ups
+> and SMEs. Offices in London, UK and Faisalabad, Pakistan. 10+ years experience, 29+ projects
+> shipped. This document expands on /llms.txt with full case-study detail for AI search engines
+> and RAG systems.
 
----
+## Services
 
-## 1. IqbalAI
-* **Role**: Fractional CTO & Solutions Architect (delivered full product engineering)
-* **Tech Stack**: FastAPI (Python 3.12), Next.js (App Router, TypeScript), PostgreSQL 16 (SQLAlchemy 2.0, Alembic), Redis 7 (Celery), Qdrant Vector DB, BGE-M3 Multilingual Embeddings, LangGraph (stateful workflows), Pydantic AI (agentic tools), Piper TTS, faster-whisper.
-* **The Challenge**: The client needed to automate technical delivery for an AI-first, Urdu-enabled educational platform and LMS targeting Pakistan's school system.
-* **T&M's Solution**: 
-  - Designed a deterministic delivery pipeline transforming product requirements into verified codebase commits using AI agents.
-  - Engineered frontend-to-backend schema alignment using auto-generated TypeScript contracts derived from FastAPI OpenAPI schemas.
-  - Developed multilingual search/retrieval pipelines (Urdu, Sindhi, Pashto, English) utilizing BGE-M3 and Qdrant hybrid retrieval.
-  - Codified data integrity with Mixins (audit, soft-delete, tenant separation) and implemented a self-improving quality audit loop.
-* **Impact & Metrics**:
-  - Compressed an estimated 10–14 month development timeline down to 3–4.5 months.
-  - Implemented robust school-tenant partitioning protecting student and teacher data.
+### AI Voice Agents & Assistants — https://tnmco.uk/services/ai-agents/
+Voice and chat agents that answer, book and act — for clinics, restaurants and operations teams.
+- Voice agents & AI assistants
+- Tool-using & workflow agents
+- Integration with your existing systems
+- Hosting, monitoring & maintenance
+Proof: Try VIOLET (clinic) and BiteBot (restaurant) live (https://tnmco.uk/demos/)
 
-## 2. Docushield
-* **Role**: Fractional CTO & Solutions Architect (delivered full product engineering)
-* **Tech Stack**: L2 Blockchain Infrastructure, Solidity (Smart Contracts), Web3.js, Infura, native iOS (Swift) & Android (Kotlin) mobile apps, PHP Web administration console, CI/CD automated pipeline.
-* **The Challenge**: Deliver an enterprise-grade document sharing and verification mobile and web application backed by secure, distributed ledger infrastructure.
-* **T&M's Solution**:
-  - Designed and deployed custom L2 blockchain consensus nodes to record hashes of shared document transactions.
-  - Developed and launched the $DOC token on the L2 network.
-  - Managed full team allocation covering UI/UX designers, blockchain engineers, mobile developers, and QA.
-* **Impact & Metrics**:
-  - Successfully raised $0.5 Million in seed funding.
-  - Delivered 100% auditable document validation logs.
+### AI Automation & RAG Development — https://tnmco.uk/services/ai-automation/
+LLM apps, retrieval pipelines and workflow automation that cut manual work in production.
+- RAG pipelines & knowledge search
+- LLM application development
+- n8n / Python workflow automation
+- Evals, monitoring & cost control
+Proof: IqbalAI shipped in 3–4.5 months, ~70% cost reduction (https://tnmco.uk/case-studies/iqbalai/)
 
-## 3. MintIt Studio (Docushield Corp Sub-Product)
-* **Role**: Fractional CTO & Lead Smart Contract Developer
-* **Tech Stack**: Kadena Blockchain, Pact Smart Contracts, React.js frontend, Docker, automated CI/CD deployment pipelines.
-* **The Challenge**: Build the first NFT marketplace on the Kadena Ecosystem featuring dynamic "mutant" NFTs.
-* **T&M's Solution**:
-  - Authored secure smart contracts in Pact (Kadena's native language) supporting mutant NFT minting and gas station relays.
-  - Created automated deployment and testing pipelines.
-  - Hired, organized, and managed the technical teams to execute frontend integrations and smart contract hooks.
-* **Impact & Metrics**:
-  - Launched Kadena's first-ever functional mutant NFT marketplace on-schedule.
-  - Achieved zero security vulnerability reports post-launch.
+### Fractional CTO Services — https://tnmco.uk/services/fractional-cto/
+Senior architecture, team leadership and delivery management — without the full-time cost.
+- Architecture & technical strategy
+- Engineering team leadership
+- Project & program management
+- Technical due diligence & scoping
+Proof: CTO on Docushield through its $0.5M seed raise (https://tnmco.uk/case-studies/docushield/)
 
-## 4. Build On Hybrid
-* **Role**: Solutions Architect & End-to-End Project Management
-* **Tech Stack**: Web3 Node Infrastructure, Unified Data API, Go, Rust, Node.js, markdown-based developer portal.
-* **The Challenge**: Finalize the discovery, scope, and technical design for a decentralized node deployment architecture and Unified Data API for Web3 networks.
-* **T&M's Solution**:
-  - Provided fractional product management and architectural consultancy from inception to launch.
-  - Designed the system architecture for high-throughput node indexing and Unified Data APIs.
-  - Created the developer documentation hub (docs.buildonhybrid.com) and API playground.
-* **Impact & Metrics**:
-  - Successfully guided the project from raw ideation to fully documented architecture spec.
-  - Handed off a production-ready blueprint deployed across global nodes.
+### Full-Stack Product Development — https://tnmco.uk/services/software-delivery/
+End-to-end product development: web, mobile, e-commerce, Web3 and desktop.
+- Full-stack web & mobile apps
+- MVP & proof-of-concept builds
+- E-commerce (Shopify / WooCommerce)
+- Blockchain & Web3 systems
+Proof: 29+ projects shipped, incl. QuickCard — acquired into NASDAQ-listed RYVYL (https://tnmco.uk/case-studies/)
 
-## 5. OTTO by BoH
-* **Role**: AI Agents Team & Project Management
-* **Tech Stack**: Autonomous AI Agents, Python, Pydantic AI, Hybrid Unified Data API, Web3, Twitter/Social API integrations.
-* **The Challenge**: Build an autonomous AI agent capable of executing Web3 transactions and publishing engaging content for the crypto community.
-* **T&M's Solution**:
-  - Designed the agentic decision workflow allowing the bot to decide when to call tools.
-  - Integrated Hybrid's Unified Data API, enabling the agent to pull live, audited blockchain data.
-  - Programmed automated transaction handling and wallet security constraints.
-* **Impact & Metrics**:
-  - Delivered a 100% autonomous agent operating on live crypto channels, showcasing the utility of the Hybrid API.
+## Case Studies
 
-## 6. NonRival Data
-* **Role**: Fractional CTO & Lead Product Delivery
-* **Tech Stack**: Laravel 8 backend, React Native (cross-platform iOS & Android mobile apps), JavaScript (Chrome, Firefox, Safari, Brave extensions), Web3.js, Infura, Solidity (Ethereum Smart Contracts).
-* **The Challenge**: Build a privacy-first, MVP-tier blockchain platform related to user data control and monetization.
-* **T&M's Solution**:
-  - Built an ecosystem containing Web dashboards, mobile apps, and browser extensions for all major browsers.
-  - Configured Ethereum integrations via Infura, ensuring every transaction logs data hashes to custom Solidity smart contracts.
-  - Implemented client-side cryptographic hashing to keep raw data secure and private.
-* **Impact & Metrics**:
-  - Successfully launched a functional Web 3.0 MVP.
-  - 100% of user data monetization requests validated on the Ethereum mainnet.
+### IqbalAI — https://tnmco.uk/case-studies/iqbalai/
+- Role: Fractional CTO & Solutions Architect
+- Timeline: 2024 - 2025
+- Tech stack: FastAPI (Python 3.12), Next.js (App Router), PostgreSQL 16, Qdrant Vector DB, LangGraph, Piper TTS / whisper
+- Challenge: Build an AI-first, Urdu-enabled educational learning management platform and school administration suite. It required tools for teachers to build lectures, quizzes, and curricula, while allowing students to take dynamic AI-supported professional test preps, plus school-tenant separations for managing private/public chains.
+- Solution: As Fractional CTO, we established a strict AI-native software engineering loop that auto-generates TypeScript client contracts. We developed stateful agent workflows using LangGraph and Pydantic AI, multilingual hybrid vector search (BGE-M3 + Qdrant), Urdu speech-to-text models, and secure school-chain multi-tenant database partitions.
+- Impact: Compressed development timeline down to 3–4.5 months (saving 70% in costs). Urdu-enabled AI engine helping students, teachers, and admins. Unified Admin panel to control multi-school chains.
+- Live: https://iqbalai.com
 
-## 7. CaptureProof
-* **Role**: Solutions Architect & Full Infrastructure Management (past 3 years)
-* **Tech Stack**: AI/ML Custom Computer Vision Models, Python, PyTorch/TensorFlow, AWS Infrastructure (EC2, S3, RDS, CloudFront), custom dashboards.
-* **The Challenge**: Train, optimize, and integrate custom computer vision models to track visual medical changes over time.
-* **T&M's Solution**:
-  - Trained custom vision models (excluding LLMs) for image analysis.
-  - Managed full AWS cloud infrastructure, optimizing scaling and HIPAA compliance for healthcare data.
-  - Provided a dedicated engineering team for ongoing maintenance and backend stability.
-* **Impact & Metrics**:
-  - Deployed models with high classification accuracy.
-  - Maintained 99.99% AWS uptime over a 3-year production period.
+### CaptureProof — https://tnmco.uk/case-studies/captureproof/
+- Role: Solutions Architect & Infrastructure Team
+- Timeline: 2023 - 2026 (Past 3 Years)
+- Tech stack: PyTorch, TensorFlow, Python, AWS (EC2, S3, RDS, CloudFront), Custom CV Models
+- Challenge: Train, validate, and optimize medical computer vision models to track patient visual physiological changes over time, requiring high uptime and strict HIPAA-compliant cloud hosting solutions.
+- Solution: T&M trained specialized computer vision architectures (non-LLM models) for clinical visual analytics. Over the past 3 years, we have fully managed the secure AWS hosting cluster, engineered automated backups, configured CloudFront CDN distribution, and provided dedicated backend maintenance.
+- Impact: Maintained 99.99% AWS server cluster availability over 3 years. Successfully satisfied rigorous healthcare data protection audits. Deployed highly accurate visual physiological tracking models.
+- Note: Enterprise IP — source code and live backend are private.
 
-## 8. Atlas by BoH
-* **Role**: AI Solutions Team & Frontend Engineers
-* **Tech Stack**: React, Next.js, Python, FastAPI, OpenAI API, LangChain (standard RAG pipeline).
-* **The Challenge**: Create a real-time AI copilot platform with a data-visualizing analytics dashboard.
-* **T&M's Solution**:
-  - Designed a dark-themed UI featuring multi-agent workflows and interactive charts.
-  - Connected databases to natural language agents, allowing users to type prompts to generate reports.
-* **Impact & Metrics**:
-  - Delivered a fluid, production-ready dashboard now active for Hybrid users.
+### Atlas by BoH — https://tnmco.uk/case-studies/atlas/
+- Role: AI Solutions Team & Frontend Engineers
+- Timeline: 2024
+- Tech stack: React, Next.js, FastAPI, OpenAI API, LangChain (RAG)
+- Challenge: Develop a premium, responsive real-time AI copilot application with a fluid data-visualizing analytics dashboard querying complex backends.
+- Solution: We designed a dark-themed user interface featuring interactive charting widgets and multi-agent chat. We developed a robust Retrieval-Augmented Generation (RAG) backend utilizing FastAPI and LangChain, enabling natural language to SQL/report execution.
+- Impact: Fluid, high-responsiveness dashboard active for Hybrid users. Under 1.5s latency on custom natural language analytics reports.
+- Live: https://atlas.buildonhybrid.com/
 
-## 9. Tiny Crews
-* **Role**: E-Commerce Developers & Storefront Designers
-* **Tech Stack**: Shopify, Liquid, JavaScript, custom checkout APIs.
-* **The Challenge**: Create a clean, bright, pastel-themed boutique storefront for online kids clothing.
-* **T&M's Solution**:
-  - Customized storefront layouts focusing on mobile shopping responsiveness and high page-load speeds.
-  - Set up automated inventory synchronization and transaction notifications.
-* **Impact & Metrics**:
-  - Optimized checkout funnel, reducing cart abandonment rate by 15%.
+### OTTO by BoH — https://tnmco.uk/case-studies/otto/
+- Role: AI Agents Team & Project Management
+- Timeline: 2024
+- Tech stack: Pydantic AI, Python, Hybrid API, Web3.js, Social API integrations
+- Challenge: Develop an autonomous AI agent capable of parsing natural language prompts, monitoring live blockchain networks, executing secure transactions, and communicating findings across social channels.
+- Solution: We built OTTO's agentic decision workflows using Pydantic AI. We integrated the Hybrid Unified Data API so the agent fetches audited Web3 telemetry, and programmed cryptographically constrained transaction tools to guarantee safe agent wallet operations.
+- Impact: 100% autonomous agent running on live social and crypto channels. Integrated directly with wallets supporting automated gas limits.
+- Live: https://onchainotto.ai/
 
-## 10. His & Hers
-* **Role**: E-Commerce Developers & UI Designers
-* **Tech Stack**: WordPress, WooCommerce, PHP, custom payment gateway APIs, SMS notification integrations.
-* **The Challenge**: Build a premium clothing and fashion e-commerce storefront for a prominent Pakistani apparel brand.
-* **T&M's Solution**:
-  - Developed a dark-gold themed premium WooCommerce storefront.
-  - Optimized database queries to handle large spikes in concurrent traffic during seasonal sales.
-  - Integrated direct SMS verification APIs and payment gateways.
-* **Impact & Metrics**:
-  - Designed a storefront that supports high volumes of concurrent checkout requests without latency.
+### Docushield — https://tnmco.uk/case-studies/docushield/
+- Role: Fractional CTO & Solutions Architect
+- Timeline: 2020 - 2021
+- Tech stack: Solidity, Web3.js, iOS (Swift), Android (Kotlin), PHP Web Admin, L2 Blockchain
+- Challenge: The requirement was to deliver an enterprise-grade document sharing, signing, and verification mobile and web application backed by secure, distributed ledger infrastructure to assure document integrity.
+- Solution: As Fractional CTO, we designed and deployed custom Layer 2 (L2) blockchain nodes to index document hashes securely. We also launched the native $DOC utility token, built native iOS and Android apps, created a PHP web console, and managed the full engineering and QA teams.
+- Impact: Raised $0.5 Million in seed funding. 100% auditable blockchain-backed document signatures.
+- Note: Enterprise IP — source code and live backend are private.
 
-## 11. Tameer Estate UK
-* **Role**: Full Stack Web Team
-* **Tech Stack**: WordPress, PHP, MySQL, Google Maps API, custom property search filters.
-* **The Challenge**: Build a real estate portal for the UK market facilitating property sales, purchases, renting, and builder profiles.
-* **T&M's Solution**:
-  - Developed custom query filters to easily search by location, price, and rooms.
-  - Integrated interactive maps to show properties and surrounding locations.
-* **Impact & Metrics**:
-  - Deployed a fully responsive property directory.
+### NonRival Data — https://tnmco.uk/case-studies/nonrival-data/
+- Role: Fractional CTO & Lead Product Delivery
+- Timeline: 2021 - 2022
+- Tech stack: Laravel 8, React Native, Web3.js, Solidity, Infura, Browser Extensions API
+- Challenge: The client wanted to build a privacy-first, MVP blockchain ecosystem empowering users to take control of their financial data and monetize it. This required seamless cross-platform functionality spanning Web, Mobile (iOS/Android), and major Web Browsers (Chrome, Firefox, Safari, Brave).
+- Solution: T&M designed and engineered a unified ecosystem. We built high-performance browser extensions, responsive mobile applications, and secure Ethereum mainnet hooks via Infura. All user transactions securely record hashes to custom Solidity smart contracts, utilizing client-side cryptographic hashing to keep raw data completely private.
+- Impact: Successfully launched Web 3.0 MVP across Web, iOS, Android, and 3 Extension Stores. 100% of user data monetization requests validated on the Ethereum mainnet. Designed high-performance cross-platform communication protocols.
+- Live: https://nonrivaldata.com
 
-## 12. e-Sehat
-* **Role**: Mobile Developers & Video Streaming Engineers
-* **Tech Stack**: React Native (iOS & Android mobile apps), Node.js backend, MongoDB, WebRTC (real-time video calls).
-* **The Challenge**: Build a secure telemedicine mobile app connecting patients with doctors in Pakistan.
-* **T&M's Solution**:
-  - Designed real-time slot booking engines.
-  - Built encrypted WebRTC video streaming rooms.
-  - Deployed prescription uploads and wallet deposit integrations.
-* **Impact & Metrics**:
-  - Deployed a HIPAA-compliant healthcare application.
+### Build On Hybrid — https://tnmco.uk/case-studies/build-on-hybrid/
+- Role: Solutions Architect & Project Management
+- Timeline: 2023 - 2024
+- Tech stack: Go, Rust, Node.js, Web3 Node Infrastructure, GraphQL API
+- Challenge: Design a decentralized node deployment architecture and a high-performance Unified Data API for multichain Web3 networks, enabling developers to query audited blockchain records instantly.
+- Solution: T&M provided fractional architecture consulting. We designed the Go and Rust based node indexing infrastructure, mapped the Unified Data API models, and built the developer portal hub and API playgound (docs.buildonhybrid.com).
+- Impact: Guided project from raw ideation to verified technical architecture blueprints. Deployed high-availability node query infrastructure worldwide.
+- Note: Enterprise IP — source code and live backend are private.
 
-## 13. QuickCard (now RYVYL)
-* **Role**: Fractional CTO & Lead Payments Engineer (end-to-end project management & team allocation)
-* **Tech Stack**: React, Python, Django, PostgreSQL, Stripe API, Card Reader integrations.
-* **The Challenge**: Create a secure cashless and contactless payment website.
-* **T&M's Solution**:
-  - Developed merchant dashboard panels, transaction logs, and QR code billing solutions.
-  - Integrated card reader APIs for POS systems.
-  - Transitioned the product portfolio into RYVYL (now publicly traded on NASDAQ).
-* **Impact & Metrics**:
-  - Deployed a cashless transaction ecosystem.
-  - Transitioned platform to RYVYL (NASDAQ listed).
-  - Designed POS card reader integrations successfully processing live transactions.
+### QuickCard (now RYVYL) — https://tnmco.uk/case-studies/quickcard/
+- Role: Fractional CTO & Lead Payments Engineer
+- Timeline: 2020 - 2021
+- Tech stack: React, Python, Django, PostgreSQL, Stripe API, POS Integrations
+- Challenge: Develop a contactless and cashless payment ecosystem allowing merchants to create bills, generate printable/digital QR codes, and hook directly into hardware card readers.
+- Solution: We created custom Stripe checkout integrations, designed merchant dashboard panels to log daily transaction logs, set up PostgreSQL databases, and integrated POS card reader APIs.
+- Impact: Contactless transaction ecosystem fully deployed. Acquired and transitioned into RYVYL (now publicly traded on NASDAQ). Integrated POS card readers successfully processing payments.
+- Live: https://www.ryvyl.com/
+
+### e-Sehat — https://tnmco.uk/case-studies/e-sehat/
+- Role: Mobile Developers & Video Streaming Engineers
+- Timeline: 2021 - 2022
+- Tech stack: React Native, Node.js, MongoDB, WebRTC (Real-time Video)
+- Challenge: Develop a highly secure, HIPAA-compliant telemedicine application connecting patients in Pakistan to specialized doctors, supporting live slot booking, instant video calls, and e-prescriptions.
+- Solution: T&M developed cross-platform mobile apps using React Native. We built encrypted, low-bandwidth WebRTC video consultation rooms, constructed database booking engines, and integrated local digital wallets for deposit methods.
+- Impact: HIPAA-compliant video telemedicine app successfully launched. Low-latency, encrypted consultations running on mobile devices.
+- Live: https://play.google.com/store/apps/details?id=com.tnm.e_sehat&fbclid=IwAR132Dx6zlIK9nwDyRF1iq4s8LSTbZ6-SW3VMqvICqb5NDSGsWns1MvTREI
+
+### MintIt Studio — https://tnmco.uk/case-studies/mintit-studio/
+- Role: Fractional CTO & Lead Smart Contract Developer
+- Timeline: 2021 - 2022
+- Tech stack: Kadena Blockchain, Pact Smart Contracts, React.js, Docker, CI/CD
+- Challenge: Design and develop the first NFT marketplace on the Kadena Ecosystem featuring dynamic "mutant" NFTs that evolve based on on-chain activities.
+- Solution: We authored secure Pact smart contracts, set up Kadena gas station relays to subsidize user transactions, designed the React.js integration, and built deployment infrastructure using Docker and automated CI/CD pipelines.
+- Impact: Successfully launched the first-ever mutant NFT marketplace on Kadena. Zero security vulnerabilities reported post-launch.
+- Live: https://mintit.tnmco.uk/
+
+### Tameer Estate UK — https://tnmco.uk/case-studies/tameer-estate/
+- Role: Full Stack Web Team
+- Timeline: 2020 - 2021
+- Tech stack: WordPress, PHP, MySQL, Google Maps API, Custom Search Queries
+- Challenge: Develop a highly performant UK-focused property directory platform supporting sales, rentals, builder profiles, interactive location-based searching, and custom property filters.
+- Solution: We built custom database query systems to instantly filter properties by geography, pricing thresholds, and room specifications. We embedded dynamic Google Maps features showing location markers and nearby points of interest.
+- Impact: Fully responsive UK property search portal successfully deployed. Integrated instant location mapping system with 100% automated map syncing.
+- Live: https://tameerestate.com
+
+### Tiny Crews — https://tnmco.uk/case-studies/tiny-crews/
+- Role: E-Commerce Developers & Storefront Designers
+- Timeline: 2022 - 2023
+- Tech stack: Shopify, Liquid, JavaScript, Custom Checkout APIs
+- Challenge: Create a highly responsive, custom boutique kids clothing storefront on Shopify with clean, fast checkout, custom cart behaviors, and real-time inventory sync.
+- Solution: T&M developed a responsive theme utilizing Shopify Liquid and vanilla JavaScript. We optimized page speed configurations and implemented direct inventory and notification synchronization hooks.
+- Impact: Reduced checkout cart abandonment rates by 15%. Increased mobile page-load speed score to 90+.
+- Live: https://tinycrews.com/
+
+### His & Hers — https://tnmco.uk/case-studies/his-and-hers/
+- Role: E-Commerce Developers & UI Designers
+- Timeline: 2022 - 2023
+- Tech stack: WordPress, WooCommerce, PHP, Custom Payment APIs, SMS Gateway API
+- Challenge: Build a premium, high-traffic clothing e-commerce storefront for a prominent fashion brand in Pakistan. The system needed database optimization to survive flash-sales spikes and custom local API hooks.
+- Solution: T&M delivered a premium dark-gold themed WooCommerce storefront, implementing direct PHP query optimizations, custom checkout integrations, and automated SMS confirmation networks.
+- Impact: Platform handles thousands of concurrent checkouts during seasonal sales. Integrated automated SMS billing alerts for clients.
+- Live: https://hisandhers.com.pk
+
+## Demos
+- VIOLET — Clinic AI Assistant: https://ai.assistant.tnmco.uk/
+- BiteBot — Restaurant AI Assistant: https://bitebot.tnmco.uk/
+
+## Company
+- Legal name: Technology and Management Consultants Ltd (trading as T&M Consultants)
+- UK Company Number: 12621485 · Founded 2020
+- Headquarters: 49 Eglinton Rd, London, SE18 3SL, United Kingdom
+- Development office: Sargodha Road, Faisalabad, Punjab, Pakistan
+- Email: info@tnmco.uk
+- Website: https://tnmco.uk · Index: https://tnmco.uk/llms.txt

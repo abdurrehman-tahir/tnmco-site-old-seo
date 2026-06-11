@@ -8,8 +8,7 @@
                         <div class="col-lg-4 col-md-6 footer-contact">
                             <h3><img src="/assets/img/whitelogo.png" style="width: 40px;" alt="white logo"> T&M Consultants</h3>
                             <p>
-                                Technology and Management (T&M) consultants is a social enterprise building capacity for start-ups and SMEs.T&M offers 360° solutions to start-ups and SMEs including but not limited to product development, deployment and after sales services. Here at
-                                T&M We try to provide our clients and customers best services.
+                                T&M Consultants is a UK-registered technology consultancy (est. 2020) that designs, builds and runs AI systems and software products for start-ups and SMEs. We work the way a CTO would: scope honestly, architect for what you actually need, ship in weeks, and stay accountable after launch.
                             </p>
                             <div class="social-links  pt-3 pt-md-0 mt-3">
                                 <a href="https://www.facebook.com/TnMConsultants" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="T&M Consultants on Facebook"><i class="fa fa-facebook"></i></a>
@@ -33,6 +32,7 @@
                                 <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/about/">About us</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/case-studies/">Case Studies</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/articles/">Articles</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/contact/">Contact</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/Career.php">Career</a></li>
                             </ul>
@@ -41,8 +41,9 @@
                         <div class="col-lg-3 col-md-6 footer-links">
                             <h4>Our Demos</h4>
                             <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="https://ai.assistant.tnmco.uk/" target="_blank">VIOLET - Clinic AI Assistant</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="https://bitebot.tnmco.uk/" target="_blank">BiteBot - Restaurant AI Assistant</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://ai.assistant.tnmco.uk/" target="_blank" rel="noopener noreferrer">VIOLET - Clinic AI Assistant</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://bitebot.tnmco.uk/" target="_blank" rel="noopener noreferrer">BiteBot - Restaurant AI Assistant</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/demos/">All Live Demos</a></li>
                             </ul>
                         </div>
 

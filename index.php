@@ -214,7 +214,7 @@ session_start();
                                 <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#team">Team</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#testimonials">Testimonials</a>
+                                <a class="nav-link" href="/about/#testimonials">Testimonials</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="contact1" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#contact">Contact</a>
@@ -241,17 +241,6 @@ session_start();
         <section id="hero" class="clearfix">
             <div id="particles-js"></div>
 
-            <?php
-        if(isset($_SESSION['message']))
-            {
-                ?>
-                <script>
-                    document.getElementById('contact1').click();
-                </script>
-
-                <?php
-            }
-        ?>
 
                     <div class="container d-flex h-100">
                         <div class="row justify-content-center align-self-center" data-aos="fade-up">
@@ -762,7 +751,7 @@ session_start();
                         </div>
                     </header>
 
-                    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="row" data-aos="fade-up" data-aos-delay="200">
 
                         <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                             <a href="/case-studies/iqbalai/" class="logo-tile">
@@ -851,90 +840,6 @@ session_start();
             </section>
             <!-- End Portfolio Section -->
 
-            <!-- ======= Testimonials Section ======= -->
-
-            <section id="testimonials" class="testimonials section-bg">
-                <div class="container">
-
-                    <div class="section-title">
-                        <span>Testimonials</span>
-                        <h2>Testimonials</h2>
-                    </div>
-
-                    <div class="owl-carousel testimonials-carousel">
-                        <div class="testimonial-item">
-                            <p style="text-align: justify; text-justify: inter-word;">
-                                <span style="margin-bottom: 10px;"><i class="fas fa-quote-left"
-                                    style="color:rgb(180, 178, 178);margin-right:7px"></i></span>
-                                    T&M went above and beyond in development of my project. They not only assisted with the project development but also helped
-                                    me refine my idea. I was thoroughly impressed with the speed of delivery as the project was time sensitive. I would strongly recommend working with them. Thanks again and looking forward to working with you in future.
-                                <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
-                            </p>
-                            <img src="./assets/img/doc-circle.png" class="testimonial-img" alt="Docushield Client Testimonial Logo" loading="lazy" width="1080" height="1080">
-                            <h3>Jules Mancion (Project Manager)</h3>
-                            <h4><a href="https://docushield.tnmco.uk/" target="_blank">docushield.com</a></h4>
-                        </div>
-                        <div class="testimonial-item">
-                            <p style="text-align: justify; text-justify: inter-word;">
-                                <span style="margin-bottom: 10px;"><i class="fas fa-quote-left"
-                                    style="color:rgb(180, 178, 178);margin-right:7px"></i></span>I'm thrilled to share my experience working with T&M consultants on our real estate website project. Their expertise in creating a platform for property sale, purchase, and rental, along with detailed builder information, was exceptional.
-                                    T&M consultants seamlessly integrated features like property search, virtual tours, and secure payments. Their innovation, including augmented reality tools, elevated our platform above the competition.
-                                    Communication was excellent throughout, and T&M consultants tackled challenges with dedication, ensuring a flawless user experience by launch day.
-                                    I wholeheartedly recommend T&M consultants for their technical skills, user-centric approach, and transformative contributions to our project. Thank you for shaping the future of real estate online!
-                                <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
-                            </p>
-                            <img src="./assets/img/tameer_circle.png" class="testimonial-img" alt="Tameer Estate UK Client Testimonial Logo" loading="lazy" width="400" height="400">
-                            <h3>Hamza Bajwa (Project Manager)</h3>
-                            <h4><a href="https://tameerestate.com/" target="_blank">tameerestate.com</a></h4>
-                        </div>
-                        <!-- <div class="testimonial-item">
-                            <p style="text-align: justify; text-justify: inter-word;">
-                                <span style="margin-bottom: 10px;"><i class="fas fa-quote-left"
-                                    style="color:rgb(180, 178, 178);margin-right:7px"></i></span> T&M consultants took over website development from another company and finished this project in record time. Good value for
-                                money and professional service by T&M consultants. I would recommend working with them.
-                                <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
-                            </p>
-                            <img src="./assets/img/tec_Circle copy.png" class="testimonial-img" alt="techstore img">
-                            <h3>Zeeshan Ahmed (Owner)</h3>
-                            <h4><a href="http://tecstore.pk/" target="_blank">techstore.pk</a></h4>
-                        </div> -->
-                        <div class="testimonial-item">
-                            <p style="text-align: justify; text-justify: inter-word;">
-                                <span style="margin-bottom: 10px;"><i class="fas fa-quote-left"
-                                    style="color:rgb(180, 178, 178);margin-right:7px"></i></span>T&M co. team have exceptional technical skills as well as communication skills. 
-                                    They made my project go smoothly. We were extremely pleased with the quality and speed of delivery. I would highly recommend them and would acquire their services again.
-                                <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
-                            </p>
-                            <img src="./assets/img/cominfo-logo.png" class="testimonial-img" alt="Cominfo Client Testimonial Logo" loading="lazy" width="400" height="400">
-                            <h3>Imad Rehman (Exec Vice. President)</h3>
-                            <h4><a href="https://www.cominfo.com/" target="_blank">cominfo.com</a></h4>
-                        </div>
-                        <!-- <div class="testimonial-item">
-                            <p style="text-align: justify; text-justify: inter-word;">
-                                <span style="margin-bottom: 10px;"><i class="fas fa-quote-left"
-                                    style="color:rgb(180, 178, 178);margin-right:7px"></i></span> It has been an absolute pleasure working with T&M. I was really pleased with their professional attitude and exceptional
-                                customer service.
-                                <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
-                            </p>
-                            <img src="./assets/img/CricInGig_Circle.png" class="testimonial-img" alt="circle img">
-                            <h3>David Hussain (PM)</h3>
-                            <h4><a href="https://www.cricingif.com/" target="_blank">cricingif.com</a></h4>
-                        </div> -->
-                        <div class="testimonial-item">
-                            <p style="text-align: justify; text-justify: inter-word;">
-                                <span style="margin-bottom: 10px;"><i class="fas fa-quote-left"
-                                    style="color:rgb(180, 178, 178);margin-right:7px"></i></span>T&M consultants provided 360° services in refining and developing proof of concept. I am really pleased with their exceptional
-                                services in developing prototype for my start-up.
-                                <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
-                            </p>
-                            <img src="./assets/img/TSG_Circle.png" class="testimonial-img" alt="TSG Client Testimonial Logo" loading="lazy" width="400" height="400">
-                            <h3>Dr.Asif Mufti (Founder)</h3>
-                            <h4><a href="http://tsgtech.us/" target="_blank">Tsgtech.us</a></h4>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
 
 
 
@@ -945,19 +850,6 @@ session_start();
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact" style="margin-bottom:60px">
 
-            <?php
-        if(isset($_SESSION['message']))
-            {
-                ?>
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                    Thank you for contacting T&M Co. We have received your query and will be in touch with you shortly.
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button></div>
-                <?php
-            unset($_SESSION['message']);
-            }
-        ?>
 
                     <div class="container" data-aos="fade-up">
                         <header class="section-header">
@@ -1034,7 +926,7 @@ session_start();
                                         <div class="error-message"></div>
                                         <div class="sent-message">Your message has been sent. Thank you!</div>
                                     </div>
-                                    <div class="text-center"><button type="submit" onclick="ValidateContact();">Send Message</button></div>
+                                    <div class="text-center"><button type="submit">Send Message</button></div>
                                 </form>
 
                             </div>
@@ -1058,8 +950,7 @@ session_start();
                         <div class="col-lg-4 col-md-6 footer-contact">
                             <h3><img src="./assets/img/whitelogo.png" style="width: 40px;" alt="white logo"> T&M Consultants</h3>
                             <p>
-                                Technology and Management (T&M) consultants is a social enterprise building capacity for start-ups and SMEs.T&M offers 360° solutions to start-ups and SMEs including but not limited to product development, deployment and after sales services. Here at
-                                T&M We try to provide our clients and customers best services.
+                                T&M Consultants is a UK-registered technology consultancy (est. 2020) that designs, builds and runs AI systems and software products for start-ups and SMEs. We work the way a CTO would: scope honestly, architect for what you actually need, ship in weeks, and stay accountable after launch.
                             </p>
                             <div class="social-links  pt-3 pt-md-0 mt-3">
                                 <a href="https://www.facebook.com/TnMConsultants" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="T&M Consultants on Facebook"><i class="fa fa-facebook"></i></a>
@@ -1072,21 +963,21 @@ session_start();
                         <div class="col-lg-3 col-md-6 footer-links">
                             <h4>Our Services</h4>
                             <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">BLOCKCHAIN LEDGER</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">FULL STACK WEB DEVELOPMENT</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">MOBILE APPLICATION DEVELOPMENT</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">Machine Learning</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">Project Management</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">E-COMMERCE</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-agents/">AI Agents &amp; Assistants</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-automation/">AI Automation &amp; RAG</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/services/fractional-cto/">Fractional CTO</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/services/software-delivery/">Software Delivery &amp; MVPs</a></li>
                             </ul>
                         </div>
 
                         <div class="col-lg-2 col-md-6 footer-links">
                             <h4>Useful Links</h4>
                             <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#services">Services</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/about/">About us</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/case-studies/">Case Studies</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/articles/">Articles</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/contact/">Contact</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="./Career.php">Career</a></li>
                             </ul>
                         </div>
@@ -1094,8 +985,9 @@ session_start();
                         <div class="col-lg-3 col-md-6 footer-links">
                             <h4>Our Demos</h4>
                             <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="https://ai.assistant.tnmco.uk/" target="_blank">VIOLET - Clinic AI Assistant</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="https://bitebot.tnmco.uk/" target="_blank">BiteBot - Restaurant AI Assistant</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://ai.assistant.tnmco.uk/" target="_blank" rel="noopener noreferrer">VIOLET - Clinic AI Assistant</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="https://bitebot.tnmco.uk/" target="_blank" rel="noopener noreferrer">BiteBot - Restaurant AI Assistant</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/demos/">All Live Demos</a></li>
                             </ul>
                         </div>
 
@@ -1277,6 +1169,28 @@ session_start();
         <script src="assets/js/main.js" defer></script>
         <script src="assets/js/orb.js" defer></script>
         
+        <!-- Form submission toast (session-driven) -->
+        <?php if (isset($_SESSION['message'])) { $tnmOk = ($_SESSION['message'] !== 'error'); ?>
+        <div class="tnm-toast <?php echo $tnmOk ? 'is-success' : 'is-error'; ?>" id="tnmToast" role="status" aria-live="polite">
+            <i class="fas <?php echo $tnmOk ? 'fa-check-circle' : 'fa-exclamation-circle'; ?>"></i>
+            <div class="toast-copy">
+                <strong><?php echo $tnmOk ? 'Message sent!' : 'Message not sent'; ?></strong>
+                <p><?php echo $tnmOk
+                    ? 'Thank you for contacting T&amp;M. We have received your query and will be in touch shortly.'
+                    : 'Something went wrong on our end. Please email us directly at info@tnmco.uk.'; ?></p>
+            </div>
+            <button type="button" class="toast-close" id="tnmToastClose" aria-label="Close">&times;</button>
+        </div>
+        <script>
+            (function () {
+                var toast = document.getElementById('tnmToast');
+                if (!toast) return;
+                document.getElementById('tnmToastClose').addEventListener('click', function () { toast.classList.add('hide'); });
+                setTimeout(function () { toast.classList.add('hide'); }, 8000);
+            })();
+        </script>
+        <?php unset($_SESSION['message']); } ?>
+
         <!-- Cookie consent (Consent Mode v2) -->
         <div class="consent-banner" id="consentBanner" role="dialog" aria-label="Cookie consent">
             <p>We use Google Analytics cookies to understand how visitors use our site. No marketing or third-party ad cookies.</p>

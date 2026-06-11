@@ -49,28 +49,36 @@ $name    = str_replace(["\r", "\n"], ' ', $name);
 $subject = str_replace(["\r", "\n"], ' ', $subject);
 $message = mb_substr($message, 0, 2000);
 
-$mail = new PHPMailer();
-
-$mail->isSMTP();
-$mail->Host = SMTP_HOST;
-$mail->SMTPAuth = true;
-$mail->Username = SMTP_USERNAME;   //username
-$mail->Password = SMTP_PASSWORD;   //password
-$mail->SMTPSecure = 'ssl';
-$mail->Port = SMTP_PORT; //SMTP port
-
-// Send from our own authenticated address (SPF/DMARC-safe); visitor goes in Reply-To
-$mail->setFrom(SMTP_USERNAME, 'T&M Website Contact Form');
-$mail->addReplyTo($email, $name);
-$mail->addAddress('contact@tnmco.uk');
-
-$mail->isHTML(false);
-$mail->Subject = $subject;
-$mail->Body    = "From: {$name} <{$email}>\n\n" . $message;
-
-$mail->send();
 session_start();
-$_SESSION['message'] = "show";
+
+try {
+    $mail = new PHPMailer(true);   // throw exceptions so failures are not silent
+
+    $mail->isSMTP();
+    $mail->Host = SMTP_HOST;
+    $mail->SMTPAuth = true;
+    $mail->Username = SMTP_USERNAME;   //username
+    $mail->Password = SMTP_PASSWORD;   //password
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port = SMTP_PORT; //SMTP port
+
+    // Send from our own authenticated address (SPF/DMARC-safe); visitor goes in Reply-To
+    $mail->setFrom(SMTP_USERNAME, 'T&M Website Contact Form');
+    $mail->addReplyTo($email, $name);
+    $mail->addAddress('contact@tnmco.uk');
+
+    $mail->isHTML(false);
+    $mail->Subject = $subject;
+    $mail->Body    = "From: {$name} <{$email}>\n\n" . $message;
+
+    $mail->send();
+    $_SESSION['message'] = "show";
+} catch (Exception $e) {
+    // Don't claim success when the send failed — the toast shows an error state
+    error_log('Contact form mail failure: ' . $e->getMessage());
+    $_SESSION['message'] = "error";
+}
+
 header("Location:./index.php");
 exit();
 

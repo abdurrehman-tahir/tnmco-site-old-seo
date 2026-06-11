@@ -73,21 +73,41 @@ require dirname(__DIR__) . '/includes/header.php';
             </section>
 
             <?php if (!empty($sv['show_demos'])): ?>
-            <!-- Live demos callout (links reuse existing demo subdomains) -->
-            <section class="section-bg" style="padding: 40px 0;">
+            <!-- Live demos callout (same demo-card component as /demos/) -->
+            <section class="section-bg" style="padding: 45px 0;">
                 <div class="container" data-aos="fade-up">
-                    <h2 style="color:#282646; font-weight:700; font-size:24px; margin-bottom:18px;">Live Demos</h2>
+                    <h2 style="color:#282646; font-weight:700; font-size:24px; margin-bottom:20px;">Live Demos</h2>
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <div style="background:#fff; border-radius:8px; padding:22px; box-shadow:0 2px 10px rgba(0,0,0,0.04); height:100%;">
-                                <h4 style="font-weight:700; color:#282646;">VIOLET — Clinic AI Assistant</h4>
-                                <a href="https://ai.assistant.tnmco.uk/" target="_blank" rel="noopener noreferrer" class="btn-tnm mt-2">Open VIOLET <i class="fas fa-external-link-alt ml-1"></i></a>
+                            <div class="demo-card">
+                                <div class="demo-banner violet">
+                                    <div class="demo-icon"><i class="fas fa-stethoscope"></i></div>
+                                    <div>
+                                        <h3>VIOLET</h3>
+                                        <span class="demo-tag">Clinic AI Assistant</span>
+                                    </div>
+                                </div>
+                                <div class="demo-body">
+                                    <span class="demo-live-dot mb-3">Live Demo</span>
+                                    <p>A working AI assistant for clinics — open it in your browser and try it for yourself.</p>
+                                    <a href="https://ai.assistant.tnmco.uk/" target="_blank" rel="noopener noreferrer" class="btn-tnm">Open VIOLET <i class="fas fa-external-link-alt ml-1"></i></a>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <div style="background:#fff; border-radius:8px; padding:22px; box-shadow:0 2px 10px rgba(0,0,0,0.04); height:100%;">
-                                <h4 style="font-weight:700; color:#282646;">BiteBot — Restaurant AI Assistant</h4>
-                                <a href="https://bitebot.tnmco.uk/" target="_blank" rel="noopener noreferrer" class="btn-tnm mt-2">Open BiteBot <i class="fas fa-external-link-alt ml-1"></i></a>
+                            <div class="demo-card">
+                                <div class="demo-banner bitebot">
+                                    <div class="demo-icon"><i class="fas fa-utensils"></i></div>
+                                    <div>
+                                        <h3>BiteBot</h3>
+                                        <span class="demo-tag">Restaurant AI Assistant</span>
+                                    </div>
+                                </div>
+                                <div class="demo-body">
+                                    <span class="demo-live-dot mb-3">Live Demo</span>
+                                    <p>A working AI assistant for restaurants — open it in your browser and try it for yourself.</p>
+                                    <a href="https://bitebot.tnmco.uk/" target="_blank" rel="noopener noreferrer" class="btn-tnm">Open BiteBot <i class="fas fa-external-link-alt ml-1"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -118,7 +138,7 @@ require dirname(__DIR__) . '/includes/header.php';
                         <?php endforeach; ?>
                     </div>
                     <div class="mt-2">
-                        <a href="/case-studies/" style="color:#1bb1dc; font-weight:600;">See all case studies →</a>
+                        <a href="/case-studies/" class="service-proof proof-chip-link">See all case studies <span class="arw">&rarr;</span></a>
                     </div>
                 </div>
             </section>

@@ -210,7 +210,7 @@
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     /* static fallback shown when JS/canvas is off or reduced-motion */
-    background: radial-gradient(circle at 38% 32%, rgba(27,177,220,.30), rgba(40,38,70,.04) 62%, transparent 72%);
+    background: radial-gradient(circle at 50% 46%, rgba(27,177,220,.28), rgba(40,38,70,.04) 62%, transparent 72%);
 }
 .about-orb .orb-canvas { display: block; width: 100%; height: 100%; }
 @media (max-width: 575px) { .about-orb { max-width: 300px; } }
@@ -529,3 +529,72 @@
 .consent-banner p { color: var(--tnm-ink); font-size: 14px; line-height: 1.55; margin: 0 0 12px; }
 .consent-banner .consent-actions { display: flex; gap: 10px; }
 .consent-banner .btn-tnm, .consent-banner .btn-tnm-ghost { padding: 9px 18px; font-size: 14px; }
+
+/* =====================================================================
+   Batch 4 — toast, orb centering, responsive hardening
+   ===================================================================== */
+
+/* Submission toast (fixed, top-center) */
+.tnm-toast {
+    position: fixed;
+    top: 22px; left: 50%;
+    transform: translateX(-50%);
+    z-index: 10001;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    width: min(560px, calc(100vw - 32px));
+    background: #fff;
+    border: 1px solid var(--tnm-line);
+    border-radius: 14px;
+    box-shadow: 0 18px 50px rgba(40, 38, 70, .25);
+    padding: 16px 18px;
+    animation: toastIn .45s var(--tnm-ease);
+    transition: opacity .35s var(--tnm-ease), transform .35s var(--tnm-ease);
+}
+.tnm-toast.is-success { border-top: 4px solid #2bd354; }
+.tnm-toast.is-error   { border-top: 4px solid #e55353; }
+.tnm-toast > i { font-size: 24px; margin-top: 2px; }
+.tnm-toast.is-success > i { color: #2bd354; }
+.tnm-toast.is-error   > i { color: #e55353; }
+.tnm-toast .toast-copy strong { display: block; color: var(--tnm-navy); font-size: 15.5px; margin-bottom: 2px; }
+.tnm-toast .toast-copy p { color: var(--tnm-ink); font-size: 14px; line-height: 1.5; margin: 0; }
+.tnm-toast .toast-close {
+    margin-left: auto;
+    background: none; border: none; cursor: pointer;
+    font-size: 22px; line-height: 1; color: #adb5bd;
+    padding: 0 2px;
+}
+.tnm-toast .toast-close:hover { color: var(--tnm-navy); }
+.tnm-toast.hide { opacity: 0; transform: translateX(-50%) translateY(-16px); pointer-events: none; }
+@keyframes toastIn { from { opacity: 0; transform: translateX(-50%) translateY(-20px); } }
+
+/* Orb: center within its column at every breakpoint */
+.about .row .col-lg-5,
+.about .row .col-md-6 { display: flex; align-items: center; justify-content: center; }
+.about-orb { margin: 0 auto; }
+@media (max-width: 767px) { .about-orb { margin-bottom: 26px; } }
+
+/* "See all case studies" proof-chip variant (service pages) */
+.proof-chip-link { max-width: 420px; text-decoration: none; }
+
+/* Responsive hardening */
+@media (max-width: 991px) {
+    .page-hero h1 { max-width: 100%; }
+    .cs-hero h1 { font-size: 28px; }
+}
+@media (max-width: 575px) {
+    .btn-tnm, .btn-tnm-ghost { width: 100%; justify-content: center; }
+    .btn-row { width: 100%; }
+    .service-proof { font-size: 13px; }
+    .logo-tile .logo-panel { height: 140px; }
+    .demo-card .demo-banner { padding: 20px; }
+    .demo-card .demo-banner h3 { font-size: 18px; }
+    .cs-logo-chip { padding: 10px 16px; }
+    .cs-logo-chip img { max-height: 44px; }
+    .cs-screens img { max-height: 320px; }
+    .consent-banner { left: 10px; right: 10px; bottom: 10px; }
+    .consent-banner .consent-actions { flex-direction: column; }
+    .team-cta .btn-tnm-ghost { width: auto; }
+    #hero .intro-info a.btn-get-started { display: block; margin: 0 0 12px 0 !important; text-align: center; }
+}
