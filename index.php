@@ -257,7 +257,12 @@ session_start();
 
                             <div class="col-md-7 intro-img order-md-last order-first mt-md-5" data-aos="zoom-out" data-aos-delay="200">
                                 <!-- <img src="assets/img/intro-img.svg" alt="" class="img-fluid"> -->
-                                <img src="./assets/img/fix-size-01.png" alt="T&M Consultants technology solutions illustration" class="img-fluid" width="900" height="540">
+<!-- Hero visual: "the Mind" — a living generative particle entity
+                                     (sibling of the VIOLET demo orb): rotating 3D swarm, heartbeat
+                                     core, orbital ring + comet, cursor-reactive. Canvas, no deps. -->
+                                <div class="hero-mind" aria-hidden="true">
+                                    <canvas class="hero-mind-canvas"></canvas>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1185,6 +1190,7 @@ session_start();
         <!-- Template Main JS File -->
         <script src="assets/js/main.js" defer></script>
         <script src="assets/js/orb.js" defer></script>
+        <script src="assets/js/hero-mind.js" defer></script>
         
         <!-- Form submission toast (session-driven) -->
         <?php if (isset($_SESSION['message'])) { $tnmOk = ($_SESSION['message'] !== 'error'); ?>

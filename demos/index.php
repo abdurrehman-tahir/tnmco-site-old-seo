@@ -40,9 +40,9 @@ require dirname(__DIR__) . '/includes/header.php';
                     <div class="row">
                         <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                             <div class="demo-card">
-                                <div class="demo-banner violet">
-                                    <div class="demo-icon"><i class="fas fa-stethoscope"></i></div>
-                                    <div>
+                                <div class="demo-media violet">
+                                    <img src="/assets/img/demos/violet.webp" alt="VIOLET clinic AI assistant — live demo launch screen" loading="lazy" width="916" height="754">
+                                    <div class="demo-media-overlay">
                                         <h3>VIOLET</h3>
                                         <span class="demo-tag">Clinic AI Assistant</span>
                                     </div>
@@ -56,9 +56,9 @@ require dirname(__DIR__) . '/includes/header.php';
                         </div>
                         <div class="col-md-6 mb-4" data-aos="fade-up" data-aos-delay="150">
                             <div class="demo-card">
-                                <div class="demo-banner bitebot">
-                                    <div class="demo-icon"><i class="fas fa-utensils"></i></div>
-                                    <div>
+                                <div class="demo-media bitebot">
+                                    <img src="/assets/img/demos/bitebot.webp" alt="BiteBot restaurant AI assistant — live demo launch screen" loading="lazy" width="916" height="754">
+                                    <div class="demo-media-overlay">
                                         <h3>BiteBot</h3>
                                         <span class="demo-tag">Restaurant AI Assistant</span>
                                     </div>
