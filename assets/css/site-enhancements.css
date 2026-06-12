@@ -689,14 +689,14 @@
 
 /* --- Hero typography: fill the space --- */
 #hero .intro-info h1 {
-    font-size: 46px !important;
+    font-size: 42px !important;
     line-height: 1.22;
     font-weight: 700;
 }
 #hero .intro-info p {
     font-size: 18.5px;
     line-height: 1.75;
-    max-width: 560px;
+    max-width: 640px;
 }
 @media (max-width: 1199px) { #hero .intro-info h1 { font-size: 40px !important; } }
 @media (max-width: 991px)  { #hero .intro-info h1 { font-size: 34px !important; } }
@@ -798,9 +798,108 @@
 /* --- Hero "Mind" canvas (replaces the SVG diagram) --- */
 .hero-mind {
     width: 100%;
-    max-width: 660px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 0 0 0 auto;          /* hug the right edge of the column */
     aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    /* soft white halo lifts the entity off the busy particles backdrop */
+    background: radial-gradient(circle at 50% 50%, rgba(255,255,255,.95) 0%, rgba(255,255,255,.55) 50%, rgba(255,255,255,0) 72%);
+}
+@media (max-width: 767px) { .hero-mind { margin: 0 auto; } }
+
+/* fade the legacy particles.js backdrop on the right so the Mind owns that space */
+@media (min-width: 768px) {
+    #particles-js canvas {
+        -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 38%, rgba(0,0,0,.12) 66%, rgba(0,0,0,0) 88%);
+        mask-image: linear-gradient(to right, rgba(0,0,0,1) 38%, rgba(0,0,0,.12) 66%, rgba(0,0,0,0) 88%);
+    }
 }
 .hero-mind .hero-mind-canvas { display: block; width: 100%; height: 100%; }
 @media (max-width: 767px) { .hero-mind { max-width: 360px; } }
+
+/* =====================================================================
+   Batch 7 — service-page authority content
+   ===================================================================== */
+.auth-h2 {
+    color: var(--tnm-navy);
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+.auth-p {
+    color: var(--tnm-ink);
+    font-size: 16.5px;
+    line-height: 1.8;
+    max-width: 860px;
+    margin-bottom: 16px;
+}
+.auth-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border: 1px solid var(--tnm-line);
+    border-radius: 14px;
+    padding: 24px 24px 20px;
+    box-shadow: 0 2px 14px rgba(40, 38, 70, .06);
+    text-decoration: none;
+    transition: transform .2s var(--tnm-ease), box-shadow .2s var(--tnm-ease), border-color .2s var(--tnm-ease);
+}
+.auth-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 34px rgba(40, 38, 70, .13);
+    border-color: rgba(27, 177, 220, .45);
+    text-decoration: none;
+}
+.auth-card h3 { color: var(--tnm-navy); font-weight: 700; font-size: 17px; margin-bottom: 10px; }
+.auth-card p { color: var(--tnm-ink); font-size: 14.5px; line-height: 1.65; margin-bottom: 14px; }
+.auth-card .view-cs { margin-top: auto; color: var(--tnm-cyan); font-weight: 600; font-size: 13.5px; }
+.auth-card:hover .view-cs .arw { transform: translateX(4px); }
+.auth-card .view-cs .arw { display: inline-block; transition: transform .18s var(--tnm-ease); }
+.auth-opinion {
+    background: rgba(27, 177, 220, .06);
+    border-left: 4px solid var(--tnm-cyan);
+    border-radius: 0 14px 14px 0;
+    padding: 26px 28px;
+    max-width: 920px;
+}
+.auth-opinion .auth-h2 { font-size: 22px; margin-bottom: 12px; }
+.auth-faq-item {
+    background: #fff;
+    border: 1px solid var(--tnm-line);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+    max-width: 920px;
+}
+.auth-faq-item h3 { color: var(--tnm-navy); font-weight: 700; font-size: 16.5px; margin-bottom: 8px; }
+.auth-faq-item p { color: var(--tnm-ink); font-size: 15px; line-height: 1.7; margin: 0; }
+
+/* =====================================================================
+   Batch 8 — hero composition: fill wide desktops, hug content on mobile
+   ===================================================================== */
+
+/* Desktop: the default 1140px container leaves huge gutters on wide screens */
+@media (min-width: 1200px) {
+    #hero > .container { max-width: min(1560px, 93vw); }
+    #hero .intro-info h1 { font-size: 46px !important; }
+    #hero .intro-info p { max-width: 700px; }
+    .hero-mind { max-width: 780px; }
+}
+
+/* Mobile: kill the 100vh voids — hero hugs its content */
+@media (max-width: 767px) {
+    #hero {
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 92px 0 46px;
+    }
+    #hero .container { height: auto !important; }
+    .hero-mind { max-width: 290px; margin: 0 auto 4px; }
+    /* the heading wrapper's mt-5 + CTA mt-4 create the mid/bottom gaps */
+    #hero .intro-info .mt-5 { margin-top: 10px !important; }
+    #hero .intro-info .mt-4 { margin-top: 16px !important; }
+    #hero .intro-info { text-align: center; }
+    #hero .intro-info p { font-size: 16px; margin-left: auto; margin-right: auto; }
+}

@@ -3,42 +3,179 @@
 > UK-registered AI consultancy (Company No. 12621485) building AI voice agents, RAG systems
 > and workflow automation, with Fractional CTO and full-stack product delivery for start-ups
 > and SMEs. Offices in London, UK and Faisalabad, Pakistan. 10+ years experience, 29+ projects
-> shipped. This document expands on /llms.txt with full case-study detail for AI search engines
-> and RAG systems.
+> shipped. This document expands on /llms.txt with full service detail, FAQs and case studies
+> for AI search engines and RAG systems.
 
 ## Services
 
 ### AI Voice Agents & Assistants — https://tnmco.uk/services/ai-agents/
+
 Voice and chat agents that answer, book and act — for clinics, restaurants and operations teams.
 - Voice agents & AI assistants
 - Tool-using & workflow agents
 - Integration with your existing systems
 - Hosting, monitoring & maintenance
-Proof: Try VIOLET (clinic) and BiteBot (restaurant) live (https://tnmco.uk/demos/)
+
+#### Agents that do the work, not demos that do the talking
+Most "AI agent" projects die in one of two places: the demo that never survives contact with real customers, or the production system that nobody maintains after launch. We build for the second week, not the first call.
+
+T&M designs, ships and runs voice and chat agents for businesses where missed conversations cost money — clinics losing bookings after hours, restaurants with phones ringing into voicemail, operations teams answering the same forty questions a week. The agent picks up, answers from your actual data, books into your actual calendar, and hands off to a human the moment it should.
+
+You don't have to take our word for any of this. Two of our agents are running publicly right now: VIOLET, a clinic assistant, and BiteBot, a restaurant assistant. Call them, try to confuse them, ask something weird. That's the standard your agent will be built to.
+
+#### Built and running
+- VIOLET — Clinic AI Assistant. Handles patient inquiries and appointment booking. Live demo, open to the public. (https://tnmco.uk/demos/)
+- BiteBot — Restaurant AI Assistant. Menus, orders, reservations, hours. Live demo, open to the public. (https://tnmco.uk/demos/)
+- OTTO — Autonomous on-chain agent. A fully autonomous agent monitoring live blockchain networks and executing cryptographically constrained transactions from natural-language prompts, built on Pydantic AI. Running on live social and crypto channels. (https://tnmco.uk/case-studies/otto/)
+
+#### How an agent project actually runs
+Week one is a scoping call and a written brief: which conversations the agent owns, which it escalates, what "success" measures (calls answered, bookings made, minutes saved). We've run this discovery process across 29+ projects and it's blunt by design — if an agent is the wrong tool for your problem, we say so on that call and you've spent nothing.
+
+Then a fixed-scope build, usually two to four weeks: agent logic, your knowledge base wired in, integrations (calendar, POS, CRM, WhatsApp or phone line), and a test harness of real conversation scenarios it must pass before launch. After go-live we monitor transcripts, patch the gaps real users find, and tune monthly. Agents degrade without this; ours don't, because maintenance is part of the engagement, not an afterthought.
+
+#### Where agent projects go wrong
+An honest note from the build side: the failure mode is almost never the model. It's scope. Agents pitched as "do everything" end up doing nothing reliably. The agents that earn their keep own a narrow, high-volume slice of work — bookings, FAQs, order capture — and refuse everything else loudly. We will push you toward narrow and reliable over impressive and fragile, every time. It's also why we put working demos in public: an agent you can't poke before buying is a promise, not a product.
+
+#### FAQ
+Q: How long until something is live?
+A: A working pilot typically takes two to four weeks from the scoping call, depending on integrations. We'd rather ship a narrow agent in three weeks than a broad one in three months.
+
+Q: What does it cost?
+A: Pilots are fixed-scope and fixed-price, agreed after the scoping call — no hourly meters. Ongoing hosting and tuning is a small monthly retainer. First-project pricing is deliberately accessible.
+
+Q: Will it work with our phone system / calendar / POS?
+A: Almost certainly. We've integrated agents with standard telephony, Google and Outlook calendars, WhatsApp, and custom backends. If something in your stack genuinely can't be integrated, we'll tell you during scoping, not after invoicing.
+
+Q: What happens when the agent doesn't know the answer?
+A: It says so and routes to a human — by transfer, callback ticket, or message — with the conversation context attached. An agent that bluffs is worse than no agent. Ours are configured to escalate early.
+
+Q: Who owns it after launch?
+A: You do. Code, prompts, data, accounts — all yours. We stay on for maintenance because agents need tuning, but you're never locked in.
 
 ### AI Automation & RAG Development — https://tnmco.uk/services/ai-automation/
+
 LLM apps, retrieval pipelines and workflow automation that cut manual work in production.
 - RAG pipelines & knowledge search
 - LLM application development
 - n8n / Python workflow automation
 - Evals, monitoring & cost control
-Proof: IqbalAI shipped in 3–4.5 months, ~70% cost reduction (https://tnmco.uk/case-studies/iqbalai/)
+
+#### Automation that survives production
+There's a graveyard of RAG prototypes that worked in the notebook and fell over in the real world: retrieval that misses, answers that drift, costs that triple quietly. We build the other kind — retrieval pipelines, LLM applications and workflow automation that run in production, with evals and monitoring treated as part of the system rather than a launch-week afterthought.
+
+Our approach is grounded in peer-reviewed machine learning research — T&M's technical leadership includes a published AI researcher — which matters less as a credential and more as a habit: we test claims before we ship them, ours included.
+
+#### In production now
+- IqbalAI — AI-first Urdu education platform. Stateful agent workflows on LangGraph, multilingual hybrid vector search (BGE-M3 + Qdrant), Urdu speech-to-text, multi-tenant school administration. Shipped in 3–4.5 months, cutting development costs roughly 70% against the conventional build estimate. (https://tnmco.uk/case-studies/iqbalai/)
+- Atlas — real-time AI copilot. RAG backend on FastAPI and LangChain turning natural language into SQL and analytics reports in under 1.5 seconds. (https://tnmco.uk/case-studies/atlas/)
+- CaptureProof — medical computer vision. Custom CV models for clinical visual tracking, run on HIPAA-compliant AWS infrastructure we've maintained at 99.99% availability for three years. (https://tnmco.uk/case-studies/captureproof/)
+
+#### The build loop
+Every automation engagement starts with the same uncomfortable question: what does this workflow cost you today, in hours or errors or missed revenue? If we can't beat that number, the project shouldn't exist. Scoping produces a written brief with the target metric in it.
+
+Builds run in short cycles against an eval set — real documents, real queries, real edge cases from your business — so "it works" means measured retrieval accuracy and answer quality, not a happy demo. On IqbalAI we went further and made the engineering loop itself AI-native, auto-generating typed client contracts so the codebase couldn't drift from its API. Launch includes cost monitoring (token spend is a budget line, and it leaks if nobody watches it) and a handover doc your team can actually operate from.
+
+#### What usually goes wrong
+Two patterns kill most automation projects. First: automating a process nobody has written down, which means automating the confusion. We make you define the workflow before we touch it — tedious, and it's saved more budgets than any model upgrade. Second: skipping evals because the first ten answers looked right. Retrieval quality is a distribution, not an anecdote; without a test set you find the failures when your customers do. We don't ship without one.
+
+#### FAQ
+Q: RAG, fine-tuning, or just better prompts — which do we need?
+A: Usually retrieval first; it's cheaper, auditable, and your data stays current. Fine-tuning earns its cost in narrow cases. We'll tell you which during scoping, including when the honest answer is "a prompt and a spreadsheet."
+
+Q: Can you work with our existing stack — n8n, Zapier, internal APIs?
+A: Yes. We build heavily on n8n and Python ourselves and run our own agency operations on the same automation we sell.
+
+Q: How do you keep costs from blowing up?
+A: Model routing (small models for small jobs), caching, and a cost dashboard from day one. Token spend gets reviewed like any other budget line.
+
+Q: What about our data — privacy and access?
+A: Your data stays in your accounts wherever possible; we work inside your cloud and sign NDAs as standard. Three years of passing healthcare data-protection audits on CaptureProof shaped how we handle everything else.
+
+Q: What does an engagement look like?
+A: A scoping call, a fixed-price pilot on one workflow with a measurable target, then expand or stop. Most clients know within a month whether the numbers work.
 
 ### Fractional CTO Services — https://tnmco.uk/services/fractional-cto/
+
 Senior architecture, team leadership and delivery management — without the full-time cost.
 - Architecture & technical strategy
 - Engineering team leadership
 - Project & program management
 - Technical due diligence & scoping
-Proof: CTO on Docushield through its $0.5M seed raise (https://tnmco.uk/case-studies/docushield/)
+
+#### A CTO's judgement, without the CTO's salary
+Somewhere between "founder with an idea" and "company with an engineering org" sits a long stretch where you need senior technical judgement a few days a month — not a £150k hire. That's the gap we fill. T&M's principal has spent 10+ years as architect, program manager and CTO across AI systems, fintech and healthcare, holds an MSc in computer and communications engineering, and publishes AI research. The combination matters: academic rigor for evaluating what's real, delivery scars for knowing what ships.
+
+A fractional CTO engagement means someone in your corner who has scoped, hired, fired, rescued and shipped before — and who has no incentive to overbuild, because we're not billing you by the engineer.
+
+#### Where this has worked
+- Docushield. As Fractional CTO we designed custom L2 blockchain infrastructure, shipped native iOS and Android apps, and ran the full engineering and QA team. The client raised $0.5M in seed funding on the product. "T&M went above and beyond... I was thoroughly impressed with the speed of delivery" — Jules Mancion, Project Manager. (https://tnmco.uk/case-studies/docushield/)
+- IqbalAI. As Fractional CTO we set the architecture and an AI-native engineering process that compressed delivery to 3–4.5 months — roughly 70% below conventional cost. (https://tnmco.uk/case-studies/iqbalai/)
+- QuickCard. E-commerce and payments platform powered by our ledger technology, later acquired into NASDAQ-listed RYVYL. (https://tnmco.uk/case-studies/quickcard/)
+
+#### What the engagement covers
+The first month is an honest technical audit: architecture, codebase, team, vendor contracts, and the roadmap's relationship with reality. You get a written assessment with priorities — including the things that are fine and should be left alone, which consultants rarely say.
+
+Ongoing, the role flexes to what the month needs: architecture decisions, hiring and vetting engineers, vendor and agency oversight (we're unusually good at catching what outsourced teams hide, having run those teams), investor-facing technical material, and delivery management with real program-management discipline — written scopes, staged milestones, kickoff checklists. It's a retainer measured in days per month, sized to your stage, and it scales down as your own team scales up. A fractional CTO who tries to become permanent is doing it wrong.
+
+#### A warning about this market
+"Fractional CTO" has become a title people award themselves between jobs. Two filters separate the real ones: have they carried a product from scoping to production recently, with the AI-era toolchain rather than 2015's; and will they show you written artifacts — audits, scopes, decision docs — rather than talk in frameworks. We pass both and will happily be tested on either. The third filter is yours to apply: a good fractional CTO should sometimes tell you to spend less.
+
+#### FAQ
+Q: How is this different from hiring an agency?
+A: Opposite incentives. An agency profits when you build more. A fractional CTO on a flat retainer profits when you build the right things — including telling you what not to build, which we do often.
+
+Q: How many days a month do we get?
+A: Typically two to six, set quarterly. Months ship-heavy in delivery get more; quiet months get strategy and review.
+
+Q: Can you manage our existing developers or outsourced team?
+A: Yes — this is the most common engagement shape. We set the process (scoped tickets, review gates, staging discipline) and hold the team to it.
+
+Q: Do you also build, or only advise?
+A: Both, deliberately. Advice from people who no longer build goes stale fast, especially in AI. When hands-on work is needed, it's scoped separately so the retainer stays honest.
+
+Q: What if we outgrow you?
+A: Then we've succeeded. Part of the role is hiring your full-time technical lead and handing over cleanly — documented decisions, no hostage-taking.
 
 ### Full-Stack Product Development — https://tnmco.uk/services/software-delivery/
+
 End-to-end product development: web, mobile, e-commerce, Web3 and desktop.
 - Full-stack web & mobile apps
 - MVP & proof-of-concept builds
 - E-commerce (Shopify / WooCommerce)
 - Blockchain & Web3 systems
-Proof: 29+ projects shipped, incl. QuickCard — acquired into NASDAQ-listed RYVYL (https://tnmco.uk/case-studies/)
+
+#### From idea to shipped product, without the rebuild
+Every founder has heard a horror story: the MVP that took nine months, the codebase no second developer could touch, the agency that vanished after the invoice cleared. The fix is unglamorous — written scopes, staged milestones, weekly demos, code that's handed over rather than held hostage. We've shipped 29+ projects this way across web, mobile, e-commerce and Web3, and several clients have stayed for years, which is the only retention metric that means anything in this business.
+
+#### Shipped and still standing
+- QuickCard. E-commerce and payments platform built on our ledger technology, acquired into NASDAQ-listed RYVYL. (https://tnmco.uk/case-studies/quickcard/)
+- e-Sehat. Telemedicine platform extending healthcare access in emerging economies — our own product, run as a social enterprise. (https://tnmco.uk/case-studies/e-sehat/)
+- NonRival Data. Web 3.0 data platform. (https://tnmco.uk/case-studies/nonrival-data/)
+- Plus production work across real estate (Tameer Estate), retail and e-commerce (His & Hers, Tiny Crews, Mint-It Studio). (https://tnmco.uk/case-studies/)
+
+#### Delivery with the boring parts done right
+Scoping comes first and it's written down: features in, features explicitly out, acceptance criteria, payment tied to milestones. (Our scoping discipline is documented internally as a checklist-driven process; clients see its output as a proposal you can hold us to.) Builds run in two-week cycles with a demo at the end of each — you watch the product grow instead of waiting for a reveal. Deployment, domain setup and handover are part of the scope, and the repository is yours from day one.
+
+For MVPs specifically, our bias is speed-to-evidence: ship the smallest version that can teach you something about your market, then iterate on data instead of guesses. AI tooling has changed the economics here — IqbalAI's 3–4.5-month, ~70%-below-estimate delivery is what a disciplined AI-native build process produces — and we bring that same loop to conventional product builds.
+
+#### The uncomfortable truth about MVPs
+Most MVPs fail before a line of code: the scope was a wishlist, not a hypothesis. The brutal question — what's the one thing this product must prove? — gets skipped because it's harder than listing features. We ask it in the first call. Sometimes the honest outcome of scoping is a smaller, cheaper project than you arrived with. We consider that a win, and so should you: money not spent on unproven features is runway.
+
+#### FAQ
+Q: How much does an MVP cost?
+A: It depends on scope, and anyone quoting before scoping is guessing with your money. What we fix is the structure: written scope, fixed price, milestone payments, no surprise invoices.
+
+Q: How fast can you ship?
+A: Small fixed-scope projects in weeks; full MVPs typically in one to three months. The schedule is in the proposal and milestone payments keep us honest against it.
+
+Q: Do you handle design too?
+A: Yes — UI/UX through deployment is in scope when needed. Several portfolio projects, Atlas among them, were design-led builds.
+
+Q: We have an existing codebase another team built. Can you take it over?
+A: Usually, after a paid audit — a short review that tells you what you actually have. Sometimes the answer is "salvageable," occasionally "rebuild the core." You get the truth either way, in writing.
+
+Q: Web3 — still?
+A: When it's the right tool. We've shipped production blockchain systems (Docushield, NonRival, OTTO) and we're equally quick to say when a database does the job for a tenth of the cost.
 
 ## Case Studies
 
@@ -162,6 +299,10 @@ Proof: 29+ projects shipped, incl. QuickCard — acquired into NASDAQ-listed RYV
 ## Demos
 - VIOLET — Clinic AI Assistant: https://ai.assistant.tnmco.uk/
 - BiteBot — Restaurant AI Assistant: https://bitebot.tnmco.uk/
+- Demos page: https://tnmco.uk/demos/
+
+## Booking
+- Book a call: https://cal.com/tnm-co
 
 ## Company
 - Legal name: Technology and Management Consultants Ltd (trading as T&M Consultants)
@@ -169,4 +310,4 @@ Proof: 29+ projects shipped, incl. QuickCard — acquired into NASDAQ-listed RYV
 - Headquarters: 49 Eglinton Rd, London, SE18 3SL, United Kingdom
 - Development office: Sargodha Road, Faisalabad, Punjab, Pakistan
 - Email: info@tnmco.uk
-- Website: https://tnmco.uk · Index: https://tnmco.uk/llms.txt
+- Website: https://tnmco.uk · Index: https://tnmco.uk/llms.txt · Privacy: https://tnmco.uk/privacy/

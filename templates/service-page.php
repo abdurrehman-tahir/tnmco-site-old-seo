@@ -14,16 +14,32 @@ $pageUrl = 'https://tnmco.uk/services/' . $slug . '/';
 
 require dirname(__DIR__) . '/case-studies/data.php';   // provides $CASE_STUDIES for proof cards
 
-/* ---- Service JSON-LD (section 3.2) via json_encode = always valid JSON ---- */
+/* ---- Service + FAQPage JSON-LD via json_encode = always valid JSON.
+        FAQ schema text equals the visible on-page answer text (Google requirement). ---- */
+$faqSchema = [
+    '@type'      => 'FAQPage',
+    'mainEntity' => array_map(function ($f) {
+        return [
+            '@type'          => 'Question',
+            'name'           => $f['q'],
+            'acceptedAnswer' => ['@type' => 'Answer', 'text' => $f['a']],
+        ];
+    }, $sv['faq']),
+];
 $graph = [
-    '@context'    => 'https://schema.org',
-    '@type'       => 'Service',
-    'name'        => $sv['schema_name'],
-    'serviceType' => $sv['schema_service_type'],
-    'url'         => $pageUrl,
-    'provider'    => ['@id' => 'https://tnmco.uk/#org'],
-    'areaServed'  => ['GB', 'US', 'PK', 'AE'],
-    'description' => $sv['schema_description'],
+    '@context' => 'https://schema.org',
+    '@graph'   => [
+        [
+            '@type'       => 'Service',
+            'name'        => $sv['schema_name'],
+            'serviceType' => $sv['schema_service_type'],
+            'url'         => $pageUrl,
+            'provider'    => ['@id' => 'https://tnmco.uk/#org'],
+            'areaServed'  => ['GB', 'US', 'PK', 'AE'],
+            'description' => $sv['schema_description'],
+        ],
+        $faqSchema,
+    ],
 ];
 $jsonLd = '<script type="application/ld+json">' . "\n"
         . json_encode($graph, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . "\n"
@@ -72,6 +88,37 @@ require dirname(__DIR__) . '/includes/header.php';
                 </div>
             </section>
 
+            <!-- Authority: intro -->
+            <section style="padding: 50px 0 30px;">
+                <div class="container" data-aos="fade-up">
+                    <h2 class="auth-h2"><?php echo $sv['intro_h2']; ?></h2>
+                    <?php foreach ($sv['intro'] as $p): ?>
+                    <p class="auth-p"><?php echo $p; ?></p>
+                    <?php endforeach; ?>
+                </div>
+            </section>
+
+            <!-- Authority: proof cards -->
+            <section class="section-bg" style="padding: 45px 0;">
+                <div class="container" data-aos="fade-up">
+                    <h2 class="auth-h2"><?php echo $sv['proof_h2']; ?></h2>
+                    <div class="row">
+                        <?php foreach ($sv['proof_cards'] as $card): ?>
+                        <div class="col-md-6 col-lg-4 mb-4 d-flex">
+                            <a href="<?php echo $card['url']; ?>" class="auth-card">
+                                <?php if ($card['title'] !== ''): ?>
+                                <h3><?php echo $card['title']; ?></h3>
+                                <?php endif; ?>
+                                <p><?php echo $card['text']; ?></p>
+                                <span class="view-cs">Read more <span class="arw">&rarr;</span></span>
+                            </a>
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                    <a href="/case-studies/" class="service-proof proof-chip-link">See all case studies <span class="arw">&rarr;</span></a>
+                </div>
+            </section>
+
             <?php if (!empty($sv['show_demos'])): ?>
             <!-- Live demos callout (same demo-card component as /demos/) -->
             <section class="section-bg" style="padding: 45px 0;">
@@ -115,30 +162,51 @@ require dirname(__DIR__) . '/includes/header.php';
             </section>
             <?php endif; ?>
 
-            <!-- Proof: the case studies named for this service -->
-            <section class="portfolio" style="padding: 45px 0 60px;">
+            <!-- Authority: how we work -->
+            <section style="padding: 50px 0 30px;">
                 <div class="container" data-aos="fade-up">
-                    <h2 style="color:#282646; font-weight:700; font-size:24px; margin-bottom:22px;">Proof</h2>
-                    <div class="row">
-                        <?php foreach ($sv['proof'] as $csSlug):
-                            if (!isset($CASE_STUDIES[$csSlug])) { continue; }
-                            $cs = $CASE_STUDIES[$csSlug];
-                        ?>
-                        <div class="col-lg-4 col-md-6 mb-4">
-                            <div class="portfolio-wrap" style="background-color: #ececec; text-align:center; padding:20px; height:100%;">
-                                <a href="/case-studies/<?php echo $csSlug; ?>/">
-                                    <img src="<?php echo $cs['image']; ?>" class="img-fluid" alt="<?php echo $cs['image_alt']; ?>" loading="lazy" style="max-height:180px; width:auto; margin:0 auto;">
-                                </a>
-                                <div class="portfolio-info">
-                                    <h4 style="margin-top:12px;"><a href="/case-studies/<?php echo $csSlug; ?>/"><?php echo $cs['name']; ?></a></h4>
-                                    <a href="/case-studies/<?php echo $csSlug; ?>/" class="link-details" title="View Case Study"><i class="fas fa-file-alt"></i></a>
-                                </div>
-                            </div>
-                        </div>
+                    <h2 class="auth-h2"><?php echo $sv['how_h2']; ?></h2>
+                    <?php foreach ($sv['how'] as $p): ?>
+                    <p class="auth-p"><?php echo $p; ?></p>
+                    <?php endforeach; ?>
+                </div>
+            </section>
+
+            <!-- Authority: opinion -->
+            <section style="padding: 20px 0 40px;">
+                <div class="container" data-aos="fade-up">
+                    <div class="auth-opinion">
+                        <h2 class="auth-h2"><?php echo $sv['opinion_h2']; ?></h2>
+                        <?php foreach ($sv['opinion'] as $p): ?>
+                        <p class="auth-p" style="margin-bottom:0;"><?php echo $p; ?></p>
                         <?php endforeach; ?>
                     </div>
-                    <div class="mt-2">
-                        <a href="/case-studies/" class="service-proof proof-chip-link">See all case studies <span class="arw">&rarr;</span></a>
+                </div>
+            </section>
+
+            <!-- Authority: FAQ (schema mirrors this text exactly) -->
+            <section class="section-bg" style="padding: 45px 0 50px;">
+                <div class="container" data-aos="fade-up">
+                    <h2 class="auth-h2">Straight answers</h2>
+                    <?php foreach ($sv['faq'] as $f): ?>
+                    <div class="auth-faq-item">
+                        <h3><?php echo $f['q']; ?></h3>
+                        <p><?php echo $f['a']; ?></p>
+                    </div>
+                    <?php endforeach; ?>
+                </div>
+            </section>
+
+            <!-- Authority: CTA -->
+            <section style="padding: 45px 0 55px;">
+                <div class="container text-center" data-aos="fade-up">
+                    <div class="btn-row" style="justify-content:center;">
+                        <?php foreach ($sv['cta'] as $i => $c):
+                            $ext = strpos($c['url'], 'http') === 0;
+                            $cls = (count($sv['cta']) > 1 && $i === 0) ? 'btn-tnm-ghost' : 'btn-tnm';
+                        ?>
+                        <a href="<?php echo $c['url']; ?>"<?php echo $ext ? ' target="_blank" rel="noopener noreferrer"' : ''; ?> class="<?php echo $cls; ?>"><?php echo $c['label']; ?> <i class="fas fa-arrow-right ml-1"></i></a>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </section>

@@ -244,7 +244,7 @@ session_start();
 
                     <div class="container d-flex h-100">
                         <div class="row justify-content-center align-self-center" data-aos="fade-up">
-                            <div class="col-md-5 intro-info order-md-first order-last" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="col-md-6 intro-info order-md-first order-last" data-aos="zoom-in" data-aos-delay="100">
                                 <div class="mt-5">
                                     <h1 class="cursor">AI Agents &amp; Automation, Delivered Like a CTO Would.</h1>
                                     <p style="margin-top:18px; line-height:1.7;">We design, build and run AI systems — voice agents, RAG, workflow automation — backed by 10+ years of product delivery and fractional technical leadership for start-ups and SMEs.</p>
@@ -255,7 +255,7 @@ session_start();
                                 </div>
                             </div>
 
-                            <div class="col-md-7 intro-img order-md-last order-first mt-md-5" data-aos="zoom-out" data-aos-delay="200">
+                            <div class="col-md-6 intro-img order-md-last order-first mt-md-5" data-aos="zoom-out" data-aos-delay="200">
                                 <!-- <img src="assets/img/intro-img.svg" alt="" class="img-fluid"> -->
 <!-- Hero visual: "the Mind" — a living generative particle entity
                                      (sibling of the VIOLET demo orb): rotating 3D swarm, heartbeat
