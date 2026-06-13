@@ -4,6 +4,9 @@
 > agents, RAG systems and workflow automation, with Fractional CTO and
 > full-stack product delivery for start-ups and SMEs. Offices in London,
 > UK and Faisalabad, Pakistan. 10+ years experience, 29+ projects shipped.
+>
+> For full service detail, every FAQ and all case studies, see the expanded
+> catalog: [/llms-full.txt](https://tnmco.uk/llms-full.txt)
 
 ## Services
 - [AI Agents & Assistants](https://tnmco.uk/services/ai-agents/): voice agents and assistants; live demos VIOLET (clinic) and BiteBot (restaurant)
@@ -22,7 +25,14 @@
 ## Demos
 - [VIOLET — Clinic AI Assistant](https://ai.assistant.tnmco.uk/)
 - [BiteBot — Restaurant AI Assistant](https://bitebot.tnmco.uk/)
+- [All live demos](https://tnmco.uk/demos/)
+
+## More
+- [About T&M](https://tnmco.uk/about/): company story, team and social-enterprise mission
+- [Articles](https://tnmco.uk/articles/): insights on AI agents, automation and delivery (launching soon)
+- [Privacy & Cookies Policy](https://tnmco.uk/privacy/)
 
 ## Contact
 - Email: info@tnmco.uk
+- Book a call: https://cal.com/tnm-co
 - [Contact page](https://tnmco.uk/contact/)
