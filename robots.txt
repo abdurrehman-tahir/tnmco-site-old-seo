@@ -1,9 +1,4 @@
 User-agent: *
-Disallow: /database/
-Disallow: /scripts/
-Disallow: /admin/
-Disallow: /db_config.php
-Disallow: /db_config.example.php
 
 # ===== Real-Time AI Search Crawlers =====
 # These bots retrieve content at query time for conversational search answers.
