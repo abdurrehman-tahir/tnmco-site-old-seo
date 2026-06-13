@@ -79,6 +79,7 @@ if (!function_exists('tnm_motif')) {
 
     <!-- Vendor CSS Files -->
     <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/vendor/fontawesome6/css/all.min.css" rel="stylesheet">
     <link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="/assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
     <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet" media="print" onload="this.media='all'">
@@ -88,7 +89,6 @@ if (!function_exists('tnm_motif')) {
     <!-- Template Main CSS File -->
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/site-enhancements.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/3e825e83d5.js" crossorigin="anonymous" defer></script>
     <script src="/assets/vendor/jquery/jquery.min.js" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->

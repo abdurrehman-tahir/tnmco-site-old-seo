@@ -69,7 +69,7 @@ require dirname(__DIR__) . '/includes/header.php';
                         <div class="col-lg-4 col-6">
                             <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="/assets/img/team/abd.png" alt="Abdurehman Bin Tahir - Technical Director & Co-Founder" loading="lazy" width="417" height="500">
+                                    <img src="/assets/img/team/abd.webp" alt="Abdurehman Bin Tahir - Technical Director & Co-Founder" loading="lazy" width="417" height="500">
                                     <h4>Abdurehman Bin Tahir</h4>
                                 </div>
                                 <span class="d-none d-md-block">Technical Director/ Co-Founder</span>
@@ -85,7 +85,7 @@ require dirname(__DIR__) . '/includes/header.php';
                         <div class="col-lg-4 col-6">
                             <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter1" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="/assets/img/team/athar-mushtaq.png" alt="Athar Mushtaq - Managing Director & Co-Founder" loading="lazy" width="417" height="500">
+                                    <img src="/assets/img/team/athar-mushtaq.webp" alt="Athar Mushtaq - Managing Director & Co-Founder" loading="lazy" width="417" height="500">
                                     <h4>Athar Mushtaq</h4>
                                 </div>
                                 <span class="d-none d-md-block">Managing Director/Co-Founder</span>
@@ -101,7 +101,7 @@ require dirname(__DIR__) . '/includes/header.php';
                         <div class="col-lg-4 col-6">
                             <div class="member">
                                 <div data-toggle="modal" data-target="#mubashir" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="/assets/img/team/mubashir-farooq.png" alt="Mubashir Farooq - Team Leader & Senior Software Developer" loading="lazy" width="417" height="500">
+                                    <img src="/assets/img/team/mubashir-farooq.webp" alt="Mubashir Farooq - Team Leader & Senior Software Developer" loading="lazy" width="417" height="500">
                                     <h4>Mubashir Farooq</h4>
                                 </div>
                                 <span class="d-none d-md-block">Team Leader / Sr. software Developer</span>
@@ -117,7 +117,7 @@ require dirname(__DIR__) . '/includes/header.php';
                         <div class="col-lg-4 col-6">
                             <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter3" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="/assets/img/team/team-member2.png" alt="Dr. Tahir Mushtaq - Marketing Advisor" loading="lazy" width="417" height="500">
+                                    <img src="/assets/img/team/team-member2.webp" alt="Dr. Tahir Mushtaq - Marketing Advisor" loading="lazy" width="417" height="500">
                                     <h4>Dr.Tahir Mushtaq</h4>
                                 </div>
                                 <span class="d-none d-md-block">Marketing Advisor</span>
@@ -133,7 +133,7 @@ require dirname(__DIR__) . '/includes/header.php';
                         <div class="col-lg-4 col-6">
                             <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter4" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="/assets/img/team/team-member3.png" alt="Ola Badawi - Financial Advisor" loading="lazy" width="417" height="500">
+                                    <img src="/assets/img/team/team-member3.webp" alt="Ola Badawi - Financial Advisor" loading="lazy" width="417" height="500">
                                     <h4>Ola Badawi</h4>
                                 </div>
                                 <span class="d-none d-md-block">Financial Advisor</span>
@@ -149,7 +149,7 @@ require dirname(__DIR__) . '/includes/header.php';
                         <div class="col-lg-4 col-6">
                             <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter2" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="/assets/img/team/team-member1.png" alt="Haixia Li - Chief Operating Officer" loading="lazy" width="417" height="500">
+                                    <img src="/assets/img/team/team-member1.webp" alt="Haixia Li - Chief Operating Officer" loading="lazy" width="417" height="500">
                                     <h4>HAIXIA LI</h4>
                                 </div>
                                 <span class="d-none d-md-block">Chief Operating Officer (COO)</span>
@@ -259,7 +259,7 @@ require dirname(__DIR__) . '/includes/header.php';
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="/assets/img/team/mubashir-farooq-c.png" alt="team img" width="180px" height="auto">
+                            <img style="margin-top:-70px;  " src="/assets/img/team/mubashir-farooq-c.webp" alt="team img" width="180px" height="auto">
                             <h2 style="font-weight:600; margin:20px 0 0 0">Mubashir Farooq</h2>
                             <h5 style="margin:10px 0 20px 0">Team Leader / Sr. software Developer</h5>
                             <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
@@ -288,7 +288,7 @@ require dirname(__DIR__) . '/includes/header.php';
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="/assets/img/team/abd-500x500-1.png" alt="team img" width="180px" height="auto">
+                            <img style="margin-top:-70px;  " src="/assets/img/team/abd-500x500-1.webp" alt="team img" width="180px" height="auto">
                             <h2 style="font-weight:600; margin:20px 0 0 0">Abdurehman Bin Tahir</h2>
                             <h5 style="margin:10px 0 20px 0">Technical Director/ Co-Founder</h5>
                             <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
@@ -312,7 +312,7 @@ require dirname(__DIR__) . '/includes/header.php';
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="/assets/img/team/md-500x500-1.png" alt="team img" width="180px" height="auto">
+                            <img style="margin-top:-70px;  " src="/assets/img/team/md-500x500-1.webp" alt="team img" width="180px" height="auto">
                             <h2 style="font-weight:600; margin:20px 0 0 0">Athar Mushtaq</h2>
                             <h5 style="margin:10px 0 20px 0">Managing Director/Co-Founder</h5>
                             <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
@@ -338,7 +338,7 @@ require dirname(__DIR__) . '/includes/header.php';
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="/assets/img/team/coo-500x500-1.png" alt="team img" width="180px" height="auto">
+                            <img style="margin-top:-70px;  " src="/assets/img/team/coo-500x500-1.webp" alt="team img" width="180px" height="auto">
                             <h2 style="font-weight:600; margin:20px 0 0 0">HAIXIA LI</h2>
                             <h5 style="margin:10px 0 20px 0">Chief Operating Officer(COO)</h5>
                             <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
@@ -363,7 +363,7 @@ require dirname(__DIR__) . '/includes/header.php';
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="/assets/img/team/tahir-500x500-1.png" alt="team img" width="180px" height="auto">
+                            <img style="margin-top:-70px;  " src="/assets/img/team/tahir-500x500-1.webp" alt="team img" width="180px" height="auto">
                             <h2 style="font-weight:600; margin:20px 0 0 0">Dr.Tahir Mushtaq</h2>
                             <h5 style="margin:10px 0 20px 0">Marketing Advisor</h5>
                             <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
@@ -388,7 +388,7 @@ require dirname(__DIR__) . '/includes/header.php';
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="/assets/img/team/ola-500x500-1.png" alt="team img" width="180px" height="auto">
+                            <img style="margin-top:-70px;  " src="/assets/img/team/ola-500x500-1.webp" alt="team img" width="180px" height="auto">
                             <h2 style="font-weight:600; margin:20px 0 0 0">Ola Badawi</h2>
                             <h5 style="margin:10px 0 20px 0">Financial Advisor</h5>
                             <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">

@@ -25,6 +25,7 @@ session_start();
 
         <!-- Vendor CSS Files -->
         <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/vendor/fontawesome6/css/all.min.css" rel="stylesheet">
         <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
         <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
         <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" media="print" onload="this.media='all'">
@@ -34,9 +35,9 @@ session_start();
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="assets/css/site-enhancements.css" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/3e825e83d5.js" crossorigin="anonymous" defer></script>
-
+        
         <script src="assets/vendor/jquery/jquery.min.js" defer></script>
+        <script src="assets/js/hero-mind.js" defer></script>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 document.addEventListener("click", function(event) {
@@ -572,7 +573,7 @@ session_start();
                         <div class="col-lg-4 col-6">
                             <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="./assets/img/team/abd.png" alt="Abdurehman Bin Tahir - Technical Director & Co-Founder" loading="lazy" width="417" height="500">
+                                    <img src="./assets/img/team/abd.webp" alt="Abdurehman Bin Tahir - Technical Director & Co-Founder" loading="lazy" width="417" height="500">
                                     <h4>Abdurehman Bin Tahir</h4>
                                 </div>
                                 <span class="d-none d-md-block">Technical Director/ Co-Founder</span>
@@ -590,7 +591,7 @@ session_start();
                         <div class="col-lg-4 col-6">
                             <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter1" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="./assets/img/team/athar-mushtaq.png" alt="Athar Mushtaq - Managing Director & Co-Founder" loading="lazy" width="417" height="500">
+                                    <img src="./assets/img/team/athar-mushtaq.webp" alt="Athar Mushtaq - Managing Director & Co-Founder" loading="lazy" width="417" height="500">
                                     <h4>Athar Mushtaq</h4>
                                 </div>
                                 <span class="d-none d-md-block">Managing Director/Co-Founder</span>
@@ -607,7 +608,7 @@ session_start();
                         <div class="col-lg-4 col-6">
                             <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter3" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="./assets/img/team/team-member2.png" alt="Dr. Tahir Mushtaq - Marketing Advisor" loading="lazy" width="417" height="500">
+                                    <img src="./assets/img/team/team-member2.webp" alt="Dr. Tahir Mushtaq - Marketing Advisor" loading="lazy" width="417" height="500">
                                     <h4>Dr.Tahir Mushtaq</h4>
                                 </div>
                                 <span class="d-none d-md-block">Marketing Advisor</span>
@@ -625,7 +626,7 @@ session_start();
                         <div class="col-6 d-lg-none">
                             <div class="member">
                                 <div class="member-info-trigger">
-                                    <img src="./assets/img/team/team-member3.png" alt="Ola Badawi - Financial Advisor" loading="lazy" width="417" height="500">
+                                    <img src="./assets/img/team/team-member3.webp" alt="Ola Badawi - Financial Advisor" loading="lazy" width="417" height="500">
                                     <h4>Ola Badawi</h4>
                                 </div>
                                 <span class="d-none d-md-block">Financial Advisor</span>
@@ -1028,7 +1029,7 @@ session_start();
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="./assets/img/team/abd-500x500-1.png" alt="team img" width="180px" height="auto">
+                            <img style="margin-top:-70px;  " src="./assets/img/team/abd-500x500-1.webp" alt="team img" width="180px" height="auto">
                             <h3 style="font-weight:600; font-size:2rem; margin:20px 0 0 0">Abdurehman Bin Tahir</h3>
                             <h5 style="margin:10px 0 20px 0">Technical Director/ Co-Founder</h5>
                             <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
@@ -1054,7 +1055,7 @@ session_start();
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="./assets/img/team/md-500x500-1.png" alt="team img" width="180px" height="auto">
+                            <img style="margin-top:-70px;  " src="./assets/img/team/md-500x500-1.webp" alt="team img" width="180px" height="auto">
                             <h3 style="font-weight:600; font-size:2rem; margin:20px 0 0 0">Athar Mushtaq</h3>
                                 <h5 style="margin:10px 0 20px 0">Managing Director/Co-Founder</h5>
                                 <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
@@ -1082,7 +1083,7 @@ session_start();
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="./assets/img/team/tahir-500x500-1.png" alt="team img" width="180px" height="auto">
+                            <img style="margin-top:-70px;  " src="./assets/img/team/tahir-500x500-1.webp" alt="team img" width="180px" height="auto">
                             <h3 style="font-weight:600; font-size:2rem; margin:20px 0 0 0">Dr.Tahir Mushtaq</h3>
                                 <h5 style="margin:10px 0 20px 0">Marketing Advisor</h5>
                                 <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
@@ -1179,7 +1180,6 @@ session_start();
         <!-- Template Main JS File -->
         <script src="assets/js/main.js" defer></script>
         <script src="assets/js/orb.js" defer></script>
-        <script src="assets/js/hero-mind.js" defer></script>
         
         <!-- Form submission toast (session-driven) -->
         <?php if (isset($_SESSION['message'])) { $tnmOk = ($_SESSION['message'] !== 'error'); ?>
