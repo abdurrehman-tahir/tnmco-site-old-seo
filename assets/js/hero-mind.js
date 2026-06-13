@@ -55,6 +55,69 @@
         ctx.closePath(); ctx.fillStyle = fill; ctx.fill();
     }
 
+
+    /* Faded robotic AI "brain core" glowing inside the sphere (desktop only):
+       radial glow + counter-rotating circuit rings + two brain lobes with
+       folds + orbiting electrons + a pulsing nucleus. */
+    function drawCore() {
+        var cr = R * 0.27;
+        var beat = 0.5 + 0.5 * Math.sin(t * 0.0022);
+        var spin = t * 0.0006;
+        ctx.save();
+        ctx.translate(CX, CY);
+
+        // inner glow
+        var g = ctx.createRadialGradient(0, 0, 0, 0, 0, cr * 1.7);
+        g.addColorStop(0, "rgba(130,205,255," + (0.20 + beat * 0.16) + ")");
+        g.addColorStop(0.5, "rgba(40,140,255,0.09)");
+        g.addColorStop(1, "rgba(40,140,255,0)");
+        ctx.fillStyle = g;
+        ctx.beginPath(); ctx.arc(0, 0, cr * 1.7, 0, 6.2832); ctx.fill();
+
+        // counter-rotating circuit rings
+        ctx.strokeStyle = "rgba(95,200,255,0.42)"; ctx.lineWidth = 1.3;
+        ctx.setLineDash([4, 7]); ctx.lineDashOffset = -t * 0.02;
+        ctx.beginPath(); ctx.arc(0, 0, cr, 0, 6.2832); ctx.stroke();
+        ctx.lineDashOffset = t * 0.028;
+        ctx.beginPath(); ctx.arc(0, 0, cr * 0.66, 0, 6.2832); ctx.stroke();
+        ctx.setLineDash([]);
+
+        // robotic brain: two lobes + folds, slowly breathing
+        ctx.save();
+        ctx.rotate(Math.sin(spin) * 0.08);
+        ctx.strokeStyle = "rgba(160,220,255,0.5)"; ctx.lineWidth = 1.5;
+        for (var lobe = -1; lobe <= 1; lobe += 2) {
+            ctx.beginPath();
+            ctx.ellipse(lobe * cr * 0.2, 0, cr * 0.34, cr * 0.52, 0, 0, 6.2832);
+            ctx.stroke();
+            for (var fold = 0; fold < 3; fold++) {        // gyri/circuit folds
+                var fy = (-0.5 + fold * 0.5) * cr * 0.5;
+                ctx.beginPath();
+                ctx.moveTo(lobe * cr * 0.04, fy);
+                ctx.quadraticCurveTo(lobe * cr * 0.32, fy + cr * 0.12, lobe * cr * 0.06, fy + cr * 0.28);
+                ctx.strokeStyle = "rgba(150,215,255,0.32)";
+                ctx.stroke();
+            }
+        }
+        ctx.restore();
+
+        // orbiting electrons (data packets) on an elliptical path
+        for (var e = 0; e < 3; e++) {
+            var ea = spin * 2.4 + e * 2.094;
+            var ex = Math.cos(ea) * cr, ey = Math.sin(ea) * cr * 0.5;
+            ctx.fillStyle = "rgba(175,230,255,0.85)";
+            ctx.beginPath(); ctx.arc(ex, ey, 2.1, 0, 6.2832); ctx.fill();
+        }
+
+        // pulsing nucleus
+        ctx.shadowColor = "rgba(95,205,255,0.95)"; ctx.shadowBlur = 16 + beat * 16;
+        ctx.fillStyle = "rgba(215,242,255," + (0.6 + beat * 0.3) + ")";
+        ctx.beginPath(); ctx.arc(0, 0, 3.4 + beat * 2, 0, 6.2832); ctx.fill();
+        ctx.shadowBlur = 0;
+
+        ctx.restore();
+    }
+
     var proj = new Array(N);
     for (var pj = 0; pj < N; pj++) proj[pj] = { p: null, x: 0, y: 0, z: 0 };
     function draw() {
@@ -100,6 +163,8 @@
                 ctx.fillStyle = "rgba(" + BLUE + "," + a + ")"; ctx.fill();
             }
         }
+        if (!mobile) drawCore();
+
         if (running && !reduced) raf = requestAnimationFrame(draw);
     }
 
