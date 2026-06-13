@@ -1058,9 +1058,9 @@ html, body { overflow-x: hidden; }
 .demo-bot { position: absolute; top: 14px; right: 4px; width: 150px; pointer-events: none; }
 @media (max-width: 991px) { .demo-bot { display: none; } }
 .demo-bot svg { width: 100%; height: auto; display: block; overflow: visible; }
-.demo-bot .bot-box { fill: #2f9bf0; }
-.demo-bot .bot-eyes { animation: botMove 6s ease-in-out infinite; }
-.demo-bot .eye {
+.bot-box { fill: #2f9bf0; }
+.bot-eyes { animation: botMove 6s ease-in-out infinite; }
+.eye {
     fill: #0a1426;
     transform-box: fill-box;
     transform-origin: center;
@@ -1076,5 +1076,38 @@ html, body { overflow-x: hidden; }
     5%, 15%, 25%, 46%, 56%, 66% { transform: scaleY(0.12); }
 }
 @media (prefers-reduced-motion: reduce) {
-    .demo-bot .bot-eyes, .demo-bot .eye { animation: none; }
+    .bot-eyes, .eye { animation: none; }
+}
+
+/* =====================================================================
+   Batch 12 — mobile hero: lightweight box-bot replaces the canvas sphere
+   ===================================================================== */
+.hero-bot { display: none; }
+@media (max-width: 767px) {
+    .hero-dark .hero-sphere-canvas { display: none !important; }   /* drop the heavy canvas on phones */
+    .hero-dark .hero-fade { display: none; }
+    .hero-dark .hero-content { flex-direction: column; align-items: flex-start; justify-content: center; padding-top: 96px; }
+    .hero-dark .hero-copy { padding: 0; }
+    .hero-bot {
+        display: block;
+        width: 72vw; max-width: 320px;
+        margin: 0 0 6vh;
+        filter: drop-shadow(0 10px 30px rgba(47,155,240,.28));
+    }
+    .hero-bot svg { width: 100%; height: auto; display: block; }
+}
+
+/* =====================================================================
+   Batch 13 — mobile hero centering + readable open-menu links
+   ===================================================================== */
+@media (max-width: 767.98px) {
+    /* centre the bot + the CTA buttons */
+    .hero-bot { margin-left: auto !important; margin-right: auto !important; }
+    .hero-dark .hero-cta { justify-content: center; }
+
+    /* the open hamburger panel is a light frosted card, so its top-level
+       links must be dark (the dark-hero rule had forced them white) */
+    .home-dark #header #mobilemenu .nav-link { color: var(--tnm-navy) !important; }
+    .home-dark #header #mobilemenu .nav-item.active > .nav-link,
+    .home-dark #header #mobilemenu .nav-link:hover { color: var(--tnm-cyan) !important; }
 }

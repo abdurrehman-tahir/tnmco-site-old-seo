@@ -7,6 +7,8 @@
     "use strict";
     var canvas = document.querySelector(".hero-sphere-canvas");
     if (!canvas) return;
+    // Mobile uses the lightweight CSS bot instead — skip the heavy canvas entirely.
+    if (window.matchMedia && window.matchMedia("(max-width: 767px)").matches) return;
 
     var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     var ctx = canvas.getContext("2d");

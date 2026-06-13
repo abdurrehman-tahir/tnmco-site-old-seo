@@ -244,6 +244,16 @@ session_start();
             <canvas class="hero-sphere-canvas" aria-hidden="true"></canvas>
             <div class="hero-fade" aria-hidden="true"></div>
             <div class="container hero-content">
+                <!-- Mobile-only lightweight bot (replaces the heavy canvas sphere on phones) -->
+                <div class="hero-bot" aria-hidden="true">
+                    <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg">
+                        <rect class="bot-box" x="8" y="18" width="184" height="114" rx="28"/>
+                        <g class="bot-eyes">
+                            <rect class="eye" x="82" y="50" width="14" height="50" rx="7"/>
+                            <rect class="eye" x="104" y="50" width="14" height="50" rx="7"/>
+                        </g>
+                    </svg>
+                </div>
                 <div class="hero-copy" data-aos="fade-up">
                     <h1 class="cursor">AI Agents &amp; Automation, Delivered Like a CTO Would.</h1>
                     <p>We design, build and run AI systems (voice agents, RAG, workflow automation) backed by 10+ years of product delivery and fractional technical leadership for start-ups and SMEs.</p>
