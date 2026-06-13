@@ -151,7 +151,7 @@ Every founder has heard a horror story: the MVP that took nine months, the codeb
 - QuickCard. E-commerce and payments platform built on our ledger technology, acquired into NASDAQ-listed RYVYL. (https://tnmco.uk/case-studies/quickcard/)
 - e-Sehat. Telemedicine platform extending healthcare access in emerging economies — our own product, run as a social enterprise. (https://tnmco.uk/case-studies/e-sehat/)
 - NonRival Data. Web 3.0 data platform. (https://tnmco.uk/case-studies/nonrival-data/)
-- Plus production work across real estate (Tameer Estate), retail and e-commerce (His & Hers, Tiny Crews, Mint-It Studio). (https://tnmco.uk/case-studies/)
+- Plus production work across real estate (Tameer Estate), retail and e-commerce (His & Hers, Mint-It Studio). (https://tnmco.uk/case-studies/)
 
 #### Delivery with the boring parts done right
 Scoping comes first and it's written down: features in, features explicitly out, acceptance criteria, payment tied to milestones. (Our scoping discipline is documented internally as a checklist-driven process; clients see its output as a proposal you can hold us to.) Builds run in two-week cycles with a demo at the end of each — you watch the product grow instead of waiting for a reveal. Deployment, domain setup and handover are part of the scope, and the repository is yours from day one.
@@ -277,15 +277,6 @@ A: When it's the right tool. We've shipped production blockchain systems (Docush
 - Solution: We built custom database query systems to instantly filter properties by geography, pricing thresholds, and room specifications. We embedded dynamic Google Maps features showing location markers and nearby points of interest.
 - Impact: Fully responsive UK property search portal successfully deployed. Integrated instant location mapping system with 100% automated map syncing.
 - Live: https://tameerestate.com
-
-### Tiny Crews — https://tnmco.uk/case-studies/tiny-crews/
-- Role: E-Commerce Developers & Storefront Designers
-- Timeline: 2022 - 2023
-- Tech stack: Shopify, Liquid, JavaScript, Custom Checkout APIs
-- Challenge: Create a highly responsive, custom boutique kids clothing storefront on Shopify with clean, fast checkout, custom cart behaviors, and real-time inventory sync.
-- Solution: T&M developed a responsive theme utilizing Shopify Liquid and vanilla JavaScript. We optimized page speed configurations and implemented direct inventory and notification synchronization hooks.
-- Impact: Reduced checkout cart abandonment rates by 15%. Increased mobile page-load speed score to 90+.
-- Live: https://tinycrews.com/
 
 ### His & Hers — https://tnmco.uk/case-studies/his-and-hers/
 - Role: E-Commerce Developers & UI Designers

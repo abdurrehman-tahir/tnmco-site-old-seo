@@ -108,12 +108,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.64</priority>
   </url>
+  <!-- Tiny Crews removed
   <url>
     <loc>https://tnmco.uk/case-studies/tiny-crews/</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.64</priority>
   </url>
+  -->
   <url>
     <loc>https://tnmco.uk/case-studies/his-and-hers/</loc>
     <lastmod>2026-06-11</lastmod>

@@ -70,11 +70,13 @@
 
         <!-- Cookie consent (Consent Mode v2) -->
         <div class="consent-banner" id="consentBanner" role="dialog" aria-label="Cookie consent">
-            <p><strong style="color:#282646;">Cookies on this site</strong></p>
-            <p>We use one optional cookie — Google Analytics — to see how the site is used. Nothing for ads, nothing sold or shared. Change your mind anytime on our <a href="/privacy/" style="color:#1bb1dc;">Privacy &amp; Cookies</a> page.</p>
+            <div class="consent-text">
+                <strong>Cookies on this site</strong>
+                <span>We use one optional cookie — Google Analytics — to see how the site is used. Nothing for ads, nothing sold or shared. Change your mind anytime on our <a href="/privacy/">Privacy &amp; Cookies</a> page.</span>
+            </div>
             <div class="consent-actions">
-                <button type="button" class="btn-tnm" id="consentAccept">Accept analytics</button>
-                <button type="button" class="btn-tnm-ghost" id="consentDecline">Decline</button>
+                <button type="button" class="consent-accept" id="consentAccept">Accept analytics</button>
+                <button type="button" class="consent-decline" id="consentDecline">Decline</button>
             </div>
         </div>
         <script src="/assets/js/consent.js" defer></script>

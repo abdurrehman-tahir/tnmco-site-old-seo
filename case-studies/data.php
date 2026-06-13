@@ -298,6 +298,7 @@ $CASE_STUDIES = [
         ],
     ],
 
+    /* Tiny Crews — removed from the site (commented out, not deleted)
     'tiny-crews' => [
         'logo'        => '/assets/img/tinycrews-logo.png',
         'name'        => 'Tiny Crews',
@@ -322,6 +323,7 @@ $CASE_STUDIES = [
         'schema_about_url'    => 'https://tinycrews.com/',
         'testimonial' => null,
     ],
+    */
 
     'his-and-hers' => [
         'logo'        => '/assets/img/hisandhers-logo.png',

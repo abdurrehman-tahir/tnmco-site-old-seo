@@ -81,7 +81,7 @@ $SERVICES = [
         'schema_service_type' => 'Software Development',
         'schema_description'  => 'End-to-end web, mobile and e-commerce development — MVPs, Web3 and enterprise systems shipped across 29+ projects since 2015.',
         'show_demos'          => false,
-        'proof'               => ['quickcard', 'tameer-estate', 'e-sehat', 'mintit-studio', 'tiny-crews', 'his-and-hers', 'build-on-hybrid'],
+        'proof'               => ['quickcard', 'tameer-estate', 'e-sehat', 'mintit-studio', /* 'tiny-crews', removed */ 'his-and-hers', 'build-on-hybrid'],
     ],
 
 ];
@@ -200,7 +200,7 @@ $SERVICES_AUTHORITY = [
             ['title' => 'QuickCard.', 'text' => 'E-commerce and payments platform built on our ledger technology, acquired into NASDAQ-listed RYVYL.', 'url' => '/case-studies/quickcard/'],
             ['title' => 'e-Sehat.', 'text' => 'Telemedicine platform extending healthcare access in emerging economies — our own product, run as a social enterprise.', 'url' => '/case-studies/e-sehat/'],
             ['title' => 'NonRival Data.', 'text' => 'Web 3.0 data platform.', 'url' => '/case-studies/nonrival-data/'],
-            ['title' => '', 'text' => 'Plus production work across real estate (Tameer Estate), retail and e-commerce (His & Hers, Tiny Crews, Mint-It Studio).', 'url' => '/case-studies/'],
+            ['title' => '', 'text' => 'Plus production work across real estate (Tameer Estate), retail and e-commerce (His & Hers, Mint-It Studio).', 'url' => '/case-studies/'],
         ],
         'how_h2'     => 'Delivery with the boring parts done right',
         'how'        => [

@@ -21,15 +21,15 @@ session_start();
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
         <!-- Vendor CSS Files -->
         <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet">
-        <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+        <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+        <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" media="print" onload="this.media='all'">
         <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+        <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
 
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
@@ -158,7 +158,7 @@ session_start();
 
     </head>
 
-    <body>
+    <body class="home-dark">
         <!-- ======= Top Bar ======= -->
         <div id="topbar" class="d-none d-lg-flex align-items-end fixed-top topbar-transparent">
             <div class="container d-flex justify-content-end">
@@ -238,34 +238,20 @@ session_start();
         <!-- End Header -->
 
         <!-- ======= Hero Section ======= -->
-        <section id="hero" class="clearfix">
-            <div id="particles-js"></div>
-
-
-                    <div class="container d-flex h-100">
-                        <div class="row justify-content-center align-self-center" data-aos="fade-up">
-                            <div class="col-md-6 intro-info order-md-first order-last" data-aos="zoom-in" data-aos-delay="100">
-                                <div class="mt-5">
-                                    <h1 class="cursor">AI Agents &amp; Automation, Delivered Like a CTO Would.</h1>
-                                    <p style="margin-top:18px; line-height:1.7;">We design, build and run AI systems — voice agents, RAG, workflow automation — backed by 10+ years of product delivery and fractional technical leadership for start-ups and SMEs.</p>
-                                </div>
-                                <div class="mt-4">
-                                    <a href="/demos/" class="btn-get-started scrollto">Try a Live Demo</a>
-                                    <a href="https://cal.com/tnm-co" target="_blank" rel="noopener noreferrer" class="btn-get-started" style="margin-left:10px;">Book a Call</a>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 intro-img order-md-last order-first mt-md-5" data-aos="zoom-out" data-aos-delay="200">
-                                <!-- <img src="assets/img/intro-img.svg" alt="" class="img-fluid"> -->
-<!-- Hero visual: "the Mind" — a living generative particle entity
-                                     (sibling of the VIOLET demo orb): rotating 3D swarm, heartbeat
-                                     core, orbital ring + comet, cursor-reactive. Canvas, no deps. -->
-                                <div class="hero-mind" aria-hidden="true">
-                                    <canvas class="hero-mind-canvas"></canvas>
-                                </div>
-                            </div>
-                        </div>
+        <section id="hero" class="clearfix hero-dark">
+            <!-- Full-bleed tumbling particle globe (T&MCO glyphs) behind the copy -->
+            <canvas class="hero-sphere-canvas" aria-hidden="true"></canvas>
+            <div class="hero-fade" aria-hidden="true"></div>
+            <div class="container hero-content">
+                <div class="hero-copy" data-aos="fade-up">
+                    <h1 class="cursor">AI Agents &amp; Automation, Delivered Like a CTO Would.</h1>
+                    <p>We design, build and run AI systems (voice agents, RAG, workflow automation) backed by 10+ years of product delivery and fractional technical leadership for start-ups and SMEs.</p>
+                    <div class="hero-cta">
+                        <a href="/demos/" class="btn-hero btn-hero-solid scrollto">Try a Live Demo</a>
+                        <a href="https://cal.com/tnm-co" target="_blank" rel="noopener noreferrer" class="btn-hero btn-hero-ghost">Book a Call</a>
                     </div>
+                </div>
+            </div>
         </section>
         <!-- End Hero -->
 
@@ -522,7 +508,7 @@ session_start();
                                         <p class="plus align-text-top p-0" style="margin: 10px 0 0 5px; font-size:25px !important;"> %</p>
                                     </div>
                                 </div>
-                                <p>JOB SUCCESS SCORE</p>
+                                <p>CLIENT SATISFACTION</p>
                             </div>
 
                         </div>
@@ -721,9 +707,12 @@ session_start();
                             <img src="./assets/img/logo png.png" style="max-width: 90%;" alt="popup logo" width="894" height="291">
                         </div>
 
+<!-- Tiny Crews removed from the site (commented out, not deleted)
                         <div>
                             <img src="./assets/img/tinycrews-logo.png" alt="Tiny Crews logo" loading="lazy" width="512" height="512">
                         </div>
+                        -->
+
 
                         <div style="margin-top:30px">
                             <img src="./assets/img/hisandhers-logo.png" alt="His & Hers logo" loading="lazy" width="452" height="286">
@@ -1216,17 +1205,19 @@ session_start();
 
         <!-- Cookie consent (Consent Mode v2) -->
         <div class="consent-banner" id="consentBanner" role="dialog" aria-label="Cookie consent">
-            <p><strong style="color:#282646;">Cookies on this site</strong></p>
-            <p>We use one optional cookie — Google Analytics — to see how the site is used. Nothing for ads, nothing sold or shared. Change your mind anytime on our <a href="/privacy/" style="color:#1bb1dc;">Privacy &amp; Cookies</a> page.</p>
+            <div class="consent-text">
+                <strong>Cookies on this site</strong>
+                <span>We use one optional cookie — Google Analytics — to see how the site is used. Nothing for ads, nothing sold or shared. Change your mind anytime on our <a href="/privacy/">Privacy &amp; Cookies</a> page.</span>
+            </div>
             <div class="consent-actions">
-                <button type="button" class="btn-tnm" id="consentAccept">Accept analytics</button>
-                <button type="button" class="btn-tnm-ghost" id="consentDecline">Decline</button>
+                <button type="button" class="consent-accept" id="consentAccept">Accept analytics</button>
+                <button type="button" class="consent-decline" id="consentDecline">Decline</button>
             </div>
         </div>
         <script src="assets/js/consent.js" defer></script>
         <script src="assets/js/contact-form.js" defer></script>
 
         <!-- particles.js -->
-        <script src="assets/vendor/particles/particles.js"></script>
+        <script src="assets/vendor/particles/particles.js" defer></script>
     </body>
     </html>

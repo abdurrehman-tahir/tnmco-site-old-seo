@@ -798,12 +798,16 @@
 /* --- Hero "Mind" canvas (replaces the SVG diagram) --- */
 .hero-mind {
     width: 100%;
-    max-width: 700px;
+    max-width: 560px;
     margin: 0 0 0 auto;          /* hug the right edge of the column */
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    /* soft white halo lifts the entity off the busy particles backdrop */
-    background: radial-gradient(circle at 50% 50%, rgba(255,255,255,.95) 0%, rgba(255,255,255,.55) 50%, rgba(255,255,255,0) 72%);
+    aspect-ratio: 5 / 6;
+    border-radius: 20px;
+    overflow: hidden;
+    /* dark panel so the brand-blue particle head pops (approved) */
+    background:
+        radial-gradient(120% 90% at 65% 35%, #11233f 0%, #0a1426 55%, #060c18 100%);
+    border: 1px solid rgba(27, 177, 220, .28);
+    box-shadow: 0 24px 60px rgba(8, 16, 34, .28), inset 0 0 60px rgba(27, 177, 220, .06);
 }
 @media (max-width: 767px) { .hero-mind { margin: 0 auto; } }
 
@@ -902,4 +906,175 @@
     #hero .intro-info .mt-4 { margin-top: 16px !important; }
     #hero .intro-info { text-align: center; }
     #hero .intro-info p { font-size: 16px; margin-left: auto; margin-right: auto; }
+}
+
+/* =====================================================================
+   Batch 9 — hero headline expansion, dark cookie bar, perf helpers
+   ===================================================================== */
+
+/* Headline fills the space like the reference */
+@media (min-width: 1200px) {
+    #hero .intro-info h1 { font-size: 54px !important; line-height: 1.16; }
+    #hero .intro-info p { font-size: 19px; max-width: 640px; }
+    .hero-mind { max-width: 600px; }
+}
+@media (min-width: 1600px) {
+    #hero .intro-info h1 { font-size: 62px !important; }
+    .hero-mind { max-width: 660px; }
+}
+
+/* Dark cookie bar (black-on-white, reference style) */
+.consent-banner {
+    position: fixed;
+    left: 16px; right: 16px; bottom: 16px;
+    z-index: 9999;
+    max-width: 1120px;
+    margin: 0 auto;
+    background: #14161c;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 14px;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .38);
+    padding: 16px 22px;
+    display: none;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.consent-banner.show { display: flex; }
+.consent-banner .consent-text { flex: 1 1 460px; min-width: 0; }
+.consent-banner .consent-text strong { display: block; color: #fff; font-size: 15px; margin-bottom: 3px; }
+.consent-banner .consent-text span { color: rgba(255, 255, 255, .72); font-size: 14px; line-height: 1.55; }
+.consent-banner .consent-text a { color: #4cc4e8; text-decoration: underline; }
+.consent-banner .consent-actions { display: flex; align-items: center; gap: 14px; margin-left: auto; }
+.consent-banner .consent-accept {
+    background: #fff; color: #14161c;
+    border: none; border-radius: 9px;
+    font-weight: 700; font-size: 14px;
+    padding: 11px 22px; cursor: pointer;
+    transition: transform .15s var(--tnm-ease), background .15s var(--tnm-ease);
+}
+.consent-banner .consent-accept:hover { background: var(--tnm-cyan); color: #fff; transform: translateY(-1px); }
+.consent-banner .consent-decline {
+    background: none; border: none; cursor: pointer;
+    color: rgba(255, 255, 255, .75); font-weight: 600; font-size: 14px;
+    padding: 8px 4px; text-decoration: underline;
+}
+.consent-banner .consent-decline:hover { color: #fff; }
+@media (max-width: 575px) {
+    .consent-banner { left: 10px; right: 10px; bottom: 10px; padding: 16px; }
+    .consent-banner .consent-actions { width: 100%; margin-left: 0; justify-content: flex-start; }
+}
+
+/* Perf: fixed background forces costly repaints on mobile scroll */
+#hero { background-attachment: scroll !important; }
+@media (max-width: 767px) { #hero { background-image: none !important; background: linear-gradient(160deg, #f3f8fc 0%, #eef3fa 100%) !important; } }
+
+/* =====================================================================
+   Batch 10 — full BLACK hero with 3D particle globe (T&MCO)
+   ===================================================================== */
+#hero.hero-dark {
+    background: #05070d !important;        /* full black hero, no image */
+    background-attachment: scroll !important;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.hero-dark .hero-sphere-canvas {
+    position: absolute; inset: 0;
+    width: 100%; height: 100%;
+    z-index: 1; display: block;
+}
+.hero-dark .hero-fade {
+    position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(90deg, #05070d 0%, rgba(5,7,13,.88) 28%, rgba(5,7,13,.28) 52%, rgba(5,7,13,0) 66%);
+}
+.hero-dark .hero-content { position: relative; z-index: 3; width: 100%; }
+.hero-dark .hero-copy { max-width: 620px; padding: 40px 0; }
+.hero-dark .hero-copy h1 {
+    color: #2fbef0;                         /* heading blue (distinct from particle blue) */
+    font-size: 52px;
+    line-height: 1.16;
+    font-weight: 700;
+    margin-bottom: 22px;
+    text-shadow: 0 2px 30px rgba(0,0,0,.6);
+}
+.hero-dark .hero-copy p {
+    color: rgba(255,255,255,.82);           /* body = white */
+    font-size: 19px;
+    line-height: 1.75;
+    max-width: 540px;
+    text-shadow: 0 1px 16px rgba(0,0,0,.7);
+}
+.hero-dark .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
+.btn-hero {
+    display: inline-flex; align-items: center; justify-content: center;
+    font-weight: 700; font-size: 14px; letter-spacing: .6px; text-transform: uppercase;
+    padding: 15px 30px; border-radius: 8px; text-decoration: none;
+    border: 2px solid transparent; cursor: pointer;
+    transition: transform .18s var(--tnm-ease), box-shadow .18s var(--tnm-ease), background .18s var(--tnm-ease), color .18s var(--tnm-ease), border-color .18s var(--tnm-ease);
+}
+.btn-hero-solid { background: var(--tnm-cyan); color: #05070d; box-shadow: 0 8px 26px rgba(27,177,220,.4); }
+.btn-hero-solid:hover { background: #46c8ec; color: #05070d; transform: translateY(-2px); }
+.btn-hero-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); }
+.btn-hero-ghost:hover { border-color: var(--tnm-cyan); color: var(--tnm-cyan); transform: translateY(-2px); }
+
+@media (min-width: 1600px) {
+    .hero-dark .hero-copy h1 { font-size: 60px; }
+    .hero-dark .hero-copy { max-width: 680px; }
+}
+@media (max-width: 991px) { .hero-dark .hero-copy h1 { font-size: 40px; } }
+@media (max-width: 767px) {
+    #hero.hero-dark { min-height: 100vh; background: #05070d !important; padding: 0; }
+    .hero-dark .hero-content { display: flex; align-items: flex-end; min-height: 100vh; }
+    .hero-dark .hero-copy { padding: 0 0 9vh; text-align: left; }
+    .hero-dark .hero-copy h1 { font-size: 31px; }
+    .hero-dark .hero-copy p { font-size: 16px; color: rgba(255,255,255,.85); }
+    .hero-dark .hero-fade {
+        background: linear-gradient(180deg, rgba(5,7,13,0) 30%, rgba(5,7,13,.72) 60%, #05070d 100%);
+    }
+    .hero-dark .btn-hero { padding: 13px 22px; }
+}
+
+/* ---- Light nav while the transparent header sits over the black hero ---- */
+.home-dark #header.header-transparent:not(.header-scrolled) .nav-link { color: #fff; }
+.home-dark #header.header-transparent:not(.header-scrolled) .nav-link:hover,
+.home-dark #header.header-transparent:not(.header-scrolled) .nav-item.active > .nav-link { color: var(--tnm-cyan); }
+.home-dark #header.header-transparent:not(.header-scrolled) #my-bars,
+.home-dark #header.header-transparent:not(.header-scrolled) .navbar-toggler { color: #fff; border-color: rgba(255,255,255,.4); }
+.home-dark #topbar.topbar-transparent:not(.topbar-scrolled) .social-links a { color: rgba(255,255,255,.85); }
+.home-dark #topbar.topbar-transparent:not(.topbar-scrolled) .social-links a:hover { color: #fff; }
+
+/* =====================================================================
+   Batch 11 — overflow guard + /demos/ bot animation
+   ===================================================================== */
+html, body { overflow-x: hidden; }
+#hero.hero-dark .hero-sphere-canvas { max-width: 100%; }
+
+/* /demos/ — box bot with blinking eyes that hop side to side */
+.demo-bot { position: absolute; top: 14px; right: 4px; width: 150px; pointer-events: none; }
+@media (max-width: 991px) { .demo-bot { display: none; } }
+.demo-bot svg { width: 100%; height: auto; display: block; overflow: visible; }
+.demo-bot .bot-box { fill: #2f9bf0; }
+.demo-bot .bot-eyes { animation: botMove 6s ease-in-out infinite; }
+.demo-bot .eye {
+    fill: #0a1426;
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: botBlink 6s linear infinite;
+}
+@keyframes botMove {
+    0%, 33% { transform: translateX(15px); }
+    41%, 75% { transform: translateX(-15px); }
+    83%, 100% { transform: translateX(15px); }
+}
+@keyframes botBlink {
+    0%, 4%, 6%, 14%, 16%, 24%, 26%, 44%, 46.9%, 54%, 56.9%, 64%, 66.9%, 100% { transform: scaleY(1); }
+    5%, 15%, 25%, 46%, 56%, 66% { transform: scaleY(0.12); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .demo-bot .bot-eyes, .demo-bot .eye { animation: none; }
 }

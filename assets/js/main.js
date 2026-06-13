@@ -298,7 +298,7 @@
         }
     }
 
-    if (document.getElementById('particles-js')) {
+    if (document.getElementById('particles-js') && window.matchMedia('(min-width: 768px)').matches) {
         particlesJS("particles-js", {
             "particles": {
                 "number": {
