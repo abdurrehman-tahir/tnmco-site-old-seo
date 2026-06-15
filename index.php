@@ -599,7 +599,7 @@ if (!function_exists('tnm_asset')) {
                                     <img src="./assets/img/team/abd.webp" alt="Abdurehman Bin Tahir - Technical Director & Co-Founder" loading="lazy" width="417" height="500">
                                     <h4>Abdurehman Bin Tahir</h4>
                                 </div>
-                                <span class="d-none d-md-block">Technical Director/ Co-Founder</span>
+                                <span class="d-block">Technical Director/ Co-Founder</span>
                                 <p class="d-none d-md-block">
                                     Abdurehman is responsible for implementing technological strategies and ensuring that the technical resources... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter">read more</a> )
                                 </p>
@@ -617,7 +617,7 @@ if (!function_exists('tnm_asset')) {
                                     <img src="./assets/img/team/athar-mushtaq.webp" alt="Athar Mushtaq - Managing Director & Co-Founder" loading="lazy" width="417" height="500">
                                     <h4>Athar Mushtaq</h4>
                                 </div>
-                                <span class="d-none d-md-block">Managing Director/Co-Founder</span>
+                                <span class="d-block">Managing Director/Co-Founder</span>
                                 <p class="d-none d-md-block">
                                     Athar is responsible for formulating company strategies, reviewing financial, marketing and operations activities... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter1">read more</a> )
                                 </p>
@@ -634,7 +634,7 @@ if (!function_exists('tnm_asset')) {
                                     <img src="./assets/img/team/team-member2.webp" alt="Dr. Tahir Mushtaq - Marketing Advisor" loading="lazy" width="417" height="500">
                                     <h4>Dr.Tahir Mushtaq</h4>
                                 </div>
-                                <span class="d-none d-md-block">Marketing Advisor</span>
+                                <span class="d-block">Marketing Advisor</span>
                                 <p class="d-none d-md-block">
                                     Dr Tahir is responsible for developing marketing strategy, gathering market intelligence, and providing... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter3">read more</a> )
                                 </p>
@@ -652,7 +652,7 @@ if (!function_exists('tnm_asset')) {
                                     <img src="./assets/img/team/team-member3.webp" alt="Ola Badawi - Financial Advisor" loading="lazy" width="417" height="500">
                                     <h4>Ola Badawi</h4>
                                 </div>
-                                <span class="d-none d-md-block">Financial Advisor</span>
+                                <span class="d-block">Financial Advisor</span>
                                 <div class="social d-none d-md-block">
                                     <a href="mailto:cfo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
                                     <a href="https://www.linkedin.com/in/ola-badawi-mba-923b79185/" target="_blank" rel="noopener noreferrer" aria-label="Ola Badawi on LinkedIn"><i class="fab fa-linkedin"></i></a>
