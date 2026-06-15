@@ -1,6 +1,6 @@
 <?php
 $pageTitle       = 'Contact T&M Consultants | Book a Call';
-$metaDescription = 'UK-registered AI consultancy building voice agents, RAG systems and automation — with Fractional CTO and full product delivery. 10+ years, 29+ projects shipped.';
+$metaDescription = 'Get in touch with T&M Consultants. Book a call, message us on WhatsApp, or use the contact form to discuss AI agents, automation and product delivery for your business.';
 $canonicalUrl    = 'https://tnmco.uk/contact/';
 
 $graph = [

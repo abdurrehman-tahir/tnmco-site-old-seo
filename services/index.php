@@ -1,8 +1,8 @@
 <?php
 require __DIR__ . '/data.php';
 
-$pageTitle       = 'Services — AI Agents, Automation, Fractional CTO & Delivery | T&M Consultants';
-$metaDescription = 'UK-registered AI consultancy building voice agents, RAG systems and automation — with Fractional CTO and full product delivery. 10+ years, 29+ projects shipped.';
+$pageTitle       = 'Services: AI Agents, Automation, Fractional CTO & Delivery | T&M Consultants';
+$metaDescription = 'T&M Consultants AI-first services: AI voice agents and assistants, automation and RAG, fractional CTO, and full-stack product delivery, proven in production.';
 $canonicalUrl    = 'https://tnmco.uk/services/';
 
 $graph = [
@@ -30,7 +30,7 @@ require dirname(__DIR__) . '/includes/header.php';
                             <span>Services</span>
                             <h1>Services</h1>
                         </div>
-                        <p class="services-subline">AI-first consulting and delivery — proven on production systems, not slideware.</p>
+                        <p class="services-subline">AI-first consulting and delivery, proven on production systems, not slideware.</p>
                     </header>
 
                     <div class="row services-grid">

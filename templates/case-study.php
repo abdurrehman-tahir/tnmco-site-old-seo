@@ -12,11 +12,13 @@ $cs      = $CASE_STUDIES[$slug];
 $pageUrl = 'https://tnmco.uk/case-studies/' . $slug . '/';
 
 /* ---- Build JSON-LD (Article + BreadcrumbList) via json_encode = always valid JSON ---- */
-$about = ['@type' => 'SoftwareApplication', 'name' => $cs['name']];
+// Typed as CreativeWork (not SoftwareApplication) so it isn't validated against
+// that type's required offers/aggregateRating/review fields, which we don't
+// fabricate. Keeps the "this case study is about product X" signal for SEO/LLMs.
+$about = ['@type' => 'CreativeWork', 'name' => $cs['name']];
 if (!empty($cs['schema_about_url'])) {            // omitted for private-IP projects
     $about['url'] = $cs['schema_about_url'];
 }
-$about['applicationCategory'] = $cs['schema_app_category'];
 
 $graph = [
     '@context' => 'https://schema.org',
@@ -151,6 +153,28 @@ require dirname(__DIR__) . '/includes/header.php';
                     <h2><i class="fas fa-desktop mr-2" style="color:#1bb1dc;"></i> Platform Screenshots</h2>
                     <div class="text-center">
                         <img src="<?php echo $cs['image']; ?>" class="img-fluid" alt="<?php echo $cs['image_alt']; ?>" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related case studies: cross-links so every study has several
+                 incoming internal links (better crawl + link equity). -->
+            <section class="cs-related" style="padding: 10px 0 30px;">
+                <div class="container">
+                    <h2 class="text-center" style="margin-bottom: 22px;">Related case studies</h2>
+                    <div class="btn-row" style="justify-content: center;">
+                        <?php
+                        $relSlugs = array_keys($CASE_STUDIES);
+                        $relPos   = array_search($slug, $relSlugs);
+                        $relCount = count($relSlugs);
+                        for ($r = 1; $r <= 3 && $r < $relCount; $r++) {
+                            $relSlug = $relSlugs[($relPos + $r) % $relCount];
+                            if ($relSlug === $slug) { continue; }
+                            echo '<a href="/case-studies/' . $relSlug . '/" class="btn-tnm-ghost">'
+                               . htmlspecialchars($CASE_STUDIES[$relSlug]['name'], ENT_QUOTES)
+                               . ' <span class="arw">&rarr;</span></a>';
+                        }
+                        ?>
                     </div>
                 </div>
             </section>

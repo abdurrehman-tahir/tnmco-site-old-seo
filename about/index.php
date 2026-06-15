@@ -37,7 +37,7 @@ require dirname(__DIR__) . '/includes/header.php';
                         </div>
                         <div class="col-lg-7 col-md-6">
                             <div class="about-content" data-aos="fade-left" data-aos-delay="100">
-                                <h3>Technology and Management (T&M) Consultants</h3>
+                                <h2 class="about-lede">Technology and Management (T&M) Consultants</h2>
                                 <p class="font-italic" style="text-align: justify; text-justify: inter-word;">
                                     AI is not new to us. We were publishing machine learning research and building intelligent systems years before the current rush, and we have spent the last decade turning that work into software that businesses rely on every day.
                                 </p>

@@ -188,7 +188,7 @@ if (!function_exists('tnm_asset')) {
             <div class="container">
                 <nav class="navbar navbar-expand-md bg-transparent navbar-light p-0 m-0">
                     <!-- Site Logo Here -->
-                    <a class="logo mr-auto" href="./index.php"><img src="./assets/img/tnmLogo.png" alt="TNM Logo" width="400" height="374"></a>
+                    <a class="logo mr-auto" href="/"><img src="./assets/img/tnmLogo.png" alt="TNM Logo" width="400" height="374"></a>
                     <!-- Collapsibe Button -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobilemenu" onclick='
         if($("#my-bars").hasClass("fa-bars")){
@@ -240,9 +240,6 @@ if (!function_exists('tnm_asset')) {
                                     <a class="dropdown-item" href="https://bitebot.tnmco.uk/" target="_blank">BiteBot - Restaurant AI Assistant</a>
                                     <a class="dropdown-item" href="/demos/">All Live Demos</a>
                                 </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./Career.php">Career</a>
                             </li>
                         </ul>
                     </div>
@@ -1028,7 +1025,6 @@ if (!function_exists('tnm_asset')) {
                                 <li><i class="bx bx-chevron-right"></i> <a href="/case-studies/">Case Studies</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/articles/">Articles</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/contact/">Contact</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="./Career.php">Career</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/privacy/">Privacy &amp; Cookies</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="cookie-settings-link">Cookie settings</a></li>
                             </ul>
@@ -1200,7 +1196,7 @@ if (!function_exists('tnm_asset')) {
               "name": "How can I contact T&M Consultants or apply for a job?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "You can contact T&M Consultants via email at info@tnmco.uk, by phone or WhatsApp at +92 314 3000005, or through the contact form on tnmco.uk. Current job openings are listed at tnmco.uk/Career.php."
+                "text": "You can contact T&M Consultants via email at info@tnmco.uk, by phone or WhatsApp at +92 314 3000005, or through the contact form on tnmco.uk."
               }
             }
           ]

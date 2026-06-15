@@ -37,7 +37,6 @@
                                 <li><i class="bx bx-chevron-right"></i> <a href="/case-studies/">Case Studies</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/articles/">Articles</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/contact/">Contact</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="/Career.php">Career</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/privacy/">Privacy &amp; Cookies</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#" class="cookie-settings-link">Cookie settings</a></li>
                             </ul>
