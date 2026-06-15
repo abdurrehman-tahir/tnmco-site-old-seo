@@ -1135,3 +1135,34 @@ html, body { overflow-x: hidden; }
 .btn-whatsapp i { font-size: 18px; color: #25d366; transition: color .15s var(--tnm-ease, ease); }
 .btn-whatsapp:hover { background: #25d366; color: #fff; text-decoration: none; }
 .btn-whatsapp:hover i { color: #fff; }
+
+/* =====================================================================
+   Batch 15 — section-title polish.
+   The big faint word is a watermark (.section-title span). On inner pages
+   the solid <h1> had no z-index, so the watermark painted ON TOP of it and
+   looked broken. Push the watermark fully behind, keep the solid heading
+   dark and in front, and give it a brand-accent underline so the pairing
+   reads as intentional.
+   ===================================================================== */
+.section-title span { z-index: 1; }              /* ghost watermark stays behind */
+
+.section-title h1,
+.section-title h2 {
+    position: relative;
+    z-index: 2;                                  /* solid heading always in front */
+    color: var(--tnm-navy);                      /* crisp dark text */
+    display: inline-block;
+    padding-bottom: 14px;
+}
+.section-title h1::after,
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 56px;
+    height: 3px;
+    border-radius: 3px;
+    background: linear-gradient(90deg, var(--tnm-cyan), var(--tnm-navy));
+}

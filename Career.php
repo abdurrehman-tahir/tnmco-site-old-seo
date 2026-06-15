@@ -1,4 +1,10 @@
 <?php
+// Career page temporarily retired — serve the 404 page until the jobs DB is
+// restored. Remove this block (and revert the .htaccess /career/ redirect) to
+// bring it back. Short-circuits before any DB connection.
+require __DIR__ . '/404.php';
+exit;
+
 session_start();
 require_once 'db_config.php';
 
