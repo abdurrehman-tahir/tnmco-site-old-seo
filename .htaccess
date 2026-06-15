@@ -13,6 +13,14 @@ ErrorDocument 404 /404.php
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
   Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+
+  # Always revalidate HTML/text documents (clean-URL PHP pages, llms.txt,
+  # llms-full.txt, sitemap.xml, robots.txt) so visitors never get a stale page
+  # from browser cache. Fingerprinted CSS/JS/images are NOT matched here and
+  # keep their long cache (set by mod_expires below).
+  <FilesMatch "\.(php|html?|txt|xml|json)$">
+    Header set Cache-Control "no-cache, must-revalidate, max-age=0"
+  </FilesMatch>
 </IfModule>
 
 <Files 403.shtml>
@@ -50,7 +58,15 @@ Require all denied
 # Enable Browser Caching (Expires Headers)
 <IfModule mod_expires.c>
   ExpiresActive On
-  ExpiresDefault "access plus 1 month"
+  # Default is now "revalidate" — anything not explicitly fingerprinted below
+  # (HTML pages, llms.txt, sitemap.xml, etc.) must be re-checked, never pinned.
+  ExpiresDefault "access plus 0 seconds"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/plain "access plus 0 seconds"
+  ExpiresByType text/xml "access plus 0 seconds"
+  ExpiresByType application/xml "access plus 0 seconds"
+  ExpiresByType application/json "access plus 0 seconds"
+  # Fingerprinted static assets (their URLs carry ?v=<mtime>) — safe to cache hard.
   ExpiresByType text/css "access plus 1 year"
   ExpiresByType text/javascript "access plus 1 year"
   ExpiresByType application/javascript "access plus 1 year"
