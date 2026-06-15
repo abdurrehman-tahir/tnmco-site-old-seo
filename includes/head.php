@@ -8,8 +8,20 @@
  *   $jsonLd           (string)  — optional, one or more <script type="application/ld+json"> blocks
  *   $ogImage          (string)  — optional, defaults to the T&M logo
  */
-if (!isset($ogImage))   { $ogImage = 'https://tnmco.uk/assets/img/tnmLogo.png'; }
+if (!isset($ogImage))   { $ogImage = 'https://tnmco.uk/assets/img/ogImage-1200x630.png'; }
 if (!isset($jsonLd))    { $jsonLd = ''; }
+
+/* Cache-busting helper: appends ?v=<file-modified-time> to a local asset URL so
+   browsers fetch the current file after each deploy despite the long Expires
+   headers in .htaccess. Falls back to the bare path if the file isn't found.
+   Accepts both "/assets/..." and "assets/..." and preserves the original form. */
+if (!function_exists('tnm_asset')) {
+    function tnm_asset($path) {
+        $full = dirname(__DIR__) . '/' . ltrim($path, '/');
+        $v = @filemtime($full);
+        return $v ? $path . '?v=' . $v : $path;
+    }
+}
 
 /* Lightweight, decorative per-page hero motif (CSS-animated, reduced-motion safe). */
 if (!function_exists('tnm_motif')) {
@@ -78,18 +90,18 @@ if (!function_exists('tnm_motif')) {
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- Vendor CSS Files -->
-    <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/vendor/fontawesome6/css/all.min.css" rel="stylesheet">
-    <link href="/assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="/assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="/assets/vendor/venobox/venobox.css" rel="stylesheet" media="print" onload="this.media='all'">
-    <link href="/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="/assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="<?php echo tnm_asset('/assets/vendor/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo tnm_asset('/assets/vendor/fontawesome6/css/all.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo tnm_asset('/assets/vendor/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo tnm_asset('/assets/vendor/ionicons/css/ionicons.min.css'); ?>" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="<?php echo tnm_asset('/assets/vendor/venobox/venobox.css'); ?>" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="<?php echo tnm_asset('/assets/vendor/owl.carousel/assets/owl.carousel.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo tnm_asset('/assets/vendor/aos/aos.css'); ?>" rel="stylesheet" media="print" onload="this.media='all'">
 
     <!-- Template Main CSS File -->
-    <link href="/assets/css/style.css" rel="stylesheet">
-    <link href="/assets/css/site-enhancements.css" rel="stylesheet">
-    <script src="/assets/vendor/jquery/jquery.min.js" defer></script>
+    <link href="<?php echo tnm_asset('/assets/css/style.css'); ?>" rel="stylesheet">
+    <link href="<?php echo tnm_asset('/assets/css/site-enhancements.css'); ?>" rel="stylesheet">
+    <script src="<?php echo tnm_asset('/assets/vendor/jquery/jquery.min.js'); ?>" defer></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRYVE7QMBL"></script>

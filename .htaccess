@@ -35,6 +35,9 @@ Require all denied
   # Redirect incorrect well-known sitemap requests to the real sitemap
   RewriteRule ^/?\.well-known/=/sitemap\.xml$ /sitemap.xml [R=301,L]
 
+  # Retire the stale /career/ URL (old indexed blockchain content) -> current Career page
+  RewriteRule ^career/?$ https://%{HTTP_HOST}/Career.php [R=301,L,NC]
+
   RewriteCond %{HTTPS} off
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>

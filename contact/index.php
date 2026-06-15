@@ -42,7 +42,7 @@ require dirname(__DIR__) . '/includes/header.php';
                             frameborder="0" allowfullscreen=""></iframe>
                     </div>
 
-                    <div class="row mt-5">
+                    <div class="row mt-5 align-items-center">
                         <div class="col-lg-4">
                             <div class="info">
                                 <div class="address">
@@ -60,6 +60,17 @@ require dirname(__DIR__) . '/includes/header.php';
                                     <h4>Email:</h4>
                                     <p>info@tnmco.uk</p>
                                 </div>
+                                <div class="email">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <h4>WhatsApp / Calls:</h4>
+                                    <p>+92 314 3000005</p>
+                                </div>
+                                <div class="email">
+                                    <i class="fas fa-phone"></i>
+                                    <h4>UK line:</h4>
+                                    <p>+44 7990 013020</p>
+                                </div>
+                                <a href="https://wa.me/923143000005?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20AI%20for%20my%20business" target="_blank" rel="noopener noreferrer" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
                             </div>
                         </div>
 

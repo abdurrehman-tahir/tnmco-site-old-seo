@@ -8,7 +8,10 @@
                         <div class="col-lg-4 col-md-6 footer-contact">
                             <h3><img src="/assets/img/whitelogo.png" style="width: 40px;" alt="white logo"> T&M Consultants</h3>
                             <p>
-                                T&M Consultants is a UK-registered technology consultancy (est. 2020) that designs, builds and runs AI systems and software products for start-ups and SMEs. We work the way a CTO would: scope honestly, architect for what you actually need, ship in weeks, and stay accountable after launch.
+                                AI is not new to us. We were publishing machine learning research and building intelligent systems years before the current rush, and we have spent the last decade turning that work into software that businesses rely on every day.
+                            </p>
+                            <p>
+                                Today T&M Consultants designs, builds, and runs AI agents, chatbots, and automation for founders and small businesses. We tell you straight what is worth building, ship it in weeks, and stay on to keep it working. That same research foundation still shapes how we work. We test what we build before it goes live, and we have put it into production for clients across education, healthcare, fintech, and analytics.
                             </p>
                             <div class="social-links  pt-3 pt-md-0 mt-3">
                                 <a href="https://www.facebook.com/TnMConsultants" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="T&M Consultants on Facebook"><i class="fa fa-facebook"></i></a>
@@ -20,7 +23,7 @@
                             <h4>Our Services</h4>
                             <ul>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-agents/">AI Agents &amp; Assistants</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-automation/">AI Automation &amp; RAG</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-automation/">AI Automation</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/services/fractional-cto/">Fractional CTO</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/services/software-delivery/">Software Delivery</a></li>
                             </ul>
@@ -79,22 +82,22 @@
                 <button type="button" class="consent-decline" id="consentDecline">Decline</button>
             </div>
         </div>
-        <script src="/assets/js/consent.js" defer></script>
-        <script src="/assets/js/contact-form.js" defer></script>
+        <script src="<?php echo tnm_asset('/assets/js/consent.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('/assets/js/contact-form.js'); ?>" defer></script>
 
         <!-- Vendor JS Files -->
-        <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-        <script src="/assets/vendor/jquery.easing/jquery.easing.min.js" defer></script>
-        <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
-        <script src="/assets/vendor/counterup/counterup.min.js" defer></script>
-        <script src="/assets/vendor/venobox/venobox.min.js" defer></script>
-        <script src="/assets/vendor/owl.carousel/owl.carousel.min.js" defer></script>
-        <script src="/assets/vendor/waypoints/jquery.waypoints.min.js" defer></script>
-        <script src="/assets/vendor/aos/aos.js" defer></script>
+        <script src="<?php echo tnm_asset('/assets/vendor/bootstrap/js/bootstrap.bundle.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('/assets/vendor/jquery.easing/jquery.easing.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('/assets/vendor/isotope-layout/isotope.pkgd.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('/assets/vendor/counterup/counterup.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('/assets/vendor/venobox/venobox.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('/assets/vendor/owl.carousel/owl.carousel.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('/assets/vendor/waypoints/jquery.waypoints.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('/assets/vendor/aos/aos.js'); ?>" defer></script>
 
         <!-- Template Main JS File -->
-        <script src="/assets/js/main.js" defer></script>
-        <script src="/assets/js/orb.js" defer></script>
+        <script src="<?php echo tnm_asset('/assets/js/main.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('/assets/js/orb.js'); ?>" defer></script>
     </body>
 
 </html>

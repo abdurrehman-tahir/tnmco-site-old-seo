@@ -32,6 +32,28 @@
         $('#topbar').addClass('topbar-scrolled');
     }
 
+    // Mobile collapsed nav: tapping a submenu parent (Services / Demos) should
+    // expand its list in place. Bootstrap's data-api is unreliable on touch
+    // (the first tap can collapse the whole menu), so below 768px we own the
+    // toggle and stop the event before Bootstrap's handler sees it. Desktop is
+    // hover-driven and left completely untouched.
+    $('#mobilemenu').on('click', '.dropdown-toggle', function(e) {
+        if (!window.matchMedia('(max-width: 767.98px)').matches) return; // desktop unchanged
+        e.preventDefault();
+        e.stopPropagation();
+        var $parent = $(this).closest('.dropdown');
+        var willOpen = !$parent.hasClass('show');
+        // collapse any other open submenu so only one is open at a time
+        $('#mobilemenu .dropdown.show').not($parent).each(function() {
+            $(this).removeClass('show')
+                   .children('.dropdown-toggle').attr('aria-expanded', 'false');
+            $(this).children('.dropdown-menu').removeClass('show');
+        });
+        $parent.toggleClass('show', willOpen)
+               .children('.dropdown-menu').toggleClass('show', willOpen);
+        $(this).attr('aria-expanded', willOpen ? 'true' : 'false');
+    });
+
     // Smooth scroll for the navigation and links with .scrollto classes
     var scrolltoOffset = $('#header').outerHeight() - 50;
     $(document).on('click', '#mobilemenu a, .scrollto', function(e) {

@@ -41,7 +41,7 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
                                     <a class="dropdown-item" href="/services/ai-agents/">AI Agents &amp; Assistants</a>
-                                    <a class="dropdown-item" href="/services/ai-automation/">AI Automation &amp; RAG</a>
+                                    <a class="dropdown-item" href="/services/ai-automation/">AI Automation</a>
                                     <a class="dropdown-item" href="/services/fractional-cto/">Fractional CTO</a>
                                     <a class="dropdown-item" href="/services/software-delivery/">Software Delivery</a>
                                 </div>

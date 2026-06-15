@@ -10,7 +10,7 @@
 
 ## Services
 - [AI Agents & Assistants](https://tnmco.uk/services/ai-agents/): voice agents and assistants; live demos VIOLET (clinic) and BiteBot (restaurant)
-- [AI Automation & RAG](https://tnmco.uk/services/ai-automation/): RAG pipelines, LLM apps, n8n/Python workflow automation
+- [AI Automation](https://tnmco.uk/services/ai-automation/): RAG pipelines, LLM apps, n8n/Python workflow automation
 - [Fractional CTO](https://tnmco.uk/services/fractional-cto/): architecture, technical leadership, delivery management
 - [Software Delivery](https://tnmco.uk/services/software-delivery/): full-stack web, mobile, e-commerce, MVP development
 

@@ -1,5 +1,16 @@
 <?php
 session_start();
+
+/* Cache-busting helper: appends ?v=<file-modified-time> to a local asset URL so
+   browsers fetch the current file after each deploy despite the long Expires
+   headers in .htaccess. Falls back to the bare path if the file isn't found. */
+if (!function_exists('tnm_asset')) {
+    function tnm_asset($path) {
+        $full = __DIR__ . '/' . ltrim($path, '/');
+        $v = @filemtime($full);
+        return $v ? $path . '?v=' . $v : $path;
+    }
+}
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -24,20 +35,20 @@ session_start();
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
         <!-- Vendor CSS Files -->
-        <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/vendor/fontawesome6/css/all.min.css" rel="stylesheet">
-        <link href="assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="assets/vendor/ionicons/css/ionicons.min.css" rel="stylesheet" media="print" onload="this.media='all'">
-        <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" media="print" onload="this.media='all'">
-        <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-        <link href="assets/vendor/aos/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+        <link href="<?php echo tnm_asset('assets/vendor/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
+        <link href="<?php echo tnm_asset('assets/vendor/fontawesome6/css/all.min.css'); ?>" rel="stylesheet">
+        <link href="<?php echo tnm_asset('assets/vendor/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet">
+        <link href="<?php echo tnm_asset('assets/vendor/ionicons/css/ionicons.min.css'); ?>" rel="stylesheet" media="print" onload="this.media='all'">
+        <link href="<?php echo tnm_asset('assets/vendor/venobox/venobox.css'); ?>" rel="stylesheet" media="print" onload="this.media='all'">
+        <link href="<?php echo tnm_asset('assets/vendor/owl.carousel/assets/owl.carousel.min.css'); ?>" rel="stylesheet">
+        <link href="<?php echo tnm_asset('assets/vendor/aos/aos.css'); ?>" rel="stylesheet" media="print" onload="this.media='all'">
 
         <!-- Template Main CSS File -->
-        <link href="assets/css/style.css" rel="stylesheet">
-        <link href="assets/css/site-enhancements.css" rel="stylesheet">
-        
-        <script src="assets/vendor/jquery/jquery.min.js" defer></script>
-        <script src="assets/js/hero-mind.js" defer></script>
+        <link href="<?php echo tnm_asset('assets/css/style.css'); ?>" rel="stylesheet">
+        <link href="<?php echo tnm_asset('assets/css/site-enhancements.css'); ?>" rel="stylesheet">
+
+        <script src="<?php echo tnm_asset('assets/vendor/jquery/jquery.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('assets/js/hero-mind.js'); ?>" defer></script>
         <script>
             document.addEventListener("DOMContentLoaded", function() {
                 document.addEventListener("click", function(event) {
@@ -70,7 +81,7 @@ session_start();
   gtag('config', 'G-MRYVE7QMBL');
 </script>
         <!-- ===== SEO Meta Tags ===== -->
-        <meta name="description" content="UK-registered AI consultancy building voice agents, RAG systems and automation — with Fractional CTO and full product delivery. 10+ years, 29+ projects shipped.">
+        <meta name="description" content="We build AI voice agents, chatbots and automation for small businesses, answering calls, handling bookings, and cutting manual work. AI researchers with 10+ years and 29+ projects shipped.">
         <meta name="robots" content="index, follow">
         <meta name="author" content="T&M Consultants">
         <meta name="language" content="English">
@@ -79,8 +90,8 @@ session_start();
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://tnmco.uk/">
         <meta property="og:title" content="T&M Consultants | AI Agents, Automation & Fractional CTO">
-        <meta property="og:description" content="UK-registered AI consultancy building voice agents, RAG systems and automation — with Fractional CTO and full product delivery. 10+ years, 29+ projects shipped.">
-        <meta property="og:image" content="https://tnmco.uk/assets/img/tnmLogo.png">
+        <meta property="og:description" content="We build AI voice agents, chatbots and automation for small businesses, answering calls, handling bookings, and cutting manual work. AI researchers with 10+ years and 29+ projects shipped.">
+        <meta property="og:image" content="https://tnmco.uk/assets/img/ogImage-1200x630.png">
         <meta property="og:site_name" content="T&M Consultants">
         <meta property="og:locale" content="en_GB">
 
@@ -88,8 +99,8 @@ session_start();
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:url" content="https://tnmco.uk/">
         <meta name="twitter:title" content="T&M Consultants | AI Agents, Automation & Fractional CTO">
-        <meta name="twitter:description" content="UK-registered AI consultancy building voice agents, RAG systems and automation — with Fractional CTO and full product delivery. 10+ years, 29+ projects shipped.">
-        <meta name="twitter:image" content="https://tnmco.uk/assets/img/tnmLogo.png">
+        <meta name="twitter:description" content="We build AI voice agents, chatbots and automation for small businesses, answering calls, handling bookings, and cutting manual work. AI researchers with 10+ years and 29+ projects shipped.">
+        <meta name="twitter:image" content="https://tnmco.uk/assets/img/ogImage-1200x630.png">
 
         <!-- ===== Organization + Website Schema (AI-first) ===== -->
         <script type="application/ld+json">
@@ -100,9 +111,11 @@ session_start();
               "@type": "Organization",
               "@id": "https://tnmco.uk/#org",
               "name": "T&M Consultants",
+              "legalName": "T&M UK Consultants Ltd",
               "alternateName": "Technology and Management Consultants",
               "url": "https://tnmco.uk/",
               "logo": "https://tnmco.uk/assets/img/tnmLogo.png",
+              "telephone": "+923143000005",
               "description": "UK-registered AI consultancy building voice agents, RAG systems and workflow automation, with Fractional CTO and full-stack product delivery for start-ups and SMEs.",
               "foundingDate": "2020",
               "identifier": {
@@ -203,7 +216,7 @@ session_start();
                                 <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
                                     <a class="dropdown-item" href="/services/ai-agents/">AI Agents &amp; Assistants</a>
-                                    <a class="dropdown-item" href="/services/ai-automation/">AI Automation &amp; RAG</a>
+                                    <a class="dropdown-item" href="/services/ai-automation/">AI Automation</a>
                                     <a class="dropdown-item" href="/services/fractional-cto/">Fractional CTO</a>
                                     <a class="dropdown-item" href="/services/software-delivery/">Software Delivery</a>
                                 </div>
@@ -255,8 +268,8 @@ session_start();
                     </svg>
                 </div>
                 <div class="hero-copy" data-aos="fade-up">
-                    <h1 class="cursor">AI Agents &amp; Automation, Delivered Like a CTO Would.</h1>
-                    <p>We design, build and run AI systems (voice agents, RAG, workflow automation) backed by 10+ years of product delivery and fractional technical leadership for start-ups and SMEs.</p>
+                    <h1 class="cursor">AI Answers the Calls. Automation Handles the Rest.</h1>
+                    <p>We build the AI agents and workflows that run the repetitive side of your business around the clock. Made by AI researchers, not resellers, with live demos you can try right now.</p>
                     <div class="hero-cta">
                         <a href="/demos/" class="btn-hero btn-hero-solid scrollto">Try a Live Demo</a>
                         <a href="https://cal.com/tnm-co" target="_blank" rel="noopener noreferrer" class="btn-hero btn-hero-ghost">Book a Call</a>
@@ -289,10 +302,10 @@ session_start();
 
                                 <h3>Technology and Management (T&M) Consultants</h3>
                                 <p class="font-italic" style="text-align: justify; text-justify: inter-word;">
-                                    T&M Consultants is a UK-registered technology consultancy (est. 2020) that designs, builds and runs AI systems and software products for start-ups and SMEs. We work the way a CTO would: scope honestly, architect for what you actually need, ship in weeks, and stay accountable after launch.
+                                    AI is not new to us. We were publishing machine learning research and building intelligent systems years before the current rush, and we have spent the last decade turning that work into software that businesses rely on every day.
                                 </p>
                                 <p class="font-italic" style="text-align: justify; text-justify: inter-word;">
-                                    Over 10+ years and 29+ shipped projects, our work has spanned AI-first education platforms (IqbalAI), medical computer vision run in production for 3 years (CaptureProof), autonomous AI agents (OTTO), RAG-powered copilots (Atlas), and fintech that was acquired into a NASDAQ-listed company (QuickCard → RYVYL). Today our focus is AI agents, automation and fractional technical leadership — with full-stack delivery underneath it all.
+                                    Today T&M Consultants designs, builds, and runs AI agents, chatbots, and automation for founders and small businesses. We tell you straight what is worth building, ship it in weeks, and stay on to keep it working. That same research foundation still shapes how we work. We test what we build before it goes live, and we have put it into production for clients across education, healthcare, fintech, and analytics.
                                 </p>
                                 <ul>
                                     <li><i class="ion-android-checkmark-circle"></i> We're a social enterprise at heart: our e-Sehat telemedicine project helps transform healthcare access in emerging economies.
@@ -340,12 +353,12 @@ session_start();
                             </div>
                         </div>
 
-                        <!-- Card 2 — AI Automation & RAG -->
+                        <!-- Card 2 — AI Automation -->
                         <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="150">
                             <div class="service-card-wrap">
                                 <a href="/services/ai-automation/" class="box service-card">
                                     <div class="icon" style="background:#eef4ff;"><i class="fas fa-bolt" style="color:#2282ff;"></i></div>
-                                    <h4 class="title">AI Automation &amp; RAG</h4>
+                                    <h4 class="title">AI Automation</h4>
                                     <p class="service-lead">LLM apps, retrieval pipelines and workflow automation that cut manual work in production.</p>
                                     <ul class="service-bullets">
                                         <li>RAG pipelines &amp; knowledge search</li>
@@ -889,7 +902,7 @@ session_start();
 
                         </div>
 
-                        <div class="row mt-5">
+                        <div class="row mt-5 align-items-center">
 
                             <div class="col-lg-4">
                                 <div class="info">
@@ -910,6 +923,20 @@ session_start();
                                         <h4>Email:</h4>
                                         <p>info@tnmco.uk</p>
                                     </div>
+
+                                    <div class="email">
+                                        <i class="fas fa-phone-alt"></i>
+                                        <h4>WhatsApp / Calls:</h4>
+                                        <p>+92 314 3000005</p>
+                                    </div>
+
+                                    <div class="email">
+                                        <i class="fas fa-phone"></i>
+                                        <h4>UK line:</h4>
+                                        <p>+44 7990 013020</p>
+                                    </div>
+
+                                    <a href="https://wa.me/923143000005?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20AI%20for%20my%20business" target="_blank" rel="noopener noreferrer" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
 
                                 </div>
 
@@ -970,7 +997,10 @@ session_start();
                         <div class="col-lg-4 col-md-6 footer-contact">
                             <h3><img src="./assets/img/whitelogo.png" style="width: 40px;" alt="white logo"> T&M Consultants</h3>
                             <p>
-                                T&M Consultants is a UK-registered technology consultancy (est. 2020) that designs, builds and runs AI systems and software products for start-ups and SMEs. We work the way a CTO would: scope honestly, architect for what you actually need, ship in weeks, and stay accountable after launch.
+                                AI is not new to us. We were publishing machine learning research and building intelligent systems years before the current rush, and we have spent the last decade turning that work into software that businesses rely on every day.
+                            </p>
+                            <p>
+                                Today T&M Consultants designs, builds, and runs AI agents, chatbots, and automation for founders and small businesses. We tell you straight what is worth building, ship it in weeks, and stay on to keep it working. That same research foundation still shapes how we work. We test what we build before it goes live, and we have put it into production for clients across education, healthcare, fintech, and analytics.
                             </p>
                             <div class="social-links  pt-3 pt-md-0 mt-3">
                                 <a href="https://www.facebook.com/TnMConsultants" target="_blank" rel="noopener noreferrer" class="facebook" aria-label="T&M Consultants on Facebook"><i class="fa fa-facebook"></i></a>
@@ -984,7 +1014,7 @@ session_start();
                             <h4>Our Services</h4>
                             <ul>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-agents/">AI Agents &amp; Assistants</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-automation/">AI Automation &amp; RAG</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-automation/">AI Automation</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/services/fractional-cto/">Fractional CTO</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/services/software-delivery/">Software Delivery &amp; MVPs</a></li>
                             </ul>
@@ -1170,7 +1200,7 @@ session_start();
               "name": "How can I contact T&M Consultants or apply for a job?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "You can contact T&M Consultants via email at contact@tnmco.uk, by phone at +44 208 374 708 (UK) or +92 321 660 1111 (Pakistan), or through the contact form on tnmco.uk. Current job openings are listed at tnmco.uk/Career.php."
+                "text": "You can contact T&M Consultants via email at info@tnmco.uk, by phone or WhatsApp at +92 314 3000005, or through the contact form on tnmco.uk. Current job openings are listed at tnmco.uk/Career.php."
               }
             }
           ]
@@ -1178,18 +1208,18 @@ session_start();
         </script>
 
         <!-- Vendor JS Files -->
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
-        <script src="assets/vendor/jquery.easing/jquery.easing.min.js" defer></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js" defer></script>
-        <script src="assets/vendor/counterup/counterup.min.js" defer></script>
-        <script src="assets/vendor/venobox/venobox.min.js" defer></script>
-        <script src="assets/vendor/owl.carousel/owl.carousel.min.js" defer></script>
-        <script src="assets/vendor/waypoints/jquery.waypoints.min.js" defer></script>
-        <script src="assets/vendor/aos/aos.js" defer></script>
+        <script src="<?php echo tnm_asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('assets/vendor/jquery.easing/jquery.easing.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('assets/vendor/isotope-layout/isotope.pkgd.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('assets/vendor/counterup/counterup.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('assets/vendor/venobox/venobox.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('assets/vendor/owl.carousel/owl.carousel.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('assets/vendor/waypoints/jquery.waypoints.min.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('assets/vendor/aos/aos.js'); ?>" defer></script>
 
         <!-- Template Main JS File -->
-        <script src="assets/js/main.js" defer></script>
-        <script src="assets/js/orb.js" defer></script>
+        <script src="<?php echo tnm_asset('assets/js/main.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('assets/js/orb.js'); ?>" defer></script>
         
         <!-- Form submission toast (session-driven) -->
         <?php if (isset($_SESSION['message'])) { $tnmOk = ($_SESSION['message'] !== 'error'); ?>
@@ -1224,10 +1254,10 @@ session_start();
                 <button type="button" class="consent-decline" id="consentDecline">Decline</button>
             </div>
         </div>
-        <script src="assets/js/consent.js" defer></script>
-        <script src="assets/js/contact-form.js" defer></script>
+        <script src="<?php echo tnm_asset('assets/js/consent.js'); ?>" defer></script>
+        <script src="<?php echo tnm_asset('assets/js/contact-form.js'); ?>" defer></script>
 
         <!-- particles.js -->
-        <script src="assets/vendor/particles/particles.js" defer></script>
+        <script src="<?php echo tnm_asset('assets/vendor/particles/particles.js'); ?>" defer></script>
     </body>
     </html>

@@ -1,6 +1,6 @@
 <?php
-$pageTitle       = 'About T&M Consultants | AI & Product Delivery Since 2015';
-$metaDescription = 'UK-registered AI consultancy building voice agents, RAG systems and automation — with Fractional CTO and full product delivery. 10+ years, 29+ projects shipped.';
+$pageTitle       = 'About T&M Consultants | AI Agents & Automation';
+$metaDescription = 'Meet T&M Consultants. We were researching AI before the current rush and now build AI agents and automation for founders and small businesses, with 10+ years and 29+ projects behind us.';
 $canonicalUrl    = 'https://tnmco.uk/about/';
 
 $graph = [
@@ -39,10 +39,10 @@ require dirname(__DIR__) . '/includes/header.php';
                             <div class="about-content" data-aos="fade-left" data-aos-delay="100">
                                 <h3>Technology and Management (T&M) Consultants</h3>
                                 <p class="font-italic" style="text-align: justify; text-justify: inter-word;">
-                                    T&M Consultants is a UK-registered technology consultancy (est. 2020) that designs, builds and runs AI systems and software products for start-ups and SMEs. We work the way a CTO would: scope honestly, architect for what you actually need, ship in weeks, and stay accountable after launch.
+                                    AI is not new to us. We were publishing machine learning research and building intelligent systems years before the current rush, and we have spent the last decade turning that work into software that businesses rely on every day.
                                 </p>
                                 <p class="font-italic" style="text-align: justify; text-justify: inter-word;">
-                                    Over 10+ years and 29+ shipped projects, our work has spanned AI-first education platforms (IqbalAI), medical computer vision run in production for 3 years (CaptureProof), autonomous AI agents (OTTO), RAG-powered copilots (Atlas), and fintech that was acquired into a NASDAQ-listed company (QuickCard → RYVYL). Today our focus is AI agents, automation and fractional technical leadership — with full-stack delivery underneath it all.
+                                    Today T&M Consultants designs, builds, and runs AI agents, chatbots, and automation for founders and small businesses. We tell you straight what is worth building, ship it in weeks, and stay on to keep it working. That same research foundation still shapes how we work. We test what we build before it goes live, and we have put it into production for clients across education, healthcare, fintech, and analytics.
                                 </p>
                                 <ul>
                                     <li><i class="ion-android-checkmark-circle"></i> We're a social enterprise at heart: our e-Sehat telemedicine project helps transform healthcare access in emerging economies.
