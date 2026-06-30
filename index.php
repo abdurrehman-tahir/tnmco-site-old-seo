@@ -80,15 +80,6 @@ if (!function_exists('tnm_asset')) {
 
   gtag('config', 'G-MRYVE7QMBL');
 
-<!-- ===== IQBAL AI BOT ===== -->
-<script src="https://consultation.iqbalai.com/static/js/consultant-embed.js"></script>
-<script>
-  IqbalConsultant.init({
-    apiBase: "https://consultation.iqbalai.com/,
-    clientKey: "AkdGtqdrLXLkgMIpwCYDhyBE2nKgO_dE-XE0iF3t7J4"
-  });
-</script>
-
 </script>
         <!-- ===== SEO Meta Tags ===== -->
         <meta name="description" content="We build AI voice agents, chatbots and automation for small businesses, answering calls, handling bookings, and cutting manual work. AI researchers with 10+ years and 29+ projects shipped.">
@@ -1265,5 +1256,14 @@ if (!function_exists('tnm_asset')) {
 
         <!-- particles.js -->
         <script src="<?php echo tnm_asset('assets/vendor/particles/particles.js'); ?>" defer></script>
+
+        <!-- IqbalAI Consultation Widget -->
+        <script src="https://consultation.iqbalai.com/static/js/consultant-embed.js"></script>
+        <script>
+            IqbalConsultant.init({
+                apiBase: "https://consultation.iqbalai.com/",
+                clientKey: "AkdGtqdrLXLkgMIpwCYDhyBE2nKgO_dE-XE0iF3t7J4"
+            });
+        </script>
     </body>
     </html>
