@@ -90,7 +90,7 @@ require dirname(__DIR__) . '/includes/header.php';
 
             <!-- Authority: intro -->
             <section style="padding: 50px 0 30px;">
-                <div class="container" data-aos="fade-up">
+                <div class="container auth-prose" data-aos="fade-up">
                     <h2 class="auth-h2"><?php echo $sv['intro_h2']; ?></h2>
                     <?php foreach ($sv['intro'] as $p): ?>
                     <p class="auth-p"><?php echo $p; ?></p>
@@ -164,7 +164,7 @@ require dirname(__DIR__) . '/includes/header.php';
 
             <!-- Authority: how we work -->
             <section style="padding: 50px 0 30px;">
-                <div class="container" data-aos="fade-up">
+                <div class="container auth-prose" data-aos="fade-up">
                     <h2 class="auth-h2"><?php echo $sv['how_h2']; ?></h2>
                     <?php foreach ($sv['how'] as $p): ?>
                     <p class="auth-p"><?php echo $p; ?></p>
@@ -174,7 +174,7 @@ require dirname(__DIR__) . '/includes/header.php';
 
             <!-- Authority: opinion -->
             <section style="padding: 20px 0 40px;">
-                <div class="container" data-aos="fade-up">
+                <div class="container auth-prose" data-aos="fade-up">
                     <div class="auth-opinion">
                         <h2 class="auth-h2"><?php echo $sv['opinion_h2']; ?></h2>
                         <?php foreach ($sv['opinion'] as $p): ?>
@@ -186,7 +186,7 @@ require dirname(__DIR__) . '/includes/header.php';
 
             <!-- Authority: FAQ (schema mirrors this text exactly) -->
             <section class="section-bg" style="padding: 45px 0 50px;">
-                <div class="container" data-aos="fade-up">
+                <div class="container auth-prose" data-aos="fade-up">
                     <h2 class="auth-h2">Straight answers</h2>
                     <?php foreach ($sv['faq'] as $f): ?>
                     <div class="auth-faq-item">

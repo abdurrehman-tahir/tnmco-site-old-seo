@@ -22,7 +22,7 @@ if (!function_exists('tnm_asset')) {
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         
 
-        <title>T&M Consultants | AI Agents, Automation & Fractional CTO</title>
+        <title>T&M Consultants | AI, Software & Fractional CTO for Founders</title>
         <link rel="canonical" href="https://tnmco.uk/">
 
         <!-- Favicons -->
@@ -82,7 +82,7 @@ if (!function_exists('tnm_asset')) {
 
 </script>
         <!-- ===== SEO Meta Tags ===== -->
-        <meta name="description" content="We build AI voice agents, chatbots and automation for small businesses, answering calls, handling bookings, and cutting manual work. AI researchers with 10+ years and 29+ projects shipped.">
+        <meta name="description" content="We are the senior technical partner for founders. Fractional CTO, product delivery, and AI, proven on 29+ shipped products with funded and acquired clients. Book a call or try a live demo.">
         <meta name="robots" content="index, follow">
         <meta name="author" content="T&M Consultants">
         <meta name="language" content="English">
@@ -90,8 +90,8 @@ if (!function_exists('tnm_asset')) {
         <!-- ===== Open Graph / Facebook ===== -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://tnmco.uk/">
-        <meta property="og:title" content="T&M Consultants | AI Agents, Automation & Fractional CTO">
-        <meta property="og:description" content="We build AI voice agents, chatbots and automation for small businesses, answering calls, handling bookings, and cutting manual work. AI researchers with 10+ years and 29+ projects shipped.">
+        <meta property="og:title" content="T&M Consultants | AI, Software & Fractional CTO for Founders">
+        <meta property="og:description" content="We are the senior technical partner for founders. Fractional CTO, product delivery, and AI, proven on 29+ shipped products with funded and acquired clients. Book a call or try a live demo.">
         <meta property="og:image" content="https://tnmco.uk/assets/img/ogImage-1200x630.png">
         <meta property="og:site_name" content="T&M Consultants">
         <meta property="og:locale" content="en_GB">
@@ -99,8 +99,8 @@ if (!function_exists('tnm_asset')) {
         <!-- ===== Twitter / X Card ===== -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:url" content="https://tnmco.uk/">
-        <meta name="twitter:title" content="T&M Consultants | AI Agents, Automation & Fractional CTO">
-        <meta name="twitter:description" content="We build AI voice agents, chatbots and automation for small businesses, answering calls, handling bookings, and cutting manual work. AI researchers with 10+ years and 29+ projects shipped.">
+        <meta name="twitter:title" content="T&M Consultants | AI, Software & Fractional CTO for Founders">
+        <meta name="twitter:description" content="We are the senior technical partner for founders. Fractional CTO, product delivery, and AI, proven on 29+ shipped products with funded and acquired clients. Book a call or try a live demo.">
         <meta name="twitter:image" content="https://tnmco.uk/assets/img/ogImage-1200x630.png">
 
         <!-- ===== Organization + Website Schema (AI-first) ===== -->
@@ -148,7 +148,7 @@ if (!function_exists('tnm_asset')) {
               "founder": {
                 "@type": "Person",
                 "@id": "https://tnmco.uk/#abdurehman",
-                "name": "Abdurehman Bin Tahir",
+                "name": "AbdurRehman Bin Tahir",
                 "jobTitle": "Technical Director / Co-Founder",
                 "sameAs": "https://www.linkedin.com/in/abdtahir/"
               },
@@ -187,11 +187,11 @@ if (!function_exists('tnm_asset')) {
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top header-transparent">
             <div class="container">
-                <nav class="navbar navbar-expand-md bg-transparent navbar-light p-0 m-0">
+                <nav class="navbar navbar-expand-lg bg-transparent navbar-light p-0 m-0">
                     <!-- Site Logo Here -->
                     <a class="logo mr-auto" href="/"><img src="./assets/img/tnmLogo.png" alt="TNM Logo" width="400" height="374"></a>
                     <!-- Collapsibe Button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobilemenu" onclick='
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation menu" data-toggle="collapse" data-target="#mobilemenu" onclick='
         if($("#my-bars").hasClass("fa-bars")){
             document.getElementById("my-bars").classList.remove("fa-bars");
             document.getElementById("my-bars").classList.add("fa-times");
@@ -216,10 +216,10 @@ if (!function_exists('tnm_asset')) {
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                                 <div class="dropdown-menu" aria-labelledby="servicesDropdown">
-                                    <a class="dropdown-item" href="/services/ai-agents/">AI Agents &amp; Assistants</a>
-                                    <a class="dropdown-item" href="/services/ai-automation/">AI Automation</a>
                                     <a class="dropdown-item" href="/services/fractional-cto/">Fractional CTO</a>
                                     <a class="dropdown-item" href="/services/software-delivery/">Software Delivery</a>
+                                    <a class="dropdown-item" href="/services/ai-automation/">AI Automation</a>
+                                    <a class="dropdown-item" href="/services/ai-agents/">AI Agents &amp; Assistants</a>
                                 </div>
                             </li>
                             <li class="nav-item">
@@ -266,11 +266,11 @@ if (!function_exists('tnm_asset')) {
                     </svg>
                 </div>
                 <div class="hero-copy" data-aos="fade-up">
-                    <h1 class="cursor">AI Answers the Calls. Automation Handles the Rest.</h1>
-                    <p>We build the AI agents and workflows that run the repetitive side of your business around the clock. Made by AI researchers, not resellers, with live demos you can try right now.</p>
+                    <h1 class="cursor">The Senior Technical Team Behind Your Product.</h1>
+                    <p>Founders bring us their AI and software ideas, and we design, build, and run them, acting as your Fractional CTO and delivery team without a full-time hire. Proven on 29+ products, including funded startups and a NASDAQ-listed acquisition, with live demos you can try.</p>
                     <div class="hero-cta">
-                        <a href="/demos/" class="btn-hero btn-hero-solid scrollto">Try a Live Demo</a>
-                        <a href="https://cal.com/tnm-co" target="_blank" rel="noopener noreferrer" class="btn-hero btn-hero-ghost">Book a Call</a>
+                        <a href="https://cal.com/tnm-co" target="_blank" rel="noopener noreferrer" class="btn-hero btn-hero-solid">Book a Call</a>
+                        <a href="/demos/" class="btn-hero btn-hero-ghost scrollto">Try a Live Demo</a>
                     </div>
                 </div>
             </div>
@@ -328,54 +328,18 @@ if (!function_exists('tnm_asset')) {
                             <span>Services</span>
                             <h2>Services</h2>
                         </div>
-                        <p class="services-subline">AI-first consulting and delivery — proven on production systems, not slideware.</p>
+                        <p class="services-subline">AI-first consulting and delivery, proven on production systems, not slideware.</p>
                     </header>
 
                     <div class="row services-grid">
 
-                        <!-- Card 1 — AI Agents & Assistants -->
-                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                            <div class="service-card-wrap">
-                                <a href="/services/ai-agents/" class="box service-card">
-                                    <div class="icon" style="background:#e6f6fb;"><i class="fas fa-robot" style="color:#1bb1dc;"></i></div>
-                                    <h4 class="title">AI Agents &amp; Assistants</h4>
-                                    <p class="service-lead">Voice and chat agents that answer, book and act — for clinics, restaurants and operations teams.</p>
-                                    <ul class="service-bullets">
-                                        <li>Voice agents &amp; AI assistants</li>
-                                        <li>Tool-using &amp; workflow agents</li>
-                                        <li>Integration with your existing systems</li>
-                                        <li>Hosting, monitoring &amp; maintenance</li>
-                                    </ul>
-                                </a>
-                                <a href="/demos/" class="service-proof">Proof: Try VIOLET (clinic) and BiteBot (restaurant) live <span class="arw">&rarr;</span></a>
-                            </div>
-                        </div>
-
-                        <!-- Card 2 — AI Automation -->
-                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="150">
-                            <div class="service-card-wrap">
-                                <a href="/services/ai-automation/" class="box service-card">
-                                    <div class="icon" style="background:#eef4ff;"><i class="fas fa-bolt" style="color:#2282ff;"></i></div>
-                                    <h4 class="title">AI Automation</h4>
-                                    <p class="service-lead">LLM apps, retrieval pipelines and workflow automation that cut manual work in production.</p>
-                                    <ul class="service-bullets">
-                                        <li>RAG pipelines &amp; knowledge search</li>
-                                        <li>LLM application development</li>
-                                        <li>n8n / Python workflow automation</li>
-                                        <li>Evals, monitoring &amp; cost control</li>
-                                    </ul>
-                                </a>
-                                <a href="/case-studies/iqbalai/" class="service-proof">Proof: IqbalAI shipped in 3–4.5 months, ~70% cost reduction <span class="arw">&rarr;</span></a>
-                            </div>
-                        </div>
-
-                        <!-- Card 3 — Fractional CTO & Technical Leadership -->
+                        <!-- Card 1 — Fractional CTO & Technical Leadership -->
                         <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
                             <div class="service-card-wrap">
                                 <a href="/services/fractional-cto/" class="box service-card">
                                     <div class="icon" style="background:#f1ecfb;"><i class="fas fa-user-tie" style="color:#6f42c1;"></i></div>
-                                    <h4 class="title">Fractional CTO &amp; Technical Leadership</h4>
-                                    <p class="service-lead">Senior architecture, team leadership and delivery management — without the full-time cost.</p>
+                                    <h3 class="title">Fractional CTO &amp; Technical Leadership</h3>
+                                    <p class="service-lead">Senior architecture, team leadership and delivery management, without the full-time cost.</p>
                                     <ul class="service-bullets">
                                         <li>Architecture &amp; technical strategy</li>
                                         <li>Engineering team leadership</li>
@@ -387,21 +351,57 @@ if (!function_exists('tnm_asset')) {
                             </div>
                         </div>
 
-                        <!-- Card 4 — Software Delivery & MVPs -->
+                        <!-- Card 2 — Software Delivery & MVPs -->
                         <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="150">
                             <div class="service-card-wrap">
                                 <a href="/services/software-delivery/" class="box service-card">
                                     <div class="icon" style="background:#fff2e6;"><i class="fas fa-laptop-code" style="color:#e98e06;"></i></div>
-                                    <h4 class="title">Software Delivery &amp; MVPs</h4>
+                                    <h3 class="title">Software Delivery &amp; MVPs</h3>
                                     <p class="service-lead">End-to-end product development: web, mobile, e-commerce, Web3 and desktop.</p>
                                     <ul class="service-bullets">
                                         <li>Full-stack web &amp; mobile apps</li>
                                         <li>MVP &amp; proof-of-concept builds</li>
-                                        <li>E-commerce (Shopify / WooCommerce)</li>
+                                        <li>E-commerce</li>
                                         <li>Blockchain &amp; Web3 systems</li>
                                     </ul>
                                 </a>
-                                <a href="/case-studies/" class="service-proof">Proof: 29+ projects shipped, incl. QuickCard — acquired into NASDAQ-listed RYVYL <span class="arw">&rarr;</span></a>
+                                <a href="/case-studies/" class="service-proof">Proof: 29+ projects shipped, incl. QuickCard, acquired into NASDAQ-listed RYVYL <span class="arw">&rarr;</span></a>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 — AI Automation -->
+                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-card-wrap">
+                                <a href="/services/ai-automation/" class="box service-card">
+                                    <div class="icon" style="background:#eef4ff;"><i class="fas fa-bolt" style="color:#2282ff;"></i></div>
+                                    <h3 class="title">AI Automation</h3>
+                                    <p class="service-lead">LLM applications and workflow automation that cut manual work in production.</p>
+                                    <ul class="service-bullets">
+                                        <li>RAG pipelines &amp; knowledge search</li>
+                                        <li>LLM application development</li>
+                                        <li>n8n / Python workflow automation</li>
+                                        <li>Evals, monitoring &amp; cost control</li>
+                                    </ul>
+                                </a>
+                                <a href="/case-studies/iqbalai/" class="service-proof">Proof: IqbalAI shipped in 3–4.5 months, ~70% cost reduction <span class="arw">&rarr;</span></a>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 — AI Agents & Assistants -->
+                        <div class="col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="150">
+                            <div class="service-card-wrap">
+                                <a href="/services/ai-agents/" class="box service-card">
+                                    <div class="icon" style="background:#e6f6fb;"><i class="fas fa-robot" style="color:#1bb1dc;"></i></div>
+                                    <h3 class="title">AI Agents &amp; Assistants</h3>
+                                    <p class="service-lead">Voice and chat agents that answer, book and act, for clinics, med-spas, restaurants and operations teams.</p>
+                                    <ul class="service-bullets">
+                                        <li>Voice agents &amp; AI assistants</li>
+                                        <li>Tool-using &amp; workflow agents</li>
+                                        <li>Integration with your existing systems</li>
+                                        <li>Hosting, monitoring &amp; maintenance</li>
+                                    </ul>
+                                </a>
+                                <a href="/demos/" class="service-proof">Proof: Try VIOLET (clinic) and BiteBot (restaurant) live <span class="arw">&rarr;</span></a>
                             </div>
                         </div>
 
@@ -439,19 +439,19 @@ if (!function_exists('tnm_asset')) {
 
                             <div class="features clearfix" data-aos="fade-up" data-aos-delay="100">
                                 <i class="fa fa-diamond" style="color: #f058dc;"></i>
-                                <h4>Corporis dolorem</h4>
+                                <h3>Corporis dolorem</h3>
                                 <p>Commodi quia voluptatum. Est cupiditate voluptas quaerat officiis ex alias dignissimos et ipsum. Soluta at enim modi ut incidunt dolor et.</p>
                             </div>
 
                             <div class="features clearfix" data-aos="fade-up" data-aos-delay="200">
                                 <i class="fa fa-object-group" style="color: #ffb774;"></i>
-                                <h4>Eum ut aspernatur</h4>
+                                <h3>Eum ut aspernatur</h3>
                                 <p>Molestias eius rerum iusto voluptas et ab cupiditate aut enim. Assumenda animi occaecati. Quo dolore fuga quasi autem aliquid ipsum odit. Perferendis doloremque iure nulla aut.</p>
                             </div>
 
                             <div class="features clearfix" data-aos="fade-up" data-aos-delay="300">
                                 <i class="fa fa-language" style="color: #589af1;"></i>
-                                <h4>Voluptates dolores</h4>
+                                <h3>Voluptates dolores</h3>
                                 <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur. Totam dolores ut enim ullam voluptas distinctio aut.</p>
                             </div>
 
@@ -510,7 +510,7 @@ if (!function_exists('tnm_asset')) {
                                         <span class="align-text-top" style="font-family: 'Montserrat', sans-serif; font-weight: bold; font-size: 40px; color: #1bb1dc; line-height: 1; margin-left: 2px;">+</span>
                                     </div>
                                 </div>
-                                <p style="color: #1bb1dc; font-weight: bold; margin-top: 10px;">CLIENT CAPITAL RAISED</p>
+                                <p style="color: #1bb1dc; font-weight: bold; margin-top: 10px;">Clients funded and acquired</p>
                             </div>
 
                             <div class="col-lg-2 col-md-4 col-6 text-center">
@@ -535,6 +535,8 @@ if (!function_exists('tnm_asset')) {
 
                         </div>
 
+                        <p class="positioning-band text-center" style="margin-top: 30px; margin-bottom: 0; color: #6c757d; font-size: 17px; font-weight: 500;">You have a product to build and ship, and you need senior technical people who have done it before, not a year spent hiring a team.</p>
+
                     </div>
                 </div>
             </section>
@@ -548,7 +550,7 @@ if (!function_exists('tnm_asset')) {
                         <img src="assets/img/features-1.svg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0" data-aos="fade-left" data-aos-delay="150">
-                        <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
                         <p>
                             Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
                         </p>
@@ -564,8 +566,8 @@ if (!function_exists('tnm_asset')) {
                     </div>
 
                     <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right" data-aos-delay="150">
-                        <h4>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.
-                        </h4>
+                        <h3>Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.
+                        </h3>
                         <p>
                             Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt.
                         </p>
@@ -594,18 +596,18 @@ if (!function_exists('tnm_asset')) {
                         <div class="col-lg-4 col-6">
                             <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter" class="member-info-trigger" style="cursor: pointer;">
-                                    <img src="./assets/img/team/abd.webp" alt="Abdurehman Bin Tahir - Technical Director & Co-Founder" loading="lazy" width="417" height="500">
-                                    <h4>Abdurehman Bin Tahir</h4>
+                                    <img src="./assets/img/team/abd.webp" alt="AbdurRehman Bin Tahir - Technical Director & Co-Founder" loading="lazy" width="417" height="500">
+                                    <h3>AbdurRehman Bin Tahir</h3>
                                 </div>
                                 <span class="d-block">Technical Director/ Co-Founder</span>
                                 <p class="d-none d-md-block">
-                                    Abdurehman is responsible for implementing technological strategies and ensuring that the technical resources... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter">read more</a> )
+                                    AbdurRehman is responsible for implementing technological strategies and ensuring that the technical resources... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter">read more</a> )
                                 </p>
 
                                 <div class="social d-none d-md-block">
-                                    <a href="mailto:abdurrehman@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+                                    <a href="mailto:abdurrehman@tnmco.uk" aria-label="Email AbdurRehman Bin Tahir"><i class="fas fa-envelope-square"></i></a>
 
-                                    <a href="https://www.linkedin.com/in/abdtahir/" target="_blank" rel="noopener noreferrer" aria-label="Abdurehman Bin Tahir on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.linkedin.com/in/abdtahir/" target="_blank" rel="noopener noreferrer" aria-label="AbdurRehman Bin Tahir on LinkedIn"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -613,14 +615,14 @@ if (!function_exists('tnm_asset')) {
                             <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter1" class="member-info-trigger" style="cursor: pointer;">
                                     <img src="./assets/img/team/athar-mushtaq.webp" alt="Athar Mushtaq - Managing Director & Co-Founder" loading="lazy" width="417" height="500">
-                                    <h4>Athar Mushtaq</h4>
+                                    <h3>Athar Mushtaq</h3>
                                 </div>
                                 <span class="d-block">Managing Director/Co-Founder</span>
                                 <p class="d-none d-md-block">
                                     Athar is responsible for formulating company strategies, reviewing financial, marketing and operations activities... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter1">read more</a> )
                                 </p>
                                 <div class="social d-none d-md-block">
-                                    <a href="mailto:md@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+                                    <a href="mailto:md@tnmco.uk" aria-label="Email Athar Mushtaq"><i class="fas fa-envelope-square"></i></a>
 
                                     <a href="https://www.linkedin.com/in/atharmushtaq/" target="_blank" rel="noopener noreferrer" aria-label="Athar Mushtaq on LinkedIn"><i class="fab fa-linkedin"></i></a>
                                 </div>
@@ -630,14 +632,14 @@ if (!function_exists('tnm_asset')) {
                             <div class="member">
                                 <div data-toggle="modal" data-target="#exampleModalCenter3" class="member-info-trigger" style="cursor: pointer;">
                                     <img src="./assets/img/team/team-member2.webp" alt="Dr. Tahir Mushtaq - Marketing Advisor" loading="lazy" width="417" height="500">
-                                    <h4>Dr.Tahir Mushtaq</h4>
+                                    <h3>Dr.Tahir Mushtaq</h3>
                                 </div>
                                 <span class="d-block">Marketing Advisor</span>
                                 <p class="d-none d-md-block">
                                     Dr Tahir is responsible for developing marketing strategy, gathering market intelligence, and providing... ( <a href="#/" data-toggle="modal" data-target="#exampleModalCenter3">read more</a> )
                                 </p>
                                 <div class="social d-none d-md-block">
-                                    <a href="mailto:cmo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+                                    <a href="mailto:cmo@tnmco.uk" aria-label="Email Dr. Tahir Mushtaq"><i class="fas fa-envelope-square"></i></a>
 
                                     <a href="https://www.linkedin.com/in/muhammadtahirmushtaq/" target="_blank" rel="noopener noreferrer" aria-label="Dr. Tahir Mushtaq on LinkedIn"><i class="fab fa-linkedin"></i></a>
                                 </div>
@@ -648,11 +650,11 @@ if (!function_exists('tnm_asset')) {
                             <div class="member">
                                 <div class="member-info-trigger">
                                     <img src="./assets/img/team/team-member3.webp" alt="Ola Badawi - Financial Advisor" loading="lazy" width="417" height="500">
-                                    <h4>Ola Badawi</h4>
+                                    <h3>Ola Badawi</h3>
                                 </div>
                                 <span class="d-block">Financial Advisor</span>
                                 <div class="social d-none d-md-block">
-                                    <a href="mailto:cfo@tnmco.uk"><i class="fas fa-envelope-square"></i></a>
+                                    <a href="mailto:cfo@tnmco.uk" aria-label="Email Ola Badawi"><i class="fas fa-envelope-square"></i></a>
                                     <a href="https://www.linkedin.com/in/ola-badawi-mba-923b79185/" target="_blank" rel="noopener noreferrer" aria-label="Ola Badawi on LinkedIn"><i class="fab fa-linkedin"></i></a>
                                 </div>
                             </div>
@@ -686,11 +688,11 @@ if (!function_exists('tnm_asset')) {
                         </div>
 
                         <div style="margin-top:30px">
-                            <img src="./assets/img/tsg.png" alt="tsg img" width="512" height="264">
+                            <img src="./assets/img/tsg.webp" alt="tsg img" width="512" height="264">
                         </div>
 
                         <div style="margin-top:30px">
-                            <img src="./assets/img/CricInGif.png" alt="cricintgit img" width="512" height="346">
+                            <img src="./assets/img/CricInGif.webp" alt="cricintgit img" width="512" height="346">
                         </div>
 
                         <div style="margin-top:0px">
@@ -718,7 +720,7 @@ if (!function_exists('tnm_asset')) {
                         </div>
                         
                         <div style="margin-top:55px">
-                            <img src="./assets/img/mint-it-dark.png" alt="mint-it logo" width="1000" height="203">
+                            <img src="./assets/img/mint-it-dark.webp" alt="mint-it logo" width="1000" height="203">
                         </div>
 
                         <div style="margin-top:50px">
@@ -737,7 +739,7 @@ if (!function_exists('tnm_asset')) {
 
 
                         <div style="margin-top:30px">
-                            <img src="./assets/img/hisandhers-logo.png" alt="His & Hers logo" loading="lazy" width="452" height="286">
+                            <img src="./assets/img/hisandhers-logo.webp" alt="His & Hers logo" loading="lazy" width="452" height="286">
                         </div>
 
                         <div>
@@ -789,7 +791,7 @@ if (!function_exists('tnm_asset')) {
                                     <img src="/assets/img/iqbalai-logo.png" alt="IqbalAI logo" loading="lazy">
                                 </div>
                                 <div class="logo-meta">
-                                    <h4>IqbalAI</h4>
+                                    <h3>IqbalAI</h3>
                                     <p>AI-First Urdu Educational &amp; School Management Platform</p>
                                     <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
                                 </div>
@@ -802,7 +804,7 @@ if (!function_exists('tnm_asset')) {
                                     <img src="/assets/img/captureproof-logo.png" alt="CaptureProof logo" loading="lazy">
                                 </div>
                                 <div class="logo-meta">
-                                    <h4>CaptureProof</h4>
+                                    <h3>CaptureProof</h3>
                                     <p>Medical Image Analysis Platform</p>
                                     <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
                                 </div>
@@ -815,7 +817,7 @@ if (!function_exists('tnm_asset')) {
                                     <img src="/assets/img/atlas-logo.png" alt="Atlas by BoH logo" loading="lazy">
                                 </div>
                                 <div class="logo-meta">
-                                    <h4>Atlas by BoH</h4>
+                                    <h3>Atlas by BoH</h3>
                                     <p>AI Copilot Platform</p>
                                     <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
                                 </div>
@@ -828,7 +830,7 @@ if (!function_exists('tnm_asset')) {
                                     <img src="/assets/img/otto-logo.png" alt="OTTO by BoH logo" loading="lazy">
                                 </div>
                                 <div class="logo-meta">
-                                    <h4>OTTO by BoH</h4>
+                                    <h3>OTTO by BoH</h3>
                                     <p>Autonomous AI Agent</p>
                                     <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
                                 </div>
@@ -841,7 +843,7 @@ if (!function_exists('tnm_asset')) {
                                     <img src="/assets/img/doclogo.png" alt="Docushield logo" loading="lazy">
                                 </div>
                                 <div class="logo-meta">
-                                    <h4>Docushield</h4>
+                                    <h3>Docushield</h3>
                                     <p>Secure Document Verification</p>
                                     <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
                                 </div>
@@ -854,7 +856,7 @@ if (!function_exists('tnm_asset')) {
                                     <img src="/assets/img/nonrivaldata.png" alt="NonRival Data logo" loading="lazy">
                                 </div>
                                 <div class="logo-meta">
-                                    <h4>NonRival Data</h4>
+                                    <h3>NonRival Data</h3>
                                     <p>Web 3.0 Data Platform</p>
                                     <span class="view-cs">View Case Study <span class="arw">&rarr;</span></span>
                                 </div>
@@ -895,7 +897,7 @@ if (!function_exists('tnm_asset')) {
 
                         <div>
 
-                            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.8673554751695!2d0.061977215234076996!3d51.47894902060476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a8e41d4dde1d%3A0xf1841cdf91d7d079!2s49%20Eglinton%20Rd%2C%20London%20SE18%203SL%2C%20UK!5e0!3m2!1sen!2s!4v1629702881294!5m2!1sen!2s"
+                            <iframe title="T&amp;M Consultants head office location on Google Maps" style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.8673554751695!2d0.061977215234076996!3d51.47894902060476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a8e41d4dde1d%3A0xf1841cdf91d7d079!2s49%20Eglinton%20Rd%2C%20London%20SE18%203SL%2C%20UK!5e0!3m2!1sen!2s!4v1629702881294!5m2!1sen!2s"
                                 frameborder="0" allowfullscreen=""></iframe>
 
                         </div>
@@ -906,31 +908,31 @@ if (!function_exists('tnm_asset')) {
                                 <div class="info">
                                     <div class="address">
                                         <i class="fas fa-building"></i>
-                                        <h4>Head Quarter:</h4>
+                                        <h3>Head Quarter:</h3>
                                         <p>49, Eglinton Rd London SE18 3SL UK</p>
                                     </div>
 
                                     <div class="email">
                                         <i class="fas fa-laptop-house"></i>
-                                        <h4>Tech Office:</h4>
+                                        <h3>Tech Office:</h3>
                                         <p>Sargodha Road, Faisalabad, Punjab Pakistan</p>
                                     </div>
 
                                     <div class="email">
                                         <i class="fas fa-envelope"></i>
-                                        <h4>Email:</h4>
+                                        <h3>Email:</h3>
                                         <p>info@tnmco.uk</p>
                                     </div>
 
                                     <div class="email">
                                         <i class="fas fa-phone-alt"></i>
-                                        <h4>WhatsApp / Calls:</h4>
+                                        <h3>WhatsApp / Calls:</h3>
                                         <p>+92 314 3000005</p>
                                     </div>
 
                                     <div class="email">
                                         <i class="fas fa-phone"></i>
-                                        <h4>UK line:</h4>
+                                        <h3>UK line:</h3>
                                         <p>+44 7990 013020</p>
                                     </div>
 
@@ -1011,10 +1013,10 @@ if (!function_exists('tnm_asset')) {
                         <div class="col-lg-3 col-md-6 footer-links">
                             <h4>Our Services</h4>
                             <ul>
-                                <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-agents/">AI Agents &amp; Assistants</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-automation/">AI Automation</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/services/fractional-cto/">Fractional CTO</a></li>
                                 <li><i class="bx bx-chevron-right"></i> <a href="/services/software-delivery/">Software Delivery &amp; MVPs</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-automation/">AI Automation</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="/services/ai-agents/">AI Agents &amp; Assistants</a></li>
                             </ul>
                         </div>
 
@@ -1066,16 +1068,16 @@ if (!function_exists('tnm_asset')) {
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="./assets/img/team/abd-500x500-1.webp" alt="team img" width="180px" height="auto">
-                            <h3 style="font-weight:600; font-size:2rem; margin:20px 0 0 0">Abdurehman Bin Tahir</h3>
+                            <img style="margin-top:-70px;  " src="./assets/img/team/abd-500x500-1.webp" alt="AbdurRehman Bin Tahir" width="180" height="180">
+                            <h3 style="font-weight:600; font-size:2rem; margin:20px 0 0 0">AbdurRehman Bin Tahir</h3>
                             <h5 style="margin:10px 0 20px 0">Technical Director/ Co-Founder</h5>
                             <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
                         </div>
 
                     </div>
                     <div class="modal-body">
-                        <p style="padding:0 30px; text-align: justify; text-justify: inter-word; ">Abdurehman is responsible for implementing technological strategies, and ensuring that the resources are aligned with the company’s business needs. He is also responsible to liaison with clients, ensuring that innovative and cost-effective
-                            solutions are developed for their unique needs. AbdurRehman holds an undergraduate in computer sciences from NUST and an M.Sc. in Computer Sciences from Turkey. He is an established academic researcher specialising in Machine
+                        <p style="padding:0 30px; text-align: justify; text-justify: inter-word; ">AbdurRehman is responsible for implementing technological strategies, and ensuring that the resources are aligned with the company’s business needs. He is also responsible to liaison with clients, ensuring that innovative and cost-effective
+                            solutions are developed for their unique needs. AbdurRehman holds an undergraduate degree in computer science from NUST and an MSc in Computer Science from Turkey. He is an established academic researcher specialising in Machine
                             Learning Algorithms with several journal and conference publications. His vast experience includes BlockChain powered solutions, Business Intelligence strategies, development of AI enabled systems and Full Stack development
                             for e-commerce platforms. He has led technical teams solving complex business problems for several years.</p>
                     </div>
@@ -1092,7 +1094,7 @@ if (!function_exists('tnm_asset')) {
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="./assets/img/team/md-500x500-1.webp" alt="team img" width="180px" height="auto">
+                            <img style="margin-top:-70px;  " src="./assets/img/team/md-500x500-1.webp" alt="Athar Mushtaq" width="180" height="180">
                             <h3 style="font-weight:600; font-size:2rem; margin:20px 0 0 0">Athar Mushtaq</h3>
                                 <h5 style="margin:10px 0 20px 0">Managing Director/Co-Founder</h5>
                                 <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
@@ -1120,7 +1122,7 @@ if (!function_exists('tnm_asset')) {
                 <div class="modal-content">
                     <div style="float:right;">
                         <div style=" text-align:center;">
-                            <img style="margin-top:-70px;  " src="./assets/img/team/tahir-500x500-1.webp" alt="team img" width="180px" height="auto">
+                            <img style="margin-top:-70px;  " src="./assets/img/team/tahir-500x500-1.webp" alt="Dr. Tahir Mushtaq" width="180" height="180">
                             <h3 style="font-weight:600; font-size:2rem; margin:20px 0 0 0">Dr.Tahir Mushtaq</h3>
                                 <h5 style="margin:10px 0 20px 0">Marketing Advisor</h5>
                                 <hr style="width:60%; height:5px; margin:auto; background-color:blue; border-radius:8px;">
@@ -1143,7 +1145,7 @@ if (!function_exists('tnm_asset')) {
 
         <!-- Modal4 -->
 
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up"></i></a>
         <!-- <div id="preloader"></div> -->
 
         <!-- ===== FAQPage Schema — Rich Results + RAG Extraction ===== -->
@@ -1157,7 +1159,7 @@ if (!function_exists('tnm_asset')) {
               "name": "What services does T&M Consultants provide?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "T&M Consultants provides AI agent development (voice agents and assistants), AI automation and RAG development, Fractional CTO and technical leadership, and full-stack software delivery — web, mobile, e-commerce and Web3 — for start-ups and SMEs."
+                "text": "T&M Consultants provides AI agent development (voice agents and assistants), AI automation and RAG development, Fractional CTO and technical leadership, and full-stack software delivery, web, mobile, e-commerce and Web3, for start-ups and SMEs."
               }
             },
             {
@@ -1244,7 +1246,7 @@ if (!function_exists('tnm_asset')) {
         <div class="consent-banner" id="consentBanner" role="dialog" aria-label="Cookie consent">
             <div class="consent-text">
                 <strong>Cookies on this site</strong>
-                <span>We use one optional cookie — Google Analytics — to see how the site is used. Nothing for ads, nothing sold or shared. Change your mind anytime on our <a href="/privacy/">Privacy &amp; Cookies</a> page.</span>
+                <span>We use one optional cookie, Google Analytics, to see how the site is used. Nothing for ads, nothing sold or shared. Change your mind anytime on our <a href="/privacy/">Privacy &amp; Cookies</a> page.</span>
             </div>
             <div class="consent-actions">
                 <button type="button" class="consent-accept" id="consentAccept">Accept analytics</button>
@@ -1258,11 +1260,12 @@ if (!function_exists('tnm_asset')) {
         <script src="<?php echo tnm_asset('assets/vendor/particles/particles.js'); ?>" defer></script>
 
         <!-- IqbalAI Consultation Widget -->
+       <!-- IqbalAI Consultation Widget -->
         <script src="https://consultation.iqbalai.com/static/js/consultant-embed.js"></script>
         <script>
             IqbalConsultant.init({
                 apiBase: "https://consultation.iqbalai.com/",
-                clientKey: "AkdGtqdrLXLkgMIpwCYDhyBE2nKgO_dE-XE0iF3t7J4"
+                clientKey: "Ce74HZ4vBaCkA5EgcJ9HNwJ-PZwXfhnkMOJqHIYXL6k"
             });
         </script>
     </body>

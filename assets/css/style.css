@@ -85,18 +85,22 @@ h1.cursor::after {
 
 /* Nav Bar Slider Styling */
 
-#mobilemenu a:after {
+/* Sliding hover underline. Uses ::before so it never collides with the
+   dropdown caret (which lives on ::after); this normalizes the hover effect
+   for plain links AND submenu toggles (Services / Demos). */
+#mobilemenu a::before {
     content: '';
-    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 0;
     height: 2px;
-    margin-top: 8px;
     background: #1bb1dc;
     transition: width .4s;
-    margin-bottom: -2px;
 }
 
-#mobilemenu a:hover::after {
+#mobilemenu a:hover::before,
+#mobilemenu .nav-item:hover > a::before {
     width: 100%;
 }
 
@@ -196,7 +200,7 @@ h6 {
     font-size: 22px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .back-to-top {
         bottom: 15px;
     }
@@ -331,6 +335,10 @@ h6 {
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3) !important;
 }
 
+#header .container {
+    max-width: 1600px;
+}
+
 #header .logo {
     font-size: 36px;
     margin: 0;
@@ -387,7 +395,7 @@ h6 {
     display: block;
     position: relative;
     color: #413e66;
-    padding: 10px 0 0 0;
+    padding: 10px 0 8px 0;
     transition: 0.3s;
     font-size: 14px;
     border-bottom: 2px solid transparent;
@@ -886,7 +894,7 @@ section {
 /* --------------------------------------------------------------*/
 
 .cta {
-    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+    background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.webp") fixed center center;
     background-size: cover;
     padding: 50px 0;
 }
@@ -1252,6 +1260,7 @@ section {
     margin: 0 0 30px 0;
 }
 
+.team .member h3,
 .team .member h4 {
     font-weight: 700;
     margin-bottom: 2px;
@@ -1269,8 +1278,16 @@ section {
     padding-top: 10px;
     font-size: 14px;
     font-style: italic;
-    color: #aaaaaa;
+    color: #5b6470;   /* darkened for WCAG AA contrast on the light team background */
 }
+
+/* "read more" link inside the blurb: dark cyan + underline so it is not
+   distinguishable by colour alone and meets contrast (a11y). */
+.team .member p a {
+    color: #0e6f8c;
+    text-decoration: underline;
+}
+.team .member p a:hover { color: #0b5a70; }
 
 .team .member .social {
     margin-top: 15px;
@@ -1604,6 +1621,7 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
+.contact .info h3,
 .contact .info h4 {
     padding: 0 0 0 60px;
     font-size: 22px;
@@ -2042,7 +2060,7 @@ section {
    ========================================== */
 
 /* Dropdown styling on Desktop */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     /* Hover to open behavior */
     .navbar-nav .dropdown:hover .dropdown-menu {
         display: block;
@@ -2060,6 +2078,13 @@ section {
         transform: translateY(10px);
         transition: all 0.3s ease;
         position: absolute;
+    }
+
+    /* Right-align the last (Demos) dropdown so it never overflows the viewport edge */
+    #mobilemenu .nav-item.dropdown:last-child .dropdown-menu,
+    #mobilemenu .dropdown-menu[aria-labelledby="demosDropdown"] {
+        left: auto;
+        right: 0;
     }
 }
 
@@ -2106,7 +2131,7 @@ section {
 }
 
 /* Styling dropdown toggle arrow on Desktop */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     #mobilemenu .dropdown-toggle::after {
         display: inline-block;
         margin-left: 0.355em;
@@ -2123,8 +2148,19 @@ section {
     }
 }
 
-/* Mobile Dropdown Adjustments (< 768px) */
-@media (max-width: 767.98px) {
+/* Mobile Dropdown Adjustments (< 992px) */
+@media (max-width: 991.98px) {
+    /* Keep the open menu inside the viewport and let it scroll on its own
+       instead of scrolling the page behind it. */
+    #mobilemenu.show,
+    #mobilemenu.collapsing {
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
+        padding-bottom: 12px;
+    }
+
     #mobilemenu .dropdown-menu {
         box-shadow: none;
         background-color: rgba(0, 0, 0, 0.03);
@@ -2147,6 +2183,7 @@ section {
     }
 }
 
+.team .member .member-info-trigger:hover h3,
 .team .member .member-info-trigger:hover h4 {
     color: #1bb1dc;
     transition: color 0.2s ease-in-out;
@@ -2170,6 +2207,7 @@ section {
         max-width: 100% !important;
         height: auto !important;
     }
+    .team .member h3,
     .team .member h4 {
         font-size: 15px !important;
         margin-bottom: 0px !important;

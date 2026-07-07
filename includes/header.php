@@ -15,7 +15,7 @@
                     <!-- Site Logo Here -->
                     <a class="logo mr-auto" href="/"><img src="/assets/img/tnmLogo.png" alt="TNM Logo" width="400" height="374"></a>
                     <!-- Collapsibe Button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobilemenu" onclick='
+                    <button class="navbar-toggler" type="button" aria-label="Toggle navigation menu" data-toggle="collapse" data-target="#mobilemenu" onclick='
         if($("#my-bars").hasClass("fa-bars")){
             document.getElementById("my-bars").classList.remove("fa-bars");
             document.getElementById("my-bars").classList.add("fa-times");

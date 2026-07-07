@@ -186,7 +186,7 @@ require dirname(__DIR__) . '/includes/header.php';
                                     me refine my idea. I was thoroughly impressed with the speed of delivery as the project was time sensitive. I would strongly recommend working with them. Thanks again and looking forward to working with you in future.
                                 <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
                             </p>
-                            <img src="/assets/img/doc-circle.png" class="testimonial-img" alt="Docushield Client Testimonial Logo" loading="lazy" width="1080" height="1080">
+                            <img src="/assets/img/doc-circle.webp" class="testimonial-img" alt="Docushield Client Testimonial Logo" loading="lazy" width="1080" height="1080">
                             <h3>Jules Mancion (Project Manager)</h3>
                             <h4><a href="https://docushield.tnmco.uk/" target="_blank">docushield.com</a></h4>
                         </div>
@@ -243,7 +243,7 @@ require dirname(__DIR__) . '/includes/header.php';
                                 services in developing prototype for my start-up.
                                 <i class="fas fa-quote-right" style="color:rgb(180, 178, 178);margin-left:7px"></i>
                             </p>
-                            <img src="/assets/img/TSG_Circle.png" class="testimonial-img" alt="TSG Client Testimonial Logo" loading="lazy" width="400" height="400">
+                            <img src="/assets/img/TSG_Circle.webp" class="testimonial-img" alt="TSG Client Testimonial Logo" loading="lazy" width="400" height="400">
                             <h3>Dr.Asif Mufti (Founder)</h3>
                             <h4><a href="http://tsgtech.us/" target="_blank">Tsgtech.us</a></h4>
                         </div>

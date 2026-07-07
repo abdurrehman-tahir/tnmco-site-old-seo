@@ -38,7 +38,7 @@ require dirname(__DIR__) . '/includes/header.php';
                     </div>
 
                     <div>
-                        <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.8673554751695!2d0.061977215234076996!3d51.47894902060476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a8e41d4dde1d%3A0xf1841cdf91d7d079!2s49%20Eglinton%20Rd%2C%20London%20SE18%203SL%2C%20UK!5e0!3m2!1sen!2s!4v1629702881294!5m2!1sen!2s"
+                        <iframe title="T&amp;M Consultants head office location on Google Maps" style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.8673554751695!2d0.061977215234076996!3d51.47894902060476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a8e41d4dde1d%3A0xf1841cdf91d7d079!2s49%20Eglinton%20Rd%2C%20London%20SE18%203SL%2C%20UK!5e0!3m2!1sen!2s!4v1629702881294!5m2!1sen!2s"
                             frameborder="0" allowfullscreen=""></iframe>
                     </div>
 

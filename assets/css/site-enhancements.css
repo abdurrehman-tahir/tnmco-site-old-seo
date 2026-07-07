@@ -408,7 +408,7 @@
 }
 .logo-tile:hover .logo-panel img { transform: scale(1.07); }
 .logo-tile .logo-meta { padding: 16px 18px 18px; text-align: center; }
-.logo-tile .logo-meta h4 { color: var(--tnm-navy); font-size: 17px; font-weight: 700; margin: 0 0 4px; }
+.logo-tile .logo-meta h3, .logo-tile .logo-meta h4 { color: var(--tnm-navy); font-size: 17px; font-weight: 700; margin: 0 0 4px; }
 .logo-tile .logo-meta p { color: var(--tnm-ink); font-size: 12.5px; letter-spacing: .4px; margin: 0 0 6px; text-transform: uppercase; }
 .logo-tile .logo-meta .view-cs { color: var(--tnm-cyan); font-weight: 600; font-size: 13.5px; }
 .logo-tile .logo-meta .view-cs .arw { display: inline-block; transition: transform .18s var(--tnm-ease); }
@@ -680,7 +680,7 @@
         height: calc(100% - 16px);
     }
     #team .member img { width: 100%; height: auto; }
-    #team .member h4 { font-size: 16px; margin-top: 10px; }
+    #team .member h3, #team .member h4 { font-size: 16px; margin-top: 10px; }
 }
 
 /* =====================================================================
@@ -833,10 +833,23 @@
 }
 .auth-p {
     color: var(--tnm-ink);
-    font-size: 16.5px;
-    line-height: 1.8;
+    font-size: 17.5px;
+    line-height: 1.75;
     max-width: 860px;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
+}
+
+/* Shared centered reading column for the flowing-text service sections
+   (intro / how / opinion / FAQ). Card grids stay full container width. */
+.auth-prose {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.auth-prose .auth-p,
+.auth-prose .auth-opinion,
+.auth-prose .auth-faq-item {
+    max-width: none;
 }
 .auth-card {
     display: flex;
@@ -993,7 +1006,7 @@
     background: linear-gradient(90deg, #05070d 0%, rgba(5,7,13,.88) 28%, rgba(5,7,13,.28) 52%, rgba(5,7,13,0) 66%);
 }
 .hero-dark .hero-content { position: relative; z-index: 3; width: 100%; }
-.hero-dark .hero-copy { max-width: 620px; padding: 40px 0; }
+.hero-dark .hero-copy { max-width: 700px; padding: 40px 0; }
 .hero-dark .hero-copy h1 {
     color: #2fbef0;                         /* heading blue (distinct from particle blue) */
     font-size: 52px;
@@ -1006,7 +1019,7 @@
     color: rgba(255,255,255,.82);           /* body = white */
     font-size: 19px;
     line-height: 1.75;
-    max-width: 540px;
+    max-width: 640px;
     text-shadow: 0 1px 16px rgba(0,0,0,.7);
 }
 .hero-dark .hero-cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 30px; }
@@ -1024,14 +1037,14 @@
 
 @media (min-width: 1600px) {
     .hero-dark .hero-copy h1 { font-size: 60px; }
-    .hero-dark .hero-copy { max-width: 680px; }
+    .hero-dark .hero-copy { max-width: 780px; }
 }
 @media (max-width: 991px) { .hero-dark .hero-copy h1 { font-size: 40px; } }
 @media (max-width: 767px) {
     #hero.hero-dark { min-height: 100vh; background: #05070d !important; padding: 0; }
     .hero-dark .hero-content { display: flex; align-items: flex-end; min-height: 100vh; }
     .hero-dark .hero-copy { padding: 0 0 9vh; text-align: left; }
-    .hero-dark .hero-copy h1 { font-size: 31px; }
+    .hero-dark .hero-copy h1 { font-size: 31px; text-align: center; }
     .hero-dark .hero-copy p { font-size: 16px; color: rgba(255,255,255,.85); }
     .hero-dark .hero-fade {
         background: linear-gradient(180deg, rgba(5,7,13,0) 30%, rgba(5,7,13,.72) 60%, #05070d 100%);
@@ -1084,9 +1097,10 @@ html, body { overflow-x: hidden; }
    ===================================================================== */
 .hero-bot { display: none; }
 @media (max-width: 767px) {
+    #hero.hero-dark { overflow: visible; }         /* sphere is hidden on phones; don't clip the copy/buttons */
     .hero-dark .hero-sphere-canvas { display: none !important; }   /* drop the heavy canvas on phones */
     .hero-dark .hero-fade { display: none; }
-    .hero-dark .hero-content { flex-direction: column; align-items: flex-start; justify-content: center; padding-top: 96px; }
+    .hero-dark .hero-content { flex-direction: column; align-items: flex-start; justify-content: center; padding-top: 108px; padding-bottom: 64px; box-sizing: border-box; }
     .hero-dark .hero-copy { padding: 0; }
     .hero-bot {
         display: block;
@@ -1165,4 +1179,41 @@ html, body { overflow-x: hidden; }
     height: 3px;
     border-radius: 3px;
     background: linear-gradient(90deg, var(--tnm-cyan), var(--tnm-navy));
+}
+
+/* =====================================================================
+   Mobile centering — service cards and footer read better centered
+   on stacked, full-width phone layouts.
+   ===================================================================== */
+@media (max-width: 767px) {
+    /* --- Service cards (home + /services/ listing): center all content --- */
+    .service-card,
+    #services .box.service-card,
+    .box.service-card { text-align: center !important; }
+    .service-card .icon { margin: 0 auto 18px auto !important; }
+    .service-card .title,
+    .service-card .service-lead { text-align: center !important; }
+    .service-card .service-bullets { display: inline-block; text-align: center; }
+    .service-card .service-bullets li {
+        padding-left: 0;
+        text-align: center;
+    }
+    .service-card .service-bullets li::before {
+        position: static;
+        margin-right: 7px;
+    }
+    /* proof chip below the card: center its label + arrow */
+    .service-proof { justify-content: center; text-align: center; }
+    .service-proof .arw { margin-left: 8px; }
+
+    /* --- Footer: center every column on phones --- */
+    #footer .footer-top { text-align: center; }
+    #footer .footer-top .footer-contact h3 { justify-content: center; }
+    #footer .footer-top .footer-contact p {
+        text-align: center;
+        padding-right: 0 !important;
+    }
+    #footer .footer-top .footer-links ul li { justify-content: center; }
+    #footer .social-links { text-align: center; }
+    #footer .footer-top .footer-contact .social-links { margin-top: 14px; }
 }

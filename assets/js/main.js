@@ -228,6 +228,21 @@
         items: 1
     });
 
+    // A11y: Owl Carousel dot buttons render with no text, so give each an
+    // accessible name. Re-run after Owl rebuilds dots on resize/change.
+    $(".owl-carousel").each(function () {
+        var $c = $(this);
+        function labelDots() {
+            $c.find(".owl-dot").each(function (i) {
+                $(this).attr("aria-label", "Go to slide " + (i + 1));
+            });
+        }
+        labelDots();
+        $c.on("changed.owl.carousel refreshed.owl.carousel", function () {
+            setTimeout(labelDots, 0);
+        });
+    });
+
     // Init AOS
     function aos_init() {
         AOS.init({

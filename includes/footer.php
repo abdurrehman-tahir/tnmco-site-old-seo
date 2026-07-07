@@ -68,7 +68,7 @@
         </footer>
         <!-- End Footer -->
 
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up"></i></a>
 
         <!-- Cookie consent (Consent Mode v2) -->
         <div class="consent-banner" id="consentBanner" role="dialog" aria-label="Cookie consent">

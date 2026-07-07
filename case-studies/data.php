@@ -135,7 +135,7 @@ $CASE_STUDIES = [
         'schema_about_url'    => null,
         'testimonial' => [
             'quote'  => 'T&M went above and beyond in development of my project. They not only assisted with the project development but also helped me refine my idea. I was thoroughly impressed with the speed of delivery as the project was time sensitive. I would strongly recommend working with them. Thanks again and looking forward to working with you in future.',
-            'img'    => '/assets/img/doc-circle.png',
+            'img'    => '/assets/img/doc-circle.webp',
             'name'   => 'Jules Mancion (Project Manager)',
             'source' => 'docushield.com',
             'url'    => 'https://docushield.tnmco.uk/',
@@ -243,7 +243,7 @@ $CASE_STUDIES = [
     ],
 
     'mintit-studio' => [
-        'logo'        => '/assets/img/mint-it-dark.png',
+        'logo'        => '/assets/img/mint-it-dark.webp',
         'name'        => 'MintIt Studio',
         'h1'          => 'MintIt Studio — NFT Marketplace on Kadena',
         'title'       => 'MintIt Studio: First Kadena NFT Marketplace | T&M Case Study',
@@ -326,7 +326,7 @@ $CASE_STUDIES = [
     */
 
     'his-and-hers' => [
-        'logo'        => '/assets/img/hisandhers-logo.png',
+        'logo'        => '/assets/img/hisandhers-logo.webp',
         'name'        => 'His & Hers',
         'h1'          => 'His & Hers — Fashion E-Commerce Storefront',
         'title'       => 'His & Hers: High-Traffic Fashion Store | T&M Case Study',
