@@ -42,7 +42,7 @@
         W = Math.max(1, r.width); H = Math.max(1, r.height);
         canvas.width = W * dpr; canvas.height = H * dpr;
         ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        R = Math.min(W * 0.92, H) * (mobile ? 0.3213 : 0.3519);   // 15% smaller sphere
+        R = Math.min(W * 0.92, H) * (mobile ? 0.2892 : 0.3167);   // 15% then 10% smaller sphere
         CX = mobile ? W * 0.5 : W * 0.72;
         CY = mobile ? H * 0.42 : H * 0.5;
     }

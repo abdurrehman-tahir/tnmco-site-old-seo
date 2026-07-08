@@ -1265,7 +1265,7 @@ if (!function_exists('tnm_asset')) {
         <script>
             IqbalConsultant.init({
                 apiBase: "https://consultation.iqbalai.com/",
-                clientKey: "Ce74HZ4vBaCkA5EgcJ9HNwJ-PZwXfhnkMOJqHIYXL6k"
+                clientKey: "WIhSZWlFUgnFPhSg9mPXfRrm5BnifUuvrminCE28uRM"
             });
         </script>
     </body>

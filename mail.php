@@ -22,14 +22,14 @@ function respond(bool $ok, bool $isAjax): void
         echo json_encode(['ok' => $ok]);
     } else {
         $_SESSION['message'] = $ok ? 'show' : 'error';
-        header('Location: ./index.php');
+        header('Location: /');
     }
     exit();
 }
 
 // Only accept POST submissions
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: ./index.php');
+    header('Location: /');
     exit();
 }
 
