@@ -57,6 +57,7 @@ require dirname(__DIR__) . '/includes/header.php';
             </section>
             <!-- End About Section -->
 
+<?php /* Team section: hidden by commenting out, not deleted. Remove this wrapper to restore.
             <!-- ======= Team Section ======= -->
             <section id="team" class="team section-bg">
                 <div class="container">
@@ -166,6 +167,7 @@ require dirname(__DIR__) . '/includes/header.php';
                 </div>
             </section>
             <!-- End Team Section -->
+*/ ?>
 
             <!-- ======= Testimonials Section ======= -->
 
@@ -253,6 +255,7 @@ require dirname(__DIR__) . '/includes/header.php';
             </section>
         </main>
 
+<?php /* Team member modals: hidden by commenting out, not deleted. Remove this wrapper to restore.
         <!-- ======= Team Member Modals ======= -->
         <div class="modal fade" id="mubashir" tabindex="-1" role="dialog" aria-labelledby="mubashirTitle" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document" style="top: 10%;">
@@ -407,4 +410,5 @@ require dirname(__DIR__) . '/includes/header.php';
             </div>
         </div>
 
-<?php require dirname(__DIR__) . '/includes/footer.php'; ?>
+
+*/ ?><?php require dirname(__DIR__) . '/includes/footer.php'; ?>

@@ -165,9 +165,11 @@ if (!$conn) {
                             <li class="nav-item">
                                 <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="./index.php#testimonials">Testimonials</a>
                             </li>
+<?php /* Team nav link: hidden by commenting out, not deleted. Remove this wrapper to restore.
                             <li class="nav-item">
                                 <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="./index.php#team">Team</a>
                             </li>
+*/ ?>
                              <li class="nav-item">
                                  <a class="nav-link" id="contact1" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="./index.php#contact">Contact</a>
                              </li>

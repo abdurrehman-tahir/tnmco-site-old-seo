@@ -225,9 +225,11 @@ if (!function_exists('tnm_asset')) {
                             <li class="nav-item">
                                 <a class="nav-link" href="/case-studies/">Case Studies</a>
                             </li>
+<?php /* Team nav link: hidden by commenting out, not deleted. Remove this wrapper to restore.
                             <li class="nav-item">
                                 <a class="nav-link" onclick='if($("#my-bars").hasClass("fa-times")){$(".navbar-toggler").click();}' href="#team">Team</a>
                             </li>
+*/ ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="/about/#testimonials">Testimonials</a>
                             </li>
@@ -585,6 +587,7 @@ if (!function_exists('tnm_asset')) {
 
 
             <!-- <section id="testimonials" class="testimonials section-bg"> -->
+<?php /* Team section: hidden by commenting out, not deleted. Remove this wrapper to restore.
             <section id="team" class="team section-bg">
                 <div class="container">
                     <div class="section-title">
@@ -666,6 +669,7 @@ if (!function_exists('tnm_asset')) {
                     </div>
                 </div>
             </section>
+*/ ?>
 
             <!-- ======= Clients Section ======= -->
             <section id="clients" class="clients">
@@ -924,18 +928,6 @@ if (!function_exists('tnm_asset')) {
                                         <p>info@tnmco.uk</p>
                                     </div>
 
-                                    <div class="email">
-                                        <i class="fas fa-phone-alt"></i>
-                                        <h3>WhatsApp / Calls:</h3>
-                                        <p>+92 314 3000005</p>
-                                    </div>
-
-                                    <div class="email">
-                                        <i class="fas fa-phone"></i>
-                                        <h3>UK line:</h3>
-                                        <p>+44 7990 013020</p>
-                                    </div>
-
                                     <a href="https://wa.me/923143000005?text=Hi%2C%20I%27d%20like%20to%20ask%20about%20AI%20for%20my%20business" target="_blank" rel="noopener noreferrer" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
 
                                 </div>
@@ -1062,6 +1054,7 @@ if (!function_exists('tnm_asset')) {
         </footer>
         <!-- End Footer -->
 
+<?php /* Team member modals: hidden by commenting out, not deleted. Remove this wrapper to restore.
         <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document" style="top: 10%;">
@@ -1143,7 +1136,8 @@ if (!function_exists('tnm_asset')) {
             </div>
         </div>
 
-        <!-- Modal4 -->
+
+*/ ?>        <!-- Modal4 -->
 
         <a href="#" class="back-to-top" aria-label="Back to top"><i class="fa fa-chevron-up"></i></a>
         <!-- <div id="preloader"></div> -->
@@ -1199,7 +1193,7 @@ if (!function_exists('tnm_asset')) {
               "name": "How can I contact T&M Consultants or apply for a job?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "You can contact T&M Consultants via email at info@tnmco.uk, by phone or WhatsApp at +92 314 3000005, or through the contact form on tnmco.uk."
+                "text": "You can contact T&M Consultants via email at info@tnmco.uk, on WhatsApp, or through the contact form on tnmco.uk."
               }
             }
           ]
